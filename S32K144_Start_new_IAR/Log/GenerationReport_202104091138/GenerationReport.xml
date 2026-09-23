@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DaVinciExecutionReport name="Generation Execution Report">
+    <ValidationResults fatalerrors="0" errors="0" warnings="20" improvements="0" infos="2">
+        <ValidationResultId id="00034" message="Deviation from Published Information Default" origin="AR-BSWMD">
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/CommonPublishedInformation[0:VendorApiInfix](value=) differs from published information default value&#xD;
+.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/CommonPublishedInformation[0:VendorApiInfix]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/CommonPublishedInformation/VendorApiInfix</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_CMU_LOC_RESET[0:McuResetReason](value=14) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_CMU_LOC_RESET[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_CORE_LOCKUP_RESET[0:McuResetReason](value=3) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_CORE_LOCKUP_RESET[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_EXTERNAL_PIN_RESET[0:McuResetReason](value=6) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_EXTERNAL_PIN_RESET[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_JTAG_RESET[0:McuResetReason](value=4) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_JTAG_RESET[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_LOSS_OF_CLOCK_RESET[0:McuResetReason](value=9) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_LOSS_OF_CLOCK_RESET[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_LOSS_OF_LOCK_RESET[0:McuResetReason](value=8) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_LOSS_OF_LOCK_RESET[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_LOW_OR_HIGH_VOLTAGE_DETECT_RESET[0:McuResetReason](value=10) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_LOW_OR_HIGH_VOLTAGE_DETECT_RESET[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_MDM_AP_SYSTEM_RESET[0:McuResetReason](value=1) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_MDM_AP_SYSTEM_RESET[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_MULTIPLE_RESET_REASON[0:McuResetReason](value=12) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_MULTIPLE_RESET_REASON[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_NO_RESET_REASON[0:McuResetReason](value=11) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_NO_RESET_REASON[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_RESET_UNDEFINED[0:McuResetReason](value=13) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_RESET_UNDEFINED[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_STOP_ACKNOWLEDGE_ERROR_RESET[0:McuResetReason](value=0) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_STOP_ACKNOWLEDGE_ERROR_RESET[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_SW_RESET[0:McuResetReason](value=2) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_SW_RESET[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>The parameter /Mcu/Mcu/McuPublishedInformation/MCU_WATCHDOG_RESET[0:McuResetReason](value=7) differs from published information default value 5.&#xD;
+This may be ok when value is provided by external tooling.&#xD;
+Look into these locations for published information default values:&#xD;
+file:/C:/Vector/CBD1800257_D01_S32K1xx/BSWMD/Mcal_S32k/Copy_Mcu_s32k144_lqfp100.arxml</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Mcu/Mcu/McuPublishedInformation/MCU_WATCHDOG_RESET[0:McuResetReason]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu/McuPublishedInformation/McuResetReasonConf/McuResetReason</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+        </ValidationResultId>
+        <ValidationResultId id="09000" message="No McData available" origin="ArxmlToA2l">
+            <ValidationResult severity="Info" ondemandresult="true">
+                <Description>There is no measurement and calibration support data in this variant. Nothing to convert from Arxml to A2L.</Description>
+            </ValidationResult>
+        </ValidationResultId>
+        <ValidationResultId id="95353" message="EcuC module not active" origin="Cfg">
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>/Mcu/Mcu Init Functions are defined but cannot be included into the EcuC module because the EcuC module is not active. Please activate the EcuC module in the Project Settings Editor.</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Definition>/[ANY]/EcuC</Definition>
+                        <Type></Type>
+                    </CE>
+                    <CE>
+                        <Object>/Mcu/Mcu</Object>
+                        <Definition>/TS_T40D2M10I1R0/Mcu</Definition>
+                        <Type>moduleConfiguration</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>/Port/Port Init Functions are defined but cannot be included into the EcuC module because the EcuC module is not active. Please activate the EcuC module in the Project Settings Editor.</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Definition>/[ANY]/EcuC</Definition>
+                        <Type></Type>
+                    </CE>
+                    <CE>
+                        <Object>/Port/Port</Object>
+                        <Definition>/TS_T40D2M10I1R0/Port</Definition>
+                        <Type>moduleConfiguration</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+        </ValidationResultId>
+        <ValidationResultId id="80000" message="'Det' module is not active" origin="DET">
+            <ValidationResult severity="Warning" ondemandresult="false">
+                <Description>'Det' module should be activated because development error detection is used by Port</Description>
+                <ErroneousCEs>
+                    <CE>
+                        <Object>/Port/Port/PortGeneral[0:PortDevErrorDetect]</Object>
+                        <Definition>/TS_T40D2M10I1R0/Port/PortGeneral/PortDevErrorDetect</Definition>
+                        <Type>parameter</Type>
+                    </CE>
+                </ErroneousCEs>
+            </ValidationResult>
+        </ValidationResultId>
+        <ValidationResultId id="01055" message="Tresos generator message" origin="Tresos">
+            <ValidationResult severity="Warning" ondemandresult="true">
+                <Description>Removed node "IMPLEMENTATION_CONFIG_VARIANT": The schema does not define a parameter with name "IMPLEMENTATION_CONFIG_VARIANT" in container "/TS_T40D2M10I1R0/Resource".</Description>
+            </ValidationResult>
+        </ValidationResultId>
+        <ValidationResultId id="79007" message="Combined non module specifc tresos warnings" origin="Tresos">
+            <ValidationResult severity="Warning" ondemandresult="true">
+                <Description>1 Messages&#xD;
+Message: 1055Removed node "IMPLEMENTATION_CONFIG_VARIANT": The schema does not define a parameter with name "IMPLEMENTATION_CONFIG_VARIANT" in container "/TS_T40D2M10I1R0/Resource".&#xD;</Description>
+            </ValidationResult>
+        </ValidationResultId>
+        <ValidationResultId id="79009" message="Tresos generator is in 'Performance optimized' mode" origin="Tresos">
+            <ValidationResult severity="Info" ondemandresult="true">
+                <Description>In this mode the DaVinci Configurator calls the external tool tresos only once for all selected modules. This results in an improved performance. As downside the validation results for all generated modules are structured below the elements with origin 'Tresos' instead of the MSN for the particular module.</Description>
+            </ValidationResult>
+        </ValidationResultId>
+    </ValidationResults>
+    <GenerationProcessResult result="WARNING" lastexecutiontime="2021-04-09 11:38:06" lastexecutionduration="7.052">
+        <GenerationResult generationtype="GENERATOR">
+            <Name>ARXML to A2L Converter</Name>
+            <State>SUCCESSFUL</State>
+            <Phases>
+                <Phase type="CALCULATION" state="NONE"/>
+                <Phase type="VALIDATION" state="SUCCESSFUL"/>
+                <Phase type="GENERATION" state="SUCCESSFUL"/>
+            </Phases>
+            <Generator>
+                <Name>ARXML to A2L Converter</Name>
+                <Version>2.2.0</Version>
+                <MSN>McDataConv</MSN>
+                <Definition>/MICROSAR/McDataConv</Definition>
+            </Generator>
+        </GenerationResult>
+        <GenerationResult generationtype="GENERATOR">
+            <Name>vSet</Name>
+            <State>SUCCESSFUL</State>
+            <Phases>
+                <Phase type="CALCULATION" state="NONE"/>
+                <Phase type="VALIDATION" state="SUCCESSFUL"/>
+                <Phase type="GENERATION" state="SUCCESSFUL"/>
+            </Phases>
+            <Generator>
+                <Name>MICROSAR vSet Generator</Name>
+                <Version>2.1.0</Version>
+                <MSN>vSet</MSN>
+                <Definition>/MICROSAR/vSet</Definition>
+            </Generator>
+            <ModulConfigurations>
+                <ModuleConfiguration>
+                    <Name>vSet</Name>
+                    <Definition>/MICROSAR/vSet</Definition>
+                    <ObjectLink>/ActiveEcuC/vSet</ObjectLink>
+                    <ConfigurationVariant>VARIANT_PRE_COMPILE</ConfigurationVariant>
+                    <SupportsPostBuildVariance>false</SupportsPostBuildVariance>
+                </ModuleConfiguration>
+            </ModulConfigurations>
+        </GenerationResult>
+        <GenerationResult generationtype="GENERATOR">
+            <Name>Dio</Name>
+            <State>SUCCESSFUL</State>
+            <Phases>
+                <Phase type="CALCULATION" state="NONE"/>
+                <Phase type="VALIDATION" state="SUCCESSFUL">
+                    <ConsoleOutputs>
+                        <ConsoleOutput>EB tresos Studio 23.0.0 b170330-0431&#xD;
+Copyright 2003-2017 Elektrobit Automotive GmbH&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USDio_TS_T40D2M10I1R" instead of "EB_TS_MOD_USDio_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USDio_TS_T40D2M10I1R" instead of "EB_TS_MOD_USDio_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USDio_TS_T40D2M10I1R" instead of "EB_TS_MOD_USDio_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USDio_TS_T40D2M10I1R" instead of "EB_TS_MOD_USDio_TS_T40D2M10I1R0") for license check.&#xD;
+BUILD SUCCESSFUL&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+BUILD SUCCESSFUL&#xD;
+INFO 21-04-09,11:38:05 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:05 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+BUILD SUCCESSFUL&#xD;
+INFO 21-04-09,11:38:02 (2102) Reading file "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\TRESOS_XSL_OUT_Tresos_ECUC_4.2.2_7676343248605917848.arxml_2764490633136828988.arxml"&#xD;
+WARNING 21-04-09,11:38:03 (1055) Removed node "IMPLEMENTATION_CONFIG_VARIANT": The schema does not define a parameter with name "IMPLEMENTATION_CONFIG_VARIANT" in container "/TS_T40D2M10I1R0/Resource".&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "plugin.tresosdb.api.verifygenerator" in mode "generate" for module ""&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "Dio_TS_T40D2M10I1R0" in mode "generate" for module "Dio_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:03 (2113) Creating directory "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\output"&#xD;
+INFO 21-04-09,11:38:03 (20053) Generating file C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\output\Dio.epc&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "Dio_TS_T40D2M10I1R0_GeneratorId" in mode "generate" for module "Dio_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:03 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\include\Dio_Cfg.h"&#xD;
+INFO 21-04-09,11:38:03 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Dio_Cfg.c"&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "Port_TS_T40D2M10I1R0" in mode "generate" for module "Port_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:03 (20053) Generating file C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\output\Port.epc&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "Port_TS_T40D2M10I1R0_GeneratorId" in mode "generate" for module "Port_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:03 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\include\Port_Cfg.h"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Port_Cfg.c"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Port_PBcfg.c"&#xD;
+INFO 21-04-09,11:38:04 (13030) Running generator "Mcu_TS_T40D2M10I1R0" in mode "generate" for module "Mcu_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:04 (20053) Generating file C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\output\Mcu.epc&#xD;
+INFO 21-04-09,11:38:04 (13030) Running generator "Mcu_TS_T40D2M10I1R0_GeneratorId" in mode "generate" for module "Mcu_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\include\Mcu_Cfg.h"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Mcu_Cfg.c"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Mcu_PBcfg.c"&#xD;
+INFO 21-04-09,11:38:04 (13030) Running generator "Dio_TS_T40D2M10I1R0_UniqueNGGeneratorId" in mode "generate" for module "Dio_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:04 (13030) Running generator "Port_TS_T40D2M10I1R0_UniqueNGGeneratorId" in mode "generate" for module "Port_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:05 (13030) Running generator "Mcu_TS_T40D2M10I1R0_UniqueNGGeneratorId" in mode "generate" for module "Mcu_TS_T40D2M10I1R0"&#xD;
+&#xD;
+Errors "0" Warnings "1"&#xD;
+</ConsoleOutput>
+                    </ConsoleOutputs>
+                </Phase>
+                <Phase type="GENERATION" state="SUCCESSFUL">
+                    <GeneratedFiles>
+                        <File generationinfo="FILE_CREATED">C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Appl\GenData\include</File>
+                        <File generationinfo="FILE_CREATED">C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Appl\GenData\output</File>
+                        <File generationinfo="FILE_CREATED">C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Appl\GenData\src</File>
+                    </GeneratedFiles>
+                </Phase>
+            </Phases>
+            <Generator>
+                <Name>Tresos proxy generator</Name>
+                <Version>3.8.1</Version>
+                <MSN>Dio</MSN>
+                <Definition>/TS_T40D2M10I1R0/Dio</Definition>
+            </Generator>
+            <ModulConfigurations>
+                <ModuleConfiguration>
+                    <Name>Dio</Name>
+                    <Definition>/TS_T40D2M10I1R0/Dio</Definition>
+                    <ObjectLink>/Dio/Dio</ObjectLink>
+                    <ConfigurationVariant>VARIANT_PRE_COMPILE</ConfigurationVariant>
+                    <SupportsPostBuildVariance>false</SupportsPostBuildVariance>
+                </ModuleConfiguration>
+            </ModulConfigurations>
+        </GenerationResult>
+        <GenerationResult generationtype="GENERATOR">
+            <Name>Mcu</Name>
+            <State>SUCCESSFUL</State>
+            <Phases>
+                <Phase type="CALCULATION" state="NONE"/>
+                <Phase type="VALIDATION" state="SUCCESSFUL">
+                    <ConsoleOutputs>
+                        <ConsoleOutput>EB tresos Studio 23.0.0 b170330-0431&#xD;
+Copyright 2003-2017 Elektrobit Automotive GmbH&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USDio_TS_T40D2M10I1R" instead of "EB_TS_MOD_USDio_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USDio_TS_T40D2M10I1R" instead of "EB_TS_MOD_USDio_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USDio_TS_T40D2M10I1R" instead of "EB_TS_MOD_USDio_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USDio_TS_T40D2M10I1R" instead of "EB_TS_MOD_USDio_TS_T40D2M10I1R0") for license check.&#xD;
+BUILD SUCCESSFUL&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+BUILD SUCCESSFUL&#xD;
+INFO 21-04-09,11:38:05 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:05 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+BUILD SUCCESSFUL&#xD;
+INFO 21-04-09,11:38:02 (2102) Reading file "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\TRESOS_XSL_OUT_Tresos_ECUC_4.2.2_7676343248605917848.arxml_2764490633136828988.arxml"&#xD;
+WARNING 21-04-09,11:38:03 (1055) Removed node "IMPLEMENTATION_CONFIG_VARIANT": The schema does not define a parameter with name "IMPLEMENTATION_CONFIG_VARIANT" in container "/TS_T40D2M10I1R0/Resource".&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "plugin.tresosdb.api.verifygenerator" in mode "generate" for module ""&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "Dio_TS_T40D2M10I1R0" in mode "generate" for module "Dio_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:03 (2113) Creating directory "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\output"&#xD;
+INFO 21-04-09,11:38:03 (20053) Generating file C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\output\Dio.epc&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "Dio_TS_T40D2M10I1R0_GeneratorId" in mode "generate" for module "Dio_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:03 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\include\Dio_Cfg.h"&#xD;
+INFO 21-04-09,11:38:03 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Dio_Cfg.c"&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "Port_TS_T40D2M10I1R0" in mode "generate" for module "Port_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:03 (20053) Generating file C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\output\Port.epc&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "Port_TS_T40D2M10I1R0_GeneratorId" in mode "generate" for module "Port_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:03 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\include\Port_Cfg.h"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Port_Cfg.c"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Port_PBcfg.c"&#xD;
+INFO 21-04-09,11:38:04 (13030) Running generator "Mcu_TS_T40D2M10I1R0" in mode "generate" for module "Mcu_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:04 (20053) Generating file C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\output\Mcu.epc&#xD;
+INFO 21-04-09,11:38:04 (13030) Running generator "Mcu_TS_T40D2M10I1R0_GeneratorId" in mode "generate" for module "Mcu_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\include\Mcu_Cfg.h"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Mcu_Cfg.c"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Mcu_PBcfg.c"&#xD;
+INFO 21-04-09,11:38:04 (13030) Running generator "Dio_TS_T40D2M10I1R0_UniqueNGGeneratorId" in mode "generate" for module "Dio_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:04 (13030) Running generator "Port_TS_T40D2M10I1R0_UniqueNGGeneratorId" in mode "generate" for module "Port_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:05 (13030) Running generator "Mcu_TS_T40D2M10I1R0_UniqueNGGeneratorId" in mode "generate" for module "Mcu_TS_T40D2M10I1R0"&#xD;
+&#xD;
+Errors "0" Warnings "1"&#xD;
+</ConsoleOutput>
+                    </ConsoleOutputs>
+                </Phase>
+                <Phase type="GENERATION" state="SUCCESSFUL">
+                    <GeneratedFiles>
+                        <File generationinfo="FILE_CREATED">C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Appl\GenData\include</File>
+                        <File generationinfo="FILE_CREATED">C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Appl\GenData\output</File>
+                        <File generationinfo="FILE_CREATED">C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Appl\GenData\src</File>
+                    </GeneratedFiles>
+                </Phase>
+            </Phases>
+            <Generator>
+                <Name>Tresos proxy generator</Name>
+                <Version>3.8.1</Version>
+                <MSN>Mcu</MSN>
+                <Definition>/TS_T40D2M10I1R0/Mcu</Definition>
+            </Generator>
+            <ModulConfigurations>
+                <ModuleConfiguration>
+                    <Name>Mcu</Name>
+                    <Definition>/TS_T40D2M10I1R0/Mcu</Definition>
+                    <ObjectLink>/Mcu/Mcu</ObjectLink>
+                    <ConfigurationVariant>VARIANT_POST_BUILD_LOADABLE</ConfigurationVariant>
+                    <SupportsPostBuildVariance>false</SupportsPostBuildVariance>
+                </ModuleConfiguration>
+            </ModulConfigurations>
+        </GenerationResult>
+        <GenerationResult generationtype="GENERATOR">
+            <Name>Port</Name>
+            <State>SUCCESSFUL</State>
+            <Phases>
+                <Phase type="CALCULATION" state="NONE"/>
+                <Phase type="VALIDATION" state="SUCCESSFUL">
+                    <ConsoleOutputs>
+                        <ConsoleOutput>EB tresos Studio 23.0.0 b170330-0431&#xD;
+Copyright 2003-2017 Elektrobit Automotive GmbH&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USDio_TS_T40D2M10I1R" instead of "EB_TS_MOD_USDio_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USDio_TS_T40D2M10I1R" instead of "EB_TS_MOD_USDio_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USDio_TS_T40D2M10I1R" instead of "EB_TS_MOD_USDio_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:03 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USDio_TS_T40D2M10I1R" instead of "EB_TS_MOD_USDio_TS_T40D2M10I1R0") for license check.&#xD;
+BUILD SUCCESSFUL&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:04 (12145) Using a shortened feature name ("EB_TS_MOD_USPort_TS_T40D2M10I1" instead of "EB_TS_MOD_USPort_TS_T40D2M10I1R0") for license check.&#xD;
+BUILD SUCCESSFUL&#xD;
+INFO 21-04-09,11:38:05 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+INFO 21-04-09,11:38:05 (12145) Using a shortened feature name ("EB_TS_MOD_USMcu_TS_T40D2M10I1R" instead of "EB_TS_MOD_USMcu_TS_T40D2M10I1R0") for license check.&#xD;
+BUILD SUCCESSFUL&#xD;
+INFO 21-04-09,11:38:02 (2102) Reading file "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\TRESOS_XSL_OUT_Tresos_ECUC_4.2.2_7676343248605917848.arxml_2764490633136828988.arxml"&#xD;
+WARNING 21-04-09,11:38:03 (1055) Removed node "IMPLEMENTATION_CONFIG_VARIANT": The schema does not define a parameter with name "IMPLEMENTATION_CONFIG_VARIANT" in container "/TS_T40D2M10I1R0/Resource".&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "plugin.tresosdb.api.verifygenerator" in mode "generate" for module ""&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "Dio_TS_T40D2M10I1R0" in mode "generate" for module "Dio_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:03 (2113) Creating directory "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\output"&#xD;
+INFO 21-04-09,11:38:03 (20053) Generating file C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\output\Dio.epc&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "Dio_TS_T40D2M10I1R0_GeneratorId" in mode "generate" for module "Dio_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:03 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\include\Dio_Cfg.h"&#xD;
+INFO 21-04-09,11:38:03 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Dio_Cfg.c"&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "Port_TS_T40D2M10I1R0" in mode "generate" for module "Port_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:03 (20053) Generating file C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\output\Port.epc&#xD;
+INFO 21-04-09,11:38:03 (13030) Running generator "Port_TS_T40D2M10I1R0_GeneratorId" in mode "generate" for module "Port_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:03 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\include\Port_Cfg.h"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Port_Cfg.c"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Port_PBcfg.c"&#xD;
+INFO 21-04-09,11:38:04 (13030) Running generator "Mcu_TS_T40D2M10I1R0" in mode "generate" for module "Mcu_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:04 (20053) Generating file C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\output\Mcu.epc&#xD;
+INFO 21-04-09,11:38:04 (13030) Running generator "Mcu_TS_T40D2M10I1R0_GeneratorId" in mode "generate" for module "Mcu_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\include\Mcu_Cfg.h"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Mcu_Cfg.c"&#xD;
+INFO 21-04-09,11:38:04 (13014) Generated "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\Generation\Cfg_Gen-1617939371026-0\Tresos-1617939479117-0\Tresos_Gen_-1617939479159-0\src\Mcu_PBcfg.c"&#xD;
+INFO 21-04-09,11:38:04 (13030) Running generator "Dio_TS_T40D2M10I1R0_UniqueNGGeneratorId" in mode "generate" for module "Dio_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:04 (13030) Running generator "Port_TS_T40D2M10I1R0_UniqueNGGeneratorId" in mode "generate" for module "Port_TS_T40D2M10I1R0"&#xD;
+INFO 21-04-09,11:38:05 (13030) Running generator "Mcu_TS_T40D2M10I1R0_UniqueNGGeneratorId" in mode "generate" for module "Mcu_TS_T40D2M10I1R0"&#xD;
+&#xD;
+Errors "0" Warnings "1"&#xD;
+</ConsoleOutput>
+                    </ConsoleOutputs>
+                </Phase>
+                <Phase type="GENERATION" state="SUCCESSFUL">
+                    <GeneratedFiles>
+                        <File generationinfo="FILE_CREATED">C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Appl\GenData\include</File>
+                        <File generationinfo="FILE_CREATED">C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Appl\GenData\output</File>
+                        <File generationinfo="FILE_CREATED">C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Appl\GenData\src</File>
+                    </GeneratedFiles>
+                </Phase>
+            </Phases>
+            <Generator>
+                <Name>Tresos proxy generator</Name>
+                <Version>3.8.1</Version>
+                <MSN>Port</MSN>
+                <Definition>/TS_T40D2M10I1R0/Port</Definition>
+            </Generator>
+            <ModulConfigurations>
+                <ModuleConfiguration>
+                    <Name>Port</Name>
+                    <Definition>/TS_T40D2M10I1R0/Port</Definition>
+                    <ObjectLink>/Port/Port</ObjectLink>
+                    <ConfigurationVariant>VARIANT_POST_BUILD_LOADABLE</ConfigurationVariant>
+                    <SupportsPostBuildVariance>false</SupportsPostBuildVariance>
+                </ModuleConfiguration>
+            </ModulConfigurations>
+        </GenerationResult>
+    </GenerationProcessResult>
+</DaVinciExecutionReport>

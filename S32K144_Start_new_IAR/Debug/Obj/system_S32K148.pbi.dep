@@ -1,0 +1,15 @@
+system_S32K148.pbi: \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Device\system_S32K148.c \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Device/device_registers.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Device/s32_core_cm4.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Device/S32K148.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdint.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
+  C:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Device/S32K148_features.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Device/devassert.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdbool.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Device/system_S32K148.h

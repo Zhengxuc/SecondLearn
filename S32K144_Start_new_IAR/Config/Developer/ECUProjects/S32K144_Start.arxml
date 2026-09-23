@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="FD78F3DF-8B8D-401D-B6F7-6AE6784BB423">
+      <SHORT-NAME>VehicleProject</SHORT-NAME>
+      <ELEMENTS>
+        <SYSTEM UUID="4F65DA82-94D3-445C-9B45-C7D52AEC516A">
+          <SHORT-NAME>System</SHORT-NAME>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE UUID="29F5C8CD-4E0A-4B35-B776-F132348B6E03">
+              <SHORT-NAME>EcuSwComposition</SHORT-NAME>
+              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ECUCompositionTypes/ECU_Composition</SOFTWARE-COMPOSITION-TREF>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="151C8EFA-5E11-41E0-B628-A0E9F07FDEE3">
+      <SHORT-NAME>ECUCompositionTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE UUID="FD22F03B-8D66-4CBA-A825-9E3899E072AF">
+          <SHORT-NAME>ECU_Composition</SHORT-NAME>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE UUID="6E3B8BA0-A77C-4C85-B120-56B689E415B9">
+              <SHORT-NAME>CpLedTask</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/CtLedTask</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="F0764082-4F63-4CC5-8ADC-DB14FF6B95F7">
+              <SHORT-NAME>Cdd_SBC_UJA1169</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/CddSbc</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="C11DE61D-285F-4660-9B1C-71FF64A5E678">
+      <SHORT-NAME>EndToEndProtections</SHORT-NAME>
+      <ELEMENTS>
+        <END-TO-END-PROTECTION-SET UUID="BE494C65-A9AB-44AA-84A6-7B06A3B56C90">
+          <SHORT-NAME>EndToEndProtectionSet</SHORT-NAME>
+        </END-TO-END-PROTECTION-SET>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="53A8C661-8D33-4573-B0AF-6181D2047D1D">
+      <SHORT-NAME>Systems</SHORT-NAME>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

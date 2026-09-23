@@ -1,0 +1,23 @@
+OsAppTask.pbi: \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\Source\OsAppTask.c \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Components\Rte_OsAppTask.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Components/Rte_OsAppTask_Type.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Rte_Type.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/Rte.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\_Common\Std_Types.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\_Common/Platform_Types.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\_Common/Compiler.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\Include\Compiler_Cfg.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Rte_Compiler_Cfg.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\Include/Cdd_Tp_Compiler_Cfg.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\Include/Cdd_Com_Compiler_Cfg.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Os_Compiler_Cfg.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/Rte_UserTypes.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\_Common\ComStack_Types.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\_Common/Std_Types.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\ComStack_Cfg.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/Rte_DataHandleType.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Rte_DataHandleType.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Components/OsAppTask_MemMap.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\Include\MemMap.h \
+  D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Components\OsAppTask_MemMap.h

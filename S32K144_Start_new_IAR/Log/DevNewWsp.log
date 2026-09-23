@@ -1,0 +1,15 @@
+﻿09 Apr 2021 10:55:34 - Saving file AdminDataTemplates.xml (C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Config\Developer\AdminDataTemplates.xml)
+09 Apr 2021 10:55:34 - Saving file S32K144_Start.dcf (C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Config\Developer\S32K144_Start.dcf)
+09 Apr 2021 10:55:34 - Start import
+09 Apr 2021 10:55:34 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.4 (SP2)\Bin\Predefines\StandardPackages_AR4.arxml).
+09 Apr 2021 10:55:35 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.4 (SP2)\Bin\Predefines\ServicePortInterfaces_4.3.1.arxml).
+09 Apr 2021 10:55:35 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.4 (SP2)\Bin\Predefines\ApplicationPortInterfaces_4.3.1.arxml).
+09 Apr 2021 10:55:35 - Importing file (C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Config\AUTOSAR\PlatformTypes_AR4.arxml).
+09 Apr 2021 10:55:35 - Merging imported data
+09 Apr 2021 10:55:36 - Finished import
+09 Apr 2021 10:55:37 - Saving file ProfileSettings.xml (C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Config\Developer\ProfileSettings.xml)
+09 Apr 2021 10:55:37 - Saving file Packages.arxml (C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Config\Developer\Packages.arxml)
+09 Apr 2021 10:55:37 - Saving file DataTypes.arxml (C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Config\Developer\DataTypes.arxml)
+09 Apr 2021 10:55:37 - Saving file PortInterfaces.arxml (C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Config\Developer\PortInterfaces.arxml)
+09 Apr 2021 10:55:37 - Saving file S32K144_Start.arxml (C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Config\Developer\ECUProjects\S32K144_Start.arxml)
+09 Apr 2021 10:55:37 - Saving file S32K144_Start.dcf (C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Config\Developer\S32K144_Start.dcf)

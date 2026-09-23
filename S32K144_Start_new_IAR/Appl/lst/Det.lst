@@ -1,0 +1,2122 @@
+                                                                      Page 1
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+Command Line: C:\ghs\comp_201714\asarm.exe -elf -b0 -I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/base_ts_t40d2m10i1r0/include -I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/dio_ts_t40d2m10i1r0/include -I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/mcu_ts_t40d2m10i1r0/include -I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/port_ts_t40d2m10i1r0/include -I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/spi_ts_t40d2m10i1r0/include -I../../../bsw/_common -I../../../bsw/bswm -I../../../bsw/can -I../../../bsw/canif -I../../../bsw/cansm -I../../../bsw/cantp -I../../../bsw/com -I../../../bsw/comm -I../../../bsw/dcm -I../../../bsw/dem -I../../../bsw/det -I../../../bsw/ecum -I../../../bsw/gendata -I../../../bsw/iohwab -I../../../bsw/mcal_s32k -I../../../bsw/os -I../../../bsw/pdur -I../../../bsw/vstdlib -I./shared/zbrs_armcommon -I./shared/zbrs_asrembeddedruntimesystemcfg5 -I./shared/zbrs_s32arm -Ic:/ghs/comp_201714/ansi -Ic:/ghs/comp_201714/include/arm -Igendata -Igendata/components -Igendata/include -Iinclude -IC:\ghs\comp_201714\lib\thumb2 -cpu=cortexm4 -fpu=soft -patch_dbo=C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new\Appl\obj\Det.dbo -source=Det.c -o obj\gh_0000c6k1.o -list=lst/Det.lst C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s 
+Original File: C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+Source File: Det.c
+Directory: C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new\Appl
+Host OS: Windows
+EASE: Copyright (C) 1983-2016 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2017.1.4
+Build Directory: [Directory] COMP-VAL-WIN47:l:/compiler/release-branch-2017-1-comp/build/v2017.1-2017-04-09/win32-comp-ecom
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2017-1-comp/src@589570 (built by auto-compiler)
+Revision Date: Mon Apr 10 10:52:57 2017
+
+Release Date: Mon Apr 10 08:00:05 2017
+
+                       1 ;Driver Command: ccarm -DBRS_DERIVATIVE_S32K144 -DBRS_OSC_CLK=8
+                       2 ;		-DBRS_TIMEBASE_CLOCK=96 -DBRS_OS_USECASE_OSGEN7 -DBRS_EVA_BOARD_
+                       3 ;		-DBRS_PROGRAM_CODE_LOCATION_FLASH
+                       4 ;		-DBRS_VECTOR_TABLE_LOCATION_FLASH -DBRS_CPU_CORE_CORTEX_M4
+                       5 ;		-DBRS_STACK_SIZE=0xC800 -DBRS_PLATFORM_ARM -DBRS_COMP_GHS
+                       6 ;		-DBRS_INSTRUCTION_SET_ARM -DBRS_OPTIONBYTES_ADR=1
+                       7 ;		-DBRS_RAM_ETH_SIZE=0 -DBRS_RAM_ETH_MAPPING=0
+                       8 ;		-DBRS_RAM_SIZE=0x0000F000 -DBRS_RAM_MAPPING=0x1FFF8000 -c
+                       9 ;		-object_dir=obj -list=lst/Det.lst --diag_suppress=1 -cpu=cortexm4
+                      10 ;		-noobj --long_long -g -dual_debug -farcalls -dwarf2
+                      11 ;		-no_misalign_pack -nostartfiles -act_like=2015.1
+                      12 ;		-pragma_asm_inline -thumb -thumb_lib -Osize -object_dir= -e
+                      13 ;		Startup_Handler
+                      14 ;		-I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/base_ts_t40d2m10i1r0/include
+                      15 ;		-I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/dio_ts_t40d2m10i1r0/include
+                      16 ;		-I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/mcu_ts_t40d2m10i1r0/include
+                      17 ;		-I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/port_ts_t40d2m10i1r0/include
+                      18 ;		-I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/spi_ts_t40d2m10i1r0/include
+                      19 ;		-I../../../bsw/_common -I../../../bsw/bswm -I../../../bsw/can
+                      20 ;		-I../../../bsw/canif -I../../../bsw/cansm -I../../../bsw/cantp
+                      21 ;		-I../../../bsw/com -I../../../bsw/comm -I../../../bsw/dcm
+                      22 ;		-I../../../bsw/dem -I../../../bsw/det -I../../../bsw/ecum
+                      23 ;		-I../../../bsw/gendata -I../../../bsw/iohwab
+                      24 ;		-I../../../bsw/mcal_s32k -I../../../bsw/os -I../../../bsw/pdur
+                      25 ;		-I../../../bsw/vstdlib -I./shared/zbrs_armcommon
+                      26 ;		-I./shared/zbrs_asrembeddedruntimesystemcfg5
+                      27 ;		-I./shared/zbrs_s32arm -Ic:/ghs/comp_201714/ansi
+                      28 ;		-Ic:/ghs/comp_201714/include/arm -Igendata -Igendata/components
+                      29 ;		-Igendata/include -Iinclude ../../../BSW/Det/Det.c
+                      30 ;Source File:   ../../../BSW/Det/Det.c
+                      31 ;Directory:     
+                      32 ;		C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new\Appl
+                      33 ;Compile Date:  Fri Jun 18 09:57:31 2021
+                      34 ;Host OS:       Win32
+                      35 ;Version:       C-ARM 2017.1.4 RELEASE VERSION
+                      36 ;Release:       Compiler v2017.1.4
+                      37 ;Revision Date: Tue Apr 11 01:37:22 2017
+                      38 ;Release Date:  Mon Apr 10 08:00:05 2017
+                      39 ; ecom  -g -w -OMS
+                      40 	.text
+                      41 ..bof.C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet...43.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl..60CBFD8B..0::
+                      42 	.align	2
+                      43 ..gh.f.a.1.e.0:
+                      44 	.endo	..gh.f.a.1.e.0
+                      45 	.thumb2
+                      46 	.global	Det_EndlessLoop..C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet.
+                      47 Det_EndlessLoop..C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet.:
+                      48 Det_EndlessLoop:
+00000000 b500         49 	push	{lr}
+00000002 b084         50 	sub	sp,16
+
+                                                                      Page 2
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+                      51 .LDW01:
+                      52 .L6:
+00000004 e7fe*        53 	b	.L6
+                      54 .LDW11:
+                      55 ..lin.a553b5c..c80603c9.0_1::
+                      56 .LDWlin1:
+                      57 __ghs_eofn_Det_EndlessLoop:
+                      58 	.endf	Det_EndlessLoop
+                      59 	.endf	Det_EndlessLoop..C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet.
+                      60 
+                      61 	.section ".bss","awb"
+                      62 .L30:
+                      63 	.endo	.L30
+                      64 	.text
+                      65 ..gh.f.a.1.e.1:
+                      66 	.endo	..gh.f.a.1.e.1
+                      67 Det_Init::
+                      68 .LDW21:
+00000006 490d*        69 	ldr	r1,.L95
+00000008 2001         70 	movs	r0,1
+0000000a 7008         71 	strb	r0,[r1]
+                      72 .LDW31:
+0000000c 4770         73 	ret
+                      74 __ghs_eofn_Det_Init::
+                      75 	.endf	Det_Init
+                      76 
+                      77 ;ConfigPtr	none	param
+                      78 
+                      79 	.section ".bss","awb"
+                      80 detModuleInit..C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet.::
+00000000 00           81 detModuleInit:	.space	1
+                      82 	.endo	detModuleInit..C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet.
+                      83 	.endo	detModuleInit
+                      84 	.text
+                      85 ..gh.f.a.1.e.2:
+                      86 	.endo	..gh.f.a.1.e.2
+                      87 Det_Start::
+                      88 .LDW41:
+                      89 .LDW51:
+0000000e 4770         90 	ret
+                      91 __ghs_eofn_Det_Start::
+                      92 	.endf	Det_Start
+                      93 
+                      94 	.section ".bss","awb"
+                      95 .L126:
+                      96 	.endo	.L126
+                      97 	.text
+                      98 ..gh.f.a.1.e.3:
+                      99 	.endo	..gh.f.a.1.e.3
+                     100 Det_InitMemory::
+                     101 .LDW61:
+00000010 490a*       102 	ldr	r1,.L95
+00000012 2000        103 	movs	r0,0
+00000014 7008        104 	strb	r0,[r1]
+                     105 .LDW71:
+00000016 4770        106 	ret
+                     107 __ghs_eofn_Det_InitMemory::
+                     108 	.endf	Det_InitMemory
+                     109 
+                     110 ..gh.f.a.1.e.4:
+                     111 	.endo	..gh.f.a.1.e.4
+
+                                                                      Page 3
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+                     112 Det_ReportError::
+00000018 b500        113 	push	{lr}
+                     114 .LDW81:
+0000001a 4908*       115 	ldr	r1,.L95
+0000001c 7808        116 	ldrb	r0,[r1]
+0000001e 2801        117 	cmp	r0,1
+00000020 d101*       118 	bne	.L177
+                     119 ;line636
+                     120 ..lin.a553b5c..8bd5a307.0_2::
+                     121 .LDWlin2:
+00000022 4807*       122 	ldr	r0,.L255
+00000024 4780        123 	blx	r0
+                     124 .L177:
+00000026 2000        125 	movs	r0,0
+                     126 .LDW91:
+00000028 bd00        127 	pop	{pc}
+                     128 __ghs_eofn_Det_ReportError::
+                     129 	.endf	Det_ReportError
+                     130 
+                     131 ;ModuleId	none	param
+                     132 ;InstanceId	none	param
+                     133 ;ApiId	none	param
+                     134 ;ErrorId	none	param
+                     135 
+                     136 ..gh.f.a.1.e.5:
+                     137 	.endo	..gh.f.a.1.e.5
+                     138 Det_ReportRuntimeError::
+                     139 .LDW02:
+0000002a 4904*       140 	ldr	r1,.L95
+0000002c 7808        141 	ldrb	r0,[r1]
+0000002e 2000        142 	movs	r0,0
+                     143 .LDW12:
+00000030 4770        144 	ret
+                     145 __ghs_eofn_Det_ReportRuntimeError::
+                     146 	.endf	Det_ReportRuntimeError
+                     147 
+                     148 ;ModuleId	none	param
+                     149 ;InstanceId	none	param
+                     150 ;ApiId	none	param
+                     151 ;ErrorId	none	param
+                     152 
+                     153 ..gh.f.a.1.e.6:
+                     154 	.endo	..gh.f.a.1.e.6
+                     155 Det_ReportTransientFault::
+                     156 .LDW22:
+00000032 4902*       157 	ldr	r1,.L95
+00000034 7808        158 	ldrb	r0,[r1]
+00000036 2000        159 	movs	r0,0
+                     160 .LDW32:
+00000038 4770        161 	ret
+                     162 __ghs_eofn_Det_ReportTransientFault::
+                     163 	.endf	Det_ReportTransientFault
+                     164 
+                     165 ;ModuleId	none	param
+                     166 ;InstanceId	none	param
+                     167 ;ApiId	none	param
+                     168 ;ErrorId	none	param
+                     169 
+0000003a bf00        170 	.align	4
+0000003c 00000000*   171 .L95:	.data.w	detModuleInit
+                     172 	.endo	.L95
+
+                                                                      Page 4
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+                     173 
+00000040 00000000*   174 .L255:	.data.w	Det_EndlessLoop
+                     175 	.endo	.L255
+                     176 
+                     177 ;detModuleInit	detModuleInit	static
+                     178 
+                     179 	.ghsnote info, 19, 3, 640
+                     180 	.align	2
+                     181 ..eof.C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet...43.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl..60CBFD8B..0::
+                     182 	.section	.debug_info
+                     183 .Ldw_begin:
+00000000 00000000*   184 	.data.w	.Ldw_end-.Ldw_begin-4
+00000004 0002        185 	.data.b	2,0
+00000006 00000000*   186 	.data.w	.Ldw_abbr_begin
+0000000a 04          187 	.data.b	4
+                     188 	.section	.debug_abbrev
+                     189 .Ldw_abbr_begin:
+                     190 	.section	.debug_info
+0000000b 01          191 	.data.b	1
+0000000c 00000000*   192 	.data.w	..bof.C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet...43.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl..60CBFD8B..0
+00000010 00000000*   193 	.data.w	..eof.C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet...43.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl..60CBFD8B..0
+00000014 2e2f2e2e    194 	.data.b	46,46,47,46,46,47,46,46,47,66,83,87,47,68,101,116,47,68,101,116,46,99,0
+00000018 2e2e2f2e 
+0000001c 5753422f 
+00000020 7465442f 
+00000024 7465442f 
+00000028 00632e 
+0000002b 565c3a43    195 	.data.b	67,58,92,86,101,99,116,111,114,92,67,66,68,49,56,48,48,50,53,55,95,68,48,49,95,83,51,50,75,49,120,120,92,65,112,112,108,105,99,97,116,105,111,110,115,92,83,51,50,75,49,52,52,95,83,116,97,114,116,95
+0000002f 6f746365 
+00000033 42435c72 
+00000037 30383144 
+0000003b 37353230 
+0000003f 3130445f 
+00000043 3233535f 
+00000047 7878314b 
+0000004b 7070415c 
+0000004f 6163696c 
+00000053 6e6f6974 
+00000057 33535c73 
+0000005b 34314b32 
+0000005f 74535f34 
+00000063 5f747261 
+00000067 5c77656e    196 	.data.b	110,101,119,92,65,112,112,108,0
+0000006b 6c707041 
+0000006f 00 
+00000070 20534847    197 	.data.b	71,72,83,32,67,32,50,48,49,55,46,49,46,52,32,91,100,117,97,108,93,0
+00000074 30322043 
+00000078 312e3731 
+0000007c 5b20342e 
+00000080 6c617564 
+00000084 005d 
+00000086 0001        198 	.data.b	1,0
+00000088 00000000*   199 	.data.w	.Ldw_line_begin
+0000008c 00000000*   200 	.data.w	.Ldw_macinfo_begin
+00000090 00          201 	.data.b	0
+                     202 
+                     203 	.section	.debug_abbrev
+00000000 01          204 	.data.b	1
+00000001 11          205 	.data.b	17
+00000002 01          206 	.data.b	1
+00000003 0111        207 	.data.b	17,1
+
+                                                                      Page 5
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+00000005 0112        208 	.data.b	18,1
+00000007 0803        209 	.data.b	3,8
+00000009 081b        210 	.data.b	27,8
+0000000b 0825        211 	.data.b	37,8
+0000000d 0513        212 	.data.b	19,5
+0000000f 0610        213 	.data.b	16,6
+00000011 0643        214 	.data.b	67,6
+00000013 0b42        215 	.data.b	66,11
+00000015 0000        216 	.data.b	0,0
+                     217 
+                     218 	.section	.debug_line
+                     219 .Ldw_line_begin:
+00000000 00000000*   220 	.data.w	.Ldw_line_end-.Ldw_line_begin-4
+00000004 0002        221 	.data.b	2,0
+00000006 00000000*   222 	.data.w	.Ldw_lpro_end-.Ldw_lpro_begin
+                     223 .Ldw_lpro_begin:
+0000000a 01          224 	.data.b	1
+0000000b 00          225 	.data.b	0
+0000000c 00          226 	.data.b	0
+0000000d 04          227 	.data.b	4
+0000000e 0a          228 	.data.b	10
+0000000f 010100      229 	.data.b	0,1,1
+00000012 000101      230 	.data.b	1,1,0
+00000015 010000      231 	.data.b	0,0,1
+00000018 00          232 	.data.b	0
+00000019 2e2f2e2e    233 	.data.b	46,46,47,46,46,47,46,46,47,66,83,87,47,68,101,116,47,68,101,116,46,99,0
+0000001d 2e2e2f2e 
+00000021 5753422f 
+00000025 7465442f 
+00000029 7465442f 
+0000002d 00632e 
+00000030 000000      234 	.data.b	0,0,0
+00000033 2e2f2e2e    235 	.data.b	46,46,47,46,46,47,46,46,47,66,83,87,47,68,101,116,47,68,101,116,46,104,0
+00000037 2e2e2f2e 
+0000003b 5753422f 
+0000003f 7465442f 
+00000043 7465442f 
+00000047 00682e 
+0000004a 000000      236 	.data.b	0,0,0
+0000004d 2e2f2e2e    237 	.data.b	46,46,47,46,46,47,46,46,47,98,115,119,47,95,99,111,109,109,111,110,47,83,116,100,95,84,121,112,101,115,46,104,0
+00000051 2e2e2f2e 
+00000055 7773622f 
+00000059 6f635f2f 
+0000005d 6e6f6d6d 
+00000061 6474532f 
+00000065 7079545f 
+00000069 682e7365 
+0000006d 00 
+0000006e 000000      238 	.data.b	0,0,0
+00000071 2e2f2e2e    239 	.data.b	46,46,47,46,46,47,46,46,47,98,115,119,47,95,99,111,109,109,111,110,47,80,108,97,116,102,111,114,109,95,84,121,112,101,115,46,104,0
+00000075 2e2e2f2e 
+00000079 7773622f 
+0000007d 6f635f2f 
+00000081 6e6f6d6d 
+00000085 616c502f 
+00000089 726f6674 
+0000008d 79545f6d 
+00000091 2e736570 
+00000095 0068 
+00000097 000000      240 	.data.b	0,0,0
+0000009a 2e2f2e2e    241 	.data.b	46,46,47,46,46,47,46,46,47,98,115,119,47,95,99,111,109,109,111,110,47,67,111,109,112,105,108,101,114,46,104,0
+
+                                                                      Page 6
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+0000009e 2e2e2f2e 
+000000a2 7773622f 
+000000a6 6f635f2f 
+000000aa 6e6f6d6d 
+000000ae 6d6f432f 
+000000b2 656c6970 
+000000b6 00682e72 
+000000ba 000000      242 	.data.b	0,0,0
+000000bd 6c636e69    243 	.data.b	105,110,99,108,117,100,101,92,67,111,109,112,105,108,101,114,95,67,102,103,46,104,0
+000000c1 5c656475 
+000000c5 706d6f43 
+000000c9 72656c69 
+000000cd 6766435f 
+000000d1 00682e 
+000000d4 000000      244 	.data.b	0,0,0
+000000d7 646e6567    245 	.data.b	103,101,110,100,97,116,97,92,82,116,101,95,67,111,109,112,105,108,101,114,95,67,102,103,46,104,0
+000000db 5c617461 
+000000df 5f657452 
+000000e3 706d6f43 
+000000e7 72656c69 
+000000eb 6766435f 
+000000ef 00682e 
+000000f2 000000      246 	.data.b	0,0,0
+000000f5 6c636e69    247 	.data.b	105,110,99,108,117,100,101,92,67,100,100,95,84,112,95,67,111,109,112,105,108,101,114,95,67,102,103,46,104,0
+000000f9 5c656475 
+000000fd 5f646443 
+00000101 435f7054 
+00000105 69706d6f 
+00000109 5f72656c 
+0000010d 2e676643 
+00000111 0068 
+00000113 000000      248 	.data.b	0,0,0
+00000116 6c636e69    249 	.data.b	105,110,99,108,117,100,101,92,67,100,100,95,67,111,109,95,67,111,109,112,105,108,101,114,95,67,102,103,46,104,0
+0000011a 5c656475 
+0000011e 5f646443 
+00000122 5f6d6f43 
+00000126 706d6f43 
+0000012a 72656c69 
+0000012e 6766435f 
+00000132 00682e 
+00000135 000000      250 	.data.b	0,0,0
+00000138 646e6567    251 	.data.b	103,101,110,100,97,116,97,92,79,115,95,67,111,109,112,105,108,101,114,95,67,102,103,46,104,0
+0000013c 5c617461 
+00000140 435f734f 
+00000144 69706d6f 
+00000148 5f72656c 
+0000014c 2e676643 
+00000150 0068 
+00000152 000000      252 	.data.b	0,0,0
+00000155 646e6567    253 	.data.b	103,101,110,100,97,116,97,92,68,101,116,95,67,102,103,46,104,0
+00000159 5c617461 
+0000015d 5f746544 
+00000161 2e676643 
+00000165 0068 
+00000167 000000      254 	.data.b	0,0,0
+0000016a 6c636e69    255 	.data.b	105,110,99,108,117,100,101,92,77,101,109,77,97,112,46,104,0
+0000016e 5c656475 
+00000172 4d6d654d 
+00000176 682e7061 
+0000017a 00 
+0000017b 000000      256 	.data.b	0,0,0
+
+                                                                      Page 7
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+0000017e 00          257 	.data.b	0
+                     258 .Ldw_lpro_end:
+                     259 	.section	.debug_macinfo
+                     260 .Ldw_macinfo_begin:
+                     261 	.section	.debug_frame
+                     262 .LDW_5d55d30:
+00000000 00000000*   263 	.data.w	.LDW_unq_2-.LDW_unq_1
+                     264 .LDW_unq_1:
+00000004 ffffffff    265 	.data.b	255,255,255,255
+00000008 01          266 	.data.b	1
+00000009 00          267 	.data.b	0
+0000000a 01          268 	.data.b	1
+0000000b 01          269 	.data.b	1
+0000000c 00          270 	.data.b	0
+0000000d 0c          271 	.data.b	12
+0000000e 0d          272 	.data.b	13
+0000000f 00          273 	.data.b	0
+00000010 07          274 	.data.b	7
+00000011 00          275 	.data.b	0
+00000012 07          276 	.data.b	7
+00000013 01          277 	.data.b	1
+00000014 07          278 	.data.b	7
+00000015 02          279 	.data.b	2
+00000016 07          280 	.data.b	7
+00000017 03          281 	.data.b	3
+00000018 07          282 	.data.b	7
+00000019 04          283 	.data.b	4
+0000001a 07          284 	.data.b	7
+0000001b 05          285 	.data.b	5
+0000001c 07          286 	.data.b	7
+0000001d 06          287 	.data.b	6
+0000001e 07          288 	.data.b	7
+0000001f 07          289 	.data.b	7
+00000020 07          290 	.data.b	7
+00000021 08          291 	.data.b	8
+00000022 07          292 	.data.b	7
+00000023 09          293 	.data.b	9
+00000024 07          294 	.data.b	7
+00000025 0a          295 	.data.b	10
+00000026 07          296 	.data.b	7
+00000027 0b          297 	.data.b	11
+00000028 07          298 	.data.b	7
+00000029 0c          299 	.data.b	12
+0000002a 07          300 	.data.b	7
+0000002b 0d          301 	.data.b	13
+0000002c 07          302 	.data.b	7
+0000002d 0e          303 	.data.b	14
+0000002e 07          304 	.data.b	7
+0000002f 0f          305 	.data.b	15
+00000030 07          306 	.data.b	7
+00000031 10          307 	.data.b	16
+00000032 07          308 	.data.b	7
+00000033 11          309 	.data.b	17
+00000034 07          310 	.data.b	7
+00000035 12          311 	.data.b	18
+00000036 07          312 	.data.b	7
+00000037 13          313 	.data.b	19
+00000038 07          314 	.data.b	7
+00000039 14          315 	.data.b	20
+0000003a 07          316 	.data.b	7
+0000003b 15          317 	.data.b	21
+
+                                                                      Page 8
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+0000003c 07          318 	.data.b	7
+0000003d 16          319 	.data.b	22
+0000003e 07          320 	.data.b	7
+0000003f 17          321 	.data.b	23
+00000040 07          322 	.data.b	7
+00000041 18          323 	.data.b	24
+00000042 07          324 	.data.b	7
+00000043 19          325 	.data.b	25
+00000044 07          326 	.data.b	7
+00000045 1a          327 	.data.b	26
+00000046 07          328 	.data.b	7
+00000047 1b          329 	.data.b	27
+00000048 07          330 	.data.b	7
+00000049 1c          331 	.data.b	28
+0000004a 07          332 	.data.b	7
+0000004b 1d          333 	.data.b	29
+0000004c 07          334 	.data.b	7
+0000004d 1e          335 	.data.b	30
+0000004e 07          336 	.data.b	7
+0000004f 1f          337 	.data.b	31
+00000050 07          338 	.data.b	7
+00000051 20          339 	.data.b	32
+00000052 07          340 	.data.b	7
+00000053 21          341 	.data.b	33
+00000054 07          342 	.data.b	7
+00000055 22          343 	.data.b	34
+00000056 07          344 	.data.b	7
+00000057 23          345 	.data.b	35
+00000058 07          346 	.data.b	7
+00000059 24          347 	.data.b	36
+0000005a 07          348 	.data.b	7
+0000005b 25          349 	.data.b	37
+0000005c 07          350 	.data.b	7
+0000005d 26          351 	.data.b	38
+0000005e 07          352 	.data.b	7
+0000005f 27          353 	.data.b	39
+00000060 07          354 	.data.b	7
+00000061 28          355 	.data.b	40
+00000062 07          356 	.data.b	7
+00000063 29          357 	.data.b	41
+00000064 07          358 	.data.b	7
+00000065 2a          359 	.data.b	42
+00000066 07          360 	.data.b	7
+00000067 2b          361 	.data.b	43
+00000068 07          362 	.data.b	7
+00000069 2c          363 	.data.b	44
+0000006a 07          364 	.data.b	7
+0000006b 2d          365 	.data.b	45
+0000006c 07          366 	.data.b	7
+0000006d 2e          367 	.data.b	46
+0000006e 07          368 	.data.b	7
+0000006f 2f          369 	.data.b	47
+00000070 07          370 	.data.b	7
+00000071 30          371 	.data.b	48
+00000072 07          372 	.data.b	7
+00000073 31          373 	.data.b	49
+00000074 07          374 	.data.b	7
+00000075 32          375 	.data.b	50
+00000076 07          376 	.data.b	7
+00000077 33          377 	.data.b	51
+00000078 07          378 	.data.b	7
+
+                                                                      Page 9
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+00000079 34          379 	.data.b	52
+0000007a 07          380 	.data.b	7
+0000007b 35          381 	.data.b	53
+0000007c 07          382 	.data.b	7
+0000007d 36          383 	.data.b	54
+0000007e 07          384 	.data.b	7
+0000007f 37          385 	.data.b	55
+00000080 07          386 	.data.b	7
+00000081 38          387 	.data.b	56
+00000082 07          388 	.data.b	7
+00000083 39          389 	.data.b	57
+00000084 07          390 	.data.b	7
+00000085 3a          391 	.data.b	58
+00000086 07          392 	.data.b	7
+00000087 3b          393 	.data.b	59
+00000088 07          394 	.data.b	7
+00000089 3c          395 	.data.b	60
+0000008a 07          396 	.data.b	7
+0000008b 3d          397 	.data.b	61
+0000008c 07          398 	.data.b	7
+0000008d 3e          399 	.data.b	62
+0000008e 07          400 	.data.b	7
+0000008f 3f          401 	.data.b	63
+                     402 .LDW_unq_2:
+                     403 	.section	.debug_info
+                     404 .LDW_19ad220:
+00000091 47          405 	.data.b	71
+00000092 01          406 	.data.b	1
+                     407 
+                     408 	.section	.debug_abbrev
+00000017 47          409 	.data.b	71
+00000018 15          410 	.data.b	21
+00000019 01          411 	.data.b	1
+0000001a 0c27        412 	.data.b	39,12
+0000001c 0000        413 	.data.b	0,0
+                     414 
+                     415 	.section	.debug_info
+00000093 00          416 	.data.b	0
+                     417 
+                     418 .LDW_19da2a0:
+00000094 2b          419 	.data.b	43
+00000095 00000000*   420 	.data.w	.LDW_19da248
+                     421 
+                     422 	.section	.debug_abbrev
+0000001e 2b          423 	.data.b	43
+0000001f 26          424 	.data.b	38
+00000020 00          425 	.data.b	0
+00000021 1049        426 	.data.b	73,16
+00000023 0000        427 	.data.b	0,0
+                     428 
+                     429 	.section	.debug_info
+                     430 .LDW_19ad1e8:
+00000099 31          431 	.data.b	49
+0000009a 00000000*   432 	.data.w	.LDW_19da2a0
+                     433 
+                     434 	.section	.debug_abbrev
+00000025 31          435 	.data.b	49
+00000026 0f          436 	.data.b	15
+00000027 00          437 	.data.b	0
+00000028 1049        438 	.data.b	73,16
+0000002a 0000        439 	.data.b	0,0
+
+                                                                      Page 10
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+                     440 
+                     441 	.section	.debug_info
+                     442 .LDW_19da2f8:
+0000009e 2b          443 	.data.b	43
+0000009f 00000000*   444 	.data.w	.LDW_19ad1e8
+                     445 
+                     446 .LDW_19ad3e0:
+000000a3 47          447 	.data.b	71
+000000a4 01          448 	.data.b	1
+                     449 
+                     450 .LDW_1990088:
+000000a5 14          451 	.data.b	20
+000000a6 00000000*   452 	.data.w	.LDW_19da2f8
+000000aa 00          453 	.data.b	0
+                     454 
+                     455 	.section	.debug_abbrev
+0000002c 14          456 	.data.b	20
+0000002d 05          457 	.data.b	5
+0000002e 00          458 	.data.b	0
+0000002f 1049        459 	.data.b	73,16
+00000031 0c4b        460 	.data.b	75,12
+00000033 0000        461 	.data.b	0,0
+                     462 
+                     463 	.section	.debug_info
+000000ab 00          464 	.data.b	0
+                     465 
+                     466 .LDW_19ad258:
+000000ac 47          467 	.data.b	71
+000000ad 01          468 	.data.b	1
+                     469 
+000000ae 00          470 	.data.b	0
+                     471 
+                     472 .LDW_19ad530:
+000000af 47          473 	.data.b	71
+000000b0 01          474 	.data.b	1
+                     475 
+000000b1 00          476 	.data.b	0
+                     477 
+                     478 .LDW_19ad418:
+000000b2 27          479 	.data.b	39
+000000b3 69736e75    480 	.data.b	117,110,115,105,103,110,101,100,32,99,104,97,114,0
+000000b7 64656e67 
+000000bb 61686320 
+000000bf 0072 
+000000c1 08          481 	.data.b	8
+000000c2 01          482 	.data.b	1
+                     483 
+                     484 	.section	.debug_abbrev
+00000035 27          485 	.data.b	39
+00000036 24          486 	.data.b	36
+00000037 00          487 	.data.b	0
+00000038 0803        488 	.data.b	3,8
+0000003a 0b3e        489 	.data.b	62,11
+0000003c 0b0b        490 	.data.b	11,11
+0000003e 0000        491 	.data.b	0,0
+                     492 
+                     493 	.section	.debug_info
+                     494 .LDW_19ad760:
+000000c3 27          495 	.data.b	39
+000000c4 69736e75    496 	.data.b	117,110,115,105,103,110,101,100,32,115,104,111,114,116,0
+000000c8 64656e67 
+
+                                                                      Page 11
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+000000cc 6f687320 
+000000d0 007472 
+000000d3 07          497 	.data.b	7
+000000d4 02          498 	.data.b	2
+                     499 
+                     500 .LDW_19ad4f8:
+000000d5 46          501 	.data.b	70
+000000d6 00000000*   502 	.data.w	.LDW_19dceb0
+000000da 01          503 	.data.b	1
+                     504 
+                     505 	.section	.debug_abbrev
+00000040 46          506 	.data.b	70
+00000041 15          507 	.data.b	21
+00000042 01          508 	.data.b	1
+00000043 1049        509 	.data.b	73,16
+00000045 0c27        510 	.data.b	39,12
+00000047 0000        511 	.data.b	0,0
+                     512 
+                     513 	.section	.debug_info
+                     514 .LDW_19902c8:
+000000db 14          515 	.data.b	20
+000000dc 00000000*   516 	.data.w	.LDW_19dcf08
+000000e0 00          517 	.data.b	0
+                     518 
+                     519 .LDW_1990328:
+000000e1 14          520 	.data.b	20
+000000e2 00000000*   521 	.data.w	.LDW_19da4d8
+000000e6 00          522 	.data.b	0
+                     523 
+                     524 .LDW_1990508:
+000000e7 14          525 	.data.b	20
+000000e8 00000000*   526 	.data.w	.LDW_19da4d8
+000000ec 00          527 	.data.b	0
+                     528 
+                     529 .LDW_19905f8:
+000000ed 14          530 	.data.b	20
+000000ee 00000000*   531 	.data.w	.LDW_19da4d8
+000000f2 00          532 	.data.b	0
+                     533 
+000000f3 00          534 	.data.b	0
+                     535 
+                     536 .LDW_19ad290:
+000000f4 46          537 	.data.b	70
+000000f5 00000000*   538 	.data.w	.LDW_19dceb0
+000000f9 01          539 	.data.b	1
+                     540 
+                     541 .LDW_1990658:
+000000fa 14          542 	.data.b	20
+000000fb 00000000*   543 	.data.w	.LDW_19dcf08
+000000ff 00          544 	.data.b	0
+                     545 
+                     546 .LDW_1990598:
+00000100 14          547 	.data.b	20
+00000101 00000000*   548 	.data.w	.LDW_19da4d8
+00000105 00          549 	.data.b	0
+                     550 
+                     551 .LDW_19905c8:
+00000106 14          552 	.data.b	20
+00000107 00000000*   553 	.data.w	.LDW_19da4d8
+0000010b 00          554 	.data.b	0
+                     555 
+
+                                                                      Page 12
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+                     556 .LDW_1990688:
+0000010c 14          557 	.data.b	20
+0000010d 00000000*   558 	.data.w	.LDW_19da4d8
+00000111 00          559 	.data.b	0
+                     560 
+00000112 00          561 	.data.b	0
+                     562 
+                     563 .LDW_19ad7d0:
+00000113 46          564 	.data.b	70
+00000114 00000000*   565 	.data.w	.LDW_19dceb0
+00000118 01          566 	.data.b	1
+                     567 
+                     568 .LDW_1990538:
+00000119 14          569 	.data.b	20
+0000011a 00000000*   570 	.data.w	.LDW_19dcf08
+0000011e 00          571 	.data.b	0
+                     572 
+                     573 .LDW_5d17ad8:
+0000011f 14          574 	.data.b	20
+00000120 00000000*   575 	.data.w	.LDW_19da4d8
+00000124 00          576 	.data.b	0
+                     577 
+                     578 .LDW_5d17748:
+00000125 14          579 	.data.b	20
+00000126 00000000*   580 	.data.w	.LDW_19da4d8
+0000012a 00          581 	.data.b	0
+                     582 
+                     583 .LDW_5d178c8:
+0000012b 14          584 	.data.b	20
+0000012c 00000000*   585 	.data.w	.LDW_19da4d8
+00000130 00          586 	.data.b	0
+                     587 
+00000131 00          588 	.data.b	0
+                     589 
+                     590 .LDW_5d03ad0:
+00000132 2d          591 	.data.b	45
+00000133 00000000*   592 	.data.w	.LDW_19db7f0
+                     593 
+                     594 	.section	.debug_abbrev
+00000049 2d          595 	.data.b	45
+0000004a 35          596 	.data.b	53
+0000004b 00          597 	.data.b	0
+0000004c 1049        598 	.data.b	73,16
+0000004e 0000        599 	.data.b	0,0
+                     600 
+                     601 	.section	.debug_info
+                     602 .LDW_19db7f0:
+00000137 2a          603 	.data.b	42
+00000138 6c6f6f62    604 	.data.b	98,111,111,108,101,97,110,0
+0000013c 006e6165 
+00000140 7a          605 	.data.b	122
+00000141 1d          606 	.data.b	29
+00000142 04          607 	.data.b	4
+00000143 00000000*   608 	.data.w	.LDW_19ad418
+                     609 
+                     610 	.section	.debug_abbrev
+00000050 2a          611 	.data.b	42
+00000051 16          612 	.data.b	22
+00000052 00          613 	.data.b	0
+00000053 0803        614 	.data.b	3,8
+00000055 0f3b        615 	.data.b	59,15
+
+                                                                      Page 13
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+00000057 0f39        616 	.data.b	57,15
+00000059 0f3a        617 	.data.b	58,15
+0000005b 1049        618 	.data.b	73,16
+0000005d 0000        619 	.data.b	0,0
+                     620 
+                     621 	.section	.debug_info
+                     622 .LDW_19da4d8:
+00000147 2a          623 	.data.b	42
+00000148 746e6975    624 	.data.b	117,105,110,116,56,0
+0000014c 0038 
+0000014e 7d          625 	.data.b	125
+0000014f 1d          626 	.data.b	29
+00000150 04          627 	.data.b	4
+00000151 00000000*   628 	.data.w	.LDW_19ad418
+                     629 
+                     630 .LDW_19dcf08:
+00000155 2a          631 	.data.b	42
+00000156 746e6975    632 	.data.b	117,105,110,116,49,54,0
+0000015a 003631 
+0000015d 7f          633 	.data.b	127
+0000015e 1d          634 	.data.b	29
+0000015f 04          635 	.data.b	4
+00000160 00000000*   636 	.data.w	.LDW_19ad760
+                     637 
+                     638 .LDW_19dceb0:
+00000164 2a          639 	.data.b	42
+00000165 5f647453    640 	.data.b	83,116,100,95,82,101,116,117,114,110,84,121,112,101,0
+00000169 75746552 
+0000016d 79546e72 
+00000171 006570 
+00000174 0184        641 	.data.b	132,1
+00000176 0f          642 	.data.b	15
+00000177 03          643 	.data.b	3
+00000178 00000000*   644 	.data.w	.LDW_19da4d8
+                     645 
+                     646 .LDW_19da198:
+0000017c 42          647 	.data.b	66
+0000017d 74654473    648 	.data.b	115,68,101,116,95,80,67,67,111,110,102,105,103,84,121,112,101,0
+00000181 4343505f 
+00000185 69666e6f 
+00000189 70795467 
+0000018d 0065 
+0000018f 01e5        649 	.data.b	229,1
+00000191 10          650 	.data.b	16
+00000192 0b          651 	.data.b	11
+00000193 01          652 	.data.b	1
+00000194 01          653 	.data.b	1
+                     654 
+                     655 	.section	.debug_abbrev
+0000005f 42          656 	.data.b	66
+00000060 13          657 	.data.b	19
+00000061 01          658 	.data.b	1
+00000062 0803        659 	.data.b	3,8
+00000064 0f3b        660 	.data.b	59,15
+00000066 0f39        661 	.data.b	57,15
+00000068 0f3a        662 	.data.b	58,15
+0000006a 0f0b        663 	.data.b	11,15
+0000006c 0b32        664 	.data.b	50,11
+0000006e 0000        665 	.data.b	0,0
+                     666 
+                     667 	.section	.debug_info
+
+                                                                      Page 14
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+                     668 .LDW_5d3e4d8:
+00000195 25          669 	.data.b	37
+00000196 5f746544    670 	.data.b	68,101,116,95,80,67,67,111,110,102,105,103,78,101,118,101,114,85,115,101,100,0
+0000019a 6f434350 
+0000019e 6769666e 
+000001a2 6576654e 
+000001a6 65735572 
+000001aa 0064 
+000001ac 01e7        671 	.data.b	231,1
+000001ae 09          672 	.data.b	9
+000001af 0b          673 	.data.b	11
+000001b0 00000000*   674 	.data.w	.LDW_19da4d8
+000001b4 2302        675 	.data.b	2,35
+000001b6 00          676 	.data.b	0
+000001b7 01          677 	.data.b	1
+                     678 
+                     679 	.section	.debug_abbrev
+00000070 25          680 	.data.b	37
+00000071 0d          681 	.data.b	13
+00000072 00          682 	.data.b	0
+00000073 0803        683 	.data.b	3,8
+00000075 0f3b        684 	.data.b	59,15
+00000077 0f39        685 	.data.b	57,15
+00000079 0f3a        686 	.data.b	58,15
+0000007b 1049        687 	.data.b	73,16
+0000007d 0a38        688 	.data.b	56,10
+0000007f 0b32        689 	.data.b	50,11
+00000081 0000        690 	.data.b	0,0
+                     691 
+                     692 	.section	.debug_info
+000001b8 00          693 	.data.b	0
+                     694 
+                     695 .LDW_19da1f0:
+000001b9 2a          696 	.data.b	42
+000001ba 5f746544    697 	.data.b	68,101,116,95,80,67,67,111,110,102,105,103,84,121,112,101,0
+000001be 6f434350 
+000001c2 6769666e 
+000001c6 65707954 
+000001ca 00 
+000001cb 01e8        698 	.data.b	232,1
+000001cd 03          699 	.data.b	3
+000001ce 0b          700 	.data.b	11
+000001cf 00000000*   701 	.data.w	.LDW_19da198
+                     702 
+                     703 .LDW_19da248:
+000001d3 2a          704 	.data.b	42
+000001d4 5f746544    705 	.data.b	68,101,116,95,67,111,110,102,105,103,84,121,112,101,0
+000001d8 666e6f43 
+000001dc 79546769 
+000001e0 006570 
+000001e3 01ea        706 	.data.b	234,1
+000001e5 1a          707 	.data.b	26
+000001e6 0b          708 	.data.b	11
+000001e7 00000000*   709 	.data.w	.LDW_19da1f0
+                     710 
+                     711 .LDW_5d03918:
+000001eb 06          712 	.data.b	6
+000001ec 4d746564    713 	.data.b	100,101,116,77,111,100,117,108,101,73,110,105,116,0
+000001f0 6c75646f 
+000001f4 696e4965 
+000001f8 0074 
+
+                                                                      Page 15
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+000001fa 74          714 	.data.b	116
+000001fb 2a          715 	.data.b	42
+000001fc 01          716 	.data.b	1
+000001fd 00000000*   717 	.data.w	.LDW_5d03ad0
+00000201 00          718 	.data.b	0
+00000202 00          719 	.data.b	0
+00000203 0305        720 	.data.b	5,3
+00000205 00000000*   721 	.data.w	detModuleInit..C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet.
+                     722 
+                     723 	.section	.debug_abbrev
+00000083 06          724 	.data.b	6
+00000084 34          725 	.data.b	52
+00000085 00          726 	.data.b	0
+00000086 0803        727 	.data.b	3,8
+00000088 0f3b        728 	.data.b	59,15
+0000008a 0f39        729 	.data.b	57,15
+0000008c 0f3a        730 	.data.b	58,15
+0000008e 1049        731 	.data.b	73,16
+00000090 0c3f        732 	.data.b	63,12
+00000092 0c3c        733 	.data.b	60,12
+00000094 0a02        734 	.data.b	2,10
+00000096 0000        735 	.data.b	0,0
+                     736 
+                     737 	.section	.debug_info
+                     738 .LDW_19da100:
+00000209 15          739 	.data.b	21
+0000020a 5f746544    740 	.data.b	68,101,116,95,69,110,100,108,101,115,115,76,111,111,112,0
+0000020e 6c646e45 
+00000212 4c737365 
+00000216 00706f6f 
+0000021a 0382        741 	.data.b	130,3
+0000021c 20          742 	.data.b	32
+0000021d 01          743 	.data.b	1
+0000021e 00000000*   744 	.data.w	Det_EndlessLoop..C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet.
+00000222 00000000*   745 	.data.w	__ghs_eofn_Det_EndlessLoop
+00000226 5d01        746 	.data.b	1,93
+00000228 018080      747 	.data.b	128,128,1
+0000022b 00          748 	.data.b	0
+0000022c 00          749 	.data.b	0
+0000022d 10          750 	.data.b	16
+0000022e 01          751 	.data.b	1
+0000022f 00          752 	.data.b	0
+00000230 00          753 	.data.b	0
+00000231 00          754 	.data.b	0
+00000232 01          755 	.data.b	1
+00000233 00          756 	.data.b	0
+00000234 01          757 	.data.b	1
+                     758 
+                     759 	.section	.debug_abbrev
+00000098 15          760 	.data.b	21
+00000099 2e          761 	.data.b	46
+0000009a 01          762 	.data.b	1
+0000009b 0803        763 	.data.b	3,8
+0000009d 0f3b        764 	.data.b	59,15
+0000009f 0f39        765 	.data.b	57,15
+000000a1 0f3a        766 	.data.b	58,15
+000000a3 0111        767 	.data.b	17,1
+000000a5 0112        768 	.data.b	18,1
+000000a7 0a40        769 	.data.b	64,10
+000000a9 4183        770 	.data.b	131,65
+000000ab 0f          771 	.data.b	15
+
+                                                                      Page 16
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+000000ac 4187        772 	.data.b	135,65
+000000ae 0d          773 	.data.b	13
+000000af 4185        774 	.data.b	133,65
+000000b1 0f          775 	.data.b	15
+000000b2 4186        776 	.data.b	134,65
+000000b4 0d          777 	.data.b	13
+000000b5 4192        778 	.data.b	146,65
+000000b7 0f          779 	.data.b	15
+000000b8 0c3c        780 	.data.b	60,12
+000000ba 0b20        781 	.data.b	32,11
+000000bc 0c3f        782 	.data.b	63,12
+000000be 0b32        783 	.data.b	50,11
+000000c0 0b4c        784 	.data.b	76,11
+000000c2 0c27        785 	.data.b	39,12
+000000c4 0000        786 	.data.b	0,0
+                     787 
+                     788 	.section	.debug_frame
+                     789 .LDW_19dc0a8:
+00000090 00000000*   790 	.data.w	.LDW_unq_4-.LDW_unq_3
+                     791 .LDW_unq_3:
+00000094 00000000*   792 	.data.w	.LDW_5d55d30
+00000098 00000000*   793 	.data.w	Det_EndlessLoop..C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet.
+0000009c 00000006    794 	.data.w	__ghs_eofn_Det_EndlessLoop-Det_EndlessLoop..C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet.
+000000a0 01          795 	.data.b	1
+000000a1 00000000*   796 	.data.w	.LDW11
+000000a5 00          797 	.data.b	0
+000000a6 00          798 	.data.b	0
+000000a7 00          799 	.data.b	0
+                     800 .LDW_unq_4:
+                     801 	.section	.debug_line
+0000017f 020500      802 	.data.b	0,5,2
+00000182 00000000*   803 	.data.w	Det_EndlessLoop..C.3A.5CVector.5CCBD1800257_D01_S32K1xx.5CApplications.5CS32K144_Start_new.5CAppl.5Cobj.5CDet.
+00000186 06          804 	.data.b	6
+00000187 03          805 	.data.b	3
+00000188 0382        806 	.data.b	130,3
+0000018a 02          807 	.data.b	2
+0000018b 00          808 	.data.b	0
+0000018c 01          809 	.data.b	1
+0000018d 03          810 	.data.b	3
+0000018e 07          811 	.data.b	7
+0000018f 02          812 	.data.b	2
+00000190 04          813 	.data.b	4
+00000191 01          814 	.data.b	1
+00000192 03          815 	.data.b	3
+00000193 0c          816 	.data.b	12
+00000194 02          817 	.data.b	2
+00000195 00          818 	.data.b	0
+00000196 01          819 	.data.b	1
+00000197 06          820 	.data.b	6
+00000198 020500      821 	.data.b	0,5,2
+0000019b 00000000*   822 	.data.w	__ghs_eofn_Det_EndlessLoop
+0000019f 02          823 	.data.b	2
+000001a0 00          824 	.data.b	0
+000001a1 010100      825 	.data.b	0,1,1
+                     826 	.section	.debug_info
+                     827 .LDW_1990058:
+00000235 1f          828 	.data.b	31
+00000236 00000000*   829 	.data.w	.LDW01
+0000023a 00000000*   830 	.data.w	.LDW11
+                     831 
+                     832 	.section	.debug_abbrev
+
+                                                                      Page 17
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+000000c6 1f          833 	.data.b	31
+000000c7 0b          834 	.data.b	11
+000000c8 01          835 	.data.b	1
+000000c9 0111        836 	.data.b	17,1
+000000cb 0112        837 	.data.b	18,1
+000000cd 0000        838 	.data.b	0,0
+                     839 
+                     840 	.section	.debug_info
+0000023e 00          841 	.data.b	0
+                     842 
+0000023f 00          843 	.data.b	0
+                     844 
+                     845 .LDW_19da350:
+00000240 15          846 	.data.b	21
+00000241 5f746544    847 	.data.b	68,101,116,95,73,110,105,116,0
+00000245 74696e49 
+00000249 00 
+0000024a 03ad        848 	.data.b	173,3
+0000024c 16          849 	.data.b	22
+0000024d 01          850 	.data.b	1
+0000024e 00000000*   851 	.data.w	Det_Init
+00000252 00000000*   852 	.data.w	__ghs_eofn_Det_Init
+00000256 5d01        853 	.data.b	1,93
+00000258 00          854 	.data.b	0
+00000259 04          855 	.data.b	4
+0000025a 00          856 	.data.b	0
+0000025b 7c          857 	.data.b	124
+0000025c 01          858 	.data.b	1
+0000025d 00          859 	.data.b	0
+0000025e 00          860 	.data.b	0
+0000025f 01          861 	.data.b	1
+00000260 01          862 	.data.b	1
+00000261 00          863 	.data.b	0
+00000262 01          864 	.data.b	1
+                     865 
+                     866 	.section	.debug_frame
+                     867 .LDW_5d44198:
+000000a8 00000000*   868 	.data.w	.LDW_unq_6-.LDW_unq_5
+                     869 .LDW_unq_5:
+000000ac 00000000*   870 	.data.w	.LDW_5d55d30
+000000b0 00000000*   871 	.data.w	Det_Init
+000000b4 00000008    872 	.data.w	__ghs_eofn_Det_Init-Det_Init
+000000b8 01          873 	.data.b	1
+000000b9 00000000*   874 	.data.w	.LDW31
+000000bd 00          875 	.data.b	0
+000000be 00          876 	.data.b	0
+000000bf 00          877 	.data.b	0
+                     878 .LDW_unq_6:
+                     879 	.section	.debug_line
+000001a4 020500      880 	.data.b	0,5,2
+000001a7 00000000*   881 	.data.w	Det_Init
+000001ab 06          882 	.data.b	6
+000001ac 03          883 	.data.b	3
+000001ad 03ec        884 	.data.b	236,3
+000001af 02          885 	.data.b	2
+000001b0 00          886 	.data.b	0
+000001b1 01          887 	.data.b	1
+000001b2 23          888 	.data.b	35
+000001b3 02          889 	.data.b	2
+000001b4 02          890 	.data.b	2
+000001b5 010100      891 	.data.b	0,1,1
+
+                                                                      Page 18
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+                     892 	.section	.debug_info
+                     893 .LDW_19da3e8:
+00000263 11          894 	.data.b	17
+00000264 666e6f43    895 	.data.b	67,111,110,102,105,103,80,116,114,0
+00000268 74506769 
+0000026c 0072 
+0000026e 03ad        896 	.data.b	173,3
+00000270 55          897 	.data.b	85
+00000271 01          898 	.data.b	1
+00000272 00000000*   899 	.data.w	.LDW_19da2f8
+00000276 00          900 	.data.b	0
+00000277 5001        901 	.data.b	1,80
+                     902 
+                     903 	.section	.debug_abbrev
+000000cf 11          904 	.data.b	17
+000000d0 05          905 	.data.b	5
+000000d1 00          906 	.data.b	0
+000000d2 0803        907 	.data.b	3,8
+000000d4 0f3b        908 	.data.b	59,15
+000000d6 0f39        909 	.data.b	57,15
+000000d8 0f3a        910 	.data.b	58,15
+000000da 1049        911 	.data.b	73,16
+000000dc 0c4b        912 	.data.b	75,12
+000000de 0a02        913 	.data.b	2,10
+000000e0 0000        914 	.data.b	0,0
+                     915 
+                     916 	.section	.debug_info
+                     917 .LDW_19900b8:
+00000279 1f          918 	.data.b	31
+0000027a 00000000*   919 	.data.w	.LDW21
+0000027e 00000000*   920 	.data.w	.LDW31
+                     921 
+00000282 00          922 	.data.b	0
+                     923 
+00000283 00          924 	.data.b	0
+                     925 
+                     926 .LDW_19da440:
+00000284 15          927 	.data.b	21
+00000285 5f746544    928 	.data.b	68,101,116,95,83,116,97,114,116,0
+00000289 72617453 
+0000028d 0074 
+0000028f 03f8        929 	.data.b	248,3
+00000291 16          930 	.data.b	22
+00000292 01          931 	.data.b	1
+00000293 00000000*   932 	.data.w	Det_Start
+00000297 00000000*   933 	.data.w	__ghs_eofn_Det_Start
+0000029b 5d01        934 	.data.b	1,93
+0000029d 00          935 	.data.b	0
+0000029e 04          936 	.data.b	4
+0000029f 00          937 	.data.b	0
+000002a0 7c          938 	.data.b	124
+000002a1 01          939 	.data.b	1
+000002a2 00          940 	.data.b	0
+000002a3 00          941 	.data.b	0
+000002a4 01          942 	.data.b	1
+000002a5 01          943 	.data.b	1
+000002a6 00          944 	.data.b	0
+000002a7 01          945 	.data.b	1
+                     946 
+                     947 	.section	.debug_frame
+                     948 .LDW_5ccf290:
+
+                                                                      Page 19
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+000000c0 00000000*   949 	.data.w	.LDW_unq_8-.LDW_unq_7
+                     950 .LDW_unq_7:
+000000c4 00000000*   951 	.data.w	.LDW_5d55d30
+000000c8 00000000*   952 	.data.w	Det_Start
+000000cc 00000002    953 	.data.w	__ghs_eofn_Det_Start-Det_Start
+000000d0 01          954 	.data.b	1
+000000d1 00000000*   955 	.data.w	.LDW51
+000000d5 00          956 	.data.b	0
+000000d6 00          957 	.data.b	0
+000000d7 00          958 	.data.b	0
+                     959 .LDW_unq_8:
+                     960 	.section	.debug_line
+000001b8 020500      961 	.data.b	0,5,2
+000001bb 00000000*   962 	.data.w	Det_Start
+000001bf 06          963 	.data.b	6
+000001c0 03          964 	.data.b	3
+000001c1 03f9        965 	.data.b	249,3
+000001c3 02          966 	.data.b	2
+000001c4 00          967 	.data.b	0
+000001c5 01          968 	.data.b	1
+000001c6 02          969 	.data.b	2
+000001c7 02          970 	.data.b	2
+000001c8 010100      971 	.data.b	0,1,1
+                     972 	.section	.debug_info
+                     973 .LDW_19900e8:
+000002a8 1f          974 	.data.b	31
+000002a9 00000000*   975 	.data.w	.LDW41
+000002ad 00000000*   976 	.data.w	.LDW51
+                     977 
+000002b1 00          978 	.data.b	0
+                     979 
+000002b2 00          980 	.data.b	0
+                     981 
+                     982 .LDW_19dce18:
+000002b3 15          983 	.data.b	21
+000002b4 5f746544    984 	.data.b	68,101,116,95,73,110,105,116,77,101,109,111,114,121,0
+000002b8 74696e49 
+000002bc 6f6d654d 
+000002c0 007972 
+000002c3 0484        985 	.data.b	132,4
+000002c5 16          986 	.data.b	22
+000002c6 01          987 	.data.b	1
+000002c7 00000000*   988 	.data.w	Det_InitMemory
+000002cb 00000000*   989 	.data.w	__ghs_eofn_Det_InitMemory
+000002cf 5d01        990 	.data.b	1,93
+000002d1 00          991 	.data.b	0
+000002d2 04          992 	.data.b	4
+000002d3 00          993 	.data.b	0
+000002d4 7c          994 	.data.b	124
+000002d5 01          995 	.data.b	1
+000002d6 00          996 	.data.b	0
+000002d7 00          997 	.data.b	0
+000002d8 01          998 	.data.b	1
+000002d9 01          999 	.data.b	1
+000002da 00         1000 	.data.b	0
+000002db 01         1001 	.data.b	1
+                    1002 
+                    1003 	.section	.debug_frame
+                    1004 .LDW_5ccf2d0:
+000000d8 00000000*  1005 	.data.w	.LDW_unq_a-.LDW_unq_9
+                    1006 .LDW_unq_9:
+
+                                                                      Page 20
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+000000dc 00000000*  1007 	.data.w	.LDW_5d55d30
+000000e0 00000000*  1008 	.data.w	Det_InitMemory
+000000e4 00000008   1009 	.data.w	__ghs_eofn_Det_InitMemory-Det_InitMemory
+000000e8 01         1010 	.data.b	1
+000000e9 00000000*  1011 	.data.w	.LDW71
+000000ed 00         1012 	.data.b	0
+000000ee 00         1013 	.data.b	0
+000000ef 00         1014 	.data.b	0
+                    1015 .LDW_unq_a:
+                    1016 	.section	.debug_line
+000001cb 020500     1017 	.data.b	0,5,2
+000001ce 00000000*  1018 	.data.w	Det_InitMemory
+000001d2 06         1019 	.data.b	6
+000001d3 03         1020 	.data.b	3
+000001d4 0485       1021 	.data.b	133,4
+000001d6 02         1022 	.data.b	2
+000001d7 00         1023 	.data.b	0
+000001d8 01         1024 	.data.b	1
+000001d9 23         1025 	.data.b	35
+000001da 02         1026 	.data.b	2
+000001db 02         1027 	.data.b	2
+000001dc 010100     1028 	.data.b	0,1,1
+                    1029 	.section	.debug_info
+                    1030 .LDW_1990268:
+000002dc 1f         1031 	.data.b	31
+000002dd 00000000*  1032 	.data.w	.LDW61
+000002e1 00000000*  1033 	.data.w	.LDW71
+                    1034 
+000002e5 00         1035 	.data.b	0
+                    1036 
+000002e6 00         1037 	.data.b	0
+                    1038 
+                    1039 .LDW_19dcf60:
+000002e7 16         1040 	.data.b	22
+000002e8 5f746544   1041 	.data.b	68,101,116,95,82,101,112,111,114,116,69,114,114,111,114,0
+000002ec 6f706552 
+000002f0 72457472 
+000002f4 00726f72 
+000002f8 049b       1042 	.data.b	155,4
+000002fa 20         1043 	.data.b	32
+000002fb 01         1044 	.data.b	1
+000002fc 00000000*  1045 	.data.w	.LDW_19dceb0
+00000300 00000000*  1046 	.data.w	Det_ReportError
+00000304 00000000*  1047 	.data.w	__ghs_eofn_Det_ReportError
+00000308 5d01       1048 	.data.b	1,93
+0000030a 018080     1049 	.data.b	128,128,1
+0000030d 00         1050 	.data.b	0
+0000030e 00         1051 	.data.b	0
+0000030f 00         1052 	.data.b	0
+00000310 01         1053 	.data.b	1
+00000311 00         1054 	.data.b	0
+00000312 00         1055 	.data.b	0
+00000313 01         1056 	.data.b	1
+00000314 01         1057 	.data.b	1
+00000315 00         1058 	.data.b	0
+00000316 01         1059 	.data.b	1
+                    1060 
+                    1061 	.section	.debug_abbrev
+000000e2 16         1062 	.data.b	22
+000000e3 2e         1063 	.data.b	46
+000000e4 01         1064 	.data.b	1
+
+                                                                      Page 21
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+000000e5 0803       1065 	.data.b	3,8
+000000e7 0f3b       1066 	.data.b	59,15
+000000e9 0f39       1067 	.data.b	57,15
+000000eb 0f3a       1068 	.data.b	58,15
+000000ed 1049       1069 	.data.b	73,16
+000000ef 0111       1070 	.data.b	17,1
+000000f1 0112       1071 	.data.b	18,1
+000000f3 0a40       1072 	.data.b	64,10
+000000f5 4183       1073 	.data.b	131,65
+000000f7 0f         1074 	.data.b	15
+000000f8 4187       1075 	.data.b	135,65
+000000fa 0d         1076 	.data.b	13
+000000fb 4185       1077 	.data.b	133,65
+000000fd 0f         1078 	.data.b	15
+000000fe 4186       1079 	.data.b	134,65
+00000100 0d         1080 	.data.b	13
+00000101 4192       1081 	.data.b	146,65
+00000103 0f         1082 	.data.b	15
+00000104 0c3c       1083 	.data.b	60,12
+00000106 0b20       1084 	.data.b	32,11
+00000108 0c3f       1085 	.data.b	63,12
+0000010a 0b32       1086 	.data.b	50,11
+0000010c 0b4c       1087 	.data.b	76,11
+0000010e 0c27       1088 	.data.b	39,12
+00000110 0000       1089 	.data.b	0,0
+                    1090 
+                    1091 	.section	.debug_frame
+                    1092 .LDW_5ccf090:
+000000f0 00000000*  1093 	.data.w	.LDW_unq_c-.LDW_unq_b
+                    1094 .LDW_unq_b:
+000000f4 00000000*  1095 	.data.w	.LDW_5d55d30
+000000f8 00000000*  1096 	.data.w	Det_ReportError
+000000fc 00000012   1097 	.data.w	__ghs_eofn_Det_ReportError-Det_ReportError
+00000100 01         1098 	.data.b	1
+00000101 00000000*  1099 	.data.w	.LDW91
+00000105 00         1100 	.data.b	0
+00000106 00         1101 	.data.b	0
+00000107 00         1102 	.data.b	0
+                    1103 .LDW_unq_c:
+                    1104 	.section	.debug_line
+000001df 020500     1105 	.data.b	0,5,2
+000001e2 00000000*  1106 	.data.w	Det_ReportError
+000001e6 06         1107 	.data.b	6
+000001e7 03         1108 	.data.b	3
+000001e8 049b       1109 	.data.b	155,4
+000001ea 02         1110 	.data.b	2
+000001eb 00         1111 	.data.b	0
+000001ec 01         1112 	.data.b	1
+000001ed 03         1113 	.data.b	3
+000001ee 20         1114 	.data.b	32
+000001ef 02         1115 	.data.b	2
+000001f0 02         1116 	.data.b	2
+000001f1 01         1117 	.data.b	1
+000001f2 020500     1118 	.data.b	0,5,2
+000001f5 00000000*  1119 	.data.w	.LDWlin2
+000001f9 0b         1120 	.data.b	11
+000001fa 03         1121 	.data.b	3
+000001fb 3f         1122 	.data.b	63
+000001fc 02         1123 	.data.b	2
+000001fd 00         1124 	.data.b	0
+000001fe 01         1125 	.data.b	1
+
+                                                                      Page 22
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+000001ff 03         1126 	.data.b	3
+00000200 0b         1127 	.data.b	11
+00000201 02         1128 	.data.b	2
+00000202 04         1129 	.data.b	4
+00000203 01         1130 	.data.b	1
+00000204 02         1131 	.data.b	2
+00000205 00         1132 	.data.b	0
+00000206 0c         1133 	.data.b	12
+00000207 06         1134 	.data.b	6
+00000208 02         1135 	.data.b	2
+00000209 02         1136 	.data.b	2
+0000020a 02         1137 	.data.b	2
+0000020b 02         1138 	.data.b	2
+0000020c 010100     1139 	.data.b	0,1,1
+                    1140 	.section	.debug_info
+                    1141 .LDW_19dcff8:
+00000317 11         1142 	.data.b	17
+00000318 75646f4d   1143 	.data.b	77,111,100,117,108,101,73,100,0
+0000031c 6449656c 
+00000320 00 
+00000321 049b       1144 	.data.b	155,4
+00000323 38         1145 	.data.b	56
+00000324 01         1146 	.data.b	1
+00000325 00000000*  1147 	.data.w	.LDW_19dcf08
+00000329 00         1148 	.data.b	0
+0000032a 5001       1149 	.data.b	1,80
+                    1150 
+                    1151 .LDW_19dd050:
+0000032c 11         1152 	.data.b	17
+0000032d 74736e49   1153 	.data.b	73,110,115,116,97,110,99,101,73,100,0
+00000331 65636e61 
+00000335 006449 
+00000338 049b       1154 	.data.b	155,4
+0000033a 48         1155 	.data.b	72
+0000033b 01         1156 	.data.b	1
+0000033c 00000000*  1157 	.data.w	.LDW_19da4d8
+00000340 00         1158 	.data.b	0
+00000341 5101       1159 	.data.b	1,81
+                    1160 
+                    1161 .LDW_19dd0a8:
+00000343 11         1162 	.data.b	17
+00000344 49697041   1163 	.data.b	65,112,105,73,100,0
+00000348 0064 
+0000034a 049b       1164 	.data.b	155,4
+0000034c 5a         1165 	.data.b	90
+0000034d 01         1166 	.data.b	1
+0000034e 00000000*  1167 	.data.w	.LDW_19da4d8
+00000352 00         1168 	.data.b	0
+00000353 5201       1169 	.data.b	1,82
+                    1170 
+                    1171 .LDW_19db848:
+00000355 11         1172 	.data.b	17
+00000356 6f727245   1173 	.data.b	69,114,114,111,114,73,100,0
+0000035a 00644972 
+0000035e 049b       1174 	.data.b	155,4
+00000360 67         1175 	.data.b	103
+00000361 01         1176 	.data.b	1
+00000362 00000000*  1177 	.data.w	.LDW_19da4d8
+00000366 00         1178 	.data.b	0
+00000367 5301       1179 	.data.b	1,83
+                    1180 
+
+                                                                      Page 23
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+                    1181 .LDW_1990628:
+00000369 1f         1182 	.data.b	31
+0000036a 00000000*  1183 	.data.w	.LDW81
+0000036e 00000000*  1184 	.data.w	.LDW91
+                    1185 
+00000372 00         1186 	.data.b	0
+                    1187 
+00000373 00         1188 	.data.b	0
+                    1189 
+                    1190 .LDW_19dd100:
+00000374 16         1191 	.data.b	22
+00000375 5f746544   1192 	.data.b	68,101,116,95,82,101,112,111,114,116,82,117,110,116,105,109,101,69,114,114,111,114,0
+00000379 6f706552 
+0000037d 75527472 
+00000381 6d69746e 
+00000385 72724565 
+00000389 00726f 
+0000038c 059c       1193 	.data.b	156,5
+0000038e 20         1194 	.data.b	32
+0000038f 01         1195 	.data.b	1
+00000390 00000000*  1196 	.data.w	.LDW_19dceb0
+00000394 00000000*  1197 	.data.w	Det_ReportRuntimeError
+00000398 00000000*  1198 	.data.w	__ghs_eofn_Det_ReportRuntimeError
+0000039c 5d01       1199 	.data.b	1,93
+0000039e 00         1200 	.data.b	0
+0000039f 04         1201 	.data.b	4
+000003a0 00         1202 	.data.b	0
+000003a1 7c         1203 	.data.b	124
+000003a2 01         1204 	.data.b	1
+000003a3 00         1205 	.data.b	0
+000003a4 00         1206 	.data.b	0
+000003a5 01         1207 	.data.b	1
+000003a6 01         1208 	.data.b	1
+000003a7 00         1209 	.data.b	0
+000003a8 01         1210 	.data.b	1
+                    1211 
+                    1212 	.section	.debug_frame
+                    1213 .LDW_5ccf690:
+00000108 00000000*  1214 	.data.w	.LDW_unq_e-.LDW_unq_d
+                    1215 .LDW_unq_d:
+0000010c 00000000*  1216 	.data.w	.LDW_5d55d30
+00000110 00000000*  1217 	.data.w	Det_ReportRuntimeError
+00000114 00000008   1218 	.data.w	__ghs_eofn_Det_ReportRuntimeError-Det_ReportRuntimeError
+00000118 01         1219 	.data.b	1
+00000119 00000000*  1220 	.data.w	.LDW12
+0000011d 00         1221 	.data.b	0
+0000011e 00         1222 	.data.b	0
+0000011f 00         1223 	.data.b	0
+                    1224 .LDW_unq_e:
+                    1225 	.section	.debug_line
+0000020f 020500     1226 	.data.b	0,5,2
+00000212 00000000*  1227 	.data.w	Det_ReportRuntimeError
+00000216 06         1228 	.data.b	6
+00000217 03         1229 	.data.b	3
+00000218 05b9       1230 	.data.b	185,5
+0000021a 02         1231 	.data.b	2
+0000021b 00         1232 	.data.b	0
+0000021c 01         1233 	.data.b	1
+0000021d 1b         1234 	.data.b	27
+0000021e 03         1235 	.data.b	3
+0000021f 32         1236 	.data.b	50
+
+                                                                      Page 24
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+00000220 02         1237 	.data.b	2
+00000221 00         1238 	.data.b	0
+00000222 01         1239 	.data.b	1
+00000223 02         1240 	.data.b	2
+00000224 00         1241 	.data.b	0
+00000225 0c         1242 	.data.b	12
+00000226 06         1243 	.data.b	6
+00000227 02         1244 	.data.b	2
+00000228 02         1245 	.data.b	2
+00000229 02         1246 	.data.b	2
+0000022a 02         1247 	.data.b	2
+0000022b 010100     1248 	.data.b	0,1,1
+                    1249 	.section	.debug_info
+                    1250 .LDW_19dba00:
+000003a9 11         1251 	.data.b	17
+000003aa 75646f4d   1252 	.data.b	77,111,100,117,108,101,73,100,0
+000003ae 6449656c 
+000003b2 00 
+000003b3 059c       1253 	.data.b	156,5
+000003b5 3f         1254 	.data.b	63
+000003b6 01         1255 	.data.b	1
+000003b7 00000000*  1256 	.data.w	.LDW_19dcf08
+000003bb 00         1257 	.data.b	0
+000003bc 5001       1258 	.data.b	1,80
+                    1259 
+                    1260 .LDW_19dba58:
+000003be 11         1261 	.data.b	17
+000003bf 74736e49   1262 	.data.b	73,110,115,116,97,110,99,101,73,100,0
+000003c3 65636e61 
+000003c7 006449 
+000003ca 059c       1263 	.data.b	156,5
+000003cc 4f         1264 	.data.b	79
+000003cd 01         1265 	.data.b	1
+000003ce 00000000*  1266 	.data.w	.LDW_19da4d8
+000003d2 00         1267 	.data.b	0
+000003d3 5101       1268 	.data.b	1,81
+                    1269 
+                    1270 .LDW_19dbab0:
+000003d5 11         1271 	.data.b	17
+000003d6 49697041   1272 	.data.b	65,112,105,73,100,0
+000003da 0064 
+000003dc 059c       1273 	.data.b	156,5
+000003de 61         1274 	.data.b	97
+000003df 01         1275 	.data.b	1
+000003e0 00000000*  1276 	.data.w	.LDW_19da4d8
+000003e4 00         1277 	.data.b	0
+000003e5 5201       1278 	.data.b	1,82
+                    1279 
+                    1280 .LDW_19db6e8:
+000003e7 11         1281 	.data.b	17
+000003e8 6f727245   1282 	.data.b	69,114,114,111,114,73,100,0
+000003ec 00644972 
+000003f0 059c       1283 	.data.b	156,5
+000003f2 6e         1284 	.data.b	110
+000003f3 01         1285 	.data.b	1
+000003f4 00000000*  1286 	.data.w	.LDW_19da4d8
+000003f8 00         1287 	.data.b	0
+000003f9 5301       1288 	.data.b	1,83
+                    1289 
+                    1290 .LDW_1990568:
+000003fb 1f         1291 	.data.b	31
+
+                                                                      Page 25
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+000003fc 00000000*  1292 	.data.w	.LDW02
+00000400 00000000*  1293 	.data.w	.LDW12
+                    1294 
+00000404 00         1295 	.data.b	0
+                    1296 
+00000405 00         1297 	.data.b	0
+                    1298 
+                    1299 .LDW_19dd198:
+00000406 16         1300 	.data.b	22
+00000407 5f746544   1301 	.data.b	68,101,116,95,82,101,112,111,114,116,84,114,97,110,115,105,101,110,116,70,97,117,108,116,0
+0000040b 6f706552 
+0000040f 72547472 
+00000413 69736e61 
+00000417 46746e65 
+0000041b 746c7561 
+0000041f 00 
+00000420 0682       1302 	.data.b	130,6
+00000422 20         1303 	.data.b	32
+00000423 01         1304 	.data.b	1
+00000424 00000000*  1305 	.data.w	.LDW_19dceb0
+00000428 00000000*  1306 	.data.w	Det_ReportTransientFault
+0000042c 00000000*  1307 	.data.w	__ghs_eofn_Det_ReportTransientFault
+00000430 5d01       1308 	.data.b	1,93
+00000432 00         1309 	.data.b	0
+00000433 04         1310 	.data.b	4
+00000434 00         1311 	.data.b	0
+00000435 7c         1312 	.data.b	124
+00000436 01         1313 	.data.b	1
+00000437 00         1314 	.data.b	0
+00000438 00         1315 	.data.b	0
+00000439 01         1316 	.data.b	1
+0000043a 01         1317 	.data.b	1
+0000043b 00         1318 	.data.b	0
+0000043c 01         1319 	.data.b	1
+                    1320 
+                    1321 	.section	.debug_frame
+                    1322 .LDW_5ccf350:
+00000120 00000000*  1323 	.data.w	.LDW_unq_10-.LDW_unq_f
+                    1324 .LDW_unq_f:
+00000124 00000000*  1325 	.data.w	.LDW_5d55d30
+00000128 00000000*  1326 	.data.w	Det_ReportTransientFault
+0000012c 00000008   1327 	.data.w	__ghs_eofn_Det_ReportTransientFault-Det_ReportTransientFault
+00000130 01         1328 	.data.b	1
+00000131 00000000*  1329 	.data.w	.LDW32
+00000135 00         1330 	.data.b	0
+00000136 00         1331 	.data.b	0
+00000137 00         1332 	.data.b	0
+                    1333 .LDW_unq_10:
+                    1334 	.section	.debug_line
+0000022e 020500     1335 	.data.b	0,5,2
+00000231 00000000*  1336 	.data.w	Det_ReportTransientFault
+00000235 06         1337 	.data.b	6
+00000236 03         1338 	.data.b	3
+00000237 069f       1339 	.data.b	159,6
+00000239 02         1340 	.data.b	2
+0000023a 00         1341 	.data.b	0
+0000023b 01         1342 	.data.b	1
+0000023c 1b         1343 	.data.b	27
+0000023d 03         1344 	.data.b	3
+0000023e 2c         1345 	.data.b	44
+0000023f 02         1346 	.data.b	2
+
+                                                                      Page 26
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+00000240 00         1347 	.data.b	0
+00000241 01         1348 	.data.b	1
+00000242 02         1349 	.data.b	2
+00000243 00         1350 	.data.b	0
+00000244 03         1351 	.data.b	3
+00000245 06         1352 	.data.b	6
+00000246 02         1353 	.data.b	2
+00000247 00         1354 	.data.b	0
+00000248 01         1355 	.data.b	1
+00000249 06         1356 	.data.b	6
+0000024a 02         1357 	.data.b	2
+0000024b 02         1358 	.data.b	2
+0000024c 02         1359 	.data.b	2
+0000024d 02         1360 	.data.b	2
+0000024e 010100     1361 	.data.b	0,1,1
+                    1362 	.section	.debug_info
+                    1363 .LDW_19db9a8:
+0000043d 11         1364 	.data.b	17
+0000043e 75646f4d   1365 	.data.b	77,111,100,117,108,101,73,100,0
+00000442 6449656c 
+00000446 00 
+00000447 0682       1366 	.data.b	130,6
+00000449 41         1367 	.data.b	65
+0000044a 01         1368 	.data.b	1
+0000044b 00000000*  1369 	.data.w	.LDW_19dcf08
+0000044f 00         1370 	.data.b	0
+00000450 5001       1371 	.data.b	1,80
+                    1372 
+                    1373 .LDW_19db798:
+00000452 11         1374 	.data.b	17
+00000453 74736e49   1375 	.data.b	73,110,115,116,97,110,99,101,73,100,0
+00000457 65636e61 
+0000045b 006449 
+0000045e 0682       1376 	.data.b	130,6
+00000460 51         1377 	.data.b	81
+00000461 01         1378 	.data.b	1
+00000462 00000000*  1379 	.data.w	.LDW_19da4d8
+00000466 00         1380 	.data.b	0
+00000467 5101       1381 	.data.b	1,81
+                    1382 
+                    1383 .LDW_19dbcc0:
+00000469 11         1384 	.data.b	17
+0000046a 49697041   1385 	.data.b	65,112,105,73,100,0
+0000046e 0064 
+00000470 0682       1386 	.data.b	130,6
+00000472 63         1387 	.data.b	99
+00000473 01         1388 	.data.b	1
+00000474 00000000*  1389 	.data.w	.LDW_19da4d8
+00000478 00         1390 	.data.b	0
+00000479 5201       1391 	.data.b	1,82
+                    1392 
+                    1393 .LDW_19dbd18:
+0000047b 11         1394 	.data.b	17
+0000047c 6f727245   1395 	.data.b	69,114,114,111,114,73,100,0
+00000480 00644972 
+00000484 0682       1396 	.data.b	130,6
+00000486 70         1397 	.data.b	112
+00000487 01         1398 	.data.b	1
+00000488 00000000*  1399 	.data.w	.LDW_19da4d8
+0000048c 00         1400 	.data.b	0
+0000048d 5301       1401 	.data.b	1,83
+
+                                                                      Page 27
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+                    1402 
+                    1403 .LDW_5d17658:
+0000048f 1f         1404 	.data.b	31
+00000490 00000000*  1405 	.data.w	.LDW22
+00000494 00000000*  1406 	.data.w	.LDW32
+                    1407 
+00000498 00         1408 	.data.b	0
+                    1409 
+00000499 00         1410 	.data.b	0
+                    1411 
+0000049a 00         1412 	.data.b	0
+                    1413 
+                    1414 	.section	.debug_line
+                    1415 .Ldw_line_end:
+                    1416 	.section	.debug_macinfo
+00000000 03         1417 	.data.b	3
+00000001 00         1418 	.data.b	0
+00000002 01         1419 	.data.b	1
+00000003 03         1420 	.data.b	3
+00000004 25         1421 	.data.b	37
+00000005 02         1422 	.data.b	2
+00000006 03         1423 	.data.b	3
+00000007 4d         1424 	.data.b	77
+00000008 03         1425 	.data.b	3
+00000009 03         1426 	.data.b	3
+0000000a 3f         1427 	.data.b	63
+0000000b 04         1428 	.data.b	4
+0000000c 01         1429 	.data.b	1
+0000000d 65         1430 	.data.b	101
+0000000e 45555254   1431 	.data.b	84,82,85,69,32,49,117,0
+00000012 00753120 
+00000016 01         1432 	.data.b	1
+00000017 69         1433 	.data.b	105
+00000018 534c4146   1434 	.data.b	70,65,76,83,69,32,48,117,0
+0000001c 75302045 
+00000020 00 
+00000021 04         1435 	.data.b	4
+00000022 03         1436 	.data.b	3
+00000023 40         1437 	.data.b	64
+00000024 05         1438 	.data.b	5
+00000025 03         1439 	.data.b	3
+00000026 3e         1440 	.data.b	62
+00000027 06         1441 	.data.b	6
+00000028 03         1442 	.data.b	3
+00000029 7f         1443 	.data.b	127
+0000002a 07         1444 	.data.b	7
+0000002b 04         1445 	.data.b	4
+0000002c 03         1446 	.data.b	3
+0000002d 01d6       1447 	.data.b	214,1
+0000002f 08         1448 	.data.b	8
+00000030 04         1449 	.data.b	4
+00000031 03         1450 	.data.b	3
+00000032 01d7       1451 	.data.b	215,1
+00000034 09         1452 	.data.b	9
+00000035 04         1453 	.data.b	4
+00000036 03         1454 	.data.b	3
+00000037 06c5       1455 	.data.b	197,6
+00000039 0a         1456 	.data.b	10
+0000003a 04         1457 	.data.b	4
+0000003b 04         1458 	.data.b	4
+0000003c 01         1459 	.data.b	1
+
+                                                                      Page 28
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+0000003d 6f         1460 	.data.b	111
+0000003e 41434f4c   1461 	.data.b	76,79,67,65,76,95,73,78,76,73,78,69,32,115,116,97,116,105,99,32,105,110,108,105,110,101,0
+00000042 4e495f4c 
+00000046 454e494c 
+0000004a 61747320 
+0000004e 20636974 
+00000052 696c6e69 
+00000056 00656e 
+00000059 01         1462 	.data.b	1
+0000005a 75         1463 	.data.b	117
+0000005b 434e5546   1464 	.data.b	70,85,78,67,40,114,101,116,116,121,112,101,44,109,101,109,99,108,97,115,115,41,32,114,101,116,116,121,112,101,0
+0000005f 74657228 
+00000063 65707974 
+00000067 6d656d2c 
+0000006b 73616c63 
+0000006f 72202973 
+00000073 79747465 
+00000077 006570 
+0000007a 01         1465 	.data.b	1
+0000007b 019f       1466 	.data.b	159,1
+0000007d 534e4f43   1467 	.data.b	67,79,78,83,84,80,50,67,79,78,83,84,40,112,116,114,116,121,112,101,44,109,101,109,99,108,97,115,115,44,112,116,114,99,108,97,115,115,41,32,99,111,110,115,116,32,112,116,114,116,121,112,101,42,32,99,111,110,115,116
+00000081 43325054 
+00000085 54534e4f 
+00000089 72747028 
+0000008d 65707974 
+00000091 6d656d2c 
+00000095 73616c63 
+00000099 74702c73 
+0000009d 616c6372 
+000000a1 20297373 
+000000a5 736e6f63 
+000000a9 74702074 
+000000ad 70797472 
+000000b1 63202a65 
+000000b5 74736e6f 
+000000b9 00         1468 	.data.b	0
+000000ba 01         1469 	.data.b	1
+000000bb 01a6       1470 	.data.b	166,1
+000000bd 55463250   1471 	.data.b	80,50,70,85,78,67,40,114,101,116,116,121,112,101,44,112,116,114,99,108,97,115,115,44,102,99,116,110,97,109,101,41,32,114,101,116,116,121,112,101,32,40,42,32,102,99,116,110,97,109,101,41,0
+000000c1 7228434e 
+000000c5 79747465 
+000000c9 702c6570 
+000000cd 6c637274 
+000000d1 2c737361 
+000000d5 6e746366 
+000000d9 29656d61 
+000000dd 74657220 
+000000e1 65707974 
+000000e5 202a2820 
+000000e9 6e746366 
+000000ed 29656d61 
+000000f1 00 
+000000f2 01         1472 	.data.b	1
+000000f3 01bc       1473 	.data.b	188,1
+000000f5 28524156   1474 	.data.b	86,65,82,40,118,97,114,116,121,112,101,44,109,101,109,99,108,97,115,115,41,32,118,97,114,116,121,112,101,0
+000000f9 74726176 
+000000fd 2c657079 
+00000101 636d656d 
+00000105 7373616c 
+00000109 61762029 
+0000010d 70797472 
+
+                                                                      Page 29
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+00000111 0065 
+00000113 04         1475 	.data.b	4
+00000114 01         1476 	.data.b	1
+00000115 6d         1477 	.data.b	109
+00000116 5f445453   1478 	.data.b	83,84,68,95,79,78,32,49,117,0
+0000011a 31204e4f 
+0000011e 0075 
+00000120 01         1479 	.data.b	1
+00000121 6e         1480 	.data.b	110
+00000122 5f445453   1481 	.data.b	83,84,68,95,79,70,70,32,48,117,0
+00000126 2046464f 
+0000012a 007530 
+0000012d 01         1482 	.data.b	1
+0000012e 7c         1483 	.data.b	124
+0000012f 4b4f5f45   1484 	.data.b	69,95,79,75,32,48,117,0
+00000133 00753020 
+00000137 04         1485 	.data.b	4
+00000138 03         1486 	.data.b	3
+00000139 4e         1487 	.data.b	78
+0000013a 0b         1488 	.data.b	11
+0000013b 01         1489 	.data.b	1
+0000013c 2b         1490 	.data.b	43
+0000013d 5f544544   1491 	.data.b	68,69,84,95,69,78,65,66,76,69,68,32,83,84,68,95,79,78,0
+00000141 42414e45 
+00000145 2044454c 
+00000149 5f445453 
+0000014d 004e4f 
+00000150 01         1492 	.data.b	1
+00000151 2c         1493 	.data.b	44
+00000152 5f544544   1494 	.data.b	68,69,84,95,86,69,82,83,73,79,78,95,73,78,70,79,95,65,80,73,32,83,84,68,95,79,70,70,0
+00000156 53524556 
+0000015a 5f4e4f49 
+0000015e 4f464e49 
+00000162 4950415f 
+00000166 44545320 
+0000016a 46464f5f 
+0000016e 00 
+0000016f 01         1495 	.data.b	1
+00000170 2d         1496 	.data.b	45
+00000171 5f544544   1497 	.data.b	68,69,84,95,68,69,66,85,71,95,69,78,65,66,76,69,68,32,83,84,68,95,79,70,70,0
+00000175 55424544 
+00000179 4e455f47 
+0000017d 454c4241 
+00000181 54532044 
+00000185 464f5f44 
+00000189 0046 
+0000018b 01         1498 	.data.b	1
+0000018c 2f         1499 	.data.b	47
+0000018d 5f544544   1500 	.data.b	68,69,84,95,71,76,79,66,65,76,70,73,76,84,69,82,83,73,90,69,32,48,117,0
+00000191 424f4c47 
+00000195 49464c41 
+00000199 5245544c 
+0000019d 455a4953 
+000001a1 00753020 
+000001a5 01         1501 	.data.b	1
+000001a6 30         1502 	.data.b	48
+000001a7 5f544544   1503 	.data.b	68,69,84,95,66,82,69,65,75,70,73,76,84,69,82,83,73,90,69,32,48,117,0
+000001ab 41455242 
+000001af 4c49464b 
+000001b3 53524554 
+000001b7 20455a49 
+
+                                                                      Page 30
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+000001bb 007530 
+000001be 01         1504 	.data.b	1
+000001bf 31         1505 	.data.b	49
+000001c0 5f544544   1506 	.data.b	68,69,84,95,76,79,71,66,85,70,70,69,82,83,73,90,69,32,48,117,0
+000001c4 42474f4c 
+000001c8 45464655 
+000001cc 5a495352 
+000001d0 75302045 
+000001d4 00 
+000001d5 01         1507 	.data.b	1
+000001d6 32         1508 	.data.b	50
+000001d7 5f544544   1509 	.data.b	68,69,84,95,70,79,82,87,65,82,68,95,84,79,95,68,76,84,32,83,84,68,95,79,70,70,0
+000001db 57524f46 
+000001df 5f445241 
+000001e3 445f4f54 
+000001e7 5320544c 
+000001eb 4f5f4454 
+000001ef 004646 
+000001f2 01         1510 	.data.b	1
+000001f3 33         1511 	.data.b	51
+000001f4 5f544544   1512 	.data.b	68,69,84,95,82,69,80,79,82,84,95,69,82,82,79,82,95,82,69,67,85,82,83,73,79,78,76,73,77,73,84,32,48,117,0
+000001f8 4f504552 
+000001fc 455f5452 
+00000200 524f5252 
+00000204 4345525f 
+00000208 49535255 
+0000020c 494c4e4f 
+00000210 2054494d 
+00000214 007530 
+00000217 01         1513 	.data.b	1
+00000218 34         1514 	.data.b	52
+00000219 5f544544   1515 	.data.b	68,69,84,95,82,69,80,79,82,84,95,82,85,78,84,73,77,69,69,82,82,79,82,95,82,69,67,85,82,83,73,79,78,76,73,77,73,84,32,48,117,0
+0000021d 4f504552 
+00000221 525f5452 
+00000225 49544e55 
+00000229 5245454d 
+0000022d 5f524f52 
+00000231 55434552 
+00000235 4f495352 
+00000239 4d494c4e 
+0000023d 30205449 
+00000241 0075 
+00000243 01         1516 	.data.b	1
+00000244 35         1517 	.data.b	53
+00000245 5f544544   1518 	.data.b	68,69,84,95,82,69,80,79,82,84,95,84,82,65,78,83,73,69,78,84,70,65,85,76,84,95,82,69,67,85,82,83,73,79,78,76,73,77,73,84,32,48,117,0
+00000249 4f504552 
+0000024d 545f5452 
+00000251 534e4152 
+00000255 544e4549 
+00000259 4c554146 
+0000025d 45525f54 
+00000261 53525543 
+00000265 4c4e4f49 
+00000269 54494d49 
+0000026d 00753020 
+00000271 01         1519 	.data.b	1
+00000272 49         1520 	.data.b	73
+00000273 5f544544   1521 	.data.b	68,69,84,95,69,82,82,79,82,72,79,79,75,84,65,66,76,69,32,83,84,68,95,79,70,70,0
+00000277 4f525245 
+0000027b 4f4f4852 
+0000027f 4241544b 
+
+                                                                      Page 31
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+00000283 5320454c 
+00000287 4f5f4454 
+0000028b 004646 
+0000028e 01         1522 	.data.b	1
+0000028f 4c         1523 	.data.b	76
+00000290 5f544544   1524 	.data.b	68,69,84,95,82,85,78,84,73,77,69,69,82,82,79,82,67,65,76,76,79,85,84,84,65,66,76,69,32,83,84,68,95,79,70,70,0
+00000294 544e5552 
+00000298 45454d49 
+0000029c 524f5252 
+000002a0 4c4c4143 
+000002a4 5454554f 
+000002a8 454c4241 
+000002ac 44545320 
+000002b0 46464f5f 
+000002b4 00 
+000002b5 01         1525 	.data.b	1
+000002b6 4d         1526 	.data.b	77
+000002b7 5f544544   1527 	.data.b	68,69,84,95,84,82,65,78,83,73,69,78,84,70,65,85,76,84,67,65,76,76,79,85,84,84,65,66,76,69,32,83,84,68,95,79,70,70,0
+000002bb 4e415254 
+000002bf 4e454953 
+000002c3 55414654 
+000002c7 4143544c 
+000002cb 554f4c4c 
+000002cf 42415454 
+000002d3 5320454c 
+000002d7 4f5f4454 
+000002db 004646 
+000002de 01         1528 	.data.b	1
+000002df 7f         1529 	.data.b	127
+000002e0 5f544544   1530 	.data.b	68,69,84,95,68,85,77,77,89,95,83,84,65,84,69,77,69,78,84,40,118,41,32,40,118,41,61,40,118,41,0
+000002e4 4d4d5544 
+000002e8 54535f59 
+000002ec 4d455441 
+000002f0 28544e45 
+000002f4 28202976 
+000002f8 283d2976 
+000002fc 002976 
+000002ff 01         1531 	.data.b	1
+00000300 0182       1532 	.data.b	130,1
+00000302 5f544544   1533 	.data.b	68,69,84,95,68,85,77,77,89,95,83,84,65,84,69,77,69,78,84,95,67,79,78,83,84,40,118,41,32,40,118,111,105,100,41,40,118,41,0
+00000306 4d4d5544 
+0000030a 54535f59 
+0000030e 4d455441 
+00000312 5f544e45 
+00000316 534e4f43 
+0000031a 29762854 
+0000031e 6f762820 
+00000322 28296469 
+00000326 002976 
+00000329 01         1534 	.data.b	1
+0000032a 01a8       1535 	.data.b	168,1
+0000032c 5f544544   1536 	.data.b	68,69,84,95,82,85,78,84,73,77,69,95,69,82,82,79,82,95,67,65,76,76,79,85,84,95,69,78,65,66,76,69,68,32,68,69,84,95,82,85,78,84,73,77,69,69,82,82,79,82,67,65,76,76,79,85,84,84,65,66
+00000330 544e5552 
+00000334 5f454d49 
+00000338 4f525245 
+0000033c 41435f52 
+00000340 554f4c4c 
+00000344 4e455f54 
+00000348 454c4241 
+0000034c 45442044 
+00000350 55525f54 
+
+                                                                      Page 32
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+00000354 4d49544e 
+00000358 52524545 
+0000035c 4143524f 
+00000360 554f4c4c 
+00000364 42415454 
+00000368 00454c     1537 	.data.b	76,69,0
+0000036b 01         1538 	.data.b	1
+0000036c 01a9       1539 	.data.b	169,1
+0000036e 5f544544   1540 	.data.b	68,69,84,95,84,82,65,78,83,73,69,78,84,95,70,65,85,76,84,95,67,65,76,76,79,85,84,95,69,78,65,66,76,69,68,32,68,69,84,95,84,82,65,78,83,73,69,78,84,70,65,85,76,84,67,65,76,76,79,85
+00000372 4e415254 
+00000376 4e454953 
+0000037a 41465f54 
+0000037e 5f544c55 
+00000382 4c4c4143 
+00000386 5f54554f 
+0000038a 42414e45 
+0000038e 2044454c 
+00000392 5f544544 
+00000396 4e415254 
+0000039a 4e454953 
+0000039e 55414654 
+000003a2 4143544c 
+000003a6 554f4c4c 
+000003aa 42415454   1541 	.data.b	84,84,65,66,76,69,0
+000003ae 00454c 
+000003b1 01         1542 	.data.b	1
+000003b2 01aa       1543 	.data.b	170,1
+000003b4 5f544544   1544 	.data.b	68,69,84,95,69,82,82,79,82,95,72,79,79,75,95,69,78,65,66,76,69,68,32,68,69,84,95,69,82,82,79,82,72,79,79,75,84,65,66,76,69,0
+000003b8 4f525245 
+000003bc 4f485f52 
+000003c0 455f4b4f 
+000003c4 4c42414e 
+000003c8 44204445 
+000003cc 455f5445 
+000003d0 524f5252 
+000003d4 4b4f4f48 
+000003d8 4c424154 
+000003dc 0045 
+000003de 03         1545 	.data.b	3
+000003df 0288       1546 	.data.b	136,2
+000003e1 0c         1547 	.data.b	12
+000003e2 04         1548 	.data.b	4
+000003e3 03         1549 	.data.b	3
+000003e4 028e       1550 	.data.b	142,2
+000003e6 0c         1551 	.data.b	12
+000003e7 04         1552 	.data.b	4
+000003e8 04         1553 	.data.b	4
+000003e9 01         1554 	.data.b	1
+000003ea 70         1555 	.data.b	112
+000003eb 5f544544   1556 	.data.b	68,69,84,95,83,87,95,77,65,74,79,82,95,86,69,82,83,73,79,78,32,40,49,49,117,41,0
+000003ef 4d5f5753 
+000003f3 524f4a41 
+000003f7 5245565f 
+000003fb 4e4f4953 
+000003ff 31312820 
+00000403 002975 
+00000406 01         1557 	.data.b	1
+00000407 71         1558 	.data.b	113
+00000408 5f544544   1559 	.data.b	68,69,84,95,83,87,95,77,73,78,79,82,95,86,69,82,83,73,79,78,32,40,48,117,41,0
+0000040c 4d5f5753 
+00000410 524f4e49 
+
+                                                                      Page 33
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+00000414 5245565f 
+00000418 4e4f4953 
+0000041c 75302820 
+00000420 0029 
+00000422 01         1560 	.data.b	1
+00000423 72         1561 	.data.b	114
+00000424 5f544544   1562 	.data.b	68,69,84,95,83,87,95,80,65,84,67,72,95,86,69,82,83,73,79,78,32,40,48,117,41,0
+00000428 505f5753 
+0000042c 48435441 
+00000430 5245565f 
+00000434 4e4f4953 
+00000438 75302820 
+0000043c 0029 
+0000043e 03         1563 	.data.b	3
+0000043f 01d5       1564 	.data.b	213,1
+00000441 0c         1565 	.data.b	12
+00000442 04         1566 	.data.b	4
+00000443 03         1567 	.data.b	3
+00000444 02d3       1568 	.data.b	211,2
+00000446 0c         1569 	.data.b	12
+00000447 04         1570 	.data.b	4
+00000448 04         1571 	.data.b	4
+00000449 01         1572 	.data.b	1
+0000044a 58         1573 	.data.b	88
+0000044b 5f544544   1574 	.data.b	68,69,84,95,76,79,67,65,76,32,115,116,97,116,105,99,0
+0000044f 41434f4c 
+00000453 7473204c 
+00000457 63697461 
+0000045b 00 
+0000045c 03         1575 	.data.b	3
+0000045d 72         1576 	.data.b	114
+0000045e 0c         1577 	.data.b	12
+0000045f 04         1578 	.data.b	4
+00000460 03         1579 	.data.b	3
+00000461 77         1580 	.data.b	119
+00000462 0c         1581 	.data.b	12
+00000463 04         1582 	.data.b	4
+00000464 03         1583 	.data.b	3
+00000465 7a         1584 	.data.b	122
+00000466 0c         1585 	.data.b	12
+00000467 04         1586 	.data.b	4
+00000468 03         1587 	.data.b	3
+00000469 0189       1588 	.data.b	137,1
+0000046b 0c         1589 	.data.b	12
+0000046c 04         1590 	.data.b	4
+0000046d 03         1591 	.data.b	3
+0000046e 0190       1592 	.data.b	144,1
+00000470 0c         1593 	.data.b	12
+00000471 04         1594 	.data.b	4
+00000472 03         1595 	.data.b	3
+00000473 01a6       1596 	.data.b	166,1
+00000475 0c         1597 	.data.b	12
+00000476 04         1598 	.data.b	4
+00000477 03         1599 	.data.b	3
+00000478 01ad       1600 	.data.b	173,1
+0000047a 0c         1601 	.data.b	12
+0000047b 04         1602 	.data.b	4
+0000047c 03         1603 	.data.b	3
+0000047d 06f7       1604 	.data.b	247,6
+0000047f 0c         1605 	.data.b	12
+00000480 04         1606 	.data.b	4
+
+                                                                      Page 34
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000c6k1.s
+00000481 04         1607 	.data.b	4
+00000482 00         1608 	.data.b	0
+                    1609 	.section	.debug_abbrev
+00000112 00         1610 	.data.b	0
+                    1611 	.section	.debug_info
+                    1612 .Ldw_end:

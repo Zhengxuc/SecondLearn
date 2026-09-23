@@ -1,0 +1,17 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\armpemicro.dll" 
+
+"D:\AutoSAR\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Debug\Exe\ASR_S32K144_Start.out" 
+
+--plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\armbat.dll" 
+
+--device_macro="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\config\debugger\NXP\KE1xF.dmac" 
+
+--device_macro="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\config\debugger\NXP\S32K14x_trace.dmac" 
+
+--flash_loader="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\config\flashloader\NXP\FlashS32K144.board" 
+
+
+
+

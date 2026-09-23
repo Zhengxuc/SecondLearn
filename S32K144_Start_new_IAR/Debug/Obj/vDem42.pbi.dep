@@ -1,0 +1,4 @@
+vDem42.pbi: \
+  C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\vDem42\vDem42.c \
+  C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\vDem42/vDem42.h \
+  C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\Include\MemMap.h

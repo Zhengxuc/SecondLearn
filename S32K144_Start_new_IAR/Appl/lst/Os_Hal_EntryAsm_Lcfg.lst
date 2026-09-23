@@ -1,0 +1,1516 @@
+                                                                      Page 1
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+Command Line: C:\ghs\comp_201714\asarm.exe -elf -b0 -I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/base_ts_t40d2m10i1r0/include -I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/dio_ts_t40d2m10i1r0/include -I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/mcu_ts_t40d2m10i1r0/include -I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/port_ts_t40d2m10i1r0/include -I../../../bsw/../thirdparty/mcal_s32k/supply/s32k14x_mcal4_2_rtm_hf3_1_0_1/eclipse/plugins/spi_ts_t40d2m10i1r0/include -I../../../bsw/_common -I../../../bsw/bswm -I../../../bsw/can -I../../../bsw/canif -I../../../bsw/cansm -I../../../bsw/cantp -I../../../bsw/com -I../../../bsw/comm -I../../../bsw/dcm -I../../../bsw/dem -I../../../bsw/det -I../../../bsw/ecum -I../../../bsw/gendata -I../../../bsw/iohwab -I../../../bsw/mcal_s32k -I../../../bsw/os -I../../../bsw/pdur -I../../../bsw/vstdlib -I./shared/zbrs_armcommon -I./shared/zbrs_asrembeddedruntimesystemcfg5 -I./shared/zbrs_s32arm -Ic:/ghs/comp_201714/ansi -Ic:/ghs/comp_201714/include/arm -Igendata -Igendata/components -Igendata/include -Iinclude -IC:\ghs\comp_201714\lib\thumb2 -cpu=cortexm4 -fpu=soft -dbo=C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new\Appl\obj\Os_Hal_EntryAsm_Lcfg.dbo -dwarf2 -source=GenData/Os_Hal_EntryAsm_Lcfg.asm -o obj\gh_0000v2g1.o -list=lst/Os_Hal_EntryAsm_Lcfg.lst C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si 
+Original File: C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+Source File: GenData/Os_Hal_EntryAsm_Lcfg.asm
+Directory: C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new\Appl
+Host OS: Windows
+EASE: Copyright (C) 1983-2016 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2017.1.4
+Build Directory: [Directory] COMP-VAL-WIN47:l:/compiler/release-branch-2017-1-comp/build/v2017.1-2017-04-09/win32-comp-ecom
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2017-1-comp/src@589570 (built by auto-compiler)
+Revision Date: Mon Apr 10 10:52:57 2017
+
+Release Date: Mon Apr 10 08:00:05 2017
+
+                       0 #line 1 "GenData/Os_Hal_EntryAsm_Lcfg.asm"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13 
+                      14 
+                      15 
+                      16 
+                      17 
+                      18 
+                      19 
+                      20 
+                      21 
+                      22 
+                      23 
+                      24 
+                      25 
+                      26 
+                      27 
+                      28 
+                      29 
+                      30  
+                      31 
+                       0 #line 1 "GenData/Os_Cfg.h"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13 
+                      14 
+                      15 
+                      16 
+                      17 
+
+                                                                      Page 2
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      18 
+                      19 
+                      20 
+                      21 
+                      22 
+                      23 
+                      24 
+                      25 
+                      26 
+                      27 
+                      28 
+                      29 
+                      30  
+                      31 
+                      32 
+                      33 
+                      34 
+                      35 
+                      36 
+                      37  
+                      38 
+                      39  
+                      40 
+                      41  
+                      42 
+                      43  
+                      44 
+                      45  
+                       0 #line 1 "GenData/Os_Hal_Cfg.h"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13 
+                      14 
+                      15 
+                      16 
+                      17 
+                      18 
+                      19 
+                      20 
+                      21 
+                      22 
+                      23 
+                      24 
+                      25 
+                      26 
+                      27 
+                      28 
+                      29 
+                      30  
+                      31 
+                      32 
+
+                                                                      Page 3
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      33 
+                      34 
+                      35 
+                      36 
+                      37  
+                      38 
+                      39 
+                      40 
+                      41  
+                      42 
+                      43  
+                      44 
+                      45 
+                      46  
+                      47 
+                      48 
+                      49  
+                      50 
+                      51 
+                      52 
+                      53 
+                      54 
+                      55 
+                      56 
+                      57 
+                      58 
+                      59  
+                      60 
+                      61  
+                      62 
+                      63 
+                      64 
+                      65 
+                      66 
+                      67  
+                      68 
+                      69 
+                      70 
+                      71 
+                      72 
+                      73  
+                      74 
+                      75  
+                      76 
+                      77 
+                      78  
+                      79 
+                      80  
+                      81 
+                      82 
+                      83  
+                      84 
+                      85  
+                      86 
+                      87 
+                      88  
+                      89 
+                      90  
+                      91 
+                      92 
+                      93 
+
+                                                                      Page 4
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      94 
+                      95 
+                      96 
+                      97 
+                      98 
+                      99 
+                     100 
+                     101  
+                     102 
+                     103 
+                     104 
+                     105 
+                     106 
+                     107 
+                     108  
+                      46 #line 47 "GenData/Os_Cfg.h"
+                      47 
+                      48 
+                      49 
+                      50 
+                      51  
+                      52 
+                      53  
+                      54 
+                      55 
+                      56  
+                      57 
+                      58 
+                      59  
+                      60 
+                      61 
+                      62  
+                      63 
+                      64 
+                      65  
+                      66 
+                      67 
+                      68  
+                      69 
+                      70 
+                      71  
+                      72 
+                      73 
+                      74  
+                      75 
+                      76 
+                      77  
+                      78 
+                      79 
+                      80  
+                      81 
+                      82 
+                      83  
+                      84 
+                      85 
+                      86  
+                      87 
+                      88 
+                      89  
+                      90 
+                      91 
+
+                                                                      Page 5
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      92  
+                      93 
+                      94 
+                      95  
+                      96 
+                      97 
+                      98  
+                      99 
+                     100 
+                     101  
+                     102 
+                     103 
+                     104 
+                     105 
+                     106 
+                     107  
+                     108 
+                     109 
+                     110 
+                     111 
+                     112 
+                     113 
+                     114  
+                     115 
+                     116 
+                     117 
+                     118  
+                     119 
+                     120 
+                     121 
+                     122 
+                     123 
+                     124 
+                     125  
+                      32 #line 33 "GenData/Os_Hal_EntryAsm_Lcfg.asm"
+                       0 #line 1 "../../../bsw/os/Os_Hal_Entry.inc"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13  
+                      14 
+                      15 
+                      16 
+                      17 
+                      18 
+                      19 
+                      20 
+                      21 
+                      22 
+                      23 
+                      24 
+                      25 
+
+                                                                      Page 6
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      26 
+                      27 
+                      28 
+                      29 
+                      30 
+                      31  
+                      32 
+                      33 
+                      34 
+                      35 
+                      36 
+                      37  
+                      38 
+                      39 
+                      40 
+                      41 
+                       0 #line 1 "../../../bsw/os/Os_Hal_Derivative.h"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13  
+                      14 
+                      15 
+                      16 
+                      17 
+                      18 
+                      19 
+                      20 
+                      21 
+                      22  
+                      23 
+                      24 
+                      25 
+                      26 
+                      27  
+                      28 
+                      29 
+                      30 
+                      31 
+                      32 
+                      33 
+                      34 
+                      35  
+                      36  
+                       0 #line 1 "../../../bsw/os/Os_Hal_DerivativeInt.h"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+
+                                                                      Page 7
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13  
+                      14 
+                      15 
+                      16 
+                      17 
+                      18 
+                      19 
+                      20 
+                      21 
+                      22 
+                      23 
+                      24 
+                      25 
+                      26  
+                      27 
+                      28 
+                      29 
+                      30 
+                      31  
+                      32 
+                      33 
+                      34 
+                      35 
+                      36 
+                      37 
+                      38 
+                      39  
+                      40  
+                      41 
+                      42  
+                       0 #line 1 "gendata\\Os_Cfg.h"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13 
+                      14 
+                      15 
+                      16 
+                      17 
+                      18 
+                      19 
+                      20 
+                      21 
+                      22 
+                      23 
+                      24 
+                      25 
+
+                                                                      Page 8
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      26 
+                      27 
+                      28 
+                      29 
+                      30  
+                      31 
+                     121 #line 122
+                     122 
+                     123 
+                     124 
+                     125  
+                      43 #line 44 "../../../bsw/os/Os_Hal_DerivativeInt.h"
+                      44 
+                      45  
+                      46 
+                      47  
+                       0 #line 1 "../../../bsw/os/Os_Hal_Derivative_S32K148Int.h"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13  
+                      14 
+                      15 
+                      16 
+                      17 
+                      18 
+                      19 
+                      20 
+                      21 
+                      22 
+                      23 
+                      24 
+                      25 
+                      26 
+                      27  
+                      28 
+                      29 
+                      30 
+                      31 
+                      32  
+                      33 
+                      34 
+                      35 
+                      36 
+                      37 
+                      38 
+                      39  
+                      40 
+                      41 
+                      42 
+                      43  
+                      44 
+
+                                                                      Page 9
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      45 
+                      46 
+                      47  
+                      48 
+                      49 
+                      50 
+                      51  
+                      52  
+                      53 
+                      54 
+                      55  
+                      56 
+                      57 
+                      58 
+                      59 
+                      60 
+                      61  
+                      62  
+                      63 
+                      64 
+                      65  
+                      66 
+                      67 
+                      68  
+                      69 
+                      70 
+                      71 
+                      72 
+                      73 
+                      74  
+                      75  
+                      76 
+                      77 
+                      78  
+                      79 
+                      80 
+                      81 
+                      82 
+                      83 
+                      84  
+                      85  
+                      86 
+                      87 
+                      88 
+                      89 
+                      90 
+                      91 
+                      92 
+                      93 
+                      94 
+                      95  
+                      96 
+                      97 
+                      98  
+                      53 #line 54 "../../../bsw/os/Os_Hal_DerivativeInt.h"
+                      54 
+                      55 
+                      56 
+                      57 
+                      58 
+                      59 
+
+                                                                      Page 10
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      60 
+                      61 
+                      62 
+                      63 
+                      64 
+                      65 
+                      66 
+                      67 
+                      68 
+                      69 
+                      70 
+                      71 
+                      72  
+                      73 
+                      74 
+                      75 
+                      76  
+                      77 
+                      78 
+                      79 
+                      80  
+                      81 
+                      82 
+                      83 
+                      84  
+                      85 
+                      86 
+                      87 
+                      88  
+                      89 
+                      90 
+                      91 
+                      92 
+                      93 
+                      94 
+                      95  
+                      96 
+                      97 
+                      98  
+                      37 #line 38 "../../../bsw/os/Os_Hal_Derivative.h"
+                      38 
+                      39 
+                      40 
+                      41  
+                      42 
+                      43 
+                      44 
+                      45 
+                      46  
+                      47 
+                      48 
+                      49 
+                      50 
+                      51  
+                      52 
+                      53 
+                      54 
+                      55  
+                      56 
+                      57 
+                      58 
+
+                                                                      Page 11
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      59  
+                      60 
+                      61 
+                      62 
+                      63 
+                      64 
+                      65  
+                      66 
+                      67 
+                      68  
+                      42 #line 43 "../../../bsw/os/Os_Hal_Entry.inc"
+                       0 #line 1 "gendata\\Os_Hal_Entry_Cfg.h"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13 
+                      14 
+                      15 
+                      16 
+                      17 
+                      18 
+                      19 
+                      20 
+                      21 
+                      22 
+                      23 
+                      24 
+                      25 
+                      26 
+                      27 
+                      28 
+                      29 
+                      30  
+                      31 
+                      32 
+                      33 
+                      34 
+                      35 
+                      36 
+                      37  
+                      38 
+                      39 
+                      40 
+                      41  
+                      42 
+                      43 
+                      44 
+                      45 
+                      46 
+                      47 
+                      48 
+                      49 
+
+                                                                      Page 12
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      50  
+                      51 
+                      52 
+                      53 
+                      54 
+                      55 
+                      56 
+                      57  
+                      43 #line 44 "../../../bsw/os/Os_Hal_Entry.inc"
+                       0 #line 1 "gendata\\Os_Hal_MemoryProtection_Cfg.h"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13 
+                      14 
+                      15 
+                      16 
+                      17 
+                      18 
+                      19 
+                      20 
+                      21 
+                      22 
+                      23 
+                      24 
+                      25 
+                      26 
+                      27 
+                      28 
+                      29 
+                      30  
+                      31 
+                      32 
+                      33 
+                      34 
+                      35 
+                      36 
+                      37  
+                      38 
+                      39 
+                      40 
+                      41  
+                      42 
+                      43 
+                      44 
+                      45 
+                      46 
+                      47 
+                      48 
+                      49  
+                      50 
+                      51 
+
+                                                                      Page 13
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      52 
+                      53 
+                      54 
+                      55 
+                      56  
+                      44 #line 45 "../../../bsw/os/Os_Hal_Entry.inc"
+                       0 #line 1 "../../../bsw/os/Os_Hal_Compiler.inc"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13  
+                      14 
+                      15 
+                      16 
+                      17 
+                      18 
+                      19 
+                      20 
+                      21 
+                      22  
+                      23 
+                      24 
+                      25 
+                      26 
+                      27 
+                      28  
+                      29 
+                      30 
+                      31 
+                      32 
+                      33 
+                      34 
+                      35  
+                      36 
+                      37  
+                       0 #line 1 "../../../bsw/os/Os_Hal_CompilerInt.inc"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13  
+                      14 
+                      15 
+                      16 
+
+                                                                      Page 14
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      17 
+                      18 
+                      19 
+                      20 
+                      21 
+                      22 
+                      23 
+                      24 
+                      25 
+                      26 
+                      27 
+                      28 
+                      29 
+                      30 
+                      31 
+                      32 
+                      33 
+                      34  
+                      35 
+                      36 
+                      37 
+                      38 
+                      39 
+                      40  
+                      41 
+                      42 
+                      43 
+                      44 
+                      45 
+                      46 
+                      47  
+                       0 #line 1 "gendata\\Os_Cfg.h"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13 
+                      14 
+                      15 
+                      16 
+                      17 
+                      18 
+                      19 
+                      20 
+                      21 
+                      22 
+                      23 
+                      24 
+                      25 
+                      26 
+                      27 
+                      28 
+                      29 
+
+                                                                      Page 15
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      30  
+                      31 
+                     121 #line 122
+                     122 
+                     123 
+                     124 
+                     125  
+                      48 #line 49 "../../../bsw/os/Os_Hal_CompilerInt.inc"
+                      49 
+                       0 #line 1 "../../../bsw/os/Os_Hal_Compiler_GreenhillsInt.inc"
+                       1 
+                       2 
+                       3 
+                       4 
+                       5 
+                       6 
+                       7 
+                       8 
+                       9 
+                      10 
+                      11 
+                      12 
+                      13  
+                      14 
+                      15 
+                      16 
+                      17 
+                      18 
+                      19 
+                      20 
+                      21  
+                      22 
+                      23 
+                      24 
+                      25 
+                      26 
+                      27  
+                      28 
+                      29 
+                      30 
+                      31 
+                      32 
+                      33 
+                      34  
+                      35 
+                      36 
+                      37 
+                      38  
+                      39 
+                      40 
+                      41 
+                      42  
+                      43 
+                      44 
+                      45 
+                      46  
+                      47 
+                      48 
+                      49 
+                      50  
+                      51 
+
+                                                                      Page 16
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      52 
+                      53 
+                      54  
+                      55 
+                      56 
+                      57 
+                      58  
+                      59 
+                      60 
+                      61 
+                      62  
+                      63 
+                      64 
+                      65 
+                      66 
+                      67 
+                      68 
+                      69  
+                      70 
+                      71 
+                      72 
+                      73 
+                      74  
+                      75 
+                      76 
+                      77 
+                      78 
+                      79  
+                      80 
+                      81 
+                      82 
+                      83  
+                      84 
+                      85 
+                      86 
+                      87  
+                      88 
+                      89 
+                      90 
+                      91  
+                      92 
+                      93 
+                      94 
+                      95  
+                      96 
+                      97 
+                      98 
+                      99  
+                     100 
+                     101 
+                     102 
+                     103  
+                     104 
+                     105 
+                     106 
+                     107  
+                     108 
+                     109 
+                     110 
+                     111  
+                     112 
+
+                                                                      Page 17
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                     113 
+                     114 
+                     115  
+                     116 .macro Os_Hal_Asm_Load_Register_Immediate Register, Immediate
+                     117   ldr Register, =Immediate
+                     118   .endm
+                     119 
+                     120 
+                     121  
+                     122 .macro Os_Hal_Asm_Load_Register_Label Register, Label
+                     123   ldr Register, =Label
+                     124   .endm
+                     125 
+                     126 
+                     127  
+                     128 
+                     129 
+                     130 
+                     131  
+                     132 
+                     133 
+                     134 
+                     135  
+                     136 
+                     137 
+                     138 
+                     139 
+                     140 
+                     141 
+                     142 
+                     143  
+                     144 
+                     145 
+                     146 
+                     147  
+                      51 #line 52 "../../../bsw/os/Os_Hal_CompilerInt.inc"
+                      52 
+                      53 
+                      54 
+                      55 
+                      56 
+                      57 
+                      58 
+                      59 
+                      60 
+                      61 
+                      62 
+                      63 
+                      64 
+                      65 
+                      66 
+                      67 
+                      68 
+                      69  
+                      70 
+                      71 
+                      72 
+                      73  
+                      38 #line 39 "../../../bsw/os/Os_Hal_Compiler.inc"
+                      39 
+                      40 
+
+                                                                      Page 18
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      41 
+                      42 
+                      43 
+                      44 
+                      45  
+                      46 
+                      47 
+                      48 
+                      49  
+                      45 #line 46 "../../../bsw/os/Os_Hal_Entry.inc"
+                      46 
+                      47   
+                      48 
+                      49   .section .OS_CODE, "ax"
+                      50 
+                      51   .thumb2
+                      52   import Os_IsrRun
+                      53 
+                      54   import Os_UnhandledIrq
+                      55 
+                      56 
+                      57 
+                      58 
+                      59 
+                      60 
+                      61 
+                      62 
+                      63 
+                      64  
+                      65 
+                      66 
+                      67 
+                      68 
+                      69 
+                      70 
+                      71 
+                      72 
+                      73 
+                      74 
+                      75 
+                      76 
+                      77  
+                      78 
+                      79   import Os_IsrRun
+                      80 
+                      81   .macro Os_Hal_Cat2Entry_Interrupt IsrConfig
+                      82   
+                      83   mrs  r2, basepri
+                      84   mov  r3, #(32)
+                      85   msr  basepri, r3         
+                      86   mrs  r1, control
+                      87   push {r1-r2, lr}
+                      88   mov  r2, #0
+                      89   msr  control, r2
+                      90 
+                      91   sub  sp, sp, #0x20       
+                      92   mov  r1, #0x1000000      
+                      93   str  r1, [sp, #0x1C]
+                      94   mvn  lr, #0x6            
+                      95   mov  r1, pc
+                      96   add  r1, r1, #0xC        
+
+                                                                      Page 19
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      97                            
+                      98                            
+                      99   str  r1, [sp, #0x18]     
+                     100   dsb
+                     101   bx   lr
+                     102 
+                     103    
+                     104   nop
+                     105    
+                     106   Os_Hal_Asm_Load_Register_Immediate  r0, IsrConfig
+                     107   bl   Os_IsrRun           
+                     108   pop  {r1-r2, lr}         
+                     109   mov  r0, sp              
+                     110   msr  basepri, r2         
+                     111   svc  #2                  
+                     112   .endm
+                     113 
+                     114 
+                     115 
+                     116 
+                     117  
+                     118 
+                     119 
+                     120 
+                     121 
+                     122 
+                     123 
+                     124 
+                     125 
+                     126 
+                     127 
+                     128 
+                     129 
+                     130  
+                     131 
+                     132   .macro Os_Hal_Entry_Interrupt JumpTarget
+                     133   
+                     134   mrs  r2, basepri
+                     135   mov  r3, #(32)
+                     136   msr  basepri, r3                                
+                     137   mrs  r1, control
+                     138   push {r1-r2, lr}
+                     139   mov  r2, #0
+                     140   msr  control, r2
+                     141 
+                     142   sub  sp, sp, #0x20                              
+                     143   mov  r1, #0x1000000                             
+                     144   str  r1, [sp, #0x1C]
+                     145   mvn  lr, #0x6                                   
+                     146   mov  r1, pc
+                     147   add  r1, r1, #0xC                               
+                     148                                                   
+                     149                                                   
+                     150   str  r1, [sp, #0x18]                            
+                     151   dsb
+                     152   bx   lr
+                     153 
+                     154    
+                     155   nop
+                     156    
+                     157   bl   JumpTarget 
+
+                                                                      Page 20
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                     158   pop  {r1-r2, lr}                                
+                     159   mov  r0, sp                                     
+                     160   msr  basepri, r2                                
+                     161   svc  #2                                         
+                     162   .endm
+                     163 
+                     164 
+                     165 
+                     166 
+                     167 
+                     168  
+                      36 #line 37 "GenData/Os_Hal_EntryAsm_Lcfg.asm"
+                      37 
+                      38 
+                      39   
+                      40 
+                      41   .section .OS_CODE, "ax"
+                      42 
+                      43   
+                      44   .section .OS_INTVEC_CORE0_CODE, "ax"
+                      45 
+                      46    
+                      47   export Os_Isr_Core0_Interrupt_15
+                      48   export Os_Isr_Core0_Interrupt_94
+                      49   export Os_Isr_Core0_Interrupt_97
+                      50   export Os_Isr_Core0_Interrupt_98
+                      51   
+                      52     
+                      53     
+                      54   import OsCfg_Isr_CounterIsr_SystemTimer
+                      55   
+                      56 Os_Isr_Core0_Interrupt_15
+                      57   Os_Hal_Cat2Entry_Interrupt OsCfg_Isr_CounterIsr_SystemTimer  
+                      57 <MACRO BEGIN>
+                      57 mrs r2 , basepri 
+                      57 mov r3 , ( 32 ) 
+                      57 msr basepri , r3 
+                      57 mrs r1 , control 
+                      57 push { r1 - r2 , lr } 
+                      57 mov r2 , 0 
+                      57 msr control , r2 
+                      57 
+                      57 sub sp , sp , 0x20 
+                      57 mov r1 , 0x1000000 
+                      57 str r1 , [ sp , 0x1C ] 
+                      57 mvn lr , 0x6 
+                      57 mov r1 , pc 
+                      57 add r1 , r1 , 0xC 
+                      57 
+                      57 
+                      57 str r1 , [ sp , 0x18 ] 
+                      57 dsb 
+                      57 bx lr 
+                      57 
+                      57 
+                      57 nop 
+                      57 
+                      57 Os_Hal_Asm_Load_Register_Immediate r0 , OsCfg_Isr_CounterIsr_SystemTimer 
+                      57 bl Os_IsrRun 
+                      57 pop { r1 - r2 , lr } 
+                      57 mov r0 , sp 
+
+                                                                      Page 21
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      57 msr basepri , r2 
+                      57 svc 2 
+00000000 f3ef8211     57 <MACRO END>
+00000004 f04f0320 
+00000008 f3838811 
+0000000c f3ef8114 
+00000010 b506 
+00000012 f04f0200 
+00000016 f3828814 
+0000001a b088 
+0000001c f04f7180 
+00000020 9107 
+00000022 f06f0e06 
+00000026 4679 
+00000028 f101010c 
+0000002c 9106 
+0000002e f3bf8f4f 
+00000032 4770 
+00000034 bf00 
+                      57 <MACRO BEGIN>
+                      57 ldr r0 , = OsCfg_Isr_CounterIsr_SystemTimer 
+00000036 4801*        57 <MACRO END>
+00000038 f000f800*
+0000003c e8bd4006 
+00000040 4668 
+00000042 f3828811 
+00000046 df02 
+                      58   .endf Os_Isr_Core0_Interrupt_15
+                      59     
+                      60   import OsCfg_Isr_CanIsr_0_BusOff
+                      61   
+                      62 Os_Isr_Core0_Interrupt_94
+                      63   Os_Hal_Cat2Entry_Interrupt OsCfg_Isr_CanIsr_0_BusOff  
+                      63 <MACRO BEGIN>
+                      63 mrs r2 , basepri 
+                      63 mov r3 , ( 32 ) 
+                      63 msr basepri , r3 
+                      63 mrs r1 , control 
+                      63 push { r1 - r2 , lr } 
+                      63 mov r2 , 0 
+                      63 msr control , r2 
+                      63 
+                      63 sub sp , sp , 0x20 
+                      63 mov r1 , 0x1000000 
+                      63 str r1 , [ sp , 0x1C ] 
+                      63 mvn lr , 0x6 
+                      63 mov r1 , pc 
+                      63 add r1 , r1 , 0xC 
+                      63 
+                      63 
+                      63 str r1 , [ sp , 0x18 ] 
+                      63 dsb 
+                      63 bx lr 
+                      63 
+                      63 
+                      63 nop 
+                      63 
+                      63 Os_Hal_Asm_Load_Register_Immediate r0 , OsCfg_Isr_CanIsr_0_BusOff 
+                      63 bl Os_IsrRun 
+                      63 pop { r1 - r2 , lr } 
+                      63 mov r0 , sp 
+
+                                                                      Page 22
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      63 msr basepri , r2 
+                      63 svc 2 
+00000048 f3ef8211     63 <MACRO END>
+0000004c f04f0320 
+00000050 f3838811 
+00000054 f3ef8114 
+00000058 b506 
+0000005a f04f0200 
+0000005e f3828814 
+00000062 b088 
+00000064 f04f7180 
+00000068 9107 
+0000006a f06f0e06 
+0000006e 4679 
+00000070 f101010c 
+00000074 9106 
+00000076 f3bf8f4f 
+0000007a 4770 
+0000007c bf00 
+                      63 <MACRO BEGIN>
+                      63 ldr r0 , = OsCfg_Isr_CanIsr_0_BusOff 
+0000007e 4801*        63 <MACRO END>
+00000080 f000f800*
+00000084 e8bd4006 
+00000088 4668 
+0000008a f3828811 
+0000008e df02 
+                      64   .endf Os_Isr_Core0_Interrupt_94
+                      65     
+                      66   import OsCfg_Isr_CanIsr_0_MB00To15
+                      67   
+                      68 Os_Isr_Core0_Interrupt_97
+                      69   Os_Hal_Cat2Entry_Interrupt OsCfg_Isr_CanIsr_0_MB00To15  
+                      69 <MACRO BEGIN>
+                      69 mrs r2 , basepri 
+                      69 mov r3 , ( 32 ) 
+                      69 msr basepri , r3 
+                      69 mrs r1 , control 
+                      69 push { r1 - r2 , lr } 
+                      69 mov r2 , 0 
+                      69 msr control , r2 
+                      69 
+                      69 sub sp , sp , 0x20 
+                      69 mov r1 , 0x1000000 
+                      69 str r1 , [ sp , 0x1C ] 
+                      69 mvn lr , 0x6 
+                      69 mov r1 , pc 
+                      69 add r1 , r1 , 0xC 
+                      69 
+                      69 
+                      69 str r1 , [ sp , 0x18 ] 
+                      69 dsb 
+                      69 bx lr 
+                      69 
+                      69 
+                      69 nop 
+                      69 
+                      69 Os_Hal_Asm_Load_Register_Immediate r0 , OsCfg_Isr_CanIsr_0_MB00To15 
+                      69 bl Os_IsrRun 
+                      69 pop { r1 - r2 , lr } 
+                      69 mov r0 , sp 
+
+                                                                      Page 23
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      69 msr basepri , r2 
+                      69 svc 2 
+00000090 f3ef8211     69 <MACRO END>
+00000094 f04f0320 
+00000098 f3838811 
+0000009c f3ef8114 
+000000a0 b506 
+000000a2 f04f0200 
+000000a6 f3828814 
+000000aa b088 
+000000ac f04f7180 
+000000b0 9107 
+000000b2 f06f0e06 
+000000b6 4679 
+000000b8 f101010c 
+000000bc 9106 
+000000be f3bf8f4f 
+000000c2 4770 
+000000c4 bf00 
+                      69 <MACRO BEGIN>
+                      69 ldr r0 , = OsCfg_Isr_CanIsr_0_MB00To15 
+000000c6 4801*        69 <MACRO END>
+000000c8 f000f800*
+000000cc e8bd4006 
+000000d0 4668 
+000000d2 f3828811 
+000000d6 df02 
+                      70   .endf Os_Isr_Core0_Interrupt_97
+                      71     
+                      72   import OsCfg_Isr_CanIsr_0_MB16To31
+                      73   
+                      74 Os_Isr_Core0_Interrupt_98
+                      75   Os_Hal_Cat2Entry_Interrupt OsCfg_Isr_CanIsr_0_MB16To31  
+                      75 <MACRO BEGIN>
+                      75 mrs r2 , basepri 
+                      75 mov r3 , ( 32 ) 
+                      75 msr basepri , r3 
+                      75 mrs r1 , control 
+                      75 push { r1 - r2 , lr } 
+                      75 mov r2 , 0 
+                      75 msr control , r2 
+                      75 
+                      75 sub sp , sp , 0x20 
+                      75 mov r1 , 0x1000000 
+                      75 str r1 , [ sp , 0x1C ] 
+                      75 mvn lr , 0x6 
+                      75 mov r1 , pc 
+                      75 add r1 , r1 , 0xC 
+                      75 
+                      75 
+                      75 str r1 , [ sp , 0x18 ] 
+                      75 dsb 
+                      75 bx lr 
+                      75 
+                      75 
+                      75 nop 
+                      75 
+                      75 Os_Hal_Asm_Load_Register_Immediate r0 , OsCfg_Isr_CanIsr_0_MB16To31 
+                      75 bl Os_IsrRun 
+                      75 pop { r1 - r2 , lr } 
+                      75 mov r0 , sp 
+
+                                                                      Page 24
+                                                              C:\Users\Fengyuan\AppData\Local\Temp\gh_0000v2g1.si
+                      75 msr basepri , r2 
+                      75 svc 2 
+000000d8 f3ef8211     75 <MACRO END>
+000000dc f04f0320 
+000000e0 f3838811 
+000000e4 f3ef8114 
+000000e8 b506 
+000000ea f04f0200 
+000000ee f3828814 
+000000f2 b088 
+000000f4 f04f7180 
+000000f8 9107 
+000000fa f06f0e06 
+000000fe 4679 
+00000100 f101010c 
+00000104 9106 
+00000106 f3bf8f4f 
+0000010a 4770 
+0000010c bf00 
+                      75 <MACRO BEGIN>
+                      75 ldr r0 , = OsCfg_Isr_CanIsr_0_MB16To31 
+0000010e 4801*        75 <MACRO END>
+00000110 f000f800*
+00000114 e8bd4006 
+00000118 4668 
+0000011a f3828811 
+0000011e df02 
+                      76   .endf Os_Isr_Core0_Interrupt_98
+                      77     
+                      78   
+                      79 
+                      80 
+                      81 
+                      82   
+                      83   end
+                      84 
+00000120 00000000*
+00000124 00000000*
+00000128 00000000*
+0000012c 00000000*

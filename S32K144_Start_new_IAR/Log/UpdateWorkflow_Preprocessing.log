@@ -1,0 +1,291 @@
+ 11:43:29 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+              Convert legacy file(s) to System Description.
+              Used executable: C:\Vector\CBD1800257_D01_S32K1xx\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe.
+              Arguments: "C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Inputfiles\CAN.dbc" -o "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617939809759-0\ConvertedLegacy" -r 42 -e -v 19.
+              
+              Vector Legacy Database Converter.
+              Version: 1.8.24.0.
+              Copyright (c) 2018 Vector Informatik GmbH.
+              License is restricted to the usage with CBD1800257 (D01) for MSR_Vector_SLP4.
+              
+              [info] SIP License found as C:\Vector\CBD1800257_D01_S32K1xx\SipLicense.lic.
+              [info] Command line: C:\Vector\CBD1800257_D01_S32K1xx\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe "C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Inputfiles\CAN.dbc" -o "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617939809759-0\ConvertedLegacy" -r 42 -e -v 19.
+              [info] Converting DBC file C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Inputfiles\CAN.dbc.
+              [error] DBC attribute definition GenMsgSendType has unknown default value cyclicX.
+              [error] DBC attribute definition GenSigSendType has unknown default value cyclicX.
+              [info] Writing System Description...
+              [info] Writing 3 ECU Extracts...
+              
+              C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617939809759-0\ConvertedLegacy.arxml.
+              C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617939809759-0\ConvertedLegacy_MyECU.arxml.
+              C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617939809759-0\ConvertedLegacy_RearECU.arxml.
+              C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617939809759-0\ConvertedLegacy_Tester.arxml.
+              Elapsed time: 0.860 seconds.
+              2 Errors.
+              0 Warnings.
+              [Warning] Legacy Converter finished with errors/warnings.
+ 11:43:30 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished with warnings.
+                 [Warning] Legacy Converter finished with errors/warnings.
+ 14:04:36 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+ 14:04:36 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+              Convert legacy file(s) to System Description.
+              Convert legacy file(s) to System Description.
+              Used executable: C:\Vector\CBD1800257_D01_S32K1xx\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe.
+              Used executable: C:\Vector\CBD1800257_D01_S32K1xx\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe.
+              Arguments: "C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Inputfiles\CAN.dbc" -o "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617948276635-0\ConvertedLegacy" -r 42 -e -v 19.
+              Arguments: "C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Inputfiles\CAN.dbc" -o "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617948276635-0\ConvertedLegacy" -r 42 -e -v 19.
+              
+              
+              Vector Legacy Database Converter.
+              Vector Legacy Database Converter.
+              Version: 1.8.24.0.
+              Version: 1.8.24.0.
+              Copyright (c) 2018 Vector Informatik GmbH.
+              Copyright (c) 2018 Vector Informatik GmbH.
+              License is restricted to the usage with CBD1800257 (D01) for MSR_Vector_SLP4.
+              License is restricted to the usage with CBD1800257 (D01) for MSR_Vector_SLP4.
+              
+              
+              [info] SIP License found as C:\Vector\CBD1800257_D01_S32K1xx\SipLicense.lic.
+              [info] SIP License found as C:\Vector\CBD1800257_D01_S32K1xx\SipLicense.lic.
+              [info] Command line: C:\Vector\CBD1800257_D01_S32K1xx\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe "C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Inputfiles\CAN.dbc" -o "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617948276635-0\ConvertedLegacy" -r 42 -e -v 19.
+              [info] Command line: C:\Vector\CBD1800257_D01_S32K1xx\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe "C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Inputfiles\CAN.dbc" -o "C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617948276635-0\ConvertedLegacy" -r 42 -e -v 19.
+              [info] Converting DBC file C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Inputfiles\CAN.dbc.
+              [info] Converting DBC file C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Inputfiles\CAN.dbc.
+              [error] DBC attribute definition GenMsgSendType has unknown default value cyclicX.
+              [error] DBC attribute definition GenMsgSendType has unknown default value cyclicX.
+              [error] DBC attribute definition GenSigSendType has unknown default value cyclicX.
+              [error] DBC attribute definition GenSigSendType has unknown default value cyclicX.
+              [info] Writing System Description...
+              [info] Writing System Description...
+              [info] Writing 3 ECU Extracts...
+              [info] Writing 3 ECU Extracts...
+              
+              
+              C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617948276635-0\ConvertedLegacy.arxml.
+              C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617948276635-0\ConvertedLegacy.arxml.
+              C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617948276635-0\ConvertedLegacy_MyECU.arxml.
+              C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617948276635-0\ConvertedLegacy_MyECU.arxml.
+              C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617948276635-0\ConvertedLegacy_RearECU.arxml.
+              C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617948276635-0\ConvertedLegacy_RearECU.arxml.
+              C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617948276635-0\ConvertedLegacy_Tester.arxml.
+              C:\Users\Fengyuan\AppData\Local\Temp\DaVinci\Cfg-9342797\LegacyConverterResults\1617948276635-0\ConvertedLegacy_Tester.arxml.
+              Elapsed time: 0.872 seconds.
+              Elapsed time: 0.872 seconds.
+              2 Errors.
+              2 Errors.
+              0 Warnings.
+              0 Warnings.
+              [Warning] Legacy Converter finished with errors/warnings.
+              [Warning] Legacy Converter finished with errors/warnings.
+ 14:04:37 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished with warnings.
+                 [Warning] Legacy Converter finished with errors/warnings.
+ 14:04:37 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished with warnings.
+                 [Warning] Legacy Converter finished with errors/warnings.
+              [14:04:39] INFO   ----> Process of diagnostic specification.
+              [14:04:40] INFO   DDM-Version: 14.0.0 (RELEASE).
+              [14:04:40] INFO   Importing ODX file C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start\Inputfiles\ForTraining.cdd, ECU: New_ECU_1, variant: CommonDiagnostics.
+              [14:04:40] INFO   Selecting ECU 'New_ECU_1'  Variant 'CommonDiagnostics'  Protocol UDS.
+              [14:04:40] INFO   Selecting Manufacturer 'Vector'.
+              [14:04:40] INFO   'Vector' was selected and 'Vector' was detected.
+              [14:04:40] INFO   Importing Database information.
+              [14:04:40] INFO   ----> Importing Variants.
+              [14:04:40] INFO   <---- Importing Variants.
+              [14:04:40] INFO   ----> Importing StateGroups.
+              [14:04:40] INFO   Importing StateMachine information.
+              [14:04:40] INFO   <---- Importing StateGroups.
+              [14:04:40] INFO   ----> Importing Services.
+              [14:04:40] INFO   Importing Service '1001'.
+              [14:04:40] INFO   Importing Service '1002'.
+              [14:04:40] INFO   Importing Service '1003'.
+              [14:04:40] INFO   Importing Service '1101'.
+              [14:04:40] INFO   Importing Service '14'.
+              [14:04:40] INFO   Importing Service '1901'.
+              [14:04:40] INFO   Importing Service '1902'.
+              [14:04:40] INFO   Importing Service '1906'.
+              [14:04:40] INFO   Importing Service '221000'.
+              [14:04:40] INFO   Importing Service '2701'.
+              [14:04:40] INFO   Importing Service '2702'.
+              [14:04:40] INFO   Importing Service '2E1000'.
+              [14:04:40] INFO   Importing Service '3E00'.
+              [14:04:40] INFO   Importing Service '8501'.
+              [14:04:40] INFO   Importing Service '8502'.
+              [14:04:40] INFO   <---- Importing Services.
+              [14:04:40] INFO   ----> Importing FaultMemory.
+              [14:04:40] INFO   Importing FaultMemory.
+              [14:04:40] WARN   Could not extract DTC format.
+              [14:04:40] INFO   AddSnapshotRecords for DTC 2.
+              [14:04:40] WARN   Could not find SnapshotRecords for DTC (0x2). .
+              [14:04:40] INFO   <---- Importing FaultMemory.
+              [14:04:40] INFO   ----> Importing FreezeFrame.
+              [14:04:40] INFO   <---- Importing FreezeFrame.
+              [14:04:40] INFO   ----> Importing DiagSettings.
+              [14:04:40] INFO   Importing DiagSettings.
+              [14:04:40] WARN   TimeBr > 100: Setting to 100.
+              [14:04:40] WARN   TimeCs > 100: Setting to 100.
+              [14:04:40] INFO   <---- Importing DiagSettings.
+              [14:04:40] INFO   ----> Importing DataCompProps.
+              [14:04:40] INFO   <---- Importing DataCompProps.
+              [14:04:40] INFO   ODX Import finished successfully.
+              [14:04:40] INFO   Shaping imported model.
+              [14:04:40] INFO   Adding shaper script to remove freeze frame 0x00.
+              [14:04:40] INFO   >>>>>>>>>>>>>>>> SHAPING preparation >>>>>>>>>>>>>>>>.
+              [14:04:40] INFO   <<<<<<<<<<<<<<<< SHAPING ready after 0.016s (16ms) <<<<<<<<<<<<<<<<.
+              [14:04:40] INFO   >>>>>>>>>>>>>>>> SHAPING started >>>>>>>>>>>>>>>>.
+              [14:04:40] INFO   >>>>>>>>>>>>>>>> ShapingStep ServiceSelection >>>>>>>>>>>>>>>>.
+              [14:04:40] INFO   <<<<<<<<<<<<<<<< ShapingStep ServiceSelection( completed in 0s (0ms) <<<<<<<<<<<<<<<<.
+              [14:04:40] INFO   >>>>>>>>>>>>>>>> ShapingStep DataPreparation >>>>>>>>>>>>>>>>.
+              [14:04:40] NOTE     - Shape Data Comp Collections.
+              [14:04:40] INFO   At Ecu .
+              [14:04:40] INFO     - Fix Unsigned Boolean.
+              [14:04:40] INFO     - Convert XInt24/XInt64 to Byte-Array.
+              [14:04:40] INFO     - Set Compu-Scale Symbols.
+              [14:04:40] INFO   <<<<<<<<<<<<<<<< ShapingStep DataPreparation( completed in 0s (0ms) <<<<<<<<<<<<<<<<.
+              [14:04:40] INFO   >>>>>>>>>>>>>>>> ShapingStep ServiceDefinition >>>>>>>>>>>>>>>>.
+              [14:04:40] INFO   Finding duplicated services... .
+              [14:04:40] INFO   Destroying duplicated services... .
+              [14:04:40] INFO   At Service 0x22 SubService 0x1000 .
+              [14:04:40] INFO     - Applying service definition shaping to protocol component [RecordDataIdentifier].
+              [14:04:40] INFO     - Service has now new definition: 0x22 0x1000 Diag_RWDI_LightOnOffCounter_Read.
+              [14:04:40] INFO     - Applying service definition shaping to protocol component [RecordDataIdentifier].
+              [14:04:40] INFO     - Service has now new definition: 0x22 0x1000 Diag_RWDI_LightOnOffCounter_Read.
+              [14:04:40] INFO   At Service 0x2e SubService 0x1000 .
+              [14:04:40] INFO     - Applying service definition shaping to protocol component [RecordDataIdentifier].
+              [14:04:40] INFO     - Service has now new definition: 0x2e 0x1000 Diag_RWDI_LightOnOffCounter_Write.
+              [14:04:40] INFO     - Applying service definition shaping to protocol component [RecordDataIdentifier].
+              [14:04:40] INFO     - Service has now new definition: 0x2e 0x1000 Diag_RWDI_LightOnOffCounter_Write.
+              [14:04:40] INFO   <<<<<<<<<<<<<<<< ShapingStep ServiceDefinition( completed in 0s (0ms) <<<<<<<<<<<<<<<<.
+              [14:04:40] INFO   >>>>>>>>>>>>>>>> ShapingStep DataDefinition >>>>>>>>>>>>>>>>.
+              [14:04:40] INFO   Service: 0x2e 0x1000 Diag_RWDI_LightOnOffCounter_Write shared data components linked to: Service: 0x22 0x1000 Diag_RWDI_LightOnOffCounter_Read !!!.
+              [14:04:40] INFO   At Service 0x19 SubService 0x1 (atomic) .
+              [14:04:40] INFO     - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'.
+              [14:04:40] INFO   At Service 0x10 SubService 0x1 (atomic) .
+              [14:04:40] INFO     - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'.
+              [14:04:40] INFO   At Service 0x10 SubService 0x1 (atomic) .
+              [14:04:40] INFO     - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'.
+              [14:04:40] INFO   At Service 0x10 SubService 0x2 (atomic) .
+              [14:04:40] INFO     - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'.
+              [14:04:40] INFO   At Service 0x10 SubService 0x2 (atomic) .
+              [14:04:40] INFO     - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'.
+              [14:04:40] INFO   At Service 0x10 SubService 0x3 (atomic) .
+              [14:04:40] INFO     - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'.
+              [14:04:40] INFO   At Service 0x10 SubService 0x3 (atomic) .
+              [14:04:40] INFO     - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'.
+              [14:04:40] INFO   At Service 0x22 SubService 0x1000 (atomic) .
+              [14:04:40] INFO     - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'.
+              [14:04:40] INFO   At Service 0x27 SubService 0x1 (atomic) .
+              [14:04:40] INFO     - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'.
+              [14:04:40] INFO   At Service 0x27 SubService 0x2 (atomic) .
+              [14:04:40] INFO     - Attribute 'FaultmemoryData' changed from 'N/A' to 'TESTFAULT'.
+              [14:04:40] NOTE     - Building Service Dids.
+              [14:04:40] NOTE     - Building Routines.
+              [14:04:40] NOTE     - Shape Routine Parameter Names.
+              [14:04:40] INFO   <<<<<<<<<<<<<<<< ShapingStep DataDefinition( completed in 0.016s (16ms) <<<<<<<<<<<<<<<<.
+              [14:04:40] INFO   >>>>>>>>>>>>>>>> ShapingStep DataIdentifier >>>>>>>>>>>>>>>>.
+              [14:04:40] INFO   <<<<<<<<<<<<<<<< ShapingStep DataIdentifier( completed in 0s (0ms) <<<<<<<<<<<<<<<<.
+              [14:04:40] INFO   >>>>>>>>>>>>>>>> ShapingStep Service >>>>>>>>>>>>>>>>.
+              [14:04:40] INFO   At Service 0x10 .
+              [14:04:40] INFO     - Qualifier changed from 'DefaultSession_Start' to 'DiagSessionControl'.
+              [14:04:40] INFO     - Service action qualifier set to 'SessionControl'.
+              [14:04:40] INFO   At Service 0x10 SubService 0x1 .
+              [14:04:40] INFO     - SubService action qualifier set to 'StartSession'.
+              [14:04:40] INFO   At Service 0x10 SubService 0x2 .
+              [14:04:40] INFO     - SubService action qualifier set to 'StartSession'.
+              [14:04:40] INFO   At Service 0x10 SubService 0x3 .
+              [14:04:40] INFO     - SubService action qualifier set to 'StartSession'.
+              [14:04:40] INFO   At Service 0x10 SubService 0x1 .
+              [14:04:40] INFO     - Qualifier changed from 'DefaultSession_Start' to 'Default'.
+              [14:04:40] INFO   At Service 0x10 SubService 0x2 .
+              [14:04:40] INFO     - Qualifier changed from 'ProgrammingSession_Start' to 'Programming'.
+              [14:04:40] INFO   At Service 0x10 SubService 0x3 .
+              [14:04:40] INFO     - Qualifier changed from 'ExtendedDiagnosticSession_Start' to 'Extended'.
+              [14:04:40] INFO   At Service 0x11 .
+              [14:04:40] INFO     - Qualifier changed from 'ECU_Reset_HardReset_Process' to 'EcuReset'.
+              [14:04:40] INFO   At Service 0x11 SubService 0x1 .
+              [14:04:40] INFO     - SubService action qualifier set to 'EcuReset'.
+              [14:04:40] INFO   At Service 0x11 SubService 0x1 .
+              [14:04:40] INFO     - Qualifier changed from 'ECU_Reset_HardReset_Process' to 'Hard'.
+              [14:04:40] INFO   At Service 0x14 .
+              [14:04:40] INFO     - Qualifier changed from 'FaultMemory_Clear' to 'ClearDiagInfo'.
+              [14:04:40] INFO   At Service 0x14 SubService .
+              [14:04:40] INFO     - SubService action qualifier set to 'Clear'.
+              [14:04:40] INFO     - Qualifier changed from 'FaultMemory_Clear' to 'ClearDiagInfo'.
+              [14:04:40] INFO   At Service 0x19 .
+              [14:04:40] INFO     - Qualifier changed from 'FaultMemory_ReadAllIdentified' to 'ReadDtcInfo'.
+              [14:04:40] INFO   At Service 0x19 SubService 0x2 .
+              [14:04:40] INFO     - SubService action qualifier set to 'ReadDtc'.
+              [14:04:40] INFO   At Service 0x19 SubService 0x1 .
+              [14:04:40] INFO     - SubService action qualifier set to 'ReadDtc'.
+              [14:04:40] INFO   At Service 0x19 SubService 0x6 .
+              [14:04:40] INFO     - SubService action qualifier set to 'ReadDtc'.
+              [14:04:40] INFO   At Service 0x19 SubService 0x1 .
+              [14:04:40] INFO     - Qualifier changed from 'FaultMemory_ReadNumber' to 'RNODTCBSM'.
+              [14:04:40] INFO   At Service 0x19 SubService 0x2 .
+              [14:04:40] INFO     - Qualifier changed from 'FaultMemory_ReadAllIdentified' to 'RDTCBSM'.
+              [14:04:40] INFO   At Service 0x19 SubService 0x6 .
+              [14:04:40] INFO     - Qualifier changed from 'FaultMemory_Read_extended' to 'RDTCEDRBDN'.
+              [14:04:40] INFO   At Service 0x22 .
+              [14:04:40] INFO     - Qualifier changed from 'Diag_RWDI_LightOnOffCounter_Read' to 'ReadDataById'.
+              [14:04:40] INFO     - Service action qualifier set to 'Read'.
+              [14:04:40] INFO   At Service 0x22 SubService 0x1000 .
+              [14:04:40] INFO     - SubService action qualifier set to 'ReadDid'.
+              [14:04:40] INFO   At Service 0x27 .
+              [14:04:40] INFO     - Qualifier changed from 'Seed_Level1_Request' to 'SecurityAccess'.
+              [14:04:40] INFO     - Service action qualifier set to 'SecurityAccess'.
+              [14:04:40] INFO   At Service 0x27 SubService 0x2 .
+              [14:04:40] INFO     - SubService action qualifier set to 'SendKey'.
+              [14:04:40] INFO   At Service 0x27 SubService 0x1 .
+              [14:04:40] INFO     - SubService action qualifier set to 'GetSeed'.
+              [14:04:40] INFO   At Service 0x2e .
+              [14:04:40] INFO     - Qualifier changed from 'Diag_RWDI_LightOnOffCounter_Write' to 'WriteDataById'.
+              [14:04:40] INFO     - Service action qualifier set to 'Write'.
+              [14:04:40] INFO   At Service 0x2e SubService 0x1000 .
+              [14:04:40] INFO     - SubService action qualifier set to 'WriteDid'.
+              [14:04:40] INFO   At Service 0x3e .
+              [14:04:40] INFO     - Qualifier changed from 'TesterPresent_Send' to 'TesterPresent'.
+              [14:04:40] INFO   At Service 0x3e SubService 0x0 .
+              [14:04:40] INFO     - SubService action qualifier set to 'Send'.
+              [14:04:40] INFO     - Qualifier changed from 'TesterPresent_Send' to 'TesterPresent'.
+              [14:04:40] INFO   At Service 0x85 .
+              [14:04:40] INFO     - Qualifier changed from 'ControlDTCSetting_On' to 'ControlDtcSetting'.
+              [14:04:40] INFO   At Service 0x85 SubService 0x1 .
+              [14:04:40] INFO     - SubService action qualifier set to 'ControlDtcSetting'.
+              [14:04:40] INFO   At Service 0x85 SubService 0x2 .
+              [14:04:40] INFO     - SubService action qualifier set to 'ControlDtcSetting'.
+              [14:04:40] INFO   At Service 0x85 SubService 0x1 .
+              [14:04:40] INFO     - Qualifier changed from 'ControlDTCSetting_On' to 'Enable'.
+              [14:04:40] INFO   At Service 0x85 SubService 0x2 .
+              [14:04:40] INFO     - Qualifier changed from 'ControlDTCSetting_Off' to 'Disable'.
+              [14:04:40] INFO   <<<<<<<<<<<<<<<< ShapingStep Service( completed in 0.015s (15ms) <<<<<<<<<<<<<<<<.
+              [14:04:40] INFO   >>>>>>>>>>>>>>>> ShapingStep StateMachine >>>>>>>>>>>>>>>>.
+              [14:04:40] INFO   At Ecu .
+              [14:04:40] INFO     - Session 'Default' does not have any P2 timings! Created default P2: 50ms.
+              [14:04:40] INFO     - Session 'Default' does not have any P2Ex timings! Created default P2Ex: 5000ms.
+              [14:04:40] INFO     - Session 'Programming' does not have any P2 timings! Created default P2: 50ms.
+              [14:04:40] INFO     - Session 'Programming' does not have any P2Ex timings! Created default P2Ex: 5000ms.
+              [14:04:40] INFO     - Session 'Extended' does not have any P2 timings! Created default P2: 50ms.
+              [14:04:40] INFO     - Session 'Extended' does not have any P2Ex timings! Created default P2Ex: 5000ms.
+              [14:04:40] NOTE     - Building Diagnostic Sessions.
+              [14:04:40] NOTE     -  + Session 'Default' created.
+              [14:04:40] NOTE     -  + Session 'Programming' created.
+              [14:04:40] NOTE     -  + Session 'Extended' created.
+              [14:04:40] NOTE     - Building Diagnostic Securities.
+              [14:04:40] NOTE     -  + Security 'Level_01' created.
+              [14:04:40] NOTE     - Building Access Conditions.
+              [14:04:40] NOTE     -  + Access Cond '|' created.
+              [14:04:40] NOTE     -  + Access Cond '02;03|' created.
+              [14:04:40] NOTE     - Building Access Conditions - finshed.
+              [14:04:40] INFO   <<<<<<<<<<<<<<<< ShapingStep StateMachine( completed in 0s (0ms) <<<<<<<<<<<<<<<<.
+              [14:04:40] INFO   >>>>>>>>>>>>>>>> ShapingStep StateMachine2 >>>>>>>>>>>>>>>>.
+              [14:04:40] INFO   <<<<<<<<<<<<<<<< ShapingStep StateMachine2( completed in 0s (0ms) <<<<<<<<<<<<<<<<.
+              [14:04:40] INFO   >>>>>>>>>>>>>>>> ShapingStep Settings >>>>>>>>>>>>>>>>.
+              [14:04:40] INFO   At Ecu 'New_ECU_1' .
+              [14:04:40] INFO     - Set 'periodic rate slow' to default '1000'.
+              [14:04:40] INFO     - Set 'periodic rate medium' to default '100'.
+              [14:04:40] INFO     - Set 'periodic rate fast' to default '20'.
+              [14:04:40] INFO     - Set 'maximum number of dynamically defined dids' to '5'.
+              [14:04:40] INFO   <<<<<<<<<<<<<<<< ShapingStep Settings( completed in 0s (0ms) <<<<<<<<<<<<<<<<.
+              [14:04:40] INFO   >>>>>>>>>>>>>>>> ShapingStep FaultMemory >>>>>>>>>>>>>>>>.
+              [14:04:40] NOTE     - Building Diagnostic Event Memories.
+              [14:04:40] INFO   At Ecu .
+              [14:04:40] INFO     -  + Event-Memory 'PrimaryMemory' created.
