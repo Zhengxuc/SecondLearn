@@ -3,11 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
   <AR-PACKAGES>
-    <AR-PACKAGE UUID="97e6e201-d3a3-4245-a5b1-ca600bf5a2f8">
+    <AR-PACKAGE>
       <SHORT-NAME>Spi</SHORT-NAME>
       <ELEMENTS>
         <ECUC-MODULE-CONFIGURATION-VALUES>
           <SHORT-NAME>Spi</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV:CfgPostBuild">
+                <SD GID="DV:postBuildVariantSupport">false</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
           <DEFINITION-REF DEST="ECUC-MODULE-DEF">/TS_T40D2M10I1R0/Spi</DEFINITION-REF>
           <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
           <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/TS_T40D2M10I1R0/Spi_Impl</MODULE-DESCRIPTION-REF>

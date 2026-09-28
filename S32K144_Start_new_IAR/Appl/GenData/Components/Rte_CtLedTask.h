@@ -43,8 +43,53 @@ extern "C"
 # include "Rte_CtLedTask_Type.h"
 # include "Rte_DataHandleType.h"
 
+# ifndef RTE_CORE
+
+#  include "Com.h"
+
+
+# endif /* !defined(RTE_CORE) */
+
 
 # ifndef RTE_CORE
+/**********************************************************************************************************************
+ * Init Values for unqueued S/R communication (primitive types only)
+ *********************************************************************************************************************/
+
+#  define Rte_InitValue_RearInterLight_Bool_signal (FALSE)
+#  define Rte_InitValue_Rear_LeftWindowPosition_u8_signal (0U)
+#  define Rte_InitValue_Rear_RightWindowPosition_u8_signal (0U)
+# endif
+
+
+# define RTE_START_SEC_CODE
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+/**********************************************************************************************************************
+ * API prototypes
+ *********************************************************************************************************************/
+FUNC(Std_ReturnType, RTE_CODE) Rte_Write_CtLedTask_RearInterLight_Bool_signal(boolean data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+# define RTE_STOP_SEC_CODE
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+
+# ifndef RTE_CORE
+
+/**********************************************************************************************************************
+ * Rte_Read_<p>_<d> (explicit S/R communication with isQueued = false)
+ *********************************************************************************************************************/
+#  define Rte_Read_Rear_LeftWindowPosition_u8_signal Rte_Read_CtLedTask_Rear_LeftWindowPosition_u8_signal
+#  define Rte_Read_CtLedTask_Rear_LeftWindowPosition_u8_signal(data) (Com_ReceiveSignal(ComConf_ComSignal_sig_RearLeftWindowPosition_omsg_Receive2_oCAN00_89d4d489_Rx, (data))) /* PRQA S 3453 */ /* MD_MSR_19.7 */
+#  define Rte_Read_Rear_RightWindowPosition_u8_signal Rte_Read_CtLedTask_Rear_RightWindowPosition_u8_signal
+#  define Rte_Read_CtLedTask_Rear_RightWindowPosition_u8_signal(data) (Com_ReceiveSignal(ComConf_ComSignal_sig_RearRightWindowPosition_omsg_Receive2_oCAN00_94575df2_Rx, (data))) /* PRQA S 3453 */ /* MD_MSR_19.7 */
+
+
+/**********************************************************************************************************************
+ * Rte_Write_<p>_<d> (explicit S/R communication with isQueued = false)
+ *********************************************************************************************************************/
+#  define Rte_Write_RearInterLight_Bool_signal Rte_Write_CtLedTask_RearInterLight_Bool_signal
+
 
 /**********************************************************************************************************************
  * Rte_Call_<p>_<o> (unmapped) for synchronous C/S communication

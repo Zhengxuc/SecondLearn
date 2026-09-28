@@ -34,7 +34,15 @@ NS_ :
 BS_:
 
 BU_: Tester RearECU MyECU
+VAL_TABLE_ RearInterLightValueTab 1 "ON" 0 "OFF" ;
 
+
+BO_ 544 msg_Receive2: 8 RearECU
+ SG_ sig_RearRightWindowPosition : 56|8@1+ (1,0) [0|255] ""  MyECU
+ SG_ sig_RearLeftWindowPosition : 0|8@1+ (1,0) [0|255] ""  MyECU
+
+BO_ 784 msg_Transmit2: 8 MyECU
+ SG_ sig_RearInterLight : 0|1@1+ (1,0) [0|1] ""  RearECU
 
 BO_ 1297 msg_MyECU_Lamp: 8 MyECU
  SG_ sig_LampCnt : 7|8@0+ (1,0) [0|255] ""  RearECU
@@ -135,6 +143,8 @@ BA_ "BusType" "CAN";
 BA_ "NmType" "NmAsr";
 BA_ "Manufacturer" "Vector";
 BA_ "NmAsrNodeIdentifier" BU_ RearECU 1;
+BA_ "GenMsgCycleTime" BO_ 544 100;
+BA_ "GenMsgCycleTime" BO_ 784 100;
 BA_ "GenMsgCycleTime" BO_ 1297 100;
 BA_ "GenMsgSendType" BO_ 1297 0;
 BA_ "GenMsgCycleTime" BO_ 1025 100;
@@ -158,6 +168,12 @@ BA_ "GenMsgCycleTime" BO_ 512 100;
 BA_ "GenMsgSendType" BO_ 512 0;
 BA_ "GenMsgCycleTime" BO_ 528 100;
 BA_ "GenMsgSendType" BO_ 528 0;
+BA_ "GenSigCycleTime" SG_ 544 sig_RearRightWindowPosition 100;
+BA_ "GenSigCycleTimeActive" SG_ 544 sig_RearRightWindowPosition 100;
+BA_ "GenSigCycleTime" SG_ 544 sig_RearLeftWindowPosition 100;
+BA_ "GenSigCycleTimeActive" SG_ 544 sig_RearLeftWindowPosition 100;
+BA_ "GenSigCycleTime" SG_ 784 sig_RearInterLight 100;
+BA_ "GenSigCycleTimeActive" SG_ 784 sig_RearInterLight 100;
 BA_ "GenSigCycleTimeActive" SG_ 1025 sig_nm_RearECU 100;
 BA_ "GenSigCycleTime" SG_ 1025 sig_nm_RearECU 100;
 BA_ "GenSigSendType" SG_ 1025 sig_nm_RearECU 0;
@@ -185,4 +201,5 @@ BA_ "GenSigSendType" SG_ 528 sig_State_RearLeftDoor 0;
 BA_ "GenSigCycleTimeActive" SG_ 528 sig_State_RearInteriorLight 100;
 BA_ "GenSigCycleTime" SG_ 528 sig_State_RearInteriorLight 100;
 BA_ "GenSigSendType" SG_ 528 sig_State_RearInteriorLight 0;
+VAL_ 784 sig_RearInterLight 1 "ON" 0 "OFF" ;
 

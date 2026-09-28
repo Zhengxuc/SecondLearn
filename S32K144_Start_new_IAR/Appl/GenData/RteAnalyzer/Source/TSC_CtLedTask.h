@@ -20,6 +20,13 @@
  *********************************************************************************************************************/
 
 
+/** Sender receiver - explicit read services */
+Std_ReturnType TSC_CtLedTask_Rte_Read_Rear_LeftWindowPosition_u8_signal(uint8 *data);
+Std_ReturnType TSC_CtLedTask_Rte_Read_Rear_RightWindowPosition_u8_signal(uint8 *data);
+
+/** Sender receiver - explicit write services */
+Std_ReturnType TSC_CtLedTask_Rte_Write_RearInterLight_Bool_signal(boolean data);
+
 /** Service interfaces */
 Std_ReturnType TSC_CtLedTask_Rte_Call_UR_CN_CAN00_06ecbb07_GetCurrentComMode(ComM_ModeType *ComMode);
 Std_ReturnType TSC_CtLedTask_Rte_Call_UR_CN_CAN00_06ecbb07_GetMaxComMode(ComM_ModeType *ComMode);

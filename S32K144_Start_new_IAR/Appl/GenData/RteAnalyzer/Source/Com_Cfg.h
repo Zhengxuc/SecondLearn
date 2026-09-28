@@ -23,5 +23,11 @@
 # define _COM_CFG_H_
 
 
+# define ComConf_ComSignal_sig_RearInterLight_omsg_Transmit2_oCAN00_6c233e33_Tx 0
+
+# define ComConf_ComSignal_sig_RearLeftWindowPosition_omsg_Receive2_oCAN00_89d4d489_Rx 1
+
+# define ComConf_ComSignal_sig_RearRightWindowPosition_omsg_Receive2_oCAN00_94575df2_Rx 2
+
 
 #endif /* _COM_CFG_H_ */

@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>3712779338</Checksum>
+        <Checksum>1927303621</Checksum>
     </DebugChecksum>
     <Disassembly>
         <InstrCount>0</InstrCount>
@@ -34,21 +34,6 @@
     <CallStack>
         <ShowArgs>0</ShowArgs>
     </CallStack>
-    <InterruptLog>
-        <LogEnabled>0</LogEnabled>
-        <GraphEnabled>0</GraphEnabled>
-        <ShowTimeLog>1</ShowTimeLog>
-        <SumEnabled>0</SumEnabled>
-        <ShowTimeSum>1</ShowTimeSum>
-        <SumSortOrder>0</SumSortOrder>
-    </InterruptLog>
-    <DataLog>
-        <LogEnabled>0</LogEnabled>
-        <GraphEnabled>0</GraphEnabled>
-        <ShowTimeLog>1</ShowTimeLog>
-        <SumEnabled>0</SumEnabled>
-        <ShowTimeSum>1</ShowTimeSum>
-    </DataLog>
     <Interrupts>
         <Enabled>1</Enabled>
     </Interrupts>
@@ -68,12 +53,6 @@
         <CStepIntDis>_ 0</CStepIntDis>
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </JLinkDriver>
-    <DriverProfiling>
-        <Enabled>0</Enabled>
-        <Mode>1</Mode>
-        <Graph>0</Graph>
-        <Symbiont>0</Symbiont>
-    </DriverProfiling>
     <PE_STARTUP>
         <jtag_numbits_pre_ir>_ "0"</jtag_numbits_pre_ir>
         <jtag_tap_num>_ "0"</jtag_tap_num>
@@ -97,7 +76,7 @@
         <FREQ_OPENSDA>_ "0"</FREQ_OPENSDA>
         <RESET_DELAY>_ "0"</RESET_DELAY>
         <PORT>_ "181"</PORT>
-        <PORT_NAME_STRING>_ "A1FB3E66"</PORT_NAME_STRING>
+        <PORT_NAME_STRING>_ ""</PORT_NAME_STRING>
         <interface_selection>_ "7"</interface_selection>
         <TraceLink_MaxBufferSize>_ "1"</TraceLink_MaxBufferSize>
         <SHOWDIALOG>_ "1"</SHOWDIALOG>
@@ -109,9 +88,9 @@
     </PE_STORED_DEVICES>
     <PE_PEDEBUG>
         <ERASE_PROGRAM_WITHOUT_ASKING>_ "1"</ERASE_PROGRAM_WITHOUT_ASKING>
-        <CURRENTMODE>_ "4"</CURRENTMODE>
         <CURRENTDEVICE>_ "NXP_S32K1xx_S32K144F512M15"</CURRENTDEVICE>
         <CURRENTCORE>_ "1"</CURRENTCORE>
+        <CURRENTMODE>_ "4"</CURRENTMODE>
     </PE_PEDEBUG>
     <PE_DEVICE>
         <CHIPMODE>_ "NXP_S32K1xx_S32K144F512M15"</CHIPMODE>
@@ -135,10 +114,82 @@
         <MEMORYSTART1>_ "0"</MEMORYSTART1>
         <MEMORYSTART2>_ "0"</MEMORYSTART2>
         <MEMORYSTART3>_ "0"</MEMORYSTART3>
-        <DEFAULT_SOURCE_PATH>_ "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\pemicro\P&amp;E"</DEFAULT_SOURCE_PATH>
+        <DEFAULT_SOURCE_PATH>_ "D:\Software\IAR8.40.2\arm\bin\pemicro\P&amp;E"</DEFAULT_SOURCE_PATH>
         <DEFAULT_MACRO_PATH>_ "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\pemicro\P&amp;E"</DEFAULT_MACRO_PATH>
         <DEFAULT_LOGFILE_PATH>_ "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\pemicro\P&amp;E"</DEFAULT_LOGFILE_PATH>
     </PE_SETTINGS>
+    <SWOTraceHWSettings>
+        <OverrideDefaultClocks>0</OverrideDefaultClocks>
+        <CpuClock>112000000</CpuClock>
+        <ClockAutoDetect>0</ClockAutoDetect>
+        <ClockWanted>2000000</ClockWanted>
+        <JtagSpeed>2000000</JtagSpeed>
+        <Prescaler>56</Prescaler>
+        <TimeStampPrescIndex>0</TimeStampPrescIndex>
+        <TimeStampPrescData>0</TimeStampPrescData>
+        <PcSampCYCTAP>1</PcSampCYCTAP>
+        <PcSampPOSTCNT>15</PcSampPOSTCNT>
+        <PcSampIndex>0</PcSampIndex>
+        <DataLogMode>0</DataLogMode>
+        <ITMportsEnable>0</ITMportsEnable>
+        <ITMportsTermIO>0</ITMportsTermIO>
+        <ITMportsLogFile>0</ITMportsLogFile>
+        <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
+    </SWOTraceHWSettings>
+    <Trace2>
+        <Enabled>0</Enabled>
+        <ShowSource>0</ShowSource>
+    </Trace2>
+    <SWOTraceWindow>
+        <PcSampling>0</PcSampling>
+        <InterruptLogs>0</InterruptLogs>
+        <ForcedTimeStamps>0</ForcedTimeStamps>
+        <EventCPI>0</EventCPI>
+        <EventEXC>0</EventEXC>
+        <EventFOLD>0</EventFOLD>
+        <EventLSU>0</EventLSU>
+        <EventSLEEP>0</EventSLEEP>
+    </SWOTraceWindow>
+    <PowerLog>
+        <Title_0>I0</Title_0>
+        <Symbol_0>0 4 0</Symbol_0>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+        <LiveEnabled>0</LiveEnabled>
+        <LiveFile>PowerLogLive.log</LiveFile>
+    </PowerLog>
+    <DataLog>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+        <SumEnabled>0</SumEnabled>
+        <ShowTimeSum>1</ShowTimeSum>
+    </DataLog>
+    <InterruptLog>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+        <SumEnabled>0</SumEnabled>
+        <ShowTimeSum>1</ShowTimeSum>
+        <SumSortOrder>0</SumSortOrder>
+    </InterruptLog>
+    <EventLog>
+        <Title_0>Ch3</Title_0>
+        <Symbol_0>0 0 1</Symbol_0>
+        <Title_1>Ch2</Title_1>
+        <Symbol_1>0 0 1</Symbol_1>
+        <Title_2>Ch1</Title_2>
+        <Symbol_2>0 0 1</Symbol_2>
+        <Title_3>Ch0</Title_3>
+        <Symbol_3>0 0 1</Symbol_3>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+        <SumEnabled>0</SumEnabled>
+        <ShowTimeSum>1</ShowTimeSum>
+        <SumSortOrder>0</SumSortOrder>
+    </EventLog>
     <DisassembleMode>
         <mode>0</mode>
     </DisassembleMode>
@@ -158,13 +209,25 @@
         <A0>_ "C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\BrsAsrMain.c" ""</A0>
         <A1>_ "C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Os_Hal_EntryAsm_Lcfg.asm" ""</A1>
         <A2>_ "C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\EcuM\EcuM.c" ""</A2>
-        <Count>3</Count>
+        <A3>_ "C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\Os\Os_Trap.c" ""</A3>
+        <Count>4</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
+    <DriverProfiling>
+        <Enabled>0</Enabled>
+        <Mode>1</Mode>
+        <Graph>0</Graph>
+        <Symbiont>0</Symbiont>
+    </DriverProfiling>
     <CallStackLog>
         <Enabled>0</Enabled>
     </CallStackLog>
     <CallStackStripe>
         <ShowTiming>1</ShowTiming>
     </CallStackStripe>
+    <PowerProbe>
+        <Frequency>10000</Frequency>
+        <Probe0>I0</Probe0>
+        <ProbeSetup0>2 1 1 2 0 0</ProbeSetup0>
+    </PowerProbe>
 </settings>

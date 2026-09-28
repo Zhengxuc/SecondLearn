@@ -81,6 +81,7 @@ static void CtLedTask_TestDefines(void);
  *
  * Primitive Types:
  * ================
+ * boolean: Boolean (standard type)
  * uint8: Integer in interval [0...255] (standard type)
  *
  * Enumeration Types:
@@ -240,6 +241,21 @@ FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void) /* PRQA S 0850 */ /* MD_
  * Executed if at least one of the following trigger conditions occurred:
  *   - triggered on TimingEvent every 300ms
  *
+ **********************************************************************************************************************
+ *
+ * Input Interfaces:
+ * =================
+ *   Explicit S/R API:
+ *   -----------------
+ *   Std_ReturnType Rte_Read_Rear_LeftWindowPosition_u8_signal(uint8 *data)
+ *   Std_ReturnType Rte_Read_Rear_RightWindowPosition_u8_signal(uint8 *data)
+ *
+ * Output Interfaces:
+ * ==================
+ *   Explicit S/R API:
+ *   -----------------
+ *   Std_ReturnType Rte_Write_RearInterLight_Bool_signal(boolean data)
+ *
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
@@ -257,6 +273,64 @@ FUNC(void, CtLedTask_CODE) LedRunnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: LedRunnable
  *********************************************************************************************************************/
+
+  Std_ReturnType fct_status;
+  boolean fct_error = 0;
+
+  uint8 Read_Rear_LeftWindowPosition_u8_signal;
+  uint8 Read_Rear_RightWindowPosition_u8_signal;
+
+  /*************************************************
+  * Direct Function Accesses
+  *************************************************/
+
+  fct_status = TSC_CtLedTask_Rte_Read_Rear_LeftWindowPosition_u8_signal(&Read_Rear_LeftWindowPosition_u8_signal);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_NEVER_RECEIVED:
+      fct_error = 1;
+      break;
+    case RTE_E_INVALID:
+      fct_error = 1;
+      break;
+    case RTE_E_MAX_AGE_EXCEEDED:
+      fct_error = 1;
+      break;
+  }
+
+  fct_status = TSC_CtLedTask_Rte_Read_Rear_RightWindowPosition_u8_signal(&Read_Rear_RightWindowPosition_u8_signal);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_NEVER_RECEIVED:
+      fct_error = 1;
+      break;
+    case RTE_E_INVALID:
+      fct_error = 1;
+      break;
+    case RTE_E_MAX_AGE_EXCEEDED:
+      fct_error = 1;
+      break;
+  }
+
+  fct_status = TSC_CtLedTask_Rte_Write_RearInterLight_Bool_signal(Rte_InitValue_RearInterLight_Bool_signal);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+  }
 
 
 /**********************************************************************************************************************

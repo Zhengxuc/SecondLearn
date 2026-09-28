@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-1.xsd">
   <AR-PACKAGES>
-    <AR-PACKAGE UUID="a3111944-82a0-403c-a898-651334429953">
+    <AR-PACKAGE>
       <SHORT-NAME>Base</SHORT-NAME>
       <ELEMENTS>
         <ECUC-MODULE-CONFIGURATION-VALUES>
           <SHORT-NAME>Base</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV:CfgPostBuild">
+                <SD GID="DV:postBuildVariantSupport">false</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
           <DEFINITION-REF DEST="ECUC-MODULE-DEF">/TS_T40D2M10I1R0/Base</DEFINITION-REF>
           <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
           <CONTAINERS>

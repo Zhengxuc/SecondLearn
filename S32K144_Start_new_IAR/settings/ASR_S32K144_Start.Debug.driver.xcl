@@ -6,11 +6,25 @@
 
 "-p" 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\CONFIG\debugger\NXP\S32K144.ddf" 
+"D:\Software\IAR8.40.2\arm\CONFIG\debugger\NXP\S32K144.ddf" 
 
 "--semihosting" 
 
 "--device=S32K144" 
+
+"--drv_communication=USB0" 
+
+"--drv_interface_speed=auto" 
+
+"--jlink_initial_speed=1000" 
+
+"--jlink_reset_strategy=0,0" 
+
+"--drv_interface=SWD" 
+
+"--drv_catch_exceptions=0x000" 
+
+"--drv_swo_clock_setup=112000000,0,2000000" 
 
 
 

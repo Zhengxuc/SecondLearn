@@ -113,10 +113,69 @@
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
                                   <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_State_RearRightDoor_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_Receive2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_Transmit2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_Receive2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_Transmit2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_RearInterLight_omsg_Transmit2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_RearLeftWindowPosition_omsg_Receive2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_RearRightWindowPosition_omsg_Receive2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
                               </FIBEX-ELEMENTS>
                               <MAPPINGS>
                                 <SYSTEM-MAPPING UUID="826abef8-a50a-4f45-90ed-8f68d7f2f552">
                                   <SHORT-NAME>MAPPINGS</SHORT-NAME>
+                                  <DATA-MAPPINGS>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpLedTask</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtLedTask/RearInterLight</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/RearInterLight/Bool_signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/sig_RearInterLight</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpLedTask</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtLedTask/Rear_LeftWindowPosition</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Rear_LeftWindowPosition/u8_signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/sig_RearLeftWindowPosition</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpLedTask</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtLedTask/Rear_RightWindowPosition</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Rear_RightWindowPosition/u8_signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/sig_RearRightWindowPosition</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpLedTask</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtLedTask/RearInterLight</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/RearInterLight/Bool_signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/sig_RearInterLight</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                  </DATA-MAPPINGS>
                                 </SYSTEM-MAPPING>
                               </MAPPINGS>
                               <ROOT-SOFTWARE-COMPOSITIONS>
@@ -258,7 +317,6 @@
                                     <SD GID="00965f10-bcb0-42ec-9d93-a14d19fa8bcc">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
                                     <SD GID="6cd128d2-d8e8-4bf6-b225-9ee91090c0af">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Cdd_SBC_UJA1169</SD>
                                     <SD GID="3ea1e045-f9c3-479c-89f6-52cf0f001a07">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</SD>
-                                    <SD GID="6756878a-6f05-4789-9552-fc18dafa6e41">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM_UR_CN_CAN00_06ecbb07_CpLedTask_UR_CN_CAN00_06ecbb07</SD>
                                     <SD GID="65d07982-b450-4fc8-97f7-fcf23ca69a48">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpLedTask</SD>
                                     <SD GID="4de37115-cc10-4e65-8c4b-261879a39d77">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</SD>
                                     <SD GID="9eaf53f7-3616-4d1b-b896-a10e18024eef">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemMaster_0</SD>
@@ -275,6 +333,9 @@
                                     <SD GID="98B791C3-A1D1-45FE-807C-A75E9A5DA7D2">/ComponentTypes/CtLedTask</SD>
                                     <SD GID="7192826B-73BB-4D99-A258-14E751560EB3">/ComponentTypes/CtLedTask/CtLedTask_InternalBehavior/CtLedTask_InitEvent</SD>
                                     <SD GID="2904E0F1-1813-44D5-9A41-57A5808DD482">/ComponentTypes/CtLedTask/CtLedTask_InternalBehavior/TMT_LedRunnable</SD>
+                                    <SD GID="727A63E2-AD51-4F52-AB69-F30C7CF7C932">/ComponentTypes/CtLedTask/RearInterLight</SD>
+                                    <SD GID="895CAC07-AF41-4190-B038-BBA3EDFD0DEB">/ComponentTypes/CtLedTask/Rear_LeftWindowPosition</SD>
+                                    <SD GID="DCA4B01F-F19F-4B5C-923A-7922169E6377">/ComponentTypes/CtLedTask/Rear_RightWindowPosition</SD>
                                     <SD GID="2A37BFB3-125E-4FFF-9381-FF394F05B2E3">/ComponentTypes/CtLedTask/UR_CN_CAN00_06ecbb07</SD>
                                     <SD GID="2EB878D9-8957-4976-A7ED-B631951289EF">/ComponentTypes/CtLedTask_Implementation</SD>
                                     <SD GID="FA2722A8-DD7A-493E-ACE9-AA8189A6F547">/DataType/Constraint/DC_sig_LampCnt</SD>
@@ -698,6 +759,9 @@
                                     <SD GID="4aa6ce32-73aa-4583-b712-41915cb75b92">/MICROSAR/PduR_ib_bswmd/BswModuleDescriptions/PduR/PduRBehavior/PDUR_EXCLUSIVE_AREA_0</SD>
                                     <SD GID="e6883765-27bb-40c8-b767-748b9c7ee1a1">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte/RteBehavior</SD>
                                     <SD GID="b98f5eaa-a922-4fe9-8f50-29a6af23f979">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte_ComSendSignalProxyPeriodic</SD>
+                                    <SD GID="BD81079B-1F0E-418E-BA4A-DF7A39805CF7">/PortInterfaces/RearInterLight/Bool_signal</SD>
+                                    <SD GID="75F93838-685F-430D-ADC8-7DE40CD5010B">/PortInterfaces/Rear_LeftWindowPosition/u8_signal</SD>
+                                    <SD GID="28C57716-8AE7-49E4-8AF7-870C8D029EAB">/PortInterfaces/Rear_RightWindowPosition/u8_signal</SD>
                                     <SD GID="{AF35D1D4-4362-4055-B014-780FA6F9E75B}">/Predefined_DEV/CompuMethods/Dem_UdsStatusByteType</SD>
                                     <SD GID="F2570AA0-D6E5-4217-80F7-5F60B8778133">/Predefined_DEV/CompuMethods/NvM_RequestResultType</SD>
                                     <SD GID="007B24D3-5C46-4986-B3CA-31D71FEDD510">/Predefined_DEV/CompuMethods/NvM_ServiceIdType</SD>
@@ -744,7 +808,6 @@
                                     <SD GID="29D8C45D-AD65-4ADB-A8C0-9051D3BA8EB3">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_DS_Defs/E_NOT_OK</SD>
                                     <SD GID="B0DF499C-5446-40C9-BA84-69FE6BBA9AFA">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_Defs/E_NOT_OK</SD>
                                     <SD GID="6C11D3FD-1F97-4F18-9F28-AEBD06095420">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_SRBS/E_NOT_OK</SD>
-                                    <SD GID="97e6e201-d3a3-4245-a5b1-ca600bf5a2f8">/Spi</SD>
                                     <SD GID="ed46821a-7b45-4226-88ba-d9ceb818a9ec">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior</SD>
                                     <SD GID="7f5ff0e9-1830-41ff-bf2d-e0bb0470aae8">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_00</SD>
                                     <SD GID="d7e9b4a3-8f67-4b94-bfb9-c575aadbca7f">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_01</SD>
@@ -841,8 +904,6 @@
                                     <SD GID="95de89ce-e659-4403-8cf3-1ffa787fa6e7">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_28</SD>
                                     <SD GID="20fcc88c-53d5-468f-bf68-5223336041a9">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_29</SD>
                                     <SD GID="eabcf2a8-a246-4fda-a849-5c5892b74c50">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_30</SD>
-                                    <SD GID="c0f925d1-7268-4373-9831-a79fcdb6fd05">/TS_T40D2M10I1R0/Spi_ib_bswmd</SD>
-                                    <SD GID="d280bab3-0634-4766-bf9c-25e54cdd77db">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions</SD>
                                     <SD GID="7b8f0f6f-8ff7-4fce-ac21-53115e2de32d">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior</SD>
                                     <SD GID="673feebe-a5f8-4465-9eef-312d2c8bf96d">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_00</SD>
                                     <SD GID="4480ff95-fcde-40d2-811b-48f4fc7e592c">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_01</SD>

@@ -127,8 +127,8 @@
         <OwnFolderForEachSplitter>false</OwnFolderForEachSplitter>
     </EcucSplitter>
     <Display LastVersion="5.18.37 SP1">
-        <FileSet Id="" CS="e1707a37">
-            <File Order="0" EcuInstance="MyECU" Hash="653b68a91da683311cb88bfa4f142c36" FileCategory="legacy_communication_data">$(DpaProjectFolder)\Inputfiles\CAN.dbc</File>
+        <FileSet Id="" CS="cd89e37a">
+            <File Order="0" EcuInstance="MyECU" Hash="d32a45a5d5d61cb705e3100b4c11dfc8" FileCategory="legacy_communication_data">$(DpaProjectFolder)\Inputfiles\CAN.dbc</File>
             <Diagnostic>
                 <Description Hash="e0ae908913d93caf691f8c3440b9d7bb">$(DpaProjectFolder)\Inputfiles\ForTraining.cdd</Description>
                 <Ecu>New_ECU_1</Ecu>

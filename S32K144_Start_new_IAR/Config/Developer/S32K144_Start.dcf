@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DCF ARSCHEMA="431_DEV">
 	<Version>1.0</Version>
 	<PROFILESETTINGS>ProfileSettings.xml</PROFILESETTINGS>
@@ -18,11 +18,11 @@
 		<DVG>ECUProjects\S32K144_Start.dvg</DVG>
 	</FILEREF>
 	<FILEREF>
-		<ARXML>ComponentTypes/CtLedTask.arxml</ARXML>
-		<DVG>ComponentTypes/CtLedTask.dvg</DVG>
+		<ARXML>ComponentTypes\CtLedTask.arxml</ARXML>
+		<DVG>ComponentTypes\CtLedTask.dvg</DVG>
 	</FILEREF>
 	<FILEREF>
-		<ARXML>ComponentTypes/CddSbc.arxml</ARXML>
-		<DVG>ComponentTypes/CddSbc.dvg</DVG>
+		<ARXML>ComponentTypes\CddSbc.arxml</ARXML>
+		<DVG>ComponentTypes\CddSbc.dvg</DVG>
 	</FILEREF>
 </DCF>

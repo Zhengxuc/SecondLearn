@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: CanIf_Lcfg.c
- *   Generation Time: 2021-04-11 12:16:16
+ *   Generation Time: 2026-09-28 15:33:02
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -190,8 +190,8 @@ CONST(CanIf_CtrlModeIndicationFctType, CANIF_CONST) CanIf_CtrlModeIndicationFctP
 /*lint -restore */
 CONST(CanIf_MailBoxConfigType, CANIF_CONST) CanIf_MailBoxConfig[2] = {
     /* Index    CtrlStatesIdx                                                                      PduIdFirst                           PduIdLast                           TxBufferCfgIdx                                                                              TxBufferHandlingType                     MailBoxType                    Referable Keys */
-  { /*     0 */           0uL  /* /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959 */,         0u  /* Unused, TxPduId 0 */,        0u  /* Unused, TxPduId 2 */,                                    0uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2 */, CANIF_TXBUFFER_HANDLINGTYPE_PRIOBYCANID, CANIF_TxBasicCANMailbox },  /* [/ActiveEcuC/Can/CanConfigSet/CN_CAN00_5e566ad9_Tx] */
-  { /*     1 */           0uL  /* /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959 */,         0u  /* RxPduId */          ,        2u  /* RxPduId  */         , CANIF_NO_TXBUFFERCFGIDXOFMAILBOXCONFIG  /* unusedIndex1 */                                , CANIF_TXBUFFER_HANDLINGTYPE_NONE       , CANIF_RxBasicCANMailbox }   /* [/ActiveEcuC/Can/CanConfigSet/CN_CAN00_770af0b0_Rx] */
+  { /*     0 */           0uL  /* /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959 */,         0u  /* Unused, TxPduId 0 */,        0u  /* Unused, TxPduId 3 */,                                    0uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2 */, CANIF_TXBUFFER_HANDLINGTYPE_PRIOBYCANID, CANIF_TxBasicCANMailbox },  /* [/ActiveEcuC/Can/CanConfigSet/CN_CAN00_5e566ad9_Tx] */
+  { /*     1 */           0uL  /* /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959 */,         0u  /* RxPduId */          ,        3u  /* RxPduId  */         , CANIF_NO_TXBUFFERCFGIDXOFMAILBOXCONFIG  /* unusedIndex1 */                                , CANIF_TXBUFFER_HANDLINGTYPE_NONE       , CANIF_RxBasicCANMailbox }   /* [/ActiveEcuC/Can/CanConfigSet/CN_CAN00_770af0b0_Rx] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -265,11 +265,12 @@ CONST(CanIf_RxIndicationFctListType, CANIF_CONST) CanIf_RxIndicationFctList[3] =
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-CONST(CanIf_RxPduConfigType, CANIF_CONST) CanIf_RxPduConfig[3] = {
+CONST(CanIf_RxPduConfigType, CANIF_CONST) CanIf_RxPduConfig[4] = {
     /* Index    RxPduCanId                                                                      RxPduMask                                                      UpperPduId                                  Dlc  RxIndicationFctListIdx                                      Comment                                                                       Referable Keys */
   { /*     0 */    0x0614u  /* msg_diag_RequestGlobal_Tp_oCAN00_5c56b065_Rx, 2.0- or FD-PDU */,   0x47FFu  /* msg_diag_RequestGlobal_Tp_oCAN00_5c56b065_Rx */, CanTpConf_CanTpRxNPdu_CanTpRxNPdu_55155daa,  8u,                    1uL  /* CanTp_RxIndication */     },  /* [PDU: msg_diag_RequestGlobal_Tp_oCAN00_5c56b065_Rx, CanId: 0x614] */  /* [CanIfConf_CanIfRxPduCfg_msg_diag_RequestGlobal_Tp_oCAN00_5c56b065_Rx] */
   { /*     1 */    0x0610u  /* msg_diag_Request_MyECU_Tp_oCAN00_2c5ccddc_Rx, 2.0- or FD-PDU */,   0x07FFu  /* msg_diag_Request_MyECU_Tp_oCAN00_2c5ccddc_Rx */, CanTpConf_CanTpRxNPdu_CanTpRxNPdu_7fe257d9,  8u,                    1uL  /* CanTp_RxIndication */     },  /* [PDU: msg_diag_Request_MyECU_Tp_oCAN00_2c5ccddc_Rx, CanId: 0x610] */  /* [CanIfConf_CanIfRxPduCfg_msg_diag_Request_MyECU_Tp_oCAN00_2c5ccddc_Rx] */
-  { /*     2 */    0x0210u  /* msg_Receive_oCAN00_76f25845_Rx, 2.0- or FD-PDU */              ,   0x07FFu  /* msg_Receive_oCAN00_76f25845_Rx */              , PduRConf_PduRSrcPdu_PduRSrcPdu_16740ed0   ,  1u,                    2uL  /* PduR_CanIfRxIndication */ }   /* [PDU: msg_Receive_oCAN00_76f25845_Rx, CanId: 0x210]               */  /* [CanIfConf_CanIfRxPduCfg_msg_Receive_oCAN00_76f25845_Rx] */
+  { /*     2 */    0x0220u  /* msg_Receive2_oCAN00_d580e241_Rx, 2.0- or FD-PDU */             ,   0x07FFu  /* msg_Receive2_oCAN00_d580e241_Rx */             , PduRConf_PduRSrcPdu_PduRSrcPdu_7b8aca19   ,  8u,                    2uL  /* PduR_CanIfRxIndication */ },  /* [PDU: msg_Receive2_oCAN00_d580e241_Rx, CanId: 0x220]              */  /* [CanIfConf_CanIfRxPduCfg_msg_Receive2_oCAN00_d580e241_Rx] */
+  { /*     3 */    0x0210u  /* msg_Receive_oCAN00_76f25845_Rx, 2.0- or FD-PDU */              ,   0x07FFu  /* msg_Receive_oCAN00_76f25845_Rx */              , PduRConf_PduRSrcPdu_PduRSrcPdu_16740ed0   ,  1u,                    2uL  /* PduR_CanIfRxIndication */ }   /* [PDU: msg_Receive_oCAN00_76f25845_Rx, CanId: 0x210]               */  /* [CanIfConf_CanIfRxPduCfg_msg_Receive_oCAN00_76f25845_Rx] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -295,7 +296,7 @@ CONST(CanIf_RxPduConfigType, CANIF_CONST) CanIf_RxPduConfig[3] = {
 /*lint -restore */
 CONST(CanIf_TxBufferPrioByCanIdByteQueueConfigType, CANIF_CONST) CanIf_TxBufferPrioByCanIdByteQueueConfig[1] = {
     /* Index    TxBufferPrioByCanIdBaseIdx                                                      TxBufferPrioByCanIdByteQueueMappedTxPdusEndIdx                                                      TxBufferPrioByCanIdByteQueueMappedTxPdusLength                                                      TxBufferPrioByCanIdByteQueueMappedTxPdusStartIdx                                                            Referable Keys */
-  { /*     0 */                        0uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2 */,                                            3uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2 */,                                            3uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2 */,                                              0uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2 */ }   /* [/ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2] */
+  { /*     0 */                        0uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2 */,                                            4uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2 */,                                            4uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2 */,                                              0uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2 */ }   /* [/ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -316,11 +317,12 @@ CONST(CanIf_TxBufferPrioByCanIdByteQueueConfigType, CANIF_CONST) CanIf_TxBufferP
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-CONST(CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType, CANIF_CONST) CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdus[3] = {
+CONST(CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdusType, CANIF_CONST) CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdus[4] = {
     /* Index    TxPduConfigIdx                                                                                            Referable Keys */
   { /*     0 */            0uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/msg_diag_Response_MyECU_Tp_oCAN00_59e48f7a_Tx */ },  /* [/ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2] */
   { /*     1 */            1uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/msg_MyECU_Lamp_oCAN00_41befc25_Tx */             },  /* [/ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2] */
-  { /*     2 */            2uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_29db34a4_Tx */               }   /* [/ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2] */
+  { /*     2 */            2uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit2_oCAN00_ca9f319c_Tx */              },  /* [/ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2] */
+  { /*     3 */            3uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_29db34a4_Tx */               }   /* [/ActiveEcuC/CanIf/CanIfInitCfg/CHNL_0fb271d2] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -368,11 +370,12 @@ CONST(CanIf_TxConfirmationFctType, CANIF_CONST) CanIf_TxConfirmationFctList[3] =
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-CONST(CanIf_TxPduConfigType, CANIF_CONST) CanIf_TxPduConfig[3] = {
+CONST(CanIf_TxPduConfigType, CANIF_CONST) CanIf_TxPduConfig[4] = {
     /* Index    CanId    UpperLayerTxPduId                                       CtrlStatesIdx                                                                      Dlc  MailBoxConfigIdx                                                           TxConfirmationFctListIdx                                        Comment                                                          Referable Keys */
   { /*     0 */ 0x0612u, CanTpConf_CanTpTxFcNPdu_CanTpTxFcNPdu_7fe257d9        ,           0uL  /* /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959 */,  8u,              0uL  /* /ActiveEcuC/Can/CanConfigSet/CN_CAN00_5e566ad9_Tx */,                      1uL  /* CanTp_TxConfirmation */     },  /* [PDU: msg_diag_Response_MyECU_Tp_oCAN00_59e48f7a_Tx] */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_diag_Response_MyECU_Tp_oCAN00_59e48f7a_Tx] */
   { /*     1 */ 0x0511u, PduRConf_PduRDestPdu_msg_MyECU_Lamp_oCAN00_26f3473b_Tx,           0uL  /* /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959 */,  8u,              0uL  /* /ActiveEcuC/Can/CanConfigSet/CN_CAN00_5e566ad9_Tx */,                      2uL  /* PduR_CanIfTxConfirmation */ },  /* [PDU: msg_MyECU_Lamp_oCAN00_41befc25_Tx]             */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_MyECU_Lamp_oCAN00_41befc25_Tx] */
-  { /*     2 */ 0x0200u, PduRConf_PduRDestPdu_msg_Transmit_oCAN00_9631a86b_Tx  ,           0uL  /* /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959 */,  1u,              0uL  /* /ActiveEcuC/Can/CanConfigSet/CN_CAN00_5e566ad9_Tx */,                      2uL  /* PduR_CanIfTxConfirmation */ }   /* [PDU: msg_Transmit_oCAN00_29db34a4_Tx]               */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_29db34a4_Tx] */
+  { /*     2 */ 0x0310u, PduRConf_PduRDestPdu_msg_Transmit2_oCAN00_fe1f443c_Tx ,           0uL  /* /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959 */,  8u,              0uL  /* /ActiveEcuC/Can/CanConfigSet/CN_CAN00_5e566ad9_Tx */,                      2uL  /* PduR_CanIfTxConfirmation */ },  /* [PDU: msg_Transmit2_oCAN00_ca9f319c_Tx]              */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit2_oCAN00_ca9f319c_Tx] */
+  { /*     3 */ 0x0200u, PduRConf_PduRDestPdu_msg_Transmit_oCAN00_9631a86b_Tx  ,           0uL  /* /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959 */,  1u,              0uL  /* /ActiveEcuC/Can/CanConfigSet/CN_CAN00_5e566ad9_Tx */,                      2uL  /* PduR_CanIfTxConfirmation */ }   /* [PDU: msg_Transmit_oCAN00_29db34a4_Tx]               */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_29db34a4_Tx] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -393,11 +396,12 @@ CONST(CanIf_TxPduConfigType, CANIF_CONST) CanIf_TxPduConfig[3] = {
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_19.1 */
 /*lint -restore */
-CONST(CanIf_TxPduQueueIndexType, CANIF_CONST) CanIf_TxPduQueueIndex[3] = {
+CONST(CanIf_TxPduQueueIndexType, CANIF_CONST) CanIf_TxPduQueueIndex[4] = {
     /* Index    TxQueueIdx                                                                                            Comment                                                                                    Referable Keys */
   { /*     0 */        0uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/msg_diag_Response_MyECU_Tp_oCAN00_59e48f7a_Tx */ },  /* [msg_diag_Response_MyECU_Tp_oCAN00_59e48f7a_Tx, BasicCAN TxPdu with Tx-buffer] */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_diag_Response_MyECU_Tp_oCAN00_59e48f7a_Tx, /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959] */
   { /*     1 */        1uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/msg_MyECU_Lamp_oCAN00_41befc25_Tx */             },  /* [msg_MyECU_Lamp_oCAN00_41befc25_Tx, BasicCAN TxPdu with Tx-buffer]             */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_MyECU_Lamp_oCAN00_41befc25_Tx, /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959] */
-  { /*     2 */        2uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_29db34a4_Tx */               }   /* [msg_Transmit_oCAN00_29db34a4_Tx, BasicCAN TxPdu with Tx-buffer]               */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_29db34a4_Tx, /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959] */
+  { /*     2 */        2uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit2_oCAN00_ca9f319c_Tx */              },  /* [msg_Transmit2_oCAN00_ca9f319c_Tx, BasicCAN TxPdu with Tx-buffer]              */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit2_oCAN00_ca9f319c_Tx, /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959] */
+  { /*     3 */        3uL  /* /ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_29db34a4_Tx */               }   /* [msg_Transmit_oCAN00_29db34a4_Tx, BasicCAN TxPdu with Tx-buffer]               */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_29db34a4_Tx, /ActiveEcuC/CanIf/CanIfCtrlDrvCfg_7d254554/CT_CAN00_9df8a959] */
 };
 #define CANIF_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
@@ -462,7 +466,8 @@ VAR(CanIf_TxQueueUType, CANIF_VAR_NOINIT) CanIf_TxQueue;  /* PRQA S 0759 */  /* 
   /* Index        Referable Keys  */
   /*     0 */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_diag_Response_MyECU_Tp_oCAN00_59e48f7a_Tx] */
   /*     1 */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_MyECU_Lamp_oCAN00_41befc25_Tx] */
-  /*     2 */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_29db34a4_Tx] */
+  /*     2 */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit2_oCAN00_ca9f319c_Tx] */
+  /*     3 */  /* [/ActiveEcuC/CanIf/CanIfInitCfg/msg_Transmit_oCAN00_29db34a4_Tx] */
 
 #define CANIF_STOP_SEC_VAR_NOINIT_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
