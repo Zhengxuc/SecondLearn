@@ -20,6 +20,8 @@ rule browsedata
 
 
 #Build steps
+build Adc_Cfg.pbi : index Adc_Cfg.xcl
+build Adc_PBcfg.pbi : index Adc_PBcfg.xcl
 build Dio_Cfg.pbi : index Dio_Cfg.xcl
 build Mcu_Cfg.pbi : index Mcu_Cfg.xcl
 build Mcu_PBcfg.pbi : index Mcu_PBcfg.xcl
@@ -157,6 +159,12 @@ build PduR_Sm.pbi : index PduR_Sm.xcl
 build vstdlib.pbi : index vstdlib.xcl
 build startup.pbi : index startup.xcl
 build system_S32K148.pbi : index system_S32K148.xcl
+build Adc.pbi : index Adc.xcl
+build Adc_Adc12bsarv2.pbi : index Adc_Adc12bsarv2.xcl
+build Adc_Adc12bsarv2_Irq.pbi : index Adc_Adc12bsarv2_Irq.xcl
+build Adc_Ipw.pbi : index Adc_Ipw.xcl
+build Adc_Pdb.pbi : index Adc_Pdb.xcl
+build Adc_Pdb_Irq.pbi : index Adc_Pdb_Irq.xcl
 build Dio.pbi : index Dio.xcl
 build Dio_Gpio.pbi : index Dio_Gpio.xcl
 build Mcu.pbi : index Mcu.xcl
@@ -178,19 +186,19 @@ build Port_Port_Ci.pbi : index Port_Port_Ci.xcl
 build Spi.pbi : index Spi.xcl
 build Spi_LPspi.pbi : index Spi_LPspi.xcl
 build Spi_LPspi_Irq.pbi : index Spi_LPspi_Irq.xcl
-build ASR_S32K144_Start_part0.pbi : link Dio_Cfg.pbi Mcu_Cfg.pbi Mcu_PBcfg.pbi Port_Cfg.pbi Port_PBcfg.pbi Spi_Cfg.pbi Spi_PBcfg.pbi BswM_Lcfg.pbi BswM_PBcfg.pbi Can_Lcfg.pbi Can_PBcfg.pbi CanIf_Lcfg.pbi CanIf_PBcfg.pbi
-build ASR_S32K144_Start_part1.pbi : link CanSM_Lcfg.pbi CanTp_Lcfg.pbi CanTp_PBcfg.pbi Com_Lcfg.pbi Com_PBcfg.pbi ComM_Lcfg.pbi ComM_PBcfg.pbi Dcm_Lcfg.pbi Dcm_PBcfg.pbi Dem_Lcfg.pbi Dem_PBcfg.pbi Det_Cfg.pbi EcuM_Cfg.pbi
-build ASR_S32K144_Start_part2.pbi : link EcuM_Init_Cfg.pbi EcuM_Init_PBcfg.pbi EcuM_PBcfg.pbi Os_AccessCheck_Lcfg.pbi Os_Alarm_Lcfg.pbi Os_Application_Lcfg.pbi Os_Barrier_Lcfg.pbi Os_Core_Lcfg.pbi Os_Counter_Lcfg.pbi Os_Error_Lcfg.pbi Os_Hal_Context_Lcfg.pbi Os_Hal_Core_Lcfg.pbi Os_Hal_Entry_Lcfg.pbi
-build ASR_S32K144_Start_part3.pbi : link Os_Hal_Interrupt_Lcfg.pbi Os_Hal_Kernel_Lcfg.pbi Os_Hal_MemoryProtection_Lcfg.pbi Os_Hal_Timer_Lcfg.pbi Os_Hook_Lcfg.pbi Os_Ioc_Lcfg.pbi Os_Isr_Lcfg.pbi Os_MemoryProtection_Lcfg.pbi Os_Peripheral_Lcfg.pbi Os_Resource_Lcfg.pbi Os_Scheduler_Lcfg.pbi Os_ScheduleTable_Lcfg.pbi Os_ServiceFunction_Lcfg.pbi
-build ASR_S32K144_Start_part4.pbi : link Os_Spinlock_Lcfg.pbi Os_Stack_Lcfg.pbi Os_Task_Lcfg.pbi Os_TimingProtection_Lcfg.pbi Os_Trace_Lcfg.pbi Os_XSignal_Lcfg.pbi PduR_Lcfg.pbi PduR_PBcfg.pbi Rte.pbi BswM_Callout_Stubs.pbi CddSbc.pbi CtLedTask.pbi Dcm_Callout_Stubs.pbi
-build ASR_S32K144_Start_part5.pbi : link EcuM_Callout_Stubs.pbi Os_Callout_Stubs.pbi OsAppTask.pbi BrsAsrMain.pbi BswM.pbi Can.pbi Can_Irq.pbi CanIf.pbi CanSM.pbi CanTp.pbi Com.pbi ComM.pbi Dcm.pbi
-build ASR_S32K144_Start_part6.pbi : link Dem.pbi Det.pbi EcuM.pbi Nm.pbi Os_AccessCheck.pbi Os_Alarm.pbi Os_Application.pbi Os_Barrier.pbi Os_Bit.pbi Os_BitArray.pbi Os_Core.pbi Os_Counter.pbi Os_Deque.pbi
-build ASR_S32K144_Start_part7.pbi : link Os_Error.pbi Os_Event.pbi Os_Fifo.pbi Os_Fifo08.pbi Os_Fifo16.pbi Os_Fifo32.pbi Os_FifoRef.pbi Os_Hal_Compiler_Arm.pbi Os_Hal_Compiler_Iar.pbi Os_Hal_Context_v7m.pbi Os_Hal_Core.pbi Os_Hal_Entry.pbi Os_Hook.pbi
-build ASR_S32K144_Start_part8.pbi : link Os_Interrupt.pbi Os_Ioc.pbi Os_Isr.pbi Os_Job.pbi Os_Lock.pbi Os_MemoryProtection.pbi Os_Peripheral.pbi Os_PriorityQueue.pbi Os_Resource.pbi Os_Scheduler.pbi Os_ScheduleTable.pbi Os_ServiceFunction.pbi Os_Spinlock.pbi
-build ASR_S32K144_Start_part9.pbi : link Os_Stack.pbi Os_Task.pbi Os_Thread.pbi Os_Timer.pbi Os_TimingProtection.pbi Os_Trace.pbi Os_Trap.pbi Os_XSignal.pbi PduR.pbi PduR_Bm.pbi PduR_Fm.pbi PduR_Lock.pbi PduR_McQ.pbi
-build ASR_S32K144_Start_part10.pbi : link PduR_RmIf.pbi PduR_RmTp.pbi PduR_RmTp_TxInst.pbi PduR_Sm.pbi vstdlib.pbi startup.pbi system_S32K148.pbi Dio.pbi Dio_Gpio.pbi Mcu.pbi Mcu_CMU.pbi Mcu_CMU_Irq.pbi Mcu_CortexM4.pbi
-build ASR_S32K144_Start_part11.pbi : link Mcu_IPW.pbi Mcu_IPW_Irq.pbi Mcu_PCC.pbi Mcu_PMC.pbi Mcu_PMC_Irq.pbi Mcu_RCM.pbi Mcu_SCG.pbi Mcu_SIM.pbi Mcu_SMC.pbi Port.pbi Port_Ipw.pbi Port_Port_Ci.pbi Spi.pbi
-build ASR_S32K144_Start_part12.pbi : link Spi_LPspi.pbi Spi_LPspi_Irq.pbi
+build ASR_S32K144_Start_part0.pbi : link Adc_Cfg.pbi Adc_PBcfg.pbi Dio_Cfg.pbi Mcu_Cfg.pbi Mcu_PBcfg.pbi Port_Cfg.pbi Port_PBcfg.pbi Spi_Cfg.pbi Spi_PBcfg.pbi BswM_Lcfg.pbi BswM_PBcfg.pbi Can_Lcfg.pbi Can_PBcfg.pbi
+build ASR_S32K144_Start_part1.pbi : link CanIf_Lcfg.pbi CanIf_PBcfg.pbi CanSM_Lcfg.pbi CanTp_Lcfg.pbi CanTp_PBcfg.pbi Com_Lcfg.pbi Com_PBcfg.pbi ComM_Lcfg.pbi ComM_PBcfg.pbi Dcm_Lcfg.pbi Dcm_PBcfg.pbi Dem_Lcfg.pbi Dem_PBcfg.pbi
+build ASR_S32K144_Start_part2.pbi : link Det_Cfg.pbi EcuM_Cfg.pbi EcuM_Init_Cfg.pbi EcuM_Init_PBcfg.pbi EcuM_PBcfg.pbi Os_AccessCheck_Lcfg.pbi Os_Alarm_Lcfg.pbi Os_Application_Lcfg.pbi Os_Barrier_Lcfg.pbi Os_Core_Lcfg.pbi Os_Counter_Lcfg.pbi Os_Error_Lcfg.pbi Os_Hal_Context_Lcfg.pbi
+build ASR_S32K144_Start_part3.pbi : link Os_Hal_Core_Lcfg.pbi Os_Hal_Entry_Lcfg.pbi Os_Hal_Interrupt_Lcfg.pbi Os_Hal_Kernel_Lcfg.pbi Os_Hal_MemoryProtection_Lcfg.pbi Os_Hal_Timer_Lcfg.pbi Os_Hook_Lcfg.pbi Os_Ioc_Lcfg.pbi Os_Isr_Lcfg.pbi Os_MemoryProtection_Lcfg.pbi Os_Peripheral_Lcfg.pbi Os_Resource_Lcfg.pbi Os_Scheduler_Lcfg.pbi
+build ASR_S32K144_Start_part4.pbi : link Os_ScheduleTable_Lcfg.pbi Os_ServiceFunction_Lcfg.pbi Os_Spinlock_Lcfg.pbi Os_Stack_Lcfg.pbi Os_Task_Lcfg.pbi Os_TimingProtection_Lcfg.pbi Os_Trace_Lcfg.pbi Os_XSignal_Lcfg.pbi PduR_Lcfg.pbi PduR_PBcfg.pbi Rte.pbi BswM_Callout_Stubs.pbi CddSbc.pbi
+build ASR_S32K144_Start_part5.pbi : link CtLedTask.pbi Dcm_Callout_Stubs.pbi EcuM_Callout_Stubs.pbi Os_Callout_Stubs.pbi OsAppTask.pbi BrsAsrMain.pbi BswM.pbi Can.pbi Can_Irq.pbi CanIf.pbi CanSM.pbi CanTp.pbi Com.pbi
+build ASR_S32K144_Start_part6.pbi : link ComM.pbi Dcm.pbi Dem.pbi Det.pbi EcuM.pbi Nm.pbi Os_AccessCheck.pbi Os_Alarm.pbi Os_Application.pbi Os_Barrier.pbi Os_Bit.pbi Os_BitArray.pbi Os_Core.pbi
+build ASR_S32K144_Start_part7.pbi : link Os_Counter.pbi Os_Deque.pbi Os_Error.pbi Os_Event.pbi Os_Fifo.pbi Os_Fifo08.pbi Os_Fifo16.pbi Os_Fifo32.pbi Os_FifoRef.pbi Os_Hal_Compiler_Arm.pbi Os_Hal_Compiler_Iar.pbi Os_Hal_Context_v7m.pbi Os_Hal_Core.pbi
+build ASR_S32K144_Start_part8.pbi : link Os_Hal_Entry.pbi Os_Hook.pbi Os_Interrupt.pbi Os_Ioc.pbi Os_Isr.pbi Os_Job.pbi Os_Lock.pbi Os_MemoryProtection.pbi Os_Peripheral.pbi Os_PriorityQueue.pbi Os_Resource.pbi Os_Scheduler.pbi Os_ScheduleTable.pbi
+build ASR_S32K144_Start_part9.pbi : link Os_ServiceFunction.pbi Os_Spinlock.pbi Os_Stack.pbi Os_Task.pbi Os_Thread.pbi Os_Timer.pbi Os_TimingProtection.pbi Os_Trace.pbi Os_Trap.pbi Os_XSignal.pbi PduR.pbi PduR_Bm.pbi PduR_Fm.pbi
+build ASR_S32K144_Start_part10.pbi : link PduR_Lock.pbi PduR_McQ.pbi PduR_RmIf.pbi PduR_RmTp.pbi PduR_RmTp_TxInst.pbi PduR_Sm.pbi vstdlib.pbi startup.pbi system_S32K148.pbi Adc.pbi Adc_Adc12bsarv2.pbi Adc_Adc12bsarv2_Irq.pbi Adc_Ipw.pbi
+build ASR_S32K144_Start_part11.pbi : link Adc_Pdb.pbi Adc_Pdb_Irq.pbi Dio.pbi Dio_Gpio.pbi Mcu.pbi Mcu_CMU.pbi Mcu_CMU_Irq.pbi Mcu_CortexM4.pbi Mcu_IPW.pbi Mcu_IPW_Irq.pbi Mcu_PCC.pbi Mcu_PMC.pbi Mcu_PMC_Irq.pbi
+build ASR_S32K144_Start_part12.pbi : link Mcu_RCM.pbi Mcu_SCG.pbi Mcu_SIM.pbi Mcu_SMC.pbi Port.pbi Port_Ipw.pbi Port_Port_Ci.pbi Spi.pbi Spi_LPspi.pbi Spi_LPspi_Irq.pbi
 build ASR_S32K144_Start.pbd : link ASR_S32K144_Start_part0.pbi ASR_S32K144_Start_part1.pbi ASR_S32K144_Start_part2.pbi ASR_S32K144_Start_part3.pbi ASR_S32K144_Start_part4.pbi ASR_S32K144_Start_part5.pbi ASR_S32K144_Start_part6.pbi ASR_S32K144_Start_part7.pbi ASR_S32K144_Start_part8.pbi ASR_S32K144_Start_part9.pbi ASR_S32K144_Start_part10.pbi ASR_S32K144_Start_part11.pbi ASR_S32K144_Start_part12.pbi
 build ASR_S32K144_Start.pbw : browsedata ASR_S32K144_Start.pbd
 

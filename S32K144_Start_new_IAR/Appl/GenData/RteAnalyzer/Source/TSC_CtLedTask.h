@@ -26,6 +26,7 @@ Std_ReturnType TSC_CtLedTask_Rte_Read_Rear_RightWindowPosition_u8_signal(uint8 *
 
 /** Sender receiver - explicit write services */
 Std_ReturnType TSC_CtLedTask_Rte_Write_RearInterLight_Bool_signal(boolean data);
+Std_ReturnType TSC_CtLedTask_Rte_Write_Test_Signal_u16_Siganl(uint16 data);
 
 /** Service interfaces */
 Std_ReturnType TSC_CtLedTask_Rte_Call_UR_CN_CAN00_06ecbb07_GetCurrentComMode(ComM_ModeType *ComMode);

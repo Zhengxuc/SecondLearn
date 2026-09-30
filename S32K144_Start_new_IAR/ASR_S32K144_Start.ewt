@@ -2378,6 +2378,12 @@
             <group>
                 <name>src</name>
                 <file>
+                    <name>$PROJ_DIR$\Appl\GenData\src\Adc_Cfg.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Appl\GenData\src\Adc_PBcfg.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\Appl\GenData\src\Dio_Cfg.c</name>
                 </file>
                 <file>
@@ -3003,6 +3009,27 @@
     </group>
     <group>
         <name>MCAL</name>
+        <group>
+            <name>ADC</name>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Adc_TS_T40D2M10I1R0\src\Adc.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2_Irq.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Adc_TS_T40D2M10I1R0\src\Adc_Ipw.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Adc_TS_T40D2M10I1R0\src\Adc_Pdb.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Adc_TS_T40D2M10I1R0\src\Adc_Pdb_Irq.c</name>
+            </file>
+        </group>
         <group>
             <name>BASE</name>
         </group>

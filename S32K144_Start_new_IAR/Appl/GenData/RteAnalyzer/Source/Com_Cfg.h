@@ -29,5 +29,7 @@
 
 # define ComConf_ComSignal_sig_RearRightWindowPosition_omsg_Receive2_oCAN00_94575df2_Rx 2
 
+# define ComConf_ComSignal_sig_TestSignal_omsg_Transmit2_oCAN00_4459a590_Tx 3
+
 
 #endif /* _COM_CFG_H_ */

@@ -89,6 +89,11 @@ Std_ReturnType TSC_CtLedTask_Rte_Write_RearInterLight_Bool_signal(boolean data)
   return Rte_Write_RearInterLight_Bool_signal(data);
 }
 
+Std_ReturnType TSC_CtLedTask_Rte_Write_Test_Signal_u16_Siganl(uint16 data)
+{
+  return Rte_Write_Test_Signal_u16_Siganl(data);
+}
+
 
 
 

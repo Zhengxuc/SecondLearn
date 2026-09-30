@@ -40,6 +40,7 @@
 #include "Rte_Det.h"
 #include "Rte_EcuM.h"
 #include "Rte_Os_OsCore0_swc.h"
+#include "SchM_Adc.h"
 #include "SchM_BswM.h"
 #include "SchM_Can.h"
 #include "SchM_CanIf.h"
@@ -262,6 +263,15 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Write_CtLedTask_RearInterLight_Bool_signal(bo
   Std_ReturnType ret = RTE_E_OK;
 
   ret |= Com_SendSignal(ComConf_ComSignal_sig_RearInterLight_omsg_Transmit2_oCAN00_6c233e33_Tx, (&data)); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+  return ret;
+} /* PRQA S 6010, 6030, 6050 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL */
+
+FUNC(Std_ReturnType, RTE_CODE) Rte_Write_CtLedTask_Test_Signal_u16_Siganl(uint16 data) /* PRQA S 0850, 1505 */ /* MD_MSR_19.8, MD_MSR_8.10 */
+{
+  Std_ReturnType ret = RTE_E_OK;
+
+  ret |= Com_SendSignal(ComConf_ComSignal_sig_TestSignal_omsg_Transmit2_oCAN00_4459a590_Tx, (&data)); /* PRQA S 0850 */ /* MD_MSR_19.8 */
 
   return ret;
 } /* PRQA S 6010, 6030, 6050 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL */

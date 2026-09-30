@@ -82,6 +82,7 @@ static void CtLedTask_TestDefines(void);
  * Primitive Types:
  * ================
  * boolean: Boolean (standard type)
+ * uint16: Integer in interval [0...65535] (standard type)
  * uint8: Integer in interval [0...255] (standard type)
  *
  * Enumeration Types:
@@ -255,6 +256,7 @@ FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void) /* PRQA S 0850 */ /* MD_
  *   Explicit S/R API:
  *   -----------------
  *   Std_ReturnType Rte_Write_RearInterLight_Bool_signal(boolean data)
+ *   Std_ReturnType Rte_Write_Test_Signal_u16_Siganl(uint16 data)
  *
  *********************************************************************************************************************/
 /**********************************************************************************************************************
@@ -325,6 +327,14 @@ FUNC(void, CtLedTask_CODE) LedRunnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
   }
 
   fct_status = TSC_CtLedTask_Rte_Write_RearInterLight_Bool_signal(Rte_InitValue_RearInterLight_Bool_signal);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+  }
+
+  fct_status = TSC_CtLedTask_Rte_Write_Test_Signal_u16_Siganl(Rte_InitValue_Test_Signal_u16_Siganl);
   switch (fct_status)
   {
     case RTE_E_OK:

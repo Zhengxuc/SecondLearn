@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Com_Cfg.h
- *   Generation Time: 2026-09-29 10:28:17
+ *   Generation Time: 2026-09-30 17:36:01
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -1145,7 +1145,7 @@
 #define COM_EXISTS_TRIGGERED_ON_CHANGE_WITHOUT_REPETITION_TRANSFERPROPERTYOFTXSIGGRPINFO STD_OFF
 #define COM_EXISTS_UINT8_APPLTYPEOFTXSIGINFO                          STD_ON
 #define COM_EXISTS_SINT8_APPLTYPEOFTXSIGINFO                          STD_ON
-#define COM_EXISTS_UINT16_APPLTYPEOFTXSIGINFO                         STD_OFF
+#define COM_EXISTS_UINT16_APPLTYPEOFTXSIGINFO                         STD_ON
 #define COM_EXISTS_SINT16_APPLTYPEOFTXSIGINFO                         STD_OFF
 #define COM_EXISTS_UINT32_APPLTYPEOFTXSIGINFO                         STD_OFF
 #define COM_EXISTS_SINT32_APPLTYPEOFTXSIGINFO                         STD_OFF
@@ -1158,7 +1158,7 @@
 #define COM_EXISTS_FLOAT64_APPLTYPEOFTXSIGINFO                        STD_OFF
 #define COM_EXISTS_NBIT_BUSACCOFTXSIGINFO                             STD_ON
 #define COM_EXISTS_BYTE_BUSACCOFTXSIGINFO                             STD_ON
-#define COM_EXISTS_NBYTE_BUSACCOFTXSIGINFO                            STD_OFF
+#define COM_EXISTS_NBYTE_BUSACCOFTXSIGINFO                            STD_ON
 #define COM_EXISTS_NBYTE_SW_BUSACCOFTXSIGINFO                         STD_OFF
 #define COM_EXISTS_NBITNBYTE_BUSACCOFTXSIGINFO                        STD_OFF
 #define COM_EXISTS_NBITNBYTE_SW_BUSACCOFTXSIGINFO                     STD_OFF
@@ -1183,8 +1183,10 @@
 #define COM_TRIGGERED_TRANSFERPROPERTYOFTXSIGGRPINFO                  0x01u
 #define COM_UINT8_APPLTYPEOFTXSIGINFO                                 0x00u
 #define COM_SINT8_APPLTYPEOFTXSIGINFO                                 0x01u
+#define COM_UINT16_APPLTYPEOFTXSIGINFO                                0x02u
 #define COM_NBIT_BUSACCOFTXSIGINFO                                    0x00u
 #define COM_BYTE_BUSACCOFTXSIGINFO                                    0x01u
+#define COM_NBYTE_BUSACCOFTXSIGINFO                                   0x02u
 /** 
   \}
 */ 
@@ -1583,6 +1585,7 @@
 #define ComConf_ComSignal_sig_LampCnt_omsg_MyECU_Lamp_oCAN00_f37e68ea_Tx 2u
 #define ComConf_ComSignal_sig_RearInterLight_omsg_Transmit2_oCAN00_6c233e33_Tx 3u
 #define ComConf_ComSignal_sig_RearInteriorLight_omsg_Transmit_oCAN00_49a633c1_Tx 4u
+#define ComConf_ComSignal_sig_TestSignal_omsg_Transmit2_oCAN00_4459a590_Tx 5u
 /**\} */
 
 
@@ -1682,7 +1685,7 @@
 #define Com_GetSizeOfTxSigGrpInfoIndOfPCConfig()                      1u  /**< the number of accomplishable value elements in Com_TxSigGrpInfoInd */
 #define Com_GetSizeOfTxSigGrpInfoOfPCConfig()                         1u  /**< the number of accomplishable value elements in Com_TxSigGrpInfo */
 #define Com_GetSizeOfTxSigGrpMaskOfPCConfig()                         4u  /**< the number of accomplishable value elements in Com_TxSigGrpMask */
-#define Com_GetSizeOfTxSigInfoOfPCConfig()                            5u  /**< the number of accomplishable value elements in Com_TxSigInfo */
+#define Com_GetSizeOfTxSigInfoOfPCConfig()                            6u  /**< the number of accomplishable value elements in Com_TxSigInfo */
 #define Com_GetTransmitRequestOfPCConfig()                            Com_TransmitRequest  /**< the pointer to Com_TransmitRequest */
 #define Com_GetTxBufferOfPCConfig()                                   Com_TxBuffer  /**< the pointer to Com_TxBuffer */
 #define Com_GetTxCyclicProcessingISRLockCounterOfPCConfig()           (&(Com_TxCyclicProcessingISRLockCounter))  /**< the pointer to Com_TxCyclicProcessingISRLockCounter */
@@ -1794,7 +1797,7 @@
 #define Com_GetBitPositionOfTxSigInfo(Index)                          (Com_GetTxSigInfoOfPCConfig()[(Index)].BitPositionOfTxSigInfo)
 #define Com_GetByteLengthOfTxSigInfo(Index)                           (Com_GetTxSigInfoOfPCConfig()[(Index)].ByteLengthOfTxSigInfo)
 #define Com_GetStartByteInPduPositionOfTxSigInfo(Index)               (Com_GetTxSigInfoOfPCConfig()[(Index)].StartByteInPduPositionOfTxSigInfo)
-#define Com_GetTxBufferLengthOfTxSigInfo(Index)                       (Com_GetTxSigInfoOfPCConfig()[(Index)].TxBufferLengthOfTxSigInfo)
+#define Com_GetTxBufferEndIdxOfTxSigInfo(Index)                       (Com_GetTxSigInfoOfPCConfig()[(Index)].TxBufferEndIdxOfTxSigInfo)
 #define Com_GetTxBufferStartIdxOfTxSigInfo(Index)                     (Com_GetTxSigInfoOfPCConfig()[(Index)].TxBufferStartIdxOfTxSigInfo)
 #define Com_GetTxPduInfoIdxOfTxSigInfo(Index)                         (Com_GetTxSigInfoOfPCConfig()[(Index)].TxPduInfoIdxOfTxSigInfo)
 #define Com_GetTxSigGrpInfoIdxOfTxSigInfo(Index)                      (Com_GetTxSigInfoOfPCConfig()[(Index)].TxSigGrpInfoIdxOfTxSigInfo)
@@ -1895,7 +1898,7 @@
 #define Com_GetTxSigGrpInfoInd(Index)                                 ((Com_TxSigGrpInfoIndType)((Index)))  /**< the indexes of the 1:1 sorted relation pointing to Com_TxSigGrpInfo */
 #define Com_GetBusAccOfTxSigInfo(Index)                               Com_GetByteLengthOfTxSigInfo(Index)  /**< BUS access algorithm for signal or group signal packing / un-packing. */
 #define Com_GetBytePositionOfTxSigInfo(Index)                         Com_GetStartByteInPduPositionOfTxSigInfo(Index)  /**< Little endian byte position of the signal or group signal within the I-PDU. */
-#define Com_GetTxBufferEndIdxOfTxSigInfo(Index)                       ((Com_TxBufferEndIdxOfTxSigInfoType)((Com_GetTxBufferStartIdxOfTxSigInfo(Index) + 1u)))  /**< the end index of the 0:n relation pointing to Com_TxBuffer */
+#define Com_GetTxBufferLengthOfTxSigInfo(Index)                       ((Com_TxBufferLengthOfTxSigInfoType)((Com_GetTxBufferEndIdxOfTxSigInfo(Index) - Com_GetTxBufferStartIdxOfTxSigInfo(Index))))  /**< the number of relations pointing to Com_TxBuffer */
 #define Com_IsTxBufferUsedOfTxSigInfo(Index)                          (((boolean)(Com_GetTxBufferLengthOfTxSigInfo(Index) != 0u)) != FALSE)  /**< TRUE, if the 0:n relation has 1 relation pointing to Com_TxBuffer */
 #define Com_IsTxSigGrpInfoUsedOfTxSigInfo(Index)                      (((boolean)(Com_GetTxSigGrpInfoIdxOfTxSigInfo(Index) != COM_NO_TXSIGGRPINFOIDXOFTXSIGINFO)) != FALSE)  /**< TRUE, if the 0:1 relation has minimum 1 relation pointing to Com_TxSigGrpInfo */
 /** 
@@ -2990,7 +2993,7 @@ typedef struct sCom_TxSigInfoType
   Com_BitPositionOfTxSigInfoType BitPositionOfTxSigInfo;  /**< Little endian bit position of the signal or group signal within the I-PDU. */
   Com_ByteLengthOfTxSigInfoType ByteLengthOfTxSigInfo;  /**< Byte length of the signal or group signal. */
   Com_StartByteInPduPositionOfTxSigInfoType StartByteInPduPositionOfTxSigInfo;  /**< Start Byte position of the signal or group signal within the I-PDU. */
-  Com_TxBufferLengthOfTxSigInfoType TxBufferLengthOfTxSigInfo;  /**< the number of relations pointing to Com_TxBuffer */
+  Com_TxBufferEndIdxOfTxSigInfoType TxBufferEndIdxOfTxSigInfo;  /**< the end index of the 0:n relation pointing to Com_TxBuffer */
   Com_TxBufferStartIdxOfTxSigInfoType TxBufferStartIdxOfTxSigInfo;  /**< the start index of the 0:n relation pointing to Com_TxBuffer */
   Com_TxPduInfoIdxOfTxSigInfoType TxPduInfoIdxOfTxSigInfo;  /**< the index of the 1:1 relation pointing to Com_TxPduInfo */
   Com_TxSigGrpInfoIdxOfTxSigInfoType TxSigGrpInfoIdxOfTxSigInfo;  /**< the index of the 0:1 relation pointing to Com_TxSigGrpInfo */
@@ -3493,7 +3496,7 @@ extern CONST(Com_TxSigGrpMaskType, COM_CONST) Com_TxSigGrpMask[4];
   BitPosition               Little endian bit position of the signal or group signal within the I-PDU.
   ByteLength                Byte length of the signal or group signal.
   StartByteInPduPosition    Start Byte position of the signal or group signal within the I-PDU.
-  TxBufferLength            the number of relations pointing to Com_TxBuffer
+  TxBufferEndIdx            the end index of the 0:n relation pointing to Com_TxBuffer
   TxBufferStartIdx          the start index of the 0:n relation pointing to Com_TxBuffer
   TxPduInfoIdx              the index of the 1:1 relation pointing to Com_TxPduInfo
   TxSigGrpInfoIdx           the index of the 0:1 relation pointing to Com_TxSigGrpInfo
@@ -3502,7 +3505,7 @@ extern CONST(Com_TxSigGrpMaskType, COM_CONST) Com_TxSigGrpMask[4];
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */
 /*lint -restore */
-extern CONST(Com_TxSigInfoType, COM_CONST) Com_TxSigInfo[5];
+extern CONST(Com_TxSigInfoType, COM_CONST) Com_TxSigInfo[6];
 #define COM_STOP_SEC_CONST_UNSPECIFIED
 /*lint -save -esym(961, 19.1) */
 #include "MemMap.h"  /* PRQA S 5087 */  /* MD_MSR_MemMap */

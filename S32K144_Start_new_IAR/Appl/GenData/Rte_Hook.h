@@ -55,6 +55,7 @@
  *  Rte_ComHook_sig_RearInterLight_omsg_Transmit2_oCAN00_6c233e33_Tx_SigTx
  *  Rte_ComHook_sig_RearLeftWindowPosition_omsg_Receive2_oCAN00_89d4d489_Rx_SigRx
  *  Rte_ComHook_sig_RearRightWindowPosition_omsg_Receive2_oCAN00_94575df2_Rx_SigRx
+ *  Rte_ComHook_sig_TestSignal_omsg_Transmit2_oCAN00_4459a590_Tx_SigTx
  *  Rte_ReadHook_BswM_Request_ESH_PostRunRequest_0_requestedMode_Return
  *  Rte_ReadHook_BswM_Request_ESH_PostRunRequest_0_requestedMode_Start
  *  Rte_ReadHook_BswM_Request_ESH_PostRunRequest_1_requestedMode_Return
@@ -223,6 +224,70 @@
  *  Rte_Task_WaitEventRet
  *  Rte_WriteHook_CtLedTask_RearInterLight_Bool_signal_Return
  *  Rte_WriteHook_CtLedTask_RearInterLight_Bool_signal_Start
+ *  Rte_WriteHook_CtLedTask_Test_Signal_u16_Siganl_Return
+ *  Rte_WriteHook_CtLedTask_Test_Signal_u16_Siganl_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_00_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_00_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_01_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_01_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_02_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_02_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_03_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_03_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_04_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_04_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_05_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_05_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_06_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_06_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_07_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_07_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_08_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_08_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_09_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_09_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_10_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_10_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_11_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_11_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_12_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_12_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_13_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_13_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_14_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_14_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_15_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_15_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_16_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_16_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_17_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_17_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_18_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_18_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_19_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_19_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_20_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_20_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_21_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_21_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_22_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_22_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_23_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_23_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_24_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_24_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_25_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_25_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_26_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_26_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_27_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_27_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_28_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_28_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_29_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_29_Start
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_30_Return
+ *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_30_Start
  *  SchM_EnterHook_BswM_BSWM_EXCLUSIVE_AREA_0_Return
  *  SchM_EnterHook_BswM_BSWM_EXCLUSIVE_AREA_0_Start
  *  SchM_EnterHook_CanIf_CANIF_EXCLUSIVE_AREA_0_Return
@@ -549,6 +614,68 @@
  *  SchM_EnterHook_Spi_SPI_EXCLUSIVE_AREA_29_Start
  *  SchM_EnterHook_Spi_SPI_EXCLUSIVE_AREA_30_Return
  *  SchM_EnterHook_Spi_SPI_EXCLUSIVE_AREA_30_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_00_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_00_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_01_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_01_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_02_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_02_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_03_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_03_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_04_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_04_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_05_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_05_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_06_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_06_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_07_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_07_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_08_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_08_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_09_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_09_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_10_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_10_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_11_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_11_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_12_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_12_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_13_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_13_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_14_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_14_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_15_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_15_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_16_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_16_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_17_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_17_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_18_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_18_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_19_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_19_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_20_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_20_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_21_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_21_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_22_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_22_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_23_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_23_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_24_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_24_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_25_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_25_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_26_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_26_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_27_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_27_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_28_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_28_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_29_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_29_Start
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_30_Return
+ *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_30_Start
  *  SchM_ExitHook_BswM_BSWM_EXCLUSIVE_AREA_0_Return
  *  SchM_ExitHook_BswM_BSWM_EXCLUSIVE_AREA_0_Start
  *  SchM_ExitHook_CanIf_CANIF_EXCLUSIVE_AREA_0_Return

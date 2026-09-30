@@ -59,6 +59,7 @@ extern "C"
 #  define Rte_InitValue_RearInterLight_Bool_signal (FALSE)
 #  define Rte_InitValue_Rear_LeftWindowPosition_u8_signal (0U)
 #  define Rte_InitValue_Rear_RightWindowPosition_u8_signal (0U)
+#  define Rte_InitValue_Test_Signal_u16_Siganl (0U)
 # endif
 
 
@@ -69,6 +70,7 @@ extern "C"
  * API prototypes
  *********************************************************************************************************************/
 FUNC(Std_ReturnType, RTE_CODE) Rte_Write_CtLedTask_RearInterLight_Bool_signal(boolean data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+FUNC(Std_ReturnType, RTE_CODE) Rte_Write_CtLedTask_Test_Signal_u16_Siganl(uint16 data); /* PRQA S 0850 */ /* MD_MSR_19.8 */
 
 # define RTE_STOP_SEC_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
@@ -89,6 +91,7 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Write_CtLedTask_RearInterLight_Bool_signal(bo
  * Rte_Write_<p>_<d> (explicit S/R communication with isQueued = false)
  *********************************************************************************************************************/
 #  define Rte_Write_RearInterLight_Bool_signal Rte_Write_CtLedTask_RearInterLight_Bool_signal
+#  define Rte_Write_Test_Signal_u16_Siganl Rte_Write_CtLedTask_Test_Signal_u16_Siganl
 
 
 /**********************************************************************************************************************

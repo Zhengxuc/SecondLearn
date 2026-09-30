@@ -124,13 +124,16 @@
         <Splitter File=".\Config\ECUC\S32K144_Start_Spi_ecuc.arxml">
             <Module Name="Spi"/>
         </Splitter>
+        <Splitter File=".\Config\ECUC\S32K144_Start_Adc_ecuc.arxml">
+            <Module Name="Adc"/>
+        </Splitter>
         <OwnFolderForEachSplitter>false</OwnFolderForEachSplitter>
     </EcucSplitter>
     <Display LastVersion="5.18.37 SP1">
-        <FileSet Id="" CS="cd89e37a">
-            <File Order="0" EcuInstance="MyECU" Hash="d32a45a5d5d61cb705e3100b4c11dfc8" FileCategory="legacy_communication_data">$(DpaProjectFolder)\Inputfiles\CAN.dbc</File>
+        <FileSet Id="" CS="e4ccf0a9">
+            <File Order="0" EcuInstance="MyECU" Hash="103b91b08179a8c27092fe8794733919" FileCategory="legacy_communication_data">$(DpaProjectFolder)\Inputfiles\CAN.dbc</File>
             <Diagnostic>
-                <Description Hash="e0ae908913d93caf691f8c3440b9d7bb">$(DpaProjectFolder)\Inputfiles\ForTraining.cdd</Description>
+                <Description Hash="fbe6dd9b9e45beb34aae6886af31085a">$(DpaProjectFolder)\Inputfiles\ForTraining.cdd</Description>
                 <Ecu>New_ECU_1</Ecu>
                 <Variant>CommonDiagnostics</Variant>
                 <UseLegacySignalImport>false</UseLegacySignalImport>

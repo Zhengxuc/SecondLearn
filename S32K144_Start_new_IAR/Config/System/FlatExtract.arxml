@@ -134,6 +134,9 @@
                                 <FIBEX-ELEMENT-REF-CONDITIONAL>
                                   <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_RearRightWindowPosition_omsg_Receive2_oCAN00</FIBEX-ELEMENT-REF>
                                 </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_TestSignal_omsg_Transmit2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
                               </FIBEX-ELEMENTS>
                               <MAPPINGS>
                                 <SYSTEM-MAPPING UUID="826abef8-a50a-4f45-90ed-8f68d7f2f552">
@@ -170,10 +173,10 @@
                                       <DATA-ELEMENT-IREF>
                                         <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpLedTask</CONTEXT-COMPONENT-REF>
                                         <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
-                                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtLedTask/RearInterLight</CONTEXT-PORT-REF>
-                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/RearInterLight/Bool_signal</TARGET-DATA-PROTOTYPE-REF>
+                                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtLedTask/Test_Signal</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/Test_Signal/u16_Siganl</TARGET-DATA-PROTOTYPE-REF>
                                       </DATA-ELEMENT-IREF>
-                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/sig_RearInterLight</SYSTEM-SIGNAL-REF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/sig_TestSignal</SYSTEM-SIGNAL-REF>
                                     </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
                                   </DATA-MAPPINGS>
                                 </SYSTEM-MAPPING>
@@ -336,6 +339,7 @@
                                     <SD GID="727A63E2-AD51-4F52-AB69-F30C7CF7C932">/ComponentTypes/CtLedTask/RearInterLight</SD>
                                     <SD GID="895CAC07-AF41-4190-B038-BBA3EDFD0DEB">/ComponentTypes/CtLedTask/Rear_LeftWindowPosition</SD>
                                     <SD GID="DCA4B01F-F19F-4B5C-923A-7922169E6377">/ComponentTypes/CtLedTask/Rear_RightWindowPosition</SD>
+                                    <SD GID="0BC14860-D2AD-40F3-A660-59D32B15E7B3">/ComponentTypes/CtLedTask/Test_Signal</SD>
                                     <SD GID="2A37BFB3-125E-4FFF-9381-FF394F05B2E3">/ComponentTypes/CtLedTask/UR_CN_CAN00_06ecbb07</SD>
                                     <SD GID="2EB878D9-8957-4976-A7ED-B631951289EF">/ComponentTypes/CtLedTask_Implementation</SD>
                                     <SD GID="FA2722A8-DD7A-493E-ACE9-AA8189A6F547">/DataType/Constraint/DC_sig_LampCnt</SD>
@@ -762,6 +766,7 @@
                                     <SD GID="BD81079B-1F0E-418E-BA4A-DF7A39805CF7">/PortInterfaces/RearInterLight/Bool_signal</SD>
                                     <SD GID="75F93838-685F-430D-ADC8-7DE40CD5010B">/PortInterfaces/Rear_LeftWindowPosition/u8_signal</SD>
                                     <SD GID="28C57716-8AE7-49E4-8AF7-870C8D029EAB">/PortInterfaces/Rear_RightWindowPosition/u8_signal</SD>
+                                    <SD GID="391D6D26-FA59-4FFB-A1A0-EB59A061C64B">/PortInterfaces/Test_Signal/u16_Siganl</SD>
                                     <SD GID="{AF35D1D4-4362-4055-B014-780FA6F9E75B}">/Predefined_DEV/CompuMethods/Dem_UdsStatusByteType</SD>
                                     <SD GID="F2570AA0-D6E5-4217-80F7-5F60B8778133">/Predefined_DEV/CompuMethods/NvM_RequestResultType</SD>
                                     <SD GID="007B24D3-5C46-4986-B3CA-31D71FEDD510">/Predefined_DEV/CompuMethods/NvM_ServiceIdType</SD>
@@ -808,6 +813,40 @@
                                     <SD GID="29D8C45D-AD65-4ADB-A8C0-9051D3BA8EB3">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_DS_Defs/E_NOT_OK</SD>
                                     <SD GID="B0DF499C-5446-40C9-BA84-69FE6BBA9AFA">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_Defs/E_NOT_OK</SD>
                                     <SD GID="6C11D3FD-1F97-4F18-9F28-AEBD06095420">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_SRBS/E_NOT_OK</SD>
+                                    <SD GID="0c49ac8b-febe-4963-afc8-40bba2af5933">/TS_T40D2M10I1R0/Adc_ib_bswmd</SD>
+                                    <SD GID="1c5d3395-9510-4341-93bd-1cc83c1afd08">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="7af65423-1b63-496a-bbdd-dba3492a2dbf">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior</SD>
+                                    <SD GID="137735f1-4d60-49ae-8df4-27f9d8909e39">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_00</SD>
+                                    <SD GID="35964ca3-590d-4bad-b9bb-15c129a33001">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_01</SD>
+                                    <SD GID="cf99de8a-7a8f-41ec-8f18-248dc1968d8f">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_02</SD>
+                                    <SD GID="5dcafeac-5eae-4f67-94c2-1e6cea5c7d87">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_03</SD>
+                                    <SD GID="73126f47-d174-499e-9686-fac2f9bcf877">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_04</SD>
+                                    <SD GID="12549bd6-aa66-49f4-af4c-e2275f7f7862">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_05</SD>
+                                    <SD GID="d2ef89b3-4359-46cf-8073-523b844cb81d">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_06</SD>
+                                    <SD GID="14290a32-267a-4941-87f5-c2f634db60a2">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_07</SD>
+                                    <SD GID="a25b6054-4419-4e6a-a44d-25be00c912ce">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_08</SD>
+                                    <SD GID="9ca17b71-fe07-4675-b48e-8b2231ab576c">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_09</SD>
+                                    <SD GID="7e3fc764-ae05-4734-b227-0a2a9fb25878">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_10</SD>
+                                    <SD GID="c592fe0a-a096-4d49-8dcc-34c9b548cc02">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_11</SD>
+                                    <SD GID="d361c0bf-f7ce-42ce-a25a-ca1d919e5ea1">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_12</SD>
+                                    <SD GID="e900ae13-e09a-482e-95be-f3987ecb63de">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_13</SD>
+                                    <SD GID="24c777d4-e6e2-460a-8429-8056487c3e70">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_14</SD>
+                                    <SD GID="b35ae649-3edf-4790-a148-40e21f960bee">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_15</SD>
+                                    <SD GID="3fcb51e4-5c65-45f3-9c71-76e05149896d">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_16</SD>
+                                    <SD GID="aefbb402-7642-4026-b4c1-369633557cc4">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_17</SD>
+                                    <SD GID="36cf1ac6-82c1-44a3-a55e-42346fdcf130">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_18</SD>
+                                    <SD GID="143a629d-ccc1-437d-aa73-c9741fd692cd">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_19</SD>
+                                    <SD GID="356286be-b97a-4f20-bfa8-9da6e8b54a52">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_20</SD>
+                                    <SD GID="1c40fabb-ac97-493e-9155-c73b0ece8e42">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_21</SD>
+                                    <SD GID="59ef2896-43d0-4445-a792-263d41cc3d26">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_22</SD>
+                                    <SD GID="4f8d0ea6-fec7-4010-9d4a-e575e0a2a0ad">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_23</SD>
+                                    <SD GID="5d0306fa-ebbc-4ad9-85b8-d733393dda59">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_24</SD>
+                                    <SD GID="05c3c236-8173-49a8-a365-1cf173c733e3">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_25</SD>
+                                    <SD GID="25d8651f-086b-4677-b897-814789fc3f20">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_26</SD>
+                                    <SD GID="2ff44253-1096-4769-a3f8-9f395c8148a5">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_27</SD>
+                                    <SD GID="f3ff3e43-b4ff-4fd9-9d72-bffb9a0a613c">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_28</SD>
+                                    <SD GID="927e3a2e-60de-4591-a9b5-0ff7d9511c27">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_29</SD>
+                                    <SD GID="7763e9a8-b440-4899-a6b7-f4939eab0fb4">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_30</SD>
                                     <SD GID="ed46821a-7b45-4226-88ba-d9ceb818a9ec">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior</SD>
                                     <SD GID="7f5ff0e9-1830-41ff-bf2d-e0bb0470aae8">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_00</SD>
                                     <SD GID="d7e9b4a3-8f67-4b94-bfb9-c575aadbca7f">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_01</SD>
