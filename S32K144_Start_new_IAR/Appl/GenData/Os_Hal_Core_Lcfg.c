@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Core_Lcfg.c
- *   Generation Time: 2021-06-22 16:26:32
+ *   Generation Time: 2026-10-10 10:43:57
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -144,6 +144,7 @@ CONST(Os_Hal_SystemConfigType, OS_CONST) OsCfg_Hal_System =
 CONSTP2CONST(Os_Hal_IntIsrConfigType, OS_CONST, OS_CONST)
   OsCfg_Hal_System_InterruptSourceRefs[OS_CFG_NUM_SYSTEM_INTERRUPTSOURCEREFS + 1] =
 {
+  &OsCfg_Hal_IntIsr_Adc_ConvertGroup0,
   &OsCfg_Hal_IntIsr_CanIsr_0_BusOff,
   &OsCfg_Hal_IntIsr_CanIsr_0_MB00To15,
   &OsCfg_Hal_IntIsr_CanIsr_0_MB16To31,

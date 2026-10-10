@@ -2431,6 +2431,9 @@
         <group>
             <name>Source</name>
             <file>
+                <name>$PROJ_DIR$\Appl\Source\Adc_ModePractice_Framework.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\Appl\Source\BswM_Callout_Stubs.c</name>
             </file>
             <file>

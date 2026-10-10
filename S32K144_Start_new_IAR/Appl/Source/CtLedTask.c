@@ -50,6 +50,8 @@
  *********************************************************************************************************************/
 
 #include "Dio.h"
+#include "Adc.h"
+//#include "Adc_CfgDefines.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -111,23 +113,19 @@
  * Symbol: CtLedTask_InitRunnable_doc
  *********************************************************************************************************************/
 
+FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void)
+{
+  static uint16 ResultBuffer[1] = {0}; 
+  Adc_SetupResultBuffer(AdcConf_AdcGroup_AdcGroup0, ResultBuffer);
+  Adc_EnableGroupNotification(AdcConf_AdcGroup_AdcGroup0);
+  
 
+  Rte_Call_UR_CN_CAN00_06ecbb07_RequestComMode(COMM_FULL_COMMUNICATION);
+}
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
-FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
-{
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
- * Symbol: CtLedTask_InitRunnable
- *********************************************************************************************************************/
-
-Rte_Call_UR_CN_CAN00_06ecbb07_RequestComMode(COMM_FULL_COMMUNICATION);
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-}
 
 /**********************************************************************************************************************
  *
@@ -163,26 +161,23 @@ static int  LedCnt=0;
 //static unsigned char Rear_RightWindowPosition;
 //static unsigned char My_GroupSignal = 70;
 //static unsigned char My_GroupSignal1 = 254;
-static uint16 Test_Signal = 100;
+
 LedCnt++;
 
 LedState ^= 0x01;
-static uint16 Adc_Value =0;
 
-Adc_StartGroupConversion(0);
-Adc_ReadGroup(0,(&Adc_Value));
- Test_Signal = (uint16)(Adc_Value/10);
- Rte_Write_CtLedTask_Test_Signal_u16_Siganl(Test_Signal);
+
 //Rte_Write_CtLedTask_RearInterLight_Bool_signal(1);
 //Rte_Read_Rear_LeftWindowPosition_u8_signal(&Rear_LeftWindowPosition);
 //Rte_Read_Rear_RightWindowPosition_u8_signal(&Rear_RightWindowPosition);
 //Com_SendSignal(ComConf_ComGroupSignal_My_ComGroupSignal,&My_GroupSignal);
 //Com_SendSignal(ComConf_ComGroupSignal_My_ComGroupSignal1,&My_GroupSignal1);
 //Com_SendSignalGroup(ComConf_ComSignalGroup_My_SignalGroup);
-
-
-
+Adc_StartGroupConversion(AdcConf_AdcGroup_AdcGroup0);
  Dio_WriteChannel(112,LedState);
+
+
+
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
@@ -197,7 +192,15 @@ Adc_ReadGroup(0,(&Adc_Value));
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of function definition area >>            DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-
+void AdcGroup0Notification(void)
+{
+   uint16 adcValue = 0u;
+   (void)Adc_ReadGroup(AdcConf_AdcGroup_AdcGroup0, &adcValue);
+   
+   Rte_Write_CtLedTask_Test_Signal_u16_Siganl((uint16)(adcValue / 10u));
+ 
+  
+}
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of function definition area >>              DO NOT CHANGE THIS COMMENT!

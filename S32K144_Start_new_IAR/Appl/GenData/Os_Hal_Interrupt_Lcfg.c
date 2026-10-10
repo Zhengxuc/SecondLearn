@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Interrupt_Lcfg.c
- *   Generation Time: 2021-04-14 11:46:06
+ *   Generation Time: 2026-10-10 16:47:12
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -78,6 +78,15 @@
 
 #define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+/*! HAL ISR configuration data: Adc_ConvertGroup0 */
+CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_Adc_ConvertGroup0 =
+{
+  /* .Level  = */ 70uL,
+  /* .SystemInterruptSource = */ 55uL,
+  /* .CoreInterruptSource = */ 39uL,
+  /* .Mapping = */ OS_HAL_ISR_MAPPING_INACTIVE  
+};
 
 /*! HAL ISR configuration data: CanIsr_0_BusOff */
 CONST(Os_Hal_IntIsrConfigType, OS_CONST) OsCfg_Hal_IntIsr_CanIsr_0_BusOff =

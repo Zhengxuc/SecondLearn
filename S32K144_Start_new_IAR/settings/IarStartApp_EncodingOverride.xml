@@ -4,4 +4,8 @@
         <path>C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\S32K148Asr_new.icf</path>
         <encoding>UTF-8</encoding>
     </override>
+    <override>
+        <path>D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\Source\CtLedTask.c</path>
+        <encoding>System</encoding>
+    </override>
 </userOverrides>
