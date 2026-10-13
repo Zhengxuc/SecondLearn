@@ -389,6 +389,28 @@
                                     <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtLedTask/CtLedTask_Recive_Test_Signal</TARGET-R-PORT-REF>
                                   </REQUESTER-IREF>
                                 </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="bf2cf9d7-25de-46cd-91d0-20865169c352">
+                                  <SHORT-NAME>Test_Swc0_Swc_Service_Test_Swc1_Swc_Service</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Test_Swc0</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Test_Swc0/Swc_Service</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Test_Swc1</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/Test_Swc1/Swc_Service</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
                               </CONNECTORS>
                             </COMPOSITION-SW-COMPONENT-TYPE>
                             <END-TO-END-PROTECTION-SET UUID="729fae43-c5c0-4595-b149-6fadd4be710e">
@@ -444,12 +466,15 @@
                                     <SD GID="2A37BFB3-125E-4FFF-9381-FF394F05B2E3">/ComponentTypes/CtLedTask/UR_CN_CAN00_06ecbb07</SD>
                                     <SD GID="2EB878D9-8957-4976-A7ED-B631951289EF">/ComponentTypes/CtLedTask_Implementation</SD>
                                     <SD GID="E84BB7CA-DEBB-4582-8768-3CA8D2C160DB">/ComponentTypes/Test_Swc0</SD>
+                                    <SD GID="84DA0A6E-3BE8-4126-AE61-A954CC294BAE">/ComponentTypes/Test_Swc0/Swc_Service</SD>
+                                    <SD GID="10DAF6D5-DF2F-4038-9E9C-EB8A5B23A441">/ComponentTypes/Test_Swc0/Test_Swc0_InternalBehavior/OIT_Swc_Service_Operation_Swc_Service_Operation</SD>
                                     <SD GID="49780591-8571-45E3-B100-5732C4E28DBF">/ComponentTypes/Test_Swc0/Test_Swc0_InternalBehavior/TMT_Test_Swc0_Main</SD>
                                     <SD GID="24E59E54-89ED-4FA6-98D6-D2CF9A37168C">/ComponentTypes/Test_Swc0/Test_Swc0_InternalBehavior/Test_Swc0_InitEvent</SD>
                                     <SD GID="07EFDDC8-5F3D-45A4-BA92-E9ECB8A6956D">/ComponentTypes/Test_Swc0/Test_Swc0_Read</SD>
                                     <SD GID="73AFA992-4D36-4C01-9142-CEE52406DEB9">/ComponentTypes/Test_Swc0/Test_Swc0_Write</SD>
                                     <SD GID="7F6DD54E-1476-4340-B1C0-07662C025514">/ComponentTypes/Test_Swc0_Implementation</SD>
                                     <SD GID="917A04C4-E65E-46C5-8ADA-F18420B029BB">/ComponentTypes/Test_Swc1</SD>
+                                    <SD GID="41B6C464-DCD5-426F-9D90-5F99FC9D3100">/ComponentTypes/Test_Swc1/Swc_Service</SD>
                                     <SD GID="BDBD777F-A888-4F66-BBE8-BE4C921700CF">/ComponentTypes/Test_Swc1/Test_Swc1_InternalBehavior/TMT_Test_Swc1_Main</SD>
                                     <SD GID="0FEACA15-D835-41ED-88C7-98E2357E5B12">/ComponentTypes/Test_Swc1/Test_Swc1_InternalBehavior/Test_Swc1_InitEvent</SD>
                                     <SD GID="D891068C-1D84-4716-B47C-7944C814A898">/ComponentTypes/Test_Swc1/Test_Swc1_Read</SD>

@@ -154,6 +154,9 @@
          }
       },
       "Components/Rte_Test_Swc1.h" : {
+         "Rte_Call_Swc_Service_Operation" : {
+            "8a7207a001fd89f0d3156cb305e34818" : {}
+         },
          "Rte_InitValue_Test_Swc1_Send_Test_Signal_u16_Siganl" : {
             "1b53a558b31c63acea001c0c155b637a" : {}
          },

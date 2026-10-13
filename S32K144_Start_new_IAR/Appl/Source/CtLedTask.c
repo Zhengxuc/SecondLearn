@@ -2,9 +2,9 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *          File:  CtLedTask.c
- *        Config:  C:/Vector/CBD1800257_D01_S32K1xx/Applications/S32K144_Start_new/S32K144_Start.dpa
+ *        Config:  D:/PANDORA/CarCode/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Applications/S32K144_Start_new_IAR/S32K144_Start.dpa
  *     SW-C Type:  CtLedTask
- *  Generated at:  Mon Jun  7 11:19:43 2021
+ *  Generated at:  Tue Oct 13 13:22:46 2026
  *
  *     Generator:  MICROSAR RTE Generator Version 4.19.0
  *                 RTE Core Version 1.19.0
@@ -66,6 +66,8 @@
  *
  * Primitive Types:
  * ================
+ * boolean: Boolean (standard type)
+ * uint16: Integer in interval [0...65535] (standard type)
  * uint8: Integer in interval [0...255] (standard type)
  *
  * Enumeration Types:
@@ -109,24 +111,28 @@
  *     Returned Application Errors: RTE_E_ComM_UserRequest_E_MODE_LIMITATION, RTE_E_ComM_UserRequest_E_NOT_OK
  *
  *********************************************************************************************************************/
+
 /**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
- * Symbol: CtLedTask_InitRunnable_doc
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
-FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void)
+FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 {
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: CtLedTask_InitRunnable
+ *********************************************************************************************************************/
   static uint16 ResultBuffer[1] = {0}; 
   Adc_SetupResultBuffer(AdcConf_AdcGroup_AdcGroup0, ResultBuffer);
   Adc_EnableGroupNotification(AdcConf_AdcGroup_AdcGroup0);
   
 
   Rte_Call_UR_CN_CAN00_06ecbb07_RequestComMode(COMM_FULL_COMMUNICATION);
-}
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
 
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
 
 /**********************************************************************************************************************
  *
@@ -135,7 +141,24 @@ FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void)
  *---------------------------------------------------------------------------------------------------------------------
  *
  * Executed if at least one of the following trigger conditions occurred:
- *   - triggered on TimingEvent every 500ms
+ *   - triggered on TimingEvent every 300ms
+ *
+ **********************************************************************************************************************
+ *
+ * Input Interfaces:
+ * =================
+ *   Explicit S/R API:
+ *   -----------------
+ *   Std_ReturnType Rte_Read_CtLedTask_Recive_Test_Signal_u16_Siganl(uint16 *data)
+ *   Std_ReturnType Rte_Read_Rear_LeftWindowPosition_u8_signal(uint8 *data)
+ *   Std_ReturnType Rte_Read_Rear_RightWindowPosition_u8_signal(uint8 *data)
+ *
+ * Output Interfaces:
+ * ==================
+ *   Explicit S/R API:
+ *   -----------------
+ *   Std_ReturnType Rte_Write_RearInterLight_Bool_signal(boolean data)
+ *   Std_ReturnType Rte_Write_Test_Signal_u16_Siganl(uint16 data)
  *
  *********************************************************************************************************************/
 /**********************************************************************************************************************
@@ -155,8 +178,8 @@ FUNC(void, CtLedTask_CODE) LedRunnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
  * Symbol: LedRunnable
  *********************************************************************************************************************/
 
-static unsigned char  LedState=0;
-static int  LedCnt=0;
+//static unsigned char  LedState=0;
+//static int  LedCnt=0;
 
 //static unsigned  char Rear_LeftWindowPosition;
 //static unsigned char Rear_RightWindowPosition;
@@ -174,9 +197,9 @@ static int  LedCnt=0;
 //Com_SendSignal(ComConf_ComGroupSignal_My_ComGroupSignal,&My_GroupSignal);
 //Com_SendSignal(ComConf_ComGroupSignal_My_ComGroupSignal1,&My_GroupSignal1);
 //Com_SendSignalGroup(ComConf_ComSignalGroup_My_SignalGroup);
-static uint16 swc2ctledtask  = 0;
-Rte_Read_CtLedTask_Recive_Test_Signal_u16_Siganl(&swc2ctledtask);
-Rte_Write_CtLedTask_Test_Signal_u16_Siganl(swc2ctledtask);
+static uint16 swc12ctledtask  = 0;
+Rte_Read_CtLedTask_Recive_Test_Signal_u16_Siganl(&swc12ctledtask);//接收来自swc1的 test signal
+Rte_Write_CtLedTask_Test_Signal_u16_Siganl(swc12ctledtask);//并通过can发送出去
 
 //Adc_StartGroupConversion(AdcConf_AdcGroup_AdcGroup0);//
 // Dio_WriteChannel(112,LedState);

@@ -101,6 +101,17 @@
                 <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtLedTask/CtLedTask_Recive_Test_Signal</TARGET-R-PORT-REF>
               </REQUESTER-IREF>
             </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="D3A9E048-C707-469C-8A77-0B57C03556AC">
+              <SHORT-NAME>Test_Swc0_Swc_Service_Test_Swc1_Swc_Service</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/Test_Swc0</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Test_Swc0/Swc_Service</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/Test_Swc1</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/Test_Swc1/Swc_Service</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
           </CONNECTORS>
         </COMPOSITION-SW-COMPONENT-TYPE>
       </ELEMENTS>

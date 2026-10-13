@@ -14,7 +14,7 @@
     "FileName": "",
     "WorkspacePath": "",
     "GeneratorBasePath": "D:\\PANDORA\\CarCode\\AUTOSAR_TOOLs\\S32K144_SIP\\MICROSAR\\CBD1800257_D01_S32K1xx\\Generators\\Rte\\",
-    "OutputDirectory": "C:\\Users\\EDY\\AppData\\Local\\Temp\\1791859630269-0\\"
+    "OutputDirectory": "C:\\Users\\EDY\\AppData\\Local\\Temp\\1791868239585-0\\"
   },
   "ECUName": "MyECU",
   "EnableVFBTracing": false,
@@ -18974,6 +18974,80 @@
         "Runnables": [
           {
             "$id": "1417",
+            "RunnableName": "Swc_Service_Operation",
+            "Description": "",
+            "Symbol": "",
+            "Reentrant": false,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "1418",
+                "PortOperationRef": {
+                  "$id": "1419",
+                  "PortPrototypeName": "Swc_Service",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "Swc_Service",
+                  "IsService": false,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": false,
+                  "OperationPrototypeName": "Operation",
+                  "Description": "",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [],
+                  "AppErrorList": [],
+                  "ArgumentList": [
+                    {
+                      "$id": "1420",
+                      "ArgumentName": "argIn",
+                      "Direction": 0,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "21"
+                      }
+                    },
+                    {
+                      "$id": "1421",
+                      "ArgumentName": "argOut",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "21"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OIT_Swc_Service_Operation_Swc_Service_Operation"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": []
+          },
+          {
+            "$id": "1422",
             "RunnableName": "Test_Swc0_Init",
             "Description": "",
             "Symbol": "",
@@ -18984,7 +19058,7 @@
             ],
             "TriggerList": [
               {
-                "$id": "1418",
+                "$id": "1423",
                 "TriggerType": "InitEvent",
                 "RTEEventList": [
                   "Test_Swc0_InitEvent"
@@ -19007,7 +19081,7 @@
             "ExternalTriggeringPointList": []
           },
           {
-            "$id": "1419",
+            "$id": "1424",
             "RunnableName": "Test_Swc0_Main",
             "Description": "",
             "Symbol": "",
@@ -19017,13 +19091,13 @@
               null
             ],
             "MinimumStartInterval": {
-              "$id": "1420",
+              "$id": "1425",
               "Time": 50,
               "Unit": 1
             },
             "TriggerList": [
               {
-                "$id": "1421",
+                "$id": "1426",
                 "CycleTime": 50,
                 "CycleTimeUnit": 1,
                 "CyclicTriggerOffset": 0,
@@ -19040,13 +19114,13 @@
             ],
             "DataSendPointList": [
               {
-                "$id": "1422",
+                "$id": "1427",
                 "AccessType": 1,
                 "TxAckMode": 0,
                 "Timeout": 0,
                 "TimeoutUnit": 1,
                 "PortDataElementRef": {
-                  "$id": "1423",
+                  "$id": "1428",
                   "PortPrototypeName": "Test_Swc0_Write",
                   "DataElementPrototypeName": "u8_Signal",
                   "Description": "",
@@ -19082,7 +19156,7 @@
                   "DataWriteAccessList": [],
                   "DataSendPointList": [
                     {
-                      "$ref": "1422"
+                      "$ref": "1427"
                     }
                   ]
                 }
@@ -19090,13 +19164,13 @@
             ],
             "DataReceivePointList": [
               {
-                "$id": "1424",
+                "$id": "1429",
                 "AccessType": 1,
                 "TxAckMode": 0,
                 "Timeout": 0,
                 "TimeoutUnit": 1,
                 "PortDataElementRef": {
-                  "$id": "1425",
+                  "$id": "1430",
                   "PortPrototypeName": "Test_Swc0_Read",
                   "DataElementPrototypeName": "u8_Signal",
                   "Description": "",
@@ -19133,7 +19207,7 @@
                   "DataReadAccessList": [],
                   "DataReceivePointList": [
                     {
-                      "$ref": "1424"
+                      "$ref": "1429"
                     }
                   ]
                 }
@@ -19156,17 +19230,32 @@
         "ExclusiveAreas": []
       },
       "CTCalibrationSupport": false,
-      "OperationPorts": [],
+      "OperationPorts": [
+        {
+          "$id": "1431",
+          "PortPrototypeName": "Swc_Service",
+          "OperationPrototypeName": "Operation",
+          "OperationServerPort": {
+            "$id": "1432",
+            "OperationPrototypeName": "Operation",
+            "PortPrototypeName": "Swc_Service",
+            "ComponentName": "Test_Swc0"
+          },
+          "ClientPortCount": 1,
+          "QueueLength": 1,
+          "IsClient": false
+        }
+      ],
       "ModePorts": [],
       "SignalPorts": [
         {
-          "$id": "1426",
+          "$id": "1433",
           "IsInput": false,
           "QueueLength": 0,
           "IsComposite": false,
           "IsNvSignalPort": false,
           "PortDataElementRef": {
-            "$ref": "1423"
+            "$ref": "1428"
           },
           "InitValueRef": {
             "$ref": "772"
@@ -19176,7 +19265,7 @@
           "TxRxPortsHaveDifferentRecordLayout": false,
           "HasSubElementMapping": false,
           "SystemSignalRef": {
-            "$id": "1427",
+            "$id": "1434",
             "SystemSignalName": "Test_Swc0_Test_Swc0_Write_u8_Signal",
             "SignalConnectivity": 0,
             "Length": 0
@@ -19184,13 +19273,13 @@
           "WasConnected": false
         },
         {
-          "$id": "1428",
+          "$id": "1435",
           "IsInput": true,
           "QueueLength": 0,
           "IsComposite": false,
           "IsNvSignalPort": false,
           "PortDataElementRef": {
-            "$ref": "1425"
+            "$ref": "1430"
           },
           "InitValueRef": {
             "$ref": "772"
@@ -19200,7 +19289,7 @@
           "TxRxPortsHaveDifferentRecordLayout": false,
           "HasSubElementMapping": false,
           "SystemSignalRef": {
-            "$id": "1429",
+            "$id": "1436",
             "SystemSignalName": "Test_Swc1_Test_Swc1_Write_u8_Signal",
             "SignalConnectivity": 0,
             "Length": 0
@@ -19212,10 +19301,10 @@
       "TriggerPorts": []
     },
     {
-      "$id": "1430",
+      "$id": "1437",
       "ComponentInstanceName": "Test_Swc1",
       "ComponentType": {
-        "$id": "1431",
+        "$id": "1438",
         "ComponentTypeName": "Test_Swc1",
         "RealizationType": 2,
         "SupportsMultipleInstances": false,
@@ -19228,7 +19317,7 @@
         "PerInstanceMemories": [],
         "Runnables": [
           {
-            "$id": "1432",
+            "$id": "1439",
             "RunnableName": "Test_Swc1_Init",
             "Description": "",
             "Symbol": "",
@@ -19239,7 +19328,7 @@
             ],
             "TriggerList": [
               {
-                "$id": "1433",
+                "$id": "1440",
                 "TriggerType": "InitEvent",
                 "RTEEventList": [
                   "Test_Swc1_InitEvent"
@@ -19262,7 +19351,7 @@
             "ExternalTriggeringPointList": []
           },
           {
-            "$id": "1434",
+            "$id": "1441",
             "RunnableName": "Test_Swc1_Main",
             "Description": "",
             "Symbol": "",
@@ -19272,13 +19361,13 @@
               null
             ],
             "MinimumStartInterval": {
-              "$id": "1435",
+              "$id": "1442",
               "Time": 50,
               "Unit": 1
             },
             "TriggerList": [
               {
-                "$id": "1436",
+                "$id": "1443",
                 "CycleTime": 50,
                 "CycleTimeUnit": 1,
                 "CyclicTriggerOffset": 0,
@@ -19295,13 +19384,13 @@
             ],
             "DataSendPointList": [
               {
-                "$id": "1437",
+                "$id": "1444",
                 "AccessType": 1,
                 "TxAckMode": 0,
                 "Timeout": 0,
                 "TimeoutUnit": 1,
                 "PortDataElementRef": {
-                  "$id": "1438",
+                  "$id": "1445",
                   "PortPrototypeName": "Test_Swc1_Send_Test_Signal",
                   "DataElementPrototypeName": "u16_Siganl",
                   "Description": "",
@@ -19337,19 +19426,19 @@
                   "DataWriteAccessList": [],
                   "DataSendPointList": [
                     {
-                      "$ref": "1437"
+                      "$ref": "1444"
                     }
                   ]
                 }
               },
               {
-                "$id": "1439",
+                "$id": "1446",
                 "AccessType": 1,
                 "TxAckMode": 0,
                 "Timeout": 0,
                 "TimeoutUnit": 1,
                 "PortDataElementRef": {
-                  "$id": "1440",
+                  "$id": "1447",
                   "PortPrototypeName": "Test_Swc1_Write",
                   "DataElementPrototypeName": "u8_Signal",
                   "Description": "",
@@ -19382,7 +19471,7 @@
                   "DataWriteAccessList": [],
                   "DataSendPointList": [
                     {
-                      "$ref": "1439"
+                      "$ref": "1446"
                     }
                   ]
                 }
@@ -19390,13 +19479,13 @@
             ],
             "DataReceivePointList": [
               {
-                "$id": "1441",
+                "$id": "1448",
                 "AccessType": 1,
                 "TxAckMode": 0,
                 "Timeout": 0,
                 "TimeoutUnit": 1,
                 "PortDataElementRef": {
-                  "$id": "1442",
+                  "$id": "1449",
                   "PortPrototypeName": "Test_Swc1_Read",
                   "DataElementPrototypeName": "u8_Signal",
                   "Description": "",
@@ -19430,7 +19519,7 @@
                   "DataReadAccessList": [],
                   "DataReceivePointList": [
                     {
-                      "$ref": "1441"
+                      "$ref": "1448"
                     }
                   ]
                 }
@@ -19440,7 +19529,59 @@
             "DataReadAccessList": [],
             "ModeSwitchPointList": [],
             "ModeAccessPointList": [],
-            "ServerCallPointList": [],
+            "ServerCallPointList": [
+              {
+                "$id": "1450",
+                "AccessType": 1,
+                "ResultMode": 0,
+                "Timeout": 0,
+                "TimeoutUnit": 1,
+                "PortOperationRef": {
+                  "$id": "1451",
+                  "PortPrototypeName": "Swc_Service",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "Swc_Service",
+                  "IsService": false,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": false,
+                  "OperationPrototypeName": "Operation",
+                  "Description": "",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [],
+                  "AppErrorList": [],
+                  "ArgumentList": [
+                    {
+                      "$id": "1452",
+                      "ArgumentName": "argIn",
+                      "Direction": 0,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "21"
+                      }
+                    },
+                    {
+                      "$id": "1453",
+                      "ArgumentName": "argOut",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "21"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [
+                    {
+                      "$ref": "1450"
+                    }
+                  ],
+                  "ServerReturnPointList": []
+                }
+              }
+            ],
             "ServerReturnPointList": [],
             "ExclusiveAreaAccessList": [],
             "InterRunnableVariableAccessList": [],
@@ -19453,35 +19594,50 @@
         "ExclusiveAreas": []
       },
       "CTCalibrationSupport": false,
-      "OperationPorts": [],
+      "OperationPorts": [
+        {
+          "$id": "1454",
+          "PortPrototypeName": "Swc_Service",
+          "OperationPrototypeName": "Operation",
+          "OperationServerPort": {
+            "$id": "1455",
+            "OperationPrototypeName": "Operation",
+            "PortPrototypeName": "Swc_Service",
+            "ComponentName": "Test_Swc0"
+          },
+          "ClientPortCount": 1,
+          "QueueLength": 1,
+          "IsClient": true
+        }
+      ],
       "ModePorts": [],
       "SignalPorts": [
         {
-          "$id": "1443",
+          "$id": "1456",
           "IsInput": false,
           "QueueLength": 0,
           "IsComposite": false,
           "IsNvSignalPort": false,
           "PortDataElementRef": {
-            "$ref": "1440"
+            "$ref": "1447"
           },
           "SignalPortName": "Test_Swc1_Write_u8_Signal",
           "PortConnectivity": 0,
           "TxRxPortsHaveDifferentRecordLayout": false,
           "HasSubElementMapping": false,
           "SystemSignalRef": {
-            "$ref": "1429"
+            "$ref": "1436"
           },
           "WasConnected": false
         },
         {
-          "$id": "1444",
+          "$id": "1457",
           "IsInput": false,
           "QueueLength": 0,
           "IsComposite": false,
           "IsNvSignalPort": false,
           "PortDataElementRef": {
-            "$ref": "1438"
+            "$ref": "1445"
           },
           "InitValueRef": {
             "$ref": "767"
@@ -19496,20 +19652,20 @@
           "WasConnected": false
         },
         {
-          "$id": "1445",
+          "$id": "1458",
           "IsInput": true,
           "QueueLength": 0,
           "IsComposite": false,
           "IsNvSignalPort": false,
           "PortDataElementRef": {
-            "$ref": "1442"
+            "$ref": "1449"
           },
           "SignalPortName": "Test_Swc1_Read_u8_Signal",
           "PortConnectivity": 0,
           "TxRxPortsHaveDifferentRecordLayout": false,
           "HasSubElementMapping": false,
           "SystemSignalRef": {
-            "$ref": "1427"
+            "$ref": "1434"
           },
           "WasConnected": false
         }
@@ -19519,7 +19675,7 @@
     }
   ],
   "LdComPduTable": {
-    "$id": "1446"
+    "$id": "1459"
   },
   "IsAUTOSAR3Rte": false,
   "Type": 8,

@@ -52,6 +52,8 @@
  *  Rte_CallHook_DemSatellite_0_CBReadData_OccurrenceCounter_OccurenceCounter_ReadData_Start
  *  Rte_CallHook_DemSatellite_0_CBReadData_OdometerValue_OdometerValue_ReadData_Return
  *  Rte_CallHook_DemSatellite_0_CBReadData_OdometerValue_OdometerValue_ReadData_Start
+ *  Rte_CallHook_Test_Swc1_Swc_Service_Operation_Return
+ *  Rte_CallHook_Test_Swc1_Swc_Service_Operation_Start
  *  Rte_ComHook_sig_RearInterLight_omsg_Transmit2_oCAN00_6c233e33_Tx_SigTx
  *  Rte_ComHook_sig_RearLeftWindowPosition_omsg_Receive2_oCAN00_89d4d489_Rx_SigRx
  *  Rte_ComHook_sig_RearRightWindowPosition_omsg_Receive2_oCAN00_94575df2_Rx_SigRx
@@ -214,6 +216,8 @@
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Return
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Start
+ *  Rte_Runnable_Test_Swc0_Swc_Service_Operation_Return
+ *  Rte_Runnable_Test_Swc0_Swc_Service_Operation_Start
  *  Rte_Runnable_Test_Swc0_Test_Swc0_Init_Return
  *  Rte_Runnable_Test_Swc0_Test_Swc0_Init_Start
  *  Rte_Runnable_Test_Swc0_Test_Swc0_Main_Return
