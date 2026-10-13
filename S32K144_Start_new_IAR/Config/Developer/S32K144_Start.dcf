@@ -25,4 +25,12 @@
 		<ARXML>ComponentTypes\CddSbc.arxml</ARXML>
 		<DVG>ComponentTypes\CddSbc.dvg</DVG>
 	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/Test_Swc0.arxml</ARXML>
+		<DVG>ComponentTypes/Test_Swc0.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/Test_Swc2.arxml</ARXML>
+		<DVG>ComponentTypes/Test_Swc2.dvg</DVG>
+	</FILEREF>
 </DCF>

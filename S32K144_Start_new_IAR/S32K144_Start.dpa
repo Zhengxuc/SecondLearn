@@ -127,6 +127,9 @@
         <Splitter File=".\Config\ECUC\S32K144_Start_Adc_ecuc.arxml">
             <Module Name="Adc"/>
         </Splitter>
+        <Splitter File=".\Config\ECUC\S32K144_Start_Pwm_ecuc.arxml">
+            <Module Name="Pwm"/>
+        </Splitter>
         <OwnFolderForEachSplitter>false</OwnFolderForEachSplitter>
     </EcucSplitter>
     <Display LastVersion="5.18.37 SP1">
@@ -286,5 +289,7 @@
         <Component Name="CpAppTask" GenerationEnabled="true"/>
         <Component Name="Cdd_SBC_UJA1169" GenerationEnabled="true"/>
         <Component Name="CddSbc" GenerationEnabled="true"/>
+        <Component Name="Test_Swc0" GenerationEnabled="true"/>
+        <Component Name="Test_Swc1" GenerationEnabled="true"/>
     </SwctGeneration>
 </ProjectAssistant>

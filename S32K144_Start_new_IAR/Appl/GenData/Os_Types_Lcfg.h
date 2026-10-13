@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2026-10-10 10:43:57
+ *   Generation Time: 2026-10-12 22:18:42
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -77,6 +77,7 @@
 #define Rte_Al_TE_CanTp_CanTp_MainFunction Rte_Al_TE_CanTp_CanTp_MainFunction
 #define Rte_Al_TE_Cdd_SBC_UJA1169_Sbc_Test_Runnable Rte_Al_TE_Cdd_SBC_UJA1169_Sbc_Test_Runnable
 #define Rte_Al_TE_CpLedTask_LedRunnable Rte_Al_TE_CpLedTask_LedRunnable
+#define Rte_Al_TE_OsTask_APP_0_50ms Rte_Al_TE_OsTask_APP_0_50ms
 
 /* Counter identifiers. */
 #define SystemTimer SystemTimer
@@ -161,7 +162,8 @@ typedef enum
   Rte_Al_TE_CanTp_CanTp_MainFunction = 2,
   Rte_Al_TE_Cdd_SBC_UJA1169_Sbc_Test_Runnable = 3,
   Rte_Al_TE_CpLedTask_LedRunnable = 4,
-  OS_ALARMID_COUNT = 5
+  Rte_Al_TE_OsTask_APP_0_50ms = 5,
+  OS_ALARMID_COUNT = 6
 } AlarmType;
 
 /*! Counter identifiers. */

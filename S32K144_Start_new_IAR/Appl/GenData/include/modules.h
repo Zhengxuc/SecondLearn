@@ -197,7 +197,7 @@ extern "C" {
 /** 
 * @brief This constant used for other modules to check if PWM is present in the project.  
 */
-#define USE_PWM_MODULE              (STD_OFF)
+#define USE_PWM_MODULE              (STD_ON)
 
 /** 
 * @brief This constant used for other modules to check if SPI is present in the project.  

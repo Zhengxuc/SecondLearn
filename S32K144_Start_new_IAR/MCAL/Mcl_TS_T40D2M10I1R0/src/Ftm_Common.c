@@ -100,7 +100,7 @@ extern "C"{
 #if (USE_OCU_MODULE==STD_ON)
     #include "Ocu_Ftm_Irq.h"
 #endif
-#include "SchM_Mcl.h"
+//#include "SchM_Mcl.h"
 
 #include "Reg_eSys_Ftm.h"
 #define USER_MODE_REG_PROT_ENABLED (STD_OFF)

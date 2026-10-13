@@ -51,6 +51,7 @@
 
 #include "Dio.h"
 #include "Adc.h"
+#include "Pwm.h"
 //#include "Adc_CfgDefines.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
@@ -141,7 +142,7 @@ FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void)
  * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
  * Symbol: LedRunnable_doc
  *********************************************************************************************************************/
-
+//static 
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
@@ -162,9 +163,9 @@ static int  LedCnt=0;
 //static unsigned char My_GroupSignal = 70;
 //static unsigned char My_GroupSignal1 = 254;
 
-LedCnt++;
-
-LedState ^= 0x01;
+//LedCnt++;
+//
+//LedState ^= 0x01;
 
 
 //Rte_Write_CtLedTask_RearInterLight_Bool_signal(1);
@@ -173,8 +174,12 @@ LedState ^= 0x01;
 //Com_SendSignal(ComConf_ComGroupSignal_My_ComGroupSignal,&My_GroupSignal);
 //Com_SendSignal(ComConf_ComGroupSignal_My_ComGroupSignal1,&My_GroupSignal1);
 //Com_SendSignalGroup(ComConf_ComSignalGroup_My_SignalGroup);
-Adc_StartGroupConversion(AdcConf_AdcGroup_AdcGroup0);
- Dio_WriteChannel(112,LedState);
+static uint16 swc2ctledtask  = 0;
+Rte_Read_CtLedTask_Recive_Test_Signal_u16_Siganl(&swc2ctledtask);
+Rte_Write_CtLedTask_Test_Signal_u16_Siganl(swc2ctledtask);
+
+//Adc_StartGroupConversion(AdcConf_AdcGroup_AdcGroup0);//
+// Dio_WriteChannel(112,LedState);
 
 
 
@@ -196,6 +201,9 @@ void AdcGroup0Notification(void)
 {
    uint16 adcValue = 0u;
    (void)Adc_ReadGroup(AdcConf_AdcGroup_AdcGroup0, &adcValue);
+   
+   Pwm_SetDutyCycle(PwmConf_PwmChannelConfigSet_PwmChannel0,adcValue*8);
+   
    
    Rte_Write_CtLedTask_Test_Signal_u16_Siganl((uint16)(adcValue / 10u));
  

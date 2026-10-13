@@ -248,6 +248,7 @@ FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void) /* PRQA S 0850 */ /* MD_
  * =================
  *   Explicit S/R API:
  *   -----------------
+ *   Std_ReturnType Rte_Read_CtLedTask_Recive_Test_Signal_u16_Siganl(uint16 *data)
  *   Std_ReturnType Rte_Read_Rear_LeftWindowPosition_u8_signal(uint8 *data)
  *   Std_ReturnType Rte_Read_Rear_RightWindowPosition_u8_signal(uint8 *data)
  *
@@ -279,12 +280,33 @@ FUNC(void, CtLedTask_CODE) LedRunnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
   Std_ReturnType fct_status;
   boolean fct_error = 0;
 
+  uint16 Read_CtLedTask_Recive_Test_Signal_u16_Siganl;
   uint8 Read_Rear_LeftWindowPosition_u8_signal;
   uint8 Read_Rear_RightWindowPosition_u8_signal;
 
   /*************************************************
   * Direct Function Accesses
   *************************************************/
+
+  fct_status = TSC_CtLedTask_Rte_Read_CtLedTask_Recive_Test_Signal_u16_Siganl(&Read_CtLedTask_Recive_Test_Signal_u16_Siganl);
+  switch (fct_status)
+  {
+    case RTE_E_OK:
+      fct_error = 0;
+      break;
+    case RTE_E_UNCONNECTED:
+      fct_error = 1;
+      break;
+    case RTE_E_NEVER_RECEIVED:
+      fct_error = 1;
+      break;
+    case RTE_E_INVALID:
+      fct_error = 1;
+      break;
+    case RTE_E_MAX_AGE_EXCEEDED:
+      fct_error = 1;
+      break;
+  }
 
   fct_status = TSC_CtLedTask_Rte_Read_Rear_LeftWindowPosition_u8_signal(&Read_Rear_LeftWindowPosition_u8_signal);
   switch (fct_status)

@@ -32,6 +32,7 @@
       SCHEDULE = NON:"@RO@";
 // TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
       AUTOSTART = FALSE:"@RO@";
+      EVENT = Rte_Ev_Cyclic_OsTask_APP_0_50ms:"@RO@";
       EVENT = Rte_Ev_Run_Cdd_SBC_UJA1169_Sbc_Test_Runnable:"@RO@";
       EVENT = Rte_Ev_Run_CpLedTask_LedRunnable:"@RO@";
    }:"@RO@@NR@";
@@ -52,6 +53,16 @@
       {
          TASK = OsTask_APP;
          EVENT = Rte_Ev_Run_CpLedTask_LedRunnable;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
+   ALARM Rte_Al_TE_OsTask_APP_0_50ms {
+      COUNTER = SystemTimer;
+      ACTION = SETEVENT
+      {
+         TASK = OsTask_APP;
+         EVENT = Rte_Ev_Cyclic_OsTask_APP_0_50ms;
       }:"@ROC@";
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
@@ -102,6 +113,10 @@
    }:"@ROC@@NR@";
 
    EVENT Rte_Ev_Cyclic2_OsTask_BSW_SCHM_0_20ms {
+      MASK = AUTO;
+   }:"@ROC@@NR@";
+
+   EVENT Rte_Ev_Cyclic_OsTask_APP_0_50ms {
       MASK = AUTO;
    }:"@ROC@@NR@";
 

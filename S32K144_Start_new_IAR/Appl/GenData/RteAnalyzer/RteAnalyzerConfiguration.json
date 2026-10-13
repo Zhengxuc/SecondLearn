@@ -886,6 +886,26 @@
             "Source",
             "..",
             "../Components",
+            "../Components/Pwm"
+         ],
+         "SourceFile" : "Source/Pwm.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/PANDORA/CarCode/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_Pwm"
+         ],
+         "SourceFile" : "Source/TSC_SchM_Pwm.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/PANDORA/CarCode/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
             "../Components/Spi"
          ],
          "SourceFile" : "Source/Spi.c"
@@ -1049,6 +1069,46 @@
             "../Components/TSC_Os_OsCore0_swc"
          ],
          "SourceFile" : "Source/TSC_Os_OsCore0_swc.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/PANDORA/CarCode/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Test_Swc0"
+         ],
+         "SourceFile" : "Source/Test_Swc0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/PANDORA/CarCode/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_Test_Swc0"
+         ],
+         "SourceFile" : "Source/TSC_Test_Swc0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/PANDORA/CarCode/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Test_Swc1"
+         ],
+         "SourceFile" : "Source/Test_Swc1.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/PANDORA/CarCode/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_Test_Swc1"
+         ],
+         "SourceFile" : "Source/TSC_Test_Swc1.c"
       }
    ],
    "TaskList" : [

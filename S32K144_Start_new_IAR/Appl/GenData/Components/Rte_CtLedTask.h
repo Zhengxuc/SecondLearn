@@ -48,6 +48,17 @@ extern "C"
 #  include "Com.h"
 
 
+/**********************************************************************************************************************
+ * extern declaration of RTE buffers for optimized macro implementation
+ *********************************************************************************************************************/
+#  define RTE_START_SEC_VAR_NOINIT_UNSPECIFIED
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+extern VAR(uint16, RTE_VAR_NOINIT) Rte_Test_Swc1_Test_Swc1_Send_Test_Signal_u16_Siganl; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+#  define RTE_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
 # endif /* !defined(RTE_CORE) */
 
 
@@ -56,6 +67,7 @@ extern "C"
  * Init Values for unqueued S/R communication (primitive types only)
  *********************************************************************************************************************/
 
+#  define Rte_InitValue_CtLedTask_Recive_Test_Signal_u16_Siganl (0U)
 #  define Rte_InitValue_RearInterLight_Bool_signal (FALSE)
 #  define Rte_InitValue_Rear_LeftWindowPosition_u8_signal (0U)
 #  define Rte_InitValue_Rear_RightWindowPosition_u8_signal (0U)
@@ -81,6 +93,8 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Write_CtLedTask_Test_Signal_u16_Siganl(uint16
 /**********************************************************************************************************************
  * Rte_Read_<p>_<d> (explicit S/R communication with isQueued = false)
  *********************************************************************************************************************/
+#  define Rte_Read_CtLedTask_Recive_Test_Signal_u16_Siganl Rte_Read_CtLedTask_CtLedTask_Recive_Test_Signal_u16_Siganl
+#  define Rte_Read_CtLedTask_CtLedTask_Recive_Test_Signal_u16_Siganl(data) (*(data) = Rte_Test_Swc1_Test_Swc1_Send_Test_Signal_u16_Siganl, ((Std_ReturnType)RTE_E_OK)) /* PRQA S 3453 */ /* MD_MSR_19.7 */
 #  define Rte_Read_Rear_LeftWindowPosition_u8_signal Rte_Read_CtLedTask_Rear_LeftWindowPosition_u8_signal
 #  define Rte_Read_CtLedTask_Rear_LeftWindowPosition_u8_signal(data) (Com_ReceiveSignal(ComConf_ComSignal_sig_RearLeftWindowPosition_omsg_Receive2_oCAN00_89d4d489_Rx, (data))) /* PRQA S 3453 */ /* MD_MSR_19.7 */
 #  define Rte_Read_Rear_RightWindowPosition_u8_signal Rte_Read_CtLedTask_Rear_RightWindowPosition_u8_signal

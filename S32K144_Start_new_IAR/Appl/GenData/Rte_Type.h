@@ -214,6 +214,20 @@ typedef unsigned int Rte_BitType;
 
 # ifdef RTE_CORE
 
+/**********************************************************************************************************************
+ * Buffers for unqueued S/R
+ *********************************************************************************************************************/
+
+#  define RTE_START_SEC_VAR_NOINIT_UNSPECIFIED
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+extern VAR(uint8, RTE_VAR_NOINIT) Rte_Test_Swc0_Test_Swc0_Write_u8_Signal; /* PRQA S 0850, 3408, 1504 */ /* MD_MSR_19.8, MD_Rte_3408, MD_MSR_8.10 */
+extern VAR(uint16, RTE_VAR_NOINIT) Rte_Test_Swc1_Test_Swc1_Send_Test_Signal_u16_Siganl; /* PRQA S 0850, 3408, 1504 */ /* MD_MSR_19.8, MD_Rte_3408, MD_MSR_8.10 */
+extern VAR(uint8, RTE_VAR_NOINIT) Rte_Test_Swc1_Test_Swc1_Write_u8_Signal; /* PRQA S 0850, 3408, 1504 */ /* MD_MSR_19.8, MD_Rte_3408, MD_MSR_8.10 */
+
+#  define RTE_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
 typedef struct
 {
   Rte_BitType Rte_ModeSwitchAck_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_Ack : 1;
@@ -231,3 +245,16 @@ extern VAR(Rte_AckFlagsType, RTE_VAR_NOINIT) Rte_AckFlags; /* PRQA S 0850 */ /* 
 # endif /* defined(RTE_CORE) */
 
 #endif /* _RTE_TYPE_H */
+
+/**********************************************************************************************************************
+ MISRA 2004 violations and justifications
+ *********************************************************************************************************************/
+
+/* module specific MISRA deviations:
+   MD_Rte_3408:  MISRA rule: 8.8
+     Reason:     For the purpose of monitoring during calibration or debugging it is necessary to use non-static declarations.
+                 This is covered in the MISRA C compliance section of the Rte specification.
+     Risk:       No functional risk.
+     Prevention: Not required.
+
+*/

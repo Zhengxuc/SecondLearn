@@ -21,6 +21,7 @@
 
 
 /** Sender receiver - explicit read services */
+Std_ReturnType TSC_CtLedTask_Rte_Read_CtLedTask_Recive_Test_Signal_u16_Siganl(uint16 *data);
 Std_ReturnType TSC_CtLedTask_Rte_Read_Rear_LeftWindowPosition_u8_signal(uint8 *data);
 Std_ReturnType TSC_CtLedTask_Rte_Read_Rear_RightWindowPosition_u8_signal(uint8 *data);
 
