@@ -73,6 +73,8 @@ Spi_DataBufferType readSbcCmd[4];
 static Spi_DataBufferType sbcReadData[4];
 readSbcCmd[0]= 0x7E<<1 | 1;
 readSbcCmd[1] = 0xFF;
+
+
 result =Spi_SetupEB((Spi_ChannelType)0,readSbcCmd,sbcReadData,2);
 if(result == E_OK)
 {

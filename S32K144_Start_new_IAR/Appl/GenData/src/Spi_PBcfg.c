@@ -232,6 +232,7 @@ extern "C"{
 
 /*  Buffers Descriptors for EB Channels (if any) */
 static VAR(Spi_BufferDescriptorType, SPI_VAR) Buffer_PBSpiChannel_SBC_Read;
+static VAR(Spi_BufferDescriptorType, SPI_VAR) Buffer_PBSpiChannel_Test_Read;
 
 
 #if ((SPI_DMA_USED == STD_ON) && \
@@ -299,7 +300,7 @@ static VAR(Spi_BufferDescriptorType, SPI_VAR) Buffer_PBSpiChannel_SBC_Read;
 
 
 /* SpiChannelConfig_PB0 Channel Configuration of Spi*/
-static CONST(Spi_ChannelConfigType, SPI_CONST) SpiChannelConfig_PB0[1] =
+static CONST(Spi_ChannelConfigType, SPI_CONST) SpiChannelConfig_PB0[2] =
 {
     {
         /* SpiChannel_SBC_Read*/
@@ -309,6 +310,16 @@ static CONST(Spi_ChannelConfigType, SPI_CONST) SpiChannelConfig_PB0[1] =
         4U,
         &Buffer_PBSpiChannel_SBC_Read,
         &Spi_aSpiChannelState[0]
+    },
+
+    {
+        /* SpiChannel_Test_Read*/
+        EB,
+        (Spi_DataBufferType)0x55u,
+
+        8U,
+        &Buffer_PBSpiChannel_Test_Read,
+        &Spi_aSpiChannelState[1]
     }
 
 
@@ -319,12 +330,59 @@ static CONST(Spi_ChannelConfigType, SPI_CONST) SpiChannelConfig_PB0[1] =
 /* Channel to Job Assignment */
 
 static CONST(Spi_ChannelType, SPI_CONST) SpiJob_0_ChannelAssignment_PB[1] = {SpiConf_SpiChannel_SpiChannel_SBC_Read};
+static CONST(Spi_ChannelType, SPI_CONST) SpiJob_1_ChannelAssignment_PB[1] = {SpiConf_SpiChannel_SpiChannel_Test_Read};
 
 
 
 /* SpiJobConfig_PB0 Job Configuration of Spi*/
-static CONST(Spi_JobConfigType, SPI_CONST) SpiJobConfig_PB0[1] =
+static CONST(Spi_JobConfigType, SPI_CONST) SpiJobConfig_PB0[2] =
 {
+    {
+
+
+        /* SpiJob_1 */
+        (Spi_ChannelType)1u,
+        SpiJob_1_ChannelAssignment_PB, /* List of Channels */
+        NULL_PTR, /* End Notification */
+        NULL_PTR, /* Start Notification */
+        (sint8)0, /* Priority */
+        &Spi_aSpiJobState[0], /* JobState instance */
+        CSIB1, /* HWUnit index */
+        LPSPI_0_OFFSET, /* LPspi device HW unit offset */
+        /* External Device Settings */
+        
+                SPI_SpiExternalDevice_TEST, /* External Device */
+        {
+                                                                                                        
+            
+                
+            (uint32)(LPSPI_TCR_CPOL_LOW_U32 | /* Clock Polarity (Idle State) */
+                            LPSPI_TCR_CPHA_LEADING_U32 | /* Clock Phase */  
+            LPSPI_TCR_PRESCALE_1_U32 /* Baudrate: Should=100000.0, Is=100000, Error=0.0% */
+          |  LPSPI_TCR_BYSW_DIS_U32 
+          | 
+                                                (uint32)(LPSPI_TCR_PCS1_EN_U32 | /* Chip Select Pin Via Peripheral Engine*/
+                                  LPSPI_TCR_CONT_EN_U32)/* Enable continuous chip select */
+                                                            
+) & LPSPI_TCR_RESERVED_MASK_U32,
+            ( ((uint32)(255) << 24u) | /* TimeClk2Cs: Should=100000ns, Is=64250, Error=-35.75% */
+            ((uint32)(255) << 16u) | /* TimeCs2Clk: Should=100000ns, Is=64250, Error=-35.75% */
+            ((uint32)(255) << 8u) | /* TimeCs2Cs: Should=100000ns, Is=64250, Error=-35.75% */
+            ((uint32)(38))
+            ),
+
+/* CFG1 register configuration */
+/* Enable QSPI interface */
+#if(SPI_QSPI_COMMUNICATION_ENABLE == STD_ON)
+    LPSPI_CFGR1_PCSCFG_MASK_U32 |
+#endif
+        (uint32)0u  /* Chip select polarity */
+     | LPSPI_CFGR1_PINCFG_NORMAL_U32 | LPSPI_CFGR1_MATCFG_DIS_U32 | LPSPI_CFGR1_MASTER_EN_U32
+
+        }
+        
+    },
+
     {
 
 
@@ -334,7 +392,7 @@ static CONST(Spi_JobConfigType, SPI_CONST) SpiJobConfig_PB0[1] =
         NULL_PTR, /* End Notification */
         NULL_PTR, /* Start Notification */
         (sint8)0, /* Priority */
-        &Spi_aSpiJobState[0], /* JobState instance */
+        &Spi_aSpiJobState[1], /* JobState instance */
         CSIB0, /* HWUnit index */
         LPSPI_1_OFFSET, /* LPspi device HW unit offset */
         /* External Device Settings */
@@ -377,7 +435,7 @@ static CONST(Spi_JobConfigType, SPI_CONST) SpiJobConfig_PB0[1] =
 
 
 /* Job to Sequence Assignment */
-static CONST(Spi_JobType, SPI_CONST) SpiSequence_0_SBC_JobAssignment_PB[1] = {SpiConf_SpiJob_SpiJob_0};
+static CONST(Spi_JobType, SPI_CONST) SpiSequence_0_SBC_JobAssignment_PB[2] = {SpiConf_SpiJob_SpiJob_0,SpiConf_SpiJob_SpiJob_1};
 
 
 
@@ -386,7 +444,7 @@ static CONST(Spi_SequenceConfigType, SPI_CONST) SpiSequenceConfig_PB0[1] =
 {
     {  /* SpiSequence_0_SBC */
 
-        (Spi_JobType)1u,
+        (Spi_JobType)2u,
         SpiSequence_0_SBC_JobAssignment_PB, /* List of Jobs */
         NULL_PTR, /* End Notification */
                 (uint8)FALSE /* Interruptible */
@@ -402,8 +460,15 @@ static CONST(Spi_SequenceConfigType, SPI_CONST) SpiSequenceConfig_PB0[1] =
 * @violates @ref Spi_PBcfg_c_REF_3 The compiler/linker shall be checked to ensure that 31 character
 * signifiance and case sensitivity are supported for external identifiers.
 */
-static CONST(Spi_Ipw_ChannelAttributesConfigType, SPI_CONST) LPspiChannelAttributesConfig_PB0[1] =
+static CONST(Spi_Ipw_ChannelAttributesConfigType, SPI_CONST) LPspiChannelAttributesConfig_PB0[2] =
 {
+{ 
+    /* Channel attribution on TCR register */
+    (uint32)(LPSPI_TCR_MSB_U32 | LPSPI_TCR_WIDTH_1_U32 | ((uint32)(7.0))),
+    /* FCR register attribution */
+    (uint32)(((uint32)(0) << 16) | ((uint32)(0))),SPI_DATA_WIDTH_8}
+,
+
 { 
     /* Channel attribution on TCR register */
     (uint32)(LPSPI_TCR_MSB_U32 | LPSPI_TCR_WIDTH_1_U32 | ((uint32)(7.0))),
@@ -418,7 +483,7 @@ static CONST(Spi_Ipw_ChannelAttributesConfigType, SPI_CONST) LPspiChannelAttribu
 
 
 /* LPspiDeviceAttributesConfig_PB0 Device Attribute Configuration of Spi*/
-static CONST(Spi_Ipw_DeviceAttributesConfigType, SPI_CONST) LPspiDeviceAttributesConfig_PB0[1] =
+static CONST(Spi_Ipw_DeviceAttributesConfigType, SPI_CONST) LPspiDeviceAttributesConfig_PB0[2] =
 {
     {  /* SpiExternalDevice_SBC */
                                                                                 
@@ -429,6 +494,34 @@ static CONST(Spi_Ipw_DeviceAttributesConfigType, SPI_CONST) LPspiDeviceAttribute
           |  LPSPI_TCR_BYSW_DIS_U32 
           | 
                                                 (uint32)(LPSPI_TCR_PCS3_EN_U32 | /* Chip Select Pin Via Peripheral Engine*/
+                                  LPSPI_TCR_CONT_EN_U32)/* Enable continuous chip select */
+                                                            
+) & LPSPI_TCR_RESERVED_MASK_U32,
+            ( ((uint32)(255) << 24u) | /* TimeClk2Cs: Should=100000ns, Is=64250, Error=-35.75% */
+            ((uint32)(255) << 16u) | /* TimeCs2Clk: Should=100000ns, Is=64250, Error=-35.75% */
+            ((uint32)(255) << 8u) | /* TimeCs2Cs: Should=100000ns, Is=64250, Error=-35.75% */
+            ((uint32)(38))
+            ),
+
+/* CFG1 register configuration */
+/* Enable QSPI interface */
+#if(SPI_QSPI_COMMUNICATION_ENABLE == STD_ON)
+    LPSPI_CFGR1_PCSCFG_MASK_U32 |
+#endif
+        (uint32)0u  /* Chip select polarity */
+     | LPSPI_CFGR1_PINCFG_NORMAL_U32 | LPSPI_CFGR1_MATCFG_DIS_U32 | LPSPI_CFGR1_MASTER_EN_U32
+
+
+    },
+    {  /* SpiExternalDevice_TEST */
+                                                                                
+            
+            (uint32)(LPSPI_TCR_CPOL_LOW_U32 | /* Clock Polarity (Idle State) */
+                            LPSPI_TCR_CPHA_LEADING_U32 | /* Clock Phase */  
+            LPSPI_TCR_PRESCALE_1_U32 /* Baudrate: Should=100000.0, Is=100000, Error=0.0% */
+          |  LPSPI_TCR_BYSW_DIS_U32 
+          | 
+                                                (uint32)(LPSPI_TCR_PCS1_EN_U32 | /* Chip Select Pin Via Peripheral Engine*/
                                   LPSPI_TCR_CONT_EN_U32)/* Enable continuous chip select */
                                                             
 ) & LPSPI_TCR_RESERVED_MASK_U32,
@@ -466,7 +559,11 @@ static CONST(Spi_HWUnitConfigType, SPI_CONST) HWUnitConfig_PB[SPI_MAX_HWUNIT] =
 
 
 
-    { LPSPI_1_OFFSET, (uint8)0u, (uint8)SPI_MASTER , SPI_PHYUNIT_SYNC_U32 }
+    { LPSPI_1_OFFSET, (uint8)0u, (uint8)SPI_MASTER , SPI_PHYUNIT_SYNC_U32 },
+
+
+
+    { LPSPI_0_OFFSET, (uint8)0u, (uint8)SPI_MASTER , SPI_PHYUNIT_SYNC_U32 }
 };
 
 
@@ -481,9 +578,9 @@ static CONST(Spi_HWUnitConfigType, SPI_CONST) HWUnitConfig_PB[SPI_MAX_HWUNIT] =
 /* MODULE-CONFIGURATION Configuration */
 CONST(Spi_ConfigType, SPI_CONST) Spi_PBCfgVariantPredefined =
 {
+    2u,
     1u,
-    0u,
-    0u,
+    1u,
     0u,
     SpiChannelConfig_PB0,
     SpiJobConfig_PB0,

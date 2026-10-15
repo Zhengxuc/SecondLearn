@@ -146,6 +146,16 @@
                     <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/EcuC/EcucGeneral/BswInitialization/Pwm_Init</SDX-REF>
                   </SDG>
                 </SDG>
+                <SDG GID=".ActiveEcuC.WdgM">
+                  <SDG GID="WdgM_Init">
+                    <SDX-REF DEST="AR-ELEMENT">/ActiveEcuC/EcuC/EcucGeneral/BswInitialization/WdgM_Init</SDX-REF>
+                  </SDG>
+                </SDG>
+                <SDG GID=".ActiveEcuC.Wdg">
+                  <SDG GID="Wdg_Init">
+                    <SDX-REF DEST="AR-ELEMENT">/ActiveEcuC/EcuC/EcucGeneral/BswInitialization/Wdg_Init</SDX-REF>
+                  </SDG>
+                </SDG>
               </SDG>
             </SDGS>
           </ADMIN-DATA>
