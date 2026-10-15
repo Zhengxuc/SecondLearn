@@ -435,17 +435,26 @@ static CONST(Spi_JobConfigType, SPI_CONST) SpiJobConfig_PB0[2] =
 
 
 /* Job to Sequence Assignment */
-static CONST(Spi_JobType, SPI_CONST) SpiSequence_0_SBC_JobAssignment_PB[2] = {SpiConf_SpiJob_SpiJob_0,SpiConf_SpiJob_SpiJob_1};
+static CONST(Spi_JobType, SPI_CONST) SpiSequence_0_SBC_JobAssignment_PB[1] = {SpiConf_SpiJob_SpiJob_0};
+static CONST(Spi_JobType, SPI_CONST) SpiSequence_1_TEST_JobAssignment_PB[1] = {SpiConf_SpiJob_SpiJob_1};
 
 
 
 /* SpiSequenceConfig_PB0 Sequence Configuration of Spi*/
-static CONST(Spi_SequenceConfigType, SPI_CONST) SpiSequenceConfig_PB0[1] =
+static CONST(Spi_SequenceConfigType, SPI_CONST) SpiSequenceConfig_PB0[2] =
 {
     {  /* SpiSequence_0_SBC */
 
-        (Spi_JobType)2u,
+        (Spi_JobType)1u,
         SpiSequence_0_SBC_JobAssignment_PB, /* List of Jobs */
+        NULL_PTR, /* End Notification */
+                (uint8)FALSE /* Interruptible */
+    },
+
+    {  /* SpiSequence_1_TEST */
+
+        (Spi_JobType)1u,
+        SpiSequence_1_TEST_JobAssignment_PB, /* List of Jobs */
         NULL_PTR, /* End Notification */
                 (uint8)FALSE /* Interruptible */
     }
@@ -581,7 +590,7 @@ CONST(Spi_ConfigType, SPI_CONST) Spi_PBCfgVariantPredefined =
     2u,
     1u,
     1u,
-    0u,
+    1u,
     SpiChannelConfig_PB0,
     SpiJobConfig_PB0,
     SpiSequenceConfig_PB0,

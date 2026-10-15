@@ -1,6 +1,6 @@
 ﻿###############################################################################
 #
-# IAR ELF Linker V8.40.2.214/W32 for ARM                  15/Oct/2026  14:17:36
+# IAR ELF Linker V8.40.2.214/W32 for ARM                  15/Oct/2026  16:16:12
 # Copyright 2007-2019 IAR Systems AB.
 #
 #    Output file  =
@@ -8,7 +8,7 @@
 #    Map file     =
 #        D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Debug\List\ASR_S32K144_Start.map
 #    Command line =
-#        -f C:\Users\EDY\AppData\Local\Temp\EW6385.tmp
+#        -f C:\Users\EDY\AppData\Local\Temp\EWEE9B.tmp
 #        (D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Debug\Obj\Adc.o
 #        D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Debug\Obj\Adc_Adc12bsarv2.o
 #        D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Debug\Obj\Adc_Adc12bsarv2_Irq.o
@@ -1244,11 +1244,11 @@ No sections matched the following patterns:
     OS_CONST_LIMIT_SEC    uninit            0x2'afa4       0x0  <internal module>
                                           - 0x2'afa4     0x9bc
 
-"PROGRAM_FLASH__Const_Default":                         0x12d0
-  Const_Default                             0x2'afa4    0x12d0  <Block>
+"PROGRAM_FLASH__Const_Default":                         0x12e0
+  Const_Default                             0x2'afa4    0x12e0  <Block>
     Const_Default_START_SEC
                           uninit            0x2'afa4       0x0  <internal module>
-    DEFAULT_RODATA_BLOCK                    0x2'afa8     0xebe  <Block>
+    DEFAULT_RODATA_BLOCK                    0x2'afa8     0xece  <Block>
       .rodata             const             0x2'afa8       0x8  Adc_Adc12bsarv2.o [1]
       .rodata             const             0x2'afb0      0x20  Adc_PBcfg.o [1]
       .rodata             const             0x2'afd0      0x34  Adc_PBcfg.o [1]
@@ -1391,57 +1391,58 @@ No sections matched the following patterns:
       .rodata             const             0x2'bd0c      0x34  Spi_LPspi.o [1]
       .rodata             const             0x2'bd40      0x18  Spi_PBcfg.o [1]
       .rodata             const             0x2'bd58      0x60  Spi_PBcfg.o [1]
-      .rodata             const             0x2'bdb8       0x4  Spi_PBcfg.o [1]
-      .rodata             const             0x2'bdbc      0x10  Spi_PBcfg.o [1]
-      .rodata             const             0x2'bdcc      0x18  Spi_PBcfg.o [1]
-      .rodata             const             0x2'bde4      0x18  Spi_PBcfg.o [1]
-      .rodata             const             0x2'bdfc       0x8  Spi_PBcfg.o [1]
-      .rodata             const             0x2'be04      0x10  Spi_PBcfg.o [1]
-      .rodata             const             0x2'be14      0x1c  Spi_PBcfg.o [1]
-      .rodata             const             0x2'be30       0x4  startup.o [1]
-      .rodata             const             0x2'be34       0x2  Can_Lcfg.o [1]
-      .rodata             const             0x2'be36       0x2  Can_Lcfg.o [1]
-      .rodata             const             0x2'be38       0x2  Can_Lcfg.o [1]
-      .rodata             const             0x2'be3a       0x2  Can_Lcfg.o [1]
-      .rodata             const             0x2'be3c       0x2  Can_Lcfg.o [1]
-      .rodata             const             0x2'be3e       0x2  CanIf_Lcfg.o [1]
-      .rodata             const             0x2'be40       0x2  CanTp_Lcfg.o [1]
-      .rodata             const             0x2'be42       0x2  CanTp_Lcfg.o [1]
-      .rodata             const             0x2'be44       0x2  Com_Lcfg.o [1]
-      .rodata             const             0x2'be46       0x2  Com_Lcfg.o [1]
-      .rodata             const             0x2'be48       0x2  Dcm.o [1]
-      .rodata             const             0x2'be4a       0x2  Dcm.o [1]
-      .rodata             const             0x2'be4c       0x2  Dcm_Lcfg.o [1]
-      .rodata             const             0x2'be4e       0x2  Dcm_Lcfg.o [1]
-      .rodata             const             0x2'be50       0x2  Dcm_Lcfg.o [1]
-      .rodata             const             0x2'be52       0x2  Dcm_Lcfg.o [1]
-      .rodata             const             0x2'be54       0x2  Dcm_Lcfg.o [1]
-      .rodata             const             0x2'be56       0x1  Adc_PBcfg.o [1]
-      .rodata             const             0x2'be57       0x1  Adc_PBcfg.o [1]
-      .rodata             const             0x2'be58       0x1  CanIf_Lcfg.o [1]
-      .rodata             const             0x2'be59       0x1  Com_Lcfg.o [1]
-      .rodata             const             0x2'be5a       0x1  Com_Lcfg.o [1]
-      .rodata             const             0x2'be5b       0x1  Com_Lcfg.o [1]
-      .rodata             const             0x2'be5c       0x1  ComM_Lcfg.o [1]
-      .rodata             const             0x2'be5d       0x1  Dcm.o [1]
-      .rodata             const             0x2'be5e       0x1  Dcm_Lcfg.o [1]
-      .rodata             const             0x2'be5f       0x1  Dcm_Lcfg.o [1]
-      .rodata             const             0x2'be60       0x1  Dcm_Lcfg.o [1]
-      .rodata             const             0x2'be61       0x1  Dcm_Lcfg.o [1]
-      .rodata             const             0x2'be62       0x1  Dcm_Lcfg.o [1]
-      .rodata             const             0x2'be63       0x1  Pwm_PBcfg.o [1]
-      .rodata             const             0x2'be64       0x1  Spi_PBcfg.o [1]
-      .rodata             const             0x2'be65       0x1  Spi_PBcfg.o [1]
-    DEFAULT_INTVEC_BLOCK                    0x2'be68     0x400  <Block>
-      .intvec             ro code           0x2'be68     0x400  startup_S32K148.o [1]
+      .rodata             const             0x2'bdb8      0x20  Spi_PBcfg.o [1]
+      .rodata             const             0x2'bdd8      0x18  Spi_PBcfg.o [1]
+      .rodata             const             0x2'bdf0      0x18  Spi_PBcfg.o [1]
+      .rodata             const             0x2'be08       0x8  Spi_PBcfg.o [1]
+      .rodata             const             0x2'be10      0x10  Spi_PBcfg.o [1]
+      .rodata             const             0x2'be20      0x1c  Spi_PBcfg.o [1]
+      .rodata             const             0x2'be3c       0x4  startup.o [1]
+      .rodata             const             0x2'be40       0x2  Can_Lcfg.o [1]
+      .rodata             const             0x2'be42       0x2  Can_Lcfg.o [1]
+      .rodata             const             0x2'be44       0x2  Can_Lcfg.o [1]
+      .rodata             const             0x2'be46       0x2  Can_Lcfg.o [1]
+      .rodata             const             0x2'be48       0x2  Can_Lcfg.o [1]
+      .rodata             const             0x2'be4a       0x2  CanIf_Lcfg.o [1]
+      .rodata             const             0x2'be4c       0x2  CanTp_Lcfg.o [1]
+      .rodata             const             0x2'be4e       0x2  CanTp_Lcfg.o [1]
+      .rodata             const             0x2'be50       0x2  Com_Lcfg.o [1]
+      .rodata             const             0x2'be52       0x2  Com_Lcfg.o [1]
+      .rodata             const             0x2'be54       0x2  Dcm.o [1]
+      .rodata             const             0x2'be56       0x2  Dcm.o [1]
+      .rodata             const             0x2'be58       0x2  Dcm_Lcfg.o [1]
+      .rodata             const             0x2'be5a       0x2  Dcm_Lcfg.o [1]
+      .rodata             const             0x2'be5c       0x2  Dcm_Lcfg.o [1]
+      .rodata             const             0x2'be5e       0x2  Dcm_Lcfg.o [1]
+      .rodata             const             0x2'be60       0x2  Dcm_Lcfg.o [1]
+      .rodata             const             0x2'be62       0x2  Spi_PBcfg.o [1]
+      .rodata             const             0x2'be64       0x2  Spi_PBcfg.o [1]
+      .rodata             const             0x2'be66       0x1  Adc_PBcfg.o [1]
+      .rodata             const             0x2'be67       0x1  Adc_PBcfg.o [1]
+      .rodata             const             0x2'be68       0x1  CanIf_Lcfg.o [1]
+      .rodata             const             0x2'be69       0x1  Com_Lcfg.o [1]
+      .rodata             const             0x2'be6a       0x1  Com_Lcfg.o [1]
+      .rodata             const             0x2'be6b       0x1  Com_Lcfg.o [1]
+      .rodata             const             0x2'be6c       0x1  ComM_Lcfg.o [1]
+      .rodata             const             0x2'be6d       0x1  Dcm.o [1]
+      .rodata             const             0x2'be6e       0x1  Dcm_Lcfg.o [1]
+      .rodata             const             0x2'be6f       0x1  Dcm_Lcfg.o [1]
+      .rodata             const             0x2'be70       0x1  Dcm_Lcfg.o [1]
+      .rodata             const             0x2'be71       0x1  Dcm_Lcfg.o [1]
+      .rodata             const             0x2'be72       0x1  Dcm_Lcfg.o [1]
+      .rodata             const             0x2'be73       0x1  Pwm_PBcfg.o [1]
+      .rodata             const             0x2'be74       0x1  Spi_PBcfg.o [1]
+      .rodata             const             0x2'be75       0x1  Spi_PBcfg.o [1]
+    DEFAULT_INTVEC_BLOCK                    0x2'be78     0x400  <Block>
+      .intvec             ro code           0x2'be78     0x400  startup_S32K148.o [1]
     DEFAULT_DATA_ROM_INIT_BLOCK
-                                            0x2'c268       0xc  <Block>
-      .data_init                            0x2'c268       0xc  <Block>
+                                            0x2'c278       0xc  <Block>
+      .data_init                            0x2'c278       0xc  <Block>
         Initializer bytes
-                          const             0x2'c268       0xc  <for .data-1>
+                          const             0x2'c278       0xc  <for .data-1>
     Const_Default_LIMIT_SEC
-                          uninit            0x2'c274       0x0  <internal module>
-                                          - 0x2'c274    0x12d0
+                          uninit            0x2'c284       0x0  <internal module>
+                                          - 0x2'c284    0x12e0
 
 "INTERNAL_RAM__OS_STACKS_CORE0_NOINIT":                 0x2800
   OS_STACKS_CORE0_NOINIT                 0x1fff'8000    0x2800  <Block>
@@ -1648,8 +1649,8 @@ No sections matched the following patterns:
   Data_Default                           0x1fff'b78c     0x5f8  <Block>
     Data_Default_START_SEC
                           uninit         0x1fff'b78c       0x0  <internal module>
-    DEFAULT_BSS_BLOCK                    0x1fff'b790     0x5e2  <Block>
-      .bss                               0x1fff'b790     0x5e2  <Block>
+    DEFAULT_BSS_BLOCK                    0x1fff'b790     0x5e7  <Block>
+      .bss                               0x1fff'b790     0x5e7  <Block>
         .bss              uninit         0x1fff'b790       0x4  Adc.o [1]
         .bss              uninit         0x1fff'b794       0x8  Adc.o [1]
         .bss              uninit         0x1fff'b79c      0x14  Adc.o [1]
@@ -1719,40 +1720,35 @@ No sections matched the following patterns:
         .bss              uninit         0x1fff'bc1c       0x4  Rte.o [1]
         .bss              uninit         0x1fff'bc20       0x4  Spi.o [1]
         .bss              uninit         0x1fff'bc24       0x8  Spi.o [1]
-        .bss              uninit         0x1fff'bc2c       0x4  Spi.o [1]
-        .bss              uninit         0x1fff'bc30       0x4  Spi.o [1]
-        .bss              uninit         0x1fff'bc34      0x58  Spi_LPspi.o [1]
-        .bss              uninit         0x1fff'bc8c       0x4  Spi_LPspi.o [1]
-        .bss              uninit         0x1fff'bc90      0x70  Spi_LPspi.o [1]
-        .bss              uninit         0x1fff'bd00       0x8  Spi_PBcfg.o [1]
-        .bss              uninit         0x1fff'bd08       0x8  Spi_PBcfg.o [1]
-        .bss              uninit         0x1fff'bd10       0x2  CanIf_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd12       0x2  CanTp_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd14       0x2  CanTp_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd16       0x2  Com_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd18       0x2  Com_Lcfg.o [1]
+        .bss              uninit         0x1fff'bc2c       0x8  Spi.o [1]
+        .bss              uninit         0x1fff'bc34       0x4  Spi.o [1]
+        .bss              uninit         0x1fff'bc38      0x58  Spi_LPspi.o [1]
+        .bss              uninit         0x1fff'bc90       0x4  Spi_LPspi.o [1]
+        .bss              uninit         0x1fff'bc94      0x70  Spi_LPspi.o [1]
+        .bss              uninit         0x1fff'bd04       0x8  Spi_PBcfg.o [1]
+        .bss              uninit         0x1fff'bd0c       0x8  Spi_PBcfg.o [1]
+        .bss              uninit         0x1fff'bd14       0x2  CanIf_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd16       0x2  CanTp_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd18       0x2  CanTp_Lcfg.o [1]
         .bss              uninit         0x1fff'bd1a       0x2  Com_Lcfg.o [1]
         .bss              uninit         0x1fff'bd1c       0x2  Com_Lcfg.o [1]
         .bss              uninit         0x1fff'bd1e       0x2  Com_Lcfg.o [1]
         .bss              uninit         0x1fff'bd20       0x2  Com_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd22       0x2  CtLedTask.o [1]
-        .bss              uninit         0x1fff'bd24       0x2  CtLedTask.o [1]
-        .bss              uninit         0x1fff'bd26       0x2  Dem.o [1]
-        .bss              uninit         0x1fff'bd28       0x2  Dem.o [1]
+        .bss              uninit         0x1fff'bd22       0x2  Com_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd24       0x2  Com_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd26       0x2  CtLedTask.o [1]
+        .bss              uninit         0x1fff'bd28       0x2  CtLedTask.o [1]
         .bss              uninit         0x1fff'bd2a       0x2  Dem.o [1]
-        .bss              uninit         0x1fff'bd2c       0x2  Dem_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd2e       0x2  Dem_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd30       0x2  Pwm_Ftm.o [1]
-        .bss              uninit         0x1fff'bd32       0x2  Rte.o [1]
-        .bss              uninit         0x1fff'bd34       0x2  Spi.o [1]
-        .bss              uninit         0x1fff'bd36       0x2  Spi.o [1]
-        .bss              uninit         0x1fff'bd38       0x1  BrsAsrMain.o [1]
-        .bss              uninit         0x1fff'bd39       0x1  BswM_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd3a       0x1  BswM_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd3b       0x1  BswM_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd3c       0x1  BswM_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd3d       0x1  BswM_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd3e       0x1  BswM_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd2c       0x2  Dem.o [1]
+        .bss              uninit         0x1fff'bd2e       0x2  Dem.o [1]
+        .bss              uninit         0x1fff'bd30       0x2  Dem_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd32       0x2  Dem_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd34       0x2  Pwm_Ftm.o [1]
+        .bss              uninit         0x1fff'bd36       0x2  Rte.o [1]
+        .bss              uninit         0x1fff'bd38       0x2  Spi.o [1]
+        .bss              uninit         0x1fff'bd3a       0x2  Spi.o [1]
+        .bss              uninit         0x1fff'bd3c       0x2  Spi.o [1]
+        .bss              uninit         0x1fff'bd3e       0x1  BrsAsrMain.o [1]
         .bss              uninit         0x1fff'bd3f       0x1  BswM_Lcfg.o [1]
         .bss              uninit         0x1fff'bd40       0x1  BswM_Lcfg.o [1]
         .bss              uninit         0x1fff'bd41       0x1  BswM_Lcfg.o [1]
@@ -1762,48 +1758,53 @@ No sections matched the following patterns:
         .bss              uninit         0x1fff'bd45       0x1  BswM_Lcfg.o [1]
         .bss              uninit         0x1fff'bd46       0x1  BswM_Lcfg.o [1]
         .bss              uninit         0x1fff'bd47       0x1  BswM_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd48       0x1  Can.o [1]
-        .bss              uninit         0x1fff'bd49       0x1  Can.o [1]
-        .bss              uninit         0x1fff'bd4a       0x1  CanIf_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd4b       0x1  CanSM.o [1]
-        .bss              uninit         0x1fff'bd4c       0x1  CanTp.o [1]
-        .bss              uninit         0x1fff'bd4d       0x1  CddSbc.o [1]
-        .bss              uninit         0x1fff'bd4e       0x1  Com_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd4f       0x1  Com_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd50       0x1  ComM.o [1]
-        .bss              uninit         0x1fff'bd51       0x1  ComM.o [1]
-        .bss              uninit         0x1fff'bd52       0x1  ComM.o [1]
-        .bss              uninit         0x1fff'bd53       0x1  ComM.o [1]
-        .bss              uninit         0x1fff'bd54       0x1  ComM.o [1]
-        .bss              uninit         0x1fff'bd55       0x1  ComM_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd56       0x1  ComM_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd57       0x1  CtLedTask.o [1]
-        .bss              uninit         0x1fff'bd58       0x1  Dcm.o [1]
-        .bss              uninit         0x1fff'bd59       0x1  Dem.o [1]
-        .bss              uninit         0x1fff'bd5a       0x1  Dem.o [1]
-        .bss              uninit         0x1fff'bd5b       0x1  Dem.o [1]
-        .bss              uninit         0x1fff'bd5c       0x1  Dem.o [1]
-        .bss              uninit         0x1fff'bd5d       0x1  Dem_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd5e       0x1  Dem_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd5f       0x1  Dem_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd60       0x1  Det.o [1]
-        .bss              uninit         0x1fff'bd61       0x1  EcuM.o [1]
-        .bss              uninit         0x1fff'bd62       0x1  EcuM.o [1]
-        .bss              uninit         0x1fff'bd63       0x1  EcuM.o [1]
-        .bss              uninit         0x1fff'bd64       0x1  EcuM.o [1]
-        .bss              uninit         0x1fff'bd65       0x1  EcuM_Cfg.o [1]
-        .bss              uninit         0x1fff'bd66       0x1  Mcu.o [1]
-        .bss              uninit         0x1fff'bd67       0x1  Mcu.o [1]
-        .bss              uninit         0x1fff'bd68       0x1  PduR_Lcfg.o [1]
-        .bss              uninit         0x1fff'bd69       0x1  Pwm.o [1]
-        .bss              uninit         0x1fff'bd6a       0x1  Pwm_Ftm.o [1]
-        .bss              uninit         0x1fff'bd6b       0x1  Pwm_Ftm.o [1]
-        .bss              uninit         0x1fff'bd6c       0x1  Pwm_Ftm.o [1]
-        .bss              uninit         0x1fff'bd6d       0x1  Rte.o [1]
-        .bss              uninit         0x1fff'bd6e       0x1  Rte.o [1]
-        .bss              uninit         0x1fff'bd6f       0x1  Rte.o [1]
-        .bss              uninit         0x1fff'bd70       0x1  Spi.o [1]
-        .bss              uninit         0x1fff'bd71       0x1  Test_Swc1.o [1]
+        .bss              uninit         0x1fff'bd48       0x1  BswM_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd49       0x1  BswM_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd4a       0x1  BswM_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd4b       0x1  BswM_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd4c       0x1  BswM_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd4d       0x1  BswM_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd4e       0x1  Can.o [1]
+        .bss              uninit         0x1fff'bd4f       0x1  Can.o [1]
+        .bss              uninit         0x1fff'bd50       0x1  CanIf_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd51       0x1  CanSM.o [1]
+        .bss              uninit         0x1fff'bd52       0x1  CanTp.o [1]
+        .bss              uninit         0x1fff'bd53       0x1  CddSbc.o [1]
+        .bss              uninit         0x1fff'bd54       0x1  Com_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd55       0x1  Com_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd56       0x1  ComM.o [1]
+        .bss              uninit         0x1fff'bd57       0x1  ComM.o [1]
+        .bss              uninit         0x1fff'bd58       0x1  ComM.o [1]
+        .bss              uninit         0x1fff'bd59       0x1  ComM.o [1]
+        .bss              uninit         0x1fff'bd5a       0x1  ComM.o [1]
+        .bss              uninit         0x1fff'bd5b       0x1  ComM_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd5c       0x1  ComM_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd5d       0x1  CtLedTask.o [1]
+        .bss              uninit         0x1fff'bd5e       0x1  Dcm.o [1]
+        .bss              uninit         0x1fff'bd5f       0x1  Dem.o [1]
+        .bss              uninit         0x1fff'bd60       0x1  Dem.o [1]
+        .bss              uninit         0x1fff'bd61       0x1  Dem.o [1]
+        .bss              uninit         0x1fff'bd62       0x1  Dem.o [1]
+        .bss              uninit         0x1fff'bd63       0x1  Dem_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd64       0x1  Dem_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd65       0x1  Dem_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd66       0x1  Det.o [1]
+        .bss              uninit         0x1fff'bd67       0x1  EcuM.o [1]
+        .bss              uninit         0x1fff'bd68       0x1  EcuM.o [1]
+        .bss              uninit         0x1fff'bd69       0x1  EcuM.o [1]
+        .bss              uninit         0x1fff'bd6a       0x1  EcuM.o [1]
+        .bss              uninit         0x1fff'bd6b       0x1  EcuM_Cfg.o [1]
+        .bss              uninit         0x1fff'bd6c       0x1  Mcu.o [1]
+        .bss              uninit         0x1fff'bd6d       0x1  Mcu.o [1]
+        .bss              uninit         0x1fff'bd6e       0x1  PduR_Lcfg.o [1]
+        .bss              uninit         0x1fff'bd6f       0x1  Pwm.o [1]
+        .bss              uninit         0x1fff'bd70       0x1  Pwm_Ftm.o [1]
+        .bss              uninit         0x1fff'bd71       0x1  Pwm_Ftm.o [1]
+        .bss              uninit         0x1fff'bd72       0x1  Pwm_Ftm.o [1]
+        .bss              uninit         0x1fff'bd73       0x1  Rte.o [1]
+        .bss              uninit         0x1fff'bd74       0x1  Rte.o [1]
+        .bss              uninit         0x1fff'bd75       0x1  Rte.o [1]
+        .bss              uninit         0x1fff'bd76       0x1  Test_Swc1.o [1]
     DEFAULT_DATA_INIT_BLOCK
                                          0x1fff'bd78       0xc  <Block>
       .data                              0x1fff'bd78       0xc  <Block>
@@ -1834,7 +1835,7 @@ Unused ranges:
          From           To      Size
          ----           --      ----
         0x3c0        0x3ff      0x40
-     0x2'c274     0x8'0000  0x5'3d8d
+     0x2'c284     0x8'0000  0x5'3d7d
   0x1fff'b769  0x1fff'b76b       0x3
   0x1fff'bd84  0x2000'0000    0x427d
 
@@ -1965,9 +1966,9 @@ D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\App
     Pwm_Ipw.o                       36
     Pwm_PBcfg.o                             105
     Rte.o                          616                 9
-    Spi.o                          928                25
+    Spi.o                          928                30
     Spi_LPspi.o                  1'340       52      204
-    Spi_PBcfg.o                             242       16
+    Spi_PBcfg.o                             258       16
     Test_Swc0.o                     40        1        1
     Test_Swc1.o                     60        1        2
     startup.o                      196        4
@@ -1975,7 +1976,7 @@ D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\App
     system_S32K148.o                72
     vstdlib.o                    1'444
     ----------------------------------------------------
-    Total:                     172'992    7'233   13'677
+    Total:                     172'992    7'249   13'682
 
 dl7M_tln.a: [2]
     exit.o                           4
@@ -2004,7 +2005,7 @@ shb_l.a: [5]
     Gaps                            28
     Linker created                            2    2'048
 --------------------------------------------------------
-    Grand Total:               173'300    7'235   15'725
+    Grand Total:               173'300    7'251   15'730
 
 
 *******************************************************************************
@@ -2014,11 +2015,11 @@ shb_l.a: [5]
 Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
 .bss$$Base              0x1fff'b790          --   Gb  - Linker created -
-.bss$$Limit             0x1fff'bd72          --   Gb  - Linker created -
+.bss$$Limit             0x1fff'bd77          --   Gb  - Linker created -
 .data$$Base             0x1fff'bd78          --   Gb  - Linker created -
 .data$$Limit            0x1fff'bd84          --   Gb  - Linker created -
-.data_init$$Base           0x2'c268          --   Gb  - Linker created -
-.data_init$$Limit          0x2'c274          --   Gb  - Linker created -
+.data_init$$Base           0x2'c278          --   Gb  - Linker created -
+.data_init$$Limit          0x2'c284          --   Gb  - Linker created -
 ?main                      0x1'52ed         Code  Gb  cmain.o [4]
 ADC12BSARV2_BASE_ADDR32
                            0x2'afa8    0x8  Data  Gb  Adc_Adc12bsarv2.o [1]
@@ -2050,11 +2051,11 @@ Adc_Adc12bsarv2_UpdateQueue
 Adc_Adc12bsarv2_UpdateSoftwareGroupState
                              0x145d   0xc2  Code  Lc  Adc_Adc12bsarv2_Irq.o [1]
 Adc_ChannelsCfg         0x1fff'bd78    0x8  Data  Lc  Adc_PBcfg.o [1]
-Adc_ChannelsCfg_0          0x2'be57    0x1  Data  Lc  Adc_PBcfg.o [1]
+Adc_ChannelsCfg_0          0x2'be67    0x1  Data  Lc  Adc_PBcfg.o [1]
 Adc_EnableGroupNotification
                               0x9c9   0x1a  Code  Gb  Adc.o [1]
 Adc_Group0_Assignment_0
-                           0x2'be56    0x1  Data  Lc  Adc_PBcfg.o [1]
+                           0x2'be66    0x1  Data  Lc  Adc_PBcfg.o [1]
 Adc_GroupsCfg              0x2'afd0   0x34  Data  Lc  Adc_PBcfg.o [1]
 Adc_HwUnitCfg              0x2'afb0   0x20  Data  Lc  Adc_PBcfg.o [1]
 Adc_Init                      0x92b   0x18  Code  Gb  Adc.o [1]
@@ -2080,7 +2081,7 @@ Adc_aUnitStatus         0x1fff'b79c   0x14  Data  Gb  Adc.o [1]
 Adc_pCfgPtr             0x1fff'b790    0x4  Data  Gb  Adc.o [1]
 ApplCanTimerLoop             0x18a5   0x60  Code  Lc  Can.o [1]
 BrsAsrApplCanInterruptLockCtr
-                        0x1fff'bd38    0x1  Data  Lc  BrsAsrMain.o [1]
+                        0x1fff'bd3e    0x1  Data  Lc  BrsAsrMain.o [1]
 BswM_AL_SetProgrammableInterrupts
                            0x1'458d    0x2  Code  Gb  BswM_Callout_Stubs.o [1]
 BswM_ActionListQueue    0x1fff'b7b4   0x14  Data  Gb  BswM_Lcfg.o [1]
@@ -2125,14 +2126,14 @@ BswM_ActionList_INIT_AL_Initialize
 BswM_ActionLists           0x2'b04c   0x50  Data  Gb  BswM_Lcfg.o [1]
 BswM_Action_RuleHandler
                            0x1'2a53   0x42  Code  Lc  BswM_Lcfg.o [1]
-BswM_CanSMChannelState  0x1fff'bd42    0x1  Data  Gb  BswM_Lcfg.o [1]
+BswM_CanSMChannelState  0x1fff'bd48    0x1  Data  Gb  BswM_Lcfg.o [1]
 BswM_CanSM_CurrentState
                              0x3547   0x62  Code  Gb  BswM.o [1]
-BswM_ComIPduGroupState  0x1fff'bd40    0x1  Data  Lc  BswM_Lcfg.o [1]
-BswM_ComMChannelState   0x1fff'bd43    0x1  Data  Gb  BswM_Lcfg.o [1]
+BswM_ComIPduGroupState  0x1fff'bd46    0x1  Data  Lc  BswM_Lcfg.o [1]
+BswM_ComMChannelState   0x1fff'bd49    0x1  Data  Gb  BswM_Lcfg.o [1]
 BswM_ComM_CurrentMode        0x34f1   0x56  Code  Gb  BswM.o [1]
 BswM_ComRxIPduGroupDMState
-                        0x1fff'bd41    0x1  Data  Lc  BswM_Lcfg.o [1]
+                        0x1fff'bd47    0x1  Data  Lc  BswM_Lcfg.o [1]
 BswM_DecreaseTimer           0x3207   0x32  Code  Lc  BswM.o [1]
 BswM_DeferredRules         0x2'b09c    0x8  Data  Gb  BswM_Lcfg.o [1]
 BswM_Deinit                  0x346d   0x26  Code  Gb  BswM.o [1]
@@ -2163,19 +2164,19 @@ BswM_Init                    0x32e1  0x18c  Code  Gb  BswM.o [1]
 BswM_InitMemory              0x32d3    0xe  Code  Gb  BswM.o [1]
 BswM_Init_Gen_NoPartitions
                            0x1'2add   0x50  Code  Gb  BswM_Lcfg.o [1]
-BswM_Initialized        0x1fff'bd44    0x1  Data  Gb  BswM_Lcfg.o [1]
+BswM_Initialized        0x1fff'bd4a    0x1  Data  Gb  BswM_Lcfg.o [1]
 BswM_MainFunction            0x35d9   0x6e  Code  Gb  BswM.o [1]
 BswM_ModeNotificationFct
                            0x1'2b2d   0x1c  Code  Gb  BswM_Lcfg.o [1]
 BswM_ModeRequestQueue   0x1fff'b7d0    0x4  Data  Gb  BswM_Lcfg.o [1]
 BswM_Mode_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode
-                        0x1fff'bd3f    0x1  Data  Lc  BswM_Lcfg.o [1]
+                        0x1fff'bd45    0x1  Data  Lc  BswM_Lcfg.o [1]
 BswM_PduGroupControlInvocation
-                        0x1fff'bd39    0x1  Data  Lc  BswM_Lcfg.o [1]
+                        0x1fff'bd3f    0x1  Data  Lc  BswM_Lcfg.o [1]
 BswM_ProcessQueuedRequests
                              0x3077   0xd4  Code  Lc  BswM.o [1]
-BswM_QueueSemaphore     0x1fff'bd45    0x1  Data  Gb  BswM_Lcfg.o [1]
-BswM_QueueWritten       0x1fff'bd46    0x1  Data  Gb  BswM_Lcfg.o [1]
+BswM_QueueSemaphore     0x1fff'bd4b    0x1  Data  Gb  BswM_Lcfg.o [1]
+BswM_QueueWritten       0x1fff'bd4c    0x1  Data  Gb  BswM_Lcfg.o [1]
 BswM_ReleaseQueue            0x3039   0x3e  Code  Lc  BswM.o [1]
 BswM_RequestMode             0x3493   0x5e  Code  Gb  BswM.o [1]
 BswM_RuleStates         0x1fff'b7d4   0x10  Data  Gb  BswM_Lcfg.o [1]
@@ -2213,15 +2214,15 @@ BswM_RulesOfConfig         0x2'b14c    0x4  Data  Gb  BswM_Lcfg.o [1]
 BswM_SwcModeRequestUpdateFct
                            0x1'2b49   0x32  Code  Gb  BswM_Lcfg.o [1]
 BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode
-                        0x1fff'bd3a    0x1  Data  Lc  BswM_Lcfg.o [1]
-BswM_TimerState         0x1fff'bd47    0x1  Data  Gb  BswM_Lcfg.o [1]
+                        0x1fff'bd40    0x1  Data  Lc  BswM_Lcfg.o [1]
+BswM_TimerState         0x1fff'bd4d    0x1  Data  Gb  BswM_Lcfg.o [1]
 BswM_TimerValue         0x1fff'b7e4    0x4  Data  Gb  BswM_Lcfg.o [1]
 BswM_UpdateRuleStates      0x1'2a95   0x12  Code  Lc  BswM_Lcfg.o [1]
 BswM_UpdateTimer           0x1'2aa7   0x36  Code  Lc  BswM_Lcfg.o [1]
 Buffer_PBSpiChannel_SBC_Read
-                        0x1fff'bd00    0x8  Data  Lc  Spi_PBcfg.o [1]
+                        0x1fff'bd04    0x8  Data  Lc  Spi_PBcfg.o [1]
 Buffer_PBSpiChannel_Test_Read
-                        0x1fff'bd08    0x8  Data  Lc  Spi_PBcfg.o [1]
+                        0x1fff'bd0c    0x8  Data  Lc  Spi_PBcfg.o [1]
 CSTACK$$Base            0x1fff'a800          --   Gb  - Linker created -
 CSTACK$$Limit           0x1fff'b000          --   Gb  - Linker created -
 CanBasicCanMsgReceived       0x23bd   0xae  Code  Lc  Can.o [1]
@@ -2264,7 +2265,7 @@ CanIfState                 0x2'b1e8   0x2c  Data  Lc  CanIf.o [1]
 CanIf_BusOffNotificationFctPtr
                            0x2'b214    0x4  Data  Gb  CanIf_Lcfg.o [1]
 CanIf_CanIfCtrlId2MappedTxBuffersConfig
-                           0x2'be3e    0x2  Data  Gb  CanIf_Lcfg.o [1]
+                           0x2'be4a    0x2  Data  Gb  CanIf_Lcfg.o [1]
 CanIf_ClearPrioByCanIdTxPduAsQueued
                              0x3977   0x7e  Code  Lc  CanIf.o [1]
 CanIf_ClearQueue             0x39f5   0x7c  Code  Lc  CanIf.o [1]
@@ -2273,7 +2274,7 @@ CanIf_ControllerModeIndication
                              0x4375   0xa0  Code  Gb  CanIf.o [1]
 CanIf_CtrlModeIndicationFctPtr
                            0x2'b218    0x4  Data  Gb  CanIf_Lcfg.o [1]
-CanIf_CtrlStates        0x1fff'bd10    0x2  Data  Gb  CanIf_Lcfg.o [1]
+CanIf_CtrlStates        0x1fff'bd14    0x2  Data  Gb  CanIf_Lcfg.o [1]
 CanIf_HlIndication           0x40af   0x82  Code  Lc  CanIf.o [1]
 CanIf_HlIndicationSubULCall
                              0x406b   0x44  Code  Lc  CanIf.o [1]
@@ -2282,7 +2283,7 @@ CanIf_Init                   0x3a71   0x2c  Code  Gb  CanIf.o [1]
 CanIf_InitMemory             0x435d    0x8  Code  Gb  CanIf.o [1]
 CanIf_MailBoxConfig        0x2'b21c    0xc  Data  Gb  CanIf_Lcfg.o [1]
 CanIf_MappedTxBuffersConfig
-                           0x2'be58    0x1  Data  Gb  CanIf_Lcfg.o [1]
+                           0x2'be68    0x1  Data  Gb  CanIf_Lcfg.o [1]
 CanIf_RxIndicationAsr403
                              0x3fa3   0xc8  Code  Gb  CanIf.o [1]
 CanIf_RxIndicationFctList
@@ -2308,7 +2309,7 @@ CanIf_TransmitSubHandleTxResBusy
                              0x3be9   0x7e  Code  Lc  CanIf.o [1]
 CanIf_TransmitSubWrite       0x3c67   0x56  Code  Lc  CanIf.o [1]
 CanIf_TxBufferPrioByCanIdBase
-                        0x1fff'bd4a    0x1  Data  Gb  CanIf_Lcfg.o [1]
+                        0x1fff'bd50    0x1  Data  Gb  CanIf_Lcfg.o [1]
 CanIf_TxBufferPrioByCanIdByteQueueConfig
                            0x2'b260    0x4  Data  Gb  CanIf_Lcfg.o [1]
 CanIf_TxBufferPrioByCanIdByteQueueMappedTxPdus
@@ -2373,7 +2374,7 @@ CanSM_InitializeVariables
                              0x8137   0x4c  Code  Lc  CanSM.o [1]
 CanSM_InitiateShutDownSequence
                              0x8125   0x12  Code  Lc  CanSM.o [1]
-CanSM_IsInitialized     0x1fff'bd4b    0x1  Data  Lc  CanSM.o [1]
+CanSM_IsInitialized     0x1fff'bd51    0x1  Data  Lc  CanSM.o [1]
 CanSM_MainFunction           0x857f   0x88  Code  Gb  CanSM.o [1]
 CanSM_MapControllerIdToLocalIndex
                              0x8357   0x18  Code  Lc  CanSM.o [1]
@@ -2390,7 +2391,7 @@ CanSM_StartControllerToBusOffCheck
                              0x80ef   0x24  Code  Lc  CanSM.o [1]
 CanSM_TimerHandling          0x82af   0x26  Code  Lc  CanSM.o [1]
 CanSM_UninitToNoCom          0x8183   0x24  Code  Lc  CanSM.o [1]
-CanTp_CalcBS            0x1fff'bd12    0x2  Data  Gb  CanTp_Lcfg.o [1]
+CanTp_CalcBS            0x1fff'bd16    0x2  Data  Gb  CanTp_Lcfg.o [1]
 CanTp_CanIfRxIndication
                              0x91d3   0xce  Code  Lc  CanTp.o [1]
 CanTp_CanIfRxIndicationCF
@@ -2411,7 +2412,7 @@ CanTp_Cfg_GetSduHdlByRxPduOnly
                              0x9079   0x42  Code  Lc  CanTp.o [1]
 CanTp_Init                   0x9929   0x1a  Code  Gb  CanTp.o [1]
 CanTp_InitMemory             0x9943    0xa  Code  Gb  CanTp.o [1]
-CanTp_InitState         0x1fff'bd4c    0x1  Data  Lc  CanTp.o [1]
+CanTp_InitState         0x1fff'bd52    0x1  Data  Lc  CanTp.o [1]
 CanTp_MainFunction           0x994d    0xc  Code  Gb  CanTp.o [1]
 CanTp_MainFunctionRx         0x9959   0xfe  Code  Gb  CanTp.o [1]
 CanTp_MainFunctionTx         0x9a57   0xda  Code  Gb  CanTp.o [1]
@@ -2433,8 +2434,8 @@ CanTp_RxInit                 0x940d   0x9c  Code  Lc  CanTp.o [1]
 CanTp_RxInitState            0x90bb   0x3a  Code  Lc  CanTp.o [1]
 CanTp_RxPduMap             0x2'b298    0x8  Data  Gb  CanTp_Lcfg.o [1]
 CanTp_RxSduCfg             0x2'b2a0   0x14  Data  Gb  CanTp_Lcfg.o [1]
-CanTp_RxSduCfgInd          0x2'be40    0x2  Data  Gb  CanTp_Lcfg.o [1]
-CanTp_RxSduSnv2Hdl         0x2'be42    0x2  Data  Gb  CanTp_Lcfg.o [1]
+CanTp_RxSduCfgInd          0x2'be4c    0x2  Data  Gb  CanTp_Lcfg.o [1]
+CanTp_RxSduSnv2Hdl         0x2'be4e    0x2  Data  Gb  CanTp_Lcfg.o [1]
 CanTp_RxState           0x1fff'b868   0x38  Data  Gb  CanTp_Lcfg.o [1]
 CanTp_RxTransmitFrame        0x966d  0x168  Code  Lc  CanTp.o [1]
 CanTp_Transmit               0x9b31   0x78  Code  Gb  CanTp.o [1]
@@ -2448,7 +2449,7 @@ CanTp_TxGetStminTimerFromStminValue
                              0x8883   0x36  Code  Lc  CanTp.o [1]
 CanTp_TxInit                 0x94ad   0x3e  Code  Lc  CanTp.o [1]
 CanTp_TxInitState            0x90f5   0x3a  Code  Lc  CanTp.o [1]
-CanTp_TxSemaphores      0x1fff'bd14    0x2  Data  Gb  CanTp_Lcfg.o [1]
+CanTp_TxSemaphores      0x1fff'bd18    0x2  Data  Gb  CanTp_Lcfg.o [1]
 CanTp_TxStartConnection
                              0x8cc5   0x3e  Code  Lc  CanTp.o [1]
 CanTp_TxState           0x1fff'b8a0   0x1c  Data  Gb  CanTp_Lcfg.o [1]
@@ -2461,7 +2462,7 @@ CanTp_Util_GetPaddingLength
                              0x8863   0x20  Code  Lc  CanTp.o [1]
 CanTp_Util_MemCpy            0x8785   0x1e  Code  Lc  CanTp.o [1]
 Can_ActiveSendObject    0x1fff'b7e8    0x4  Data  Gb  Can_Lcfg.o [1]
-Can_CanIfChannelId         0x2'be34    0x2  Data  Gb  Can_Lcfg.o [1]
+Can_CanIfChannelId         0x2'be40    0x2  Data  Gb  Can_Lcfg.o [1]
 Can_ChangeBaudrate           0x24f5   0x6c  Code  Gb  Can.o [1]
 Can_CleanUpSendState         0x1913   0x28  Code  Lc  Can.o [1]
 Can_ConfigDataPtr          0x2'b150    0x4  Data  Gb  Can.o [1]
@@ -2473,13 +2474,13 @@ Can_EnableControllerInterrupts
                              0x2805   0x70  Code  Gb  Can.o [1]
 Can_Init                     0x2569   0x78  Code  Gb  Can.o [1]
 Can_InitBasicCan           0x2'b188   0x40  Data  Gb  Can_Lcfg.o [1]
-Can_InitBasicCanIndex      0x2'be36    0x2  Data  Gb  Can_Lcfg.o [1]
+Can_InitBasicCanIndex      0x2'be42    0x2  Data  Gb  Can_Lcfg.o [1]
 Can_InitController           0x25e9   0xb8  Code  Gb  Can.o [1]
 Can_InitMemory               0x24eb    0xa  Code  Gb  Can.o [1]
 Can_InitObject             0x2'b1c8    0x8  Data  Gb  Can_Lcfg.o [1]
-Can_InitObjectBaudrate     0x2'be38    0x2  Data  Gb  Can_Lcfg.o [1]
+Can_InitObjectBaudrate     0x2'be44    0x2  Data  Gb  Can_Lcfg.o [1]
 Can_InitObjectStartIndex
-                           0x2'be3a    0x2  Data  Gb  Can_Lcfg.o [1]
+                           0x2'be46    0x2  Data  Gb  Can_Lcfg.o [1]
 Can_Mailbox                0x2'b1d0   0x18  Data  Gb  Can_Lcfg.o [1]
 Can_MainFunction_BusOff
                              0x2941    0x2  Code  Gb  Can.o [1]
@@ -2487,32 +2488,32 @@ Can_MainFunction_Mode        0x2945   0x58  Code  Gb  Can.o [1]
 Can_MainFunction_Wakeup
                              0x2943    0x2  Code  Gb  Can.o [1]
 Can_SetControllerMode        0x26a5  0x108  Code  Gb  Can.o [1]
-Can_TxOffsetHwToLog        0x2'be3c    0x2  Data  Gb  Can_Lcfg.o [1]
+Can_TxOffsetHwToLog        0x2'be48    0x2  Data  Gb  Can_Lcfg.o [1]
 Can_Write                    0x2875   0xc4  Code  Gb  Can.o [1]
 CancelAlarm                0x1'f64b   0x4a  Code  Gb  Os_Trap.o [1]
 ClearEvent                 0x1'f3f3   0x4c  Code  Gb  Os_Trap.o [1]
 Code_Default$$Base            0x674          --   Gb  - Linker created -
 Code_Default$$Limit        0x1'5398          --   Gb  - Linker created -
-ComM_ActiveComMode      0x1fff'bd53    0x1  Data  Lc  ComM.o [1]
-ComM_BusComModeReq      0x1fff'bd54    0x1  Data  Lc  ComM.o [1]
+ComM_ActiveComMode      0x1fff'bd59    0x1  Data  Lc  ComM.o [1]
+ComM_BusComModeReq      0x1fff'bd5a    0x1  Data  Lc  ComM.o [1]
 ComM_BusSM_ModeIndication
                              0x2eb7   0x96  Code  Gb  ComM.o [1]
-ComM_BusSmState         0x1fff'bd51    0x1  Data  Lc  ComM.o [1]
+ComM_BusSmState         0x1fff'bd57    0x1  Data  Lc  ComM.o [1]
 ComM_CalculateHighestComMode
                              0x29c5   0x5e  Code  Lc  ComM.o [1]
 ComM_ChannelIsRequestPending
                              0x2a49   0x2e  Code  Lc  ComM.o [1]
 ComM_ChannelStateTransition
                              0x2d51   0x9e  Code  Lc  ComM.o [1]
-ComM_ComAllowed         0x1fff'bd52    0x1  Data  Lc  ComM.o [1]
+ComM_ComAllowed         0x1fff'bd58    0x1  Data  Lc  ComM.o [1]
 ComM_CommunicationAllowed
                              0x2cc9   0x38  Code  Gb  ComM.o [1]
 ComM_DCM_ActiveDiagnostic
                              0x2def   0x3a  Code  Gb  ComM.o [1]
 ComM_DCM_InactiveDiagnostic
                              0x2e29   0x3a  Code  Gb  ComM.o [1]
-ComM_DcmRequestActive   0x1fff'bd55    0x1  Data  Gb  ComM_Lcfg.o [1]
-ComM_ECUGroupClassInit     0x2'be5c    0x1  Data  Gb  ComM_Lcfg.o [1]
+ComM_DcmRequestActive   0x1fff'bd5b    0x1  Data  Gb  ComM_Lcfg.o [1]
+ComM_ECUGroupClassInit     0x2'be6c    0x1  Data  Gb  ComM_Lcfg.o [1]
 ComM_EcuM_WakeUpIndication
                              0x2e63   0x54  Code  Gb  ComM.o [1]
 ComM_GetState                0x2b93   0x6e  Code  Gb  ComM.o [1]
@@ -2522,7 +2523,7 @@ ComM_Init                    0x2ac5   0xb4  Code  Gb  ComM.o [1]
 ComM_InitCheckGeneratedData
                              0x2b79   0x10  Code  Lc  ComM.o [1]
 ComM_InitMemory              0x2b89    0xa  Code  Gb  ComM.o [1]
-ComM_InitStatus         0x1fff'bd50    0x1  Data  Lc  ComM.o [1]
+ComM_InitStatus         0x1fff'bd56    0x1  Data  Lc  ComM.o [1]
 ComM_IsUserRequestingChannel
                              0x2a23   0x26  Code  Lc  ComM.o [1]
 ComM_MainFunction            0x2d01   0x50  Code  Gb  ComM.o [1]
@@ -2541,12 +2542,12 @@ ComM_TF_SiCom_NoCom          0x2a97   0x18  Code  Lc  ComM.o [1]
 ComM_TransitionFctTable
                            0x2'b380   0x64  Data  Lc  ComM.o [1]
 ComM_TransitionTable       0x2'b364   0x1c  Data  Lc  ComM.o [1]
-ComM_UserReqFullCom     0x1fff'bd56    0x1  Data  Gb  ComM_Lcfg.o [1]
+ComM_UserReqFullCom     0x1fff'bd5c    0x1  Data  Gb  ComM_Lcfg.o [1]
 Com_ActivateRxComIPdu        0x9d3f   0x1c  Code  Lc  Com.o [1]
 Com_ActivateTxComIPdu        0x9d5b   0x1a  Code  Lc  Com.o [1]
 Com_ClearIpduGroupVector
                              0xa8dd    0xc  Code  Gb  Com.o [1]
-Com_ConstValueUInt8        0x2'be59    0x1  Data  Gb  Com_Lcfg.o [1]
+Com_ConstValueUInt8        0x2'be69    0x1  Data  Gb  Com_Lcfg.o [1]
 Com_CurrentTxMode       0x1fff'b8c4    0x4  Data  Gb  Com_Lcfg.o [1]
 Com_CycleTimeCnt        0x1fff'b8c8    0x4  Data  Gb  Com_Lcfg.o [1]
 Com_CyclicSendRequest   0x1fff'b8cc    0x4  Data  Gb  Com_Lcfg.o [1]
@@ -2560,7 +2561,7 @@ Com_Init                     0xa78f   0x5a  Code  Gb  Com.o [1]
 Com_InitMemory               0xa7e9    0xa  Code  Gb  Com.o [1]
 Com_InitRx                   0x9eb5   0x1e  Code  Lc  Com.o [1]
 Com_InitTx                   0x9e99   0x1c  Code  Lc  Com.o [1]
-Com_Initialized         0x1fff'bd4e    0x1  Data  Gb  Com_Lcfg.o [1]
+Com_Initialized         0x1fff'bd54    0x1  Data  Gb  Com_Lcfg.o [1]
 Com_IpduGroupControl         0xa7f9   0x6e  Code  Gb  Com.o [1]
 Com_IpduGroupControl_EvaluateActiveState
                              0x9e5d   0x3c  Code  Lc  Com.o [1]
@@ -2582,9 +2583,9 @@ Com_RxDeferredPduProcessing
 Com_RxDeferredPduProcessing_IterateOverAllRxPdus
                              0xa1eb   0x30  Code  Lc  Com.o [1]
 Com_RxDeferredProcessingISRLockCounter
-                        0x1fff'bd16    0x2  Data  Gb  Com_Lcfg.o [1]
+                        0x1fff'bd1a    0x2  Data  Gb  Com_Lcfg.o [1]
 Com_RxIPduGroupISRLockCounter
-                        0x1fff'bd18    0x2  Data  Gb  Com_Lcfg.o [1]
+                        0x1fff'bd1c    0x2  Data  Gb  Com_Lcfg.o [1]
 Com_RxIPduGroup_EnterExclusiveArea
                              0x9ed3    0x8  Code  Lc  Com.o [1]
 Com_RxIPduGroup_ExitExclusiveArea
@@ -2596,8 +2597,8 @@ Com_RxIndication_ProcessPdu
                              0xa281   0x6a  Code  Lc  Com.o [1]
 Com_RxIndication_Processing
                              0xa137   0x18  Code  Lc  Com.o [1]
-Com_RxPduGrpActive      0x1fff'bd1a    0x2  Data  Gb  Com_Lcfg.o [1]
-Com_RxPduGrpInfo           0x2'be44    0x2  Data  Gb  Com_Lcfg.o [1]
+Com_RxPduGrpActive      0x1fff'bd1e    0x2  Data  Gb  Com_Lcfg.o [1]
+Com_RxPduGrpInfo           0x2'be50    0x2  Data  Gb  Com_Lcfg.o [1]
 Com_RxPduInfo              0x2'b2d8    0xc  Data  Gb  Com_Lcfg.o [1]
 Com_RxProcessDeferredPDU
                              0xa21b   0x66  Code  Lc  Com.o [1]
@@ -2624,7 +2625,7 @@ Com_SendSignal_Processing
 Com_SendSignal_WriteSignal
                              0xa6e5   0x74  Code  Lc  Com.o [1]
 Com_SetIpduGroup             0xa8e9   0x6e  Code  Gb  Com.o [1]
-Com_SigGrpEventFlag     0x1fff'bd4f    0x1  Data  Gb  Com_Lcfg.o [1]
+Com_SigGrpEventFlag     0x1fff'bd55    0x1  Data  Gb  Com_Lcfg.o [1]
 Com_SignalGroup_InitTxIpdu
                              0x9f3f   0x78  Code  Lc  Com.o [1]
 Com_Signal_GetTxBufferLength
@@ -2644,9 +2645,9 @@ Com_TxConfirmation           0xa9cd   0x3e  Code  Gb  Com.o [1]
 Com_TxConfirmation_Process
                              0xa457   0x20  Code  Lc  Com.o [1]
 Com_TxCyclicProcessingISRLockCounter
-                        0x1fff'bd1c    0x2  Data  Gb  Com_Lcfg.o [1]
+                        0x1fff'bd20    0x2  Data  Gb  Com_Lcfg.o [1]
 Com_TxIPduGroupISRLockCounter
-                        0x1fff'bd1e    0x2  Data  Gb  Com_Lcfg.o [1]
+                        0x1fff'bd22    0x2  Data  Gb  Com_Lcfg.o [1]
 Com_TxIPduGroup_EnterExclusiveArea
                              0x9f09    0x8  Code  Lc  Com.o [1]
 Com_TxIPduGroup_ExitExclusiveArea
@@ -2655,7 +2656,7 @@ Com_TxIPduGroup_ThresholdCheck
                              0x9f21   0x1e  Code  Lc  Com.o [1]
 Com_TxLLIf_InitTxIpdu        0xa43f   0x18  Code  Lc  Com.o [1]
 Com_TxLLIf_Transmit          0xaa0b   0x44  Code  Gb  Com.o [1]
-Com_TxModeFalse            0x2'be46    0x2  Data  Gb  Com_Lcfg.o [1]
+Com_TxModeFalse            0x2'be52    0x2  Data  Gb  Com_Lcfg.o [1]
 Com_TxModeHdlr_EnterExclusiveArea
                              0xa55b    0x8  Code  Lc  Com.o [1]
 Com_TxModeHdlr_EnterExclusiveArea_CycleCounter
@@ -2683,25 +2684,25 @@ Com_TxModeHdlr_ThresholdCheck
 Com_TxModeHdlr_ThresholdCheck_CycleCounter
                              0xa517   0x1e  Code  Lc  Com.o [1]
 Com_TxModeInfo             0x2'b2f0    0xc  Data  Gb  Com_Lcfg.o [1]
-Com_TxModeTrue             0x2'be5a    0x1  Data  Gb  Com_Lcfg.o [1]
+Com_TxModeTrue             0x2'be6a    0x1  Data  Gb  Com_Lcfg.o [1]
 Com_TxPduGrpActive      0x1fff'b908    0x4  Data  Gb  Com_Lcfg.o [1]
 Com_TxPduGrpInfo           0x2'b2fc    0x4  Data  Gb  Com_Lcfg.o [1]
 Com_TxPduInfo              0x2'b300   0x14  Data  Gb  Com_Lcfg.o [1]
 Com_TxPduInitValue         0x2'b314   0x18  Data  Gb  Com_Lcfg.o [1]
 Com_TxProcessingISRLockCounter
-                        0x1fff'bd20    0x2  Data  Gb  Com_Lcfg.o [1]
+                        0x1fff'bd24    0x2  Data  Gb  Com_Lcfg.o [1]
 Com_TxSduLength         0x1fff'b90c    0x8  Data  Gb  Com_Lcfg.o [1]
-Com_TxSigGrpInfo           0x2'be5b    0x1  Data  Gb  Com_Lcfg.o [1]
+Com_TxSigGrpInfo           0x2'be6b    0x1  Data  Gb  Com_Lcfg.o [1]
 Com_TxSigInfo              0x2'b32c   0x38  Data  Gb  Com_Lcfg.o [1]
 Const_Default$$Base        0x2'afa4          --   Gb  - Linker created -
-Const_Default$$Limit       0x2'c274          --   Gb  - Linker created -
+Const_Default$$Limit       0x2'c284          --   Gb  - Linker created -
 CtLedTask_InitRunnable     0x1'3051   0x1a  Code  Gb  CtLedTask.o [1]
 CtLedTask_InitRunnable::ResultBuffer
-                        0x1fff'bd22    0x2  Data  Lc  CtLedTask.o [1]
+                        0x1fff'bd26    0x2  Data  Lc  CtLedTask.o [1]
 DEFAULT_BSS_BLOCK$$Base
                         0x1fff'b790          --   Gb  - Linker created -
 DEFAULT_BSS_BLOCK$$Limit
-                        0x1fff'bd72          --   Gb  - Linker created -
+                        0x1fff'bd77          --   Gb  - Linker created -
 DEFAULT_CODE_BLOCK$$Base
                               0x678          --   Gb  - Linker created -
 DEFAULT_CODE_BLOCK$$Limit
@@ -2711,17 +2712,17 @@ DEFAULT_DATA_INIT_BLOCK$$Base
 DEFAULT_DATA_INIT_BLOCK$$Limit
                         0x1fff'bd84          --   Gb  - Linker created -
 DEFAULT_DATA_ROM_INIT_BLOCK$$Base
-                           0x2'c268          --   Gb  - Linker created -
+                           0x2'c278          --   Gb  - Linker created -
 DEFAULT_DATA_ROM_INIT_BLOCK$$Limit
-                           0x2'c274          --   Gb  - Linker created -
+                           0x2'c284          --   Gb  - Linker created -
 DEFAULT_INTVEC_BLOCK$$Base
-                           0x2'be68          --   Gb  - Linker created -
+                           0x2'be78          --   Gb  - Linker created -
 DEFAULT_INTVEC_BLOCK$$Limit
-                           0x2'c268          --   Gb  - Linker created -
+                           0x2'c278          --   Gb  - Linker created -
 DEFAULT_RODATA_BLOCK$$Base
                            0x2'afa8          --   Gb  - Linker created -
 DEFAULT_RODATA_BLOCK$$Limit
-                           0x2'be66          --   Gb  - Linker created -
+                           0x2'be76          --   Gb  - Linker created -
 Data_Default$$Base      0x1fff'b78c          --   Gb  - Linker created -
 Data_Default$$Limit     0x1fff'bd84          --   Gb  - Linker created -
 Data_Default_INIT$$Base
@@ -2755,18 +2756,18 @@ Dcm_CfgDidMgrSignalOpClassInfo
 Dcm_CfgDidMgrSignalOpClassInfoGetEntryOrNull
                              0x4839    0xc  Code  Lc  Dcm.o [1]
 Dcm_CfgNetAllComMChannelMap
-                           0x2'be60    0x1  Data  Gb  Dcm_Lcfg.o [1]
+                           0x2'be70    0x1  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgNetBufferInfo       0x2'b4b4    0x8  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgNetBuffer_000    0x1fff'ba2c   0x34  Data  Lc  Dcm_Lcfg.o [1]
 Dcm_CfgNetConnComMChannelMap
-                           0x2'be5f    0x1  Data  Gb  Dcm_Lcfg.o [1]
+                           0x2'be6f    0x1  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgNetConnectionInfo
                            0x2'b4c0    0x8  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgNetNetworkHandleLookUpTable
-                           0x2'be50    0x2  Data  Gb  Dcm_Lcfg.o [1]
+                           0x2'be5c    0x2  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgNetProtocolInfo     0x2'b4c8    0xc  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgNetRxPduInfo        0x2'b4bc    0x4  Data  Gb  Dcm_Lcfg.o [1]
-Dcm_CfgNetTxPduInfo        0x2'be5e    0x1  Data  Gb  Dcm_Lcfg.o [1]
+Dcm_CfgNetTxPduInfo        0x2'be6e    0x1  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgStatePreconditions
                            0x2'b4d4    0x4  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgStateSecurityInfo
@@ -2780,13 +2781,13 @@ Dcm_CfgSvc10SubFuncInfo
 Dcm_CfgSvc10SubFuncLookUpTable
                            0x2'b4a0    0x4  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgSvc11SubFuncExecPrecondTable
-                           0x2'be61    0x1  Data  Gb  Dcm_Lcfg.o [1]
+                           0x2'be71    0x1  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgSvc11SubFuncInfo
                            0x2'b5f4    0x4  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgSvc11SubFuncInfoGetEntryOrNull
                              0x5acd    0xa  Code  Lc  Dcm.o [1]
 Dcm_CfgSvc11SubFuncLookUpTable
-                           0x2'be4c    0x2  Data  Gb  Dcm_Lcfg.o [1]
+                           0x2'be58    0x2  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgSvc19SubFuncExecPrecondTable
                            0x2'b610    0x4  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgSvc19SubFuncInfo
@@ -2800,7 +2801,7 @@ Dcm_CfgSvc27SecLevelInfo
 Dcm_CfgSvc27SecLevelInfoGetEntryOrNull
                              0x62e7    0xc  Code  Lc  Dcm.o [1]
 Dcm_CfgSvc27SubFuncExecPrecondTable
-                           0x2'be52    0x2  Data  Gb  Dcm_Lcfg.o [1]
+                           0x2'be5e    0x2  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgSvc27SubFuncInfo
                            0x2'b614   0x10  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgSvc27SubFuncInfoGetEntryOrNull
@@ -2808,11 +2809,11 @@ Dcm_CfgSvc27SubFuncInfoGetEntryOrNull
 Dcm_CfgSvc27SubFuncLookUpTable
                            0x2'b4a8    0x4  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgSvc3ESubFuncExecPrecondTable
-                           0x2'be62    0x1  Data  Gb  Dcm_Lcfg.o [1]
+                           0x2'be72    0x1  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgSvc3ESubFuncLookUpTable
-                           0x2'be4e    0x2  Data  Gb  Dcm_Lcfg.o [1]
+                           0x2'be5a    0x2  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgSvc85SubFuncExecPrecondTable
-                           0x2'be54    0x2  Data  Gb  Dcm_Lcfg.o [1]
+                           0x2'be60    0x2  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgSvc85SubFuncInfo
                            0x2'b630   0x10  Data  Gb  Dcm_Lcfg.o [1]
 Dcm_CfgSvc85SubFuncInfoGetEntryOrNull
@@ -2828,7 +2829,7 @@ Dcm_ComM_SilentComModeEntered
 Dcm_Confirmation           0x1'3841    0x2  Code  Gb  Dcm_Callout_Stubs.o [1]
 Dcm_CopyRxData               0x7845   0x8e  Code  Gb  Dcm.o [1]
 Dcm_CopyTxData               0x791d   0x9c  Code  Gb  Dcm.o [1]
-Dcm_DebugInitState      0x1fff'bd58    0x1  Data  Lc  Dcm.o [1]
+Dcm_DebugInitState      0x1fff'bd5e    0x1  Data  Lc  Dcm.o [1]
 Dcm_DemApiConvDemRsltGetNextFilteredItem
                              0x6d91   0x34  Code  Lc  Dcm.o [1]
 Dcm_DemApiGetNrcForDemRetValue
@@ -2836,7 +2837,7 @@ Dcm_DemApiGetNrcForDemRetValue
 Dcm_DemApiNrcMapGetNumberOfFilteredDTC
                            0x2'b3ec    0x4  Data  Lc  Dcm.o [1]
 Dcm_DemApiNrcMapSelectDTC
-                           0x2'be5d    0x1  Data  Lc  Dcm.o [1]
+                           0x2'be6d    0x1  Data  Lc  Dcm.o [1]
 Dcm_DemApiNrcMapSetDTCFilter
                            0x2'b3e8    0x4  Data  Lc  Dcm.o [1]
 Dcm_DiagAcceptNewRequest
@@ -3162,9 +3163,9 @@ Dcm_Svc14_XX_RepeaterProxyCheckSelectionResult
 Dcm_Svc14_XX_RepeaterProxySelectDTC
                              0x5bbd   0x3a  Code  Lc  Dcm.o [1]
 Dcm_Svc19DemChainDtcCount
-                           0x2'be48    0x2  Data  Lc  Dcm.o [1]
+                           0x2'be54    0x2  Data  Lc  Dcm.o [1]
 Dcm_Svc19DemChainReadDtcByStatus
-                           0x2'be4a    0x2  Data  Lc  Dcm.o [1]
+                           0x2'be56    0x2  Data  Lc  Dcm.o [1]
 Dcm_Svc19DemChainReadExtRecords
                            0x2'b48c    0x8  Data  Lc  Dcm.o [1]
 Dcm_Svc19DemDtcFilterInfo
@@ -3276,7 +3277,7 @@ Dcm_UtiLookUpUint8           0x7a8b   0x24  Code  Gb  Dcm.o [1]
 Dcm_UtiMemCopySafe           0x4471   0x1a  Code  Lc  Dcm.o [1]
 Dcm_VarMgrLookUpFilter       0x7445    0x2  Code  Lc  Dcm.o [1]
 Dem_Cfg_AdminData       0x1fff'ba74    0xc  Data  Gb  Dem_Lcfg.o [1]
-Dem_Cfg_ClearDTCTable   0x1fff'bd2c    0x2  Data  Gb  Dem_Lcfg.o [1]
+Dem_Cfg_ClearDTCTable   0x1fff'bd30    0x2  Data  Gb  Dem_Lcfg.o [1]
 Dem_Cfg_CombinedGroupGetEvent
                              0xb7e5   0x12  Code  Lc  Dem.o [1]
 Dem_Cfg_CombinedGroupIterGet
@@ -3314,11 +3315,11 @@ Dem_Cfg_ERecDid              0xb5fd    0x4  Code  Lc  Dem.o [1]
 Dem_Cfg_ERecType             0xb601   0x10  Code  Lc  Dem.o [1]
 Dem_Cfg_ERecUpdate           0xb611   0x14  Code  Lc  Dem.o [1]
 Dem_Cfg_EnableConditionGroupCounter
-                        0x1fff'bd5d    0x1  Data  Gb  Dem_Lcfg.o [1]
+                        0x1fff'bd63    0x1  Data  Gb  Dem_Lcfg.o [1]
 Dem_Cfg_EnableConditionGroupState
-                        0x1fff'bd5e    0x1  Data  Gb  Dem_Lcfg.o [1]
+                        0x1fff'bd64    0x1  Data  Gb  Dem_Lcfg.o [1]
 Dem_Cfg_EnableConditionState
-                        0x1fff'bd5f    0x1  Data  Gb  Dem_Lcfg.o [1]
+                        0x1fff'bd65    0x1  Data  Gb  Dem_Lcfg.o [1]
 Dem_Cfg_EventAgingCycle
                              0xb625    0x4  Code  Lc  Dem.o [1]
 Dem_Cfg_EventAgingTarget
@@ -3363,7 +3364,7 @@ Dem_Cfg_EventFunctionalUnit
                              0xb683    0x8  Code  Lc  Dem.o [1]
 Dem_Cfg_EventGroupMask       0xb7cb   0x1a  Code  Lc  Dem.o [1]
 Dem_Cfg_EventInternalStatus
-                        0x1fff'bd2e    0x2  Data  Gb  Dem_Lcfg.o [1]
+                        0x1fff'bd32    0x2  Data  Gb  Dem_Lcfg.o [1]
 Dem_Cfg_EventIsCombined
                              0xb65d    0x4  Code  Lc  Dem.o [1]
 Dem_Cfg_EventJumpDownValue
@@ -3523,9 +3524,9 @@ Dem_ClearDTC_TestClearWwhObdAllDTCsAllowed
 Dem_ClearTask_ClearRequest
                         0x1fff'ba6c    0x8  Data  Lc  Dem.o [1]
 Dem_ClearTask_ClearState
-                        0x1fff'bd5b    0x1  Data  Lc  Dem.o [1]
+                        0x1fff'bd61    0x1  Data  Lc  Dem.o [1]
 Dem_ClearTask_ClearWriteErrors
-                        0x1fff'bd5c    0x1  Data  Lc  Dem.o [1]
+                        0x1fff'bd62    0x1  Data  Lc  Dem.o [1]
 Dem_ClearTask_GetClearClient
                              0xffa1    0x8  Code  Lc  Dem.o [1]
 Dem_ClearTask_GetClearEvent
@@ -4411,7 +4412,7 @@ Dem_Indicator_UserIndicatorEnable
 Dem_Init                   0x1'1ae1   0x44  Code  Gb  Dem.o [1]
 Dem_InitMemory             0x1'1925   0x26  Code  Gb  Dem.o [1]
 Dem_InitState_CoreInitializationStatus
-                        0x1fff'bd59    0x1  Data  Lc  Dem.o [1]
+                        0x1fff'bd5f    0x1  Data  Lc  Dem.o [1]
 Dem_InitState_SetInitState
                              0xb497    0x8  Code  Lc  Dem.o [1]
 Dem_InitState_TestAllSatellitesAtLeastInState
@@ -4496,7 +4497,7 @@ Dem_MemState_MemoryUpdateInit
 Dem_MemState_MemoryUpdateStart
                              0xb8e9   0x18  Code  Lc  Dem.o [1]
 Dem_MemState_PrimaryCurrentCount
-                        0x1fff'bd5a    0x1  Data  Gb  Dem.o [1]
+                        0x1fff'bd60    0x1  Data  Gb  Dem.o [1]
 Dem_MemState_PrimaryInfo
                            0x2'b640   0x10  Data  Lc  Dem.o [1]
 Dem_MemState_ResetOverflow
@@ -4618,9 +4619,9 @@ Dem_Nvm_SetStatusBlockChanged
 Dem_OperationCycle_AddCycleCount
                              0xd49d   0x1a  Code  Lc  Dem.o [1]
 Dem_OperationCycle_CurrentCycleState
-                        0x1fff'bd26    0x2  Data  Lc  Dem.o [1]
-Dem_OperationCycle_CycleFlag
                         0x1fff'bd2a    0x2  Data  Lc  Dem.o [1]
+Dem_OperationCycle_CycleFlag
+                        0x1fff'bd2e    0x2  Data  Lc  Dem.o [1]
 Dem_OperationCycle_CycleUpdate
                              0xd6a9   0x44  Code  Lc  Dem.o [1]
 Dem_OperationCycle_CycleUpdateEnd
@@ -4640,7 +4641,7 @@ Dem_OperationCycle_MainFunction
 Dem_OperationCycle_ObdCycleUpdate
                              0xd695    0x2  Code  Lc  Dem.o [1]
 Dem_OperationCycle_PendingCycleState
-                        0x1fff'bd28    0x2  Data  Lc  Dem.o [1]
+                        0x1fff'bd2c    0x2  Data  Lc  Dem.o [1]
 Dem_OperationCycle_PreInit
                              0xd6ed   0x14  Code  Lc  Dem.o [1]
 Dem_OperationCycle_ProcessCycles
@@ -4854,11 +4855,11 @@ EcuM_ClearValidatedWakeupEvent
                              0x173b   0x42  Code  Gb  EcuM.o [1]
 EcuM_ComM_BufferedWakeups
                         0x1fff'bbcc    0x4  Data  Lc  EcuM.o [1]
-EcuM_CurrentBootTarget  0x1fff'bd64    0x1  Data  Lc  EcuM.o [1]
+EcuM_CurrentBootTarget  0x1fff'bd6a    0x1  Data  Lc  EcuM.o [1]
 EcuM_CurrentShutdownMode
-                        0x1fff'bd61    0x1  Data  Lc  EcuM.o [1]
+                        0x1fff'bd67    0x1  Data  Lc  EcuM.o [1]
 EcuM_CurrentShutdownTarget
-                        0x1fff'bd62    0x1  Data  Lc  EcuM.o [1]
+                        0x1fff'bd68    0x1  Data  Lc  EcuM.o [1]
 EcuM_DriverInitOne         0x2'b788    0x4  Data  Gb  EcuM_Cfg.o [1]
 EcuM_GetPendingWakeupEvents
                              0x1711   0x2a  Code  Gb  EcuM.o [1]
@@ -4873,9 +4874,9 @@ EcuM_InternalClearWakeupEvent
 EcuM_InternalComMNotifications
                              0x1635   0x42  Code  Lc  EcuM.o [1]
 EcuM_MainFunction            0x1699   0x12  Code  Gb  EcuM.o [1]
-EcuM_ModuleState        0x1fff'bd65    0x1  Data  Gb  EcuM_Cfg.o [1]
+EcuM_ModuleState        0x1fff'bd6b    0x1  Data  Gb  EcuM_Cfg.o [1]
 EcuM_OnGoOffOne              0x2f7d    0x2  Code  Gb  EcuM_Callout_Stubs.o [1]
-EcuM_ShutdownCause      0x1fff'bd63    0x1  Data  Lc  EcuM.o [1]
+EcuM_ShutdownCause      0x1fff'bd69    0x1  Data  Lc  EcuM.o [1]
 EcuM_ShutdownOS              0x2f7f    0xa  Code  Gb  EcuM_Callout_Stubs.o [1]
 EcuM_StartOS                 0x3005    0xa  Code  Gb  EcuM_Callout_Stubs.o [1]
 EcuM_StartupTwo              0x17ab   0x5c  Code  Gb  EcuM.o [1]
@@ -4887,19 +4888,19 @@ FTM_BASE_ADDR32            0x2'b794   0x20  Data  Gb  Ftm_Common.o [1]
 GetCounterValue            0x1'f4f7   0x68  Code  Gb  Os_Trap.o [1]
 GetElapsedValue            0x1'f55f   0x8e  Code  Gb  Os_Trap.o [1]
 GetEvent                   0x1'f43f   0x6c  Code  Gb  Os_Trap.o [1]
-HWUnitConfig_PB            0x2'be04   0x10  Data  Lc  Spi_PBcfg.o [1]
+HWUnitConfig_PB            0x2'be10   0x10  Data  Lc  Spi_PBcfg.o [1]
 Heap_Default$$Base      0x1fff'bd84          --   Gb  - Linker created -
 Heap_Default$$Limit     0x1fff'bd84          --   Gb  - Linker created -
 LPspiChannelAttributesConfig_PB0
-                           0x2'bdcc   0x18  Data  Lc  Spi_PBcfg.o [1]
+                           0x2'bdd8   0x18  Data  Lc  Spi_PBcfg.o [1]
 LPspiDeviceAttributesConfig_PB0
-                           0x2'bde4   0x18  Data  Lc  Spi_PBcfg.o [1]
-LedRunnable                0x1'306b   0x58  Code  Gb  CtLedTask.o [1]
+                           0x2'bdf0   0x18  Data  Lc  Spi_PBcfg.o [1]
+LedRunnable                0x1'306b   0x5a  Code  Gb  CtLedTask.o [1]
 LedRunnable::Receive    0x1fff'b924    0x8  Data  Lc  CtLedTask.o [1]
 LedRunnable::Send       0x1fff'b91c    0x8  Data  Lc  CtLedTask.o [1]
-LedRunnable::result     0x1fff'bd57    0x1  Data  Lc  CtLedTask.o [1]
+LedRunnable::result     0x1fff'bd5d    0x1  Data  Lc  CtLedTask.o [1]
 LedRunnable::swc12ctledtask
-                        0x1fff'bd24    0x2  Data  Lc  CtLedTask.o [1]
+                        0x1fff'bd28    0x2  Data  Lc  CtLedTask.o [1]
 McuModuleConfiguration     0x2'b9a0   0x18  Data  Gb  Mcu_PBcfg.o [1]
 Mcu_ClockConfigPB0         0x2'b950   0x14  Data  Lc  Mcu_PBcfg.o [1]
 Mcu_DistributePllClock     0x1'24a5    0xe  Code  Gb  Mcu.o [1]
@@ -4930,8 +4931,8 @@ Mcu_SIM_ClockConfig        0x1'46c7   0x38  Code  Gb  Mcu_SIM.o [1]
 Mcu_SIM_Init               0x1'4679   0x4e  Code  Gb  Mcu_SIM.o [1]
 Mcu_SMC_AllowedModesConfig
                            0x1'478d    0xc  Code  Gb  Mcu_SMC.o [1]
-Mcu_au8ClockConfigIds   0x1fff'bd66    0x1  Data  Lc  Mcu.o [1]
-Mcu_au8ModeConfigIds    0x1fff'bd67    0x1  Data  Lc  Mcu.o [1]
+Mcu_au8ClockConfigIds   0x1fff'bd6c    0x1  Data  Lc  Mcu.o [1]
+Mcu_au8ModeConfigIds    0x1fff'bd6d    0x1  Data  Lc  Mcu.o [1]
 Mcu_pClockConfig        0x1fff'bbd4    0x4  Data  Lc  Mcu_IPW.o [1]
 Mcu_pConfigPtr          0x1fff'bbd0    0x4  Data  Gb  Mcu.o [1]
 OS_BARRIER_CORE0_VAR_NOCACHE_NOINIT_BLOCK$$Base
@@ -9512,7 +9513,7 @@ PduR_DcmTransmit           0x1'378f   0x16  Code  Gb  PduR_Lcfg.o [1]
 PduR_ExclusiveAreaRom      0x2'b9d8    0x8  Data  Gb  PduR_Lcfg.o [1]
 PduR_Init                    0xae35   0x38  Code  Gb  PduR.o [1]
 PduR_InitMemory              0xae85    0x8  Code  Gb  PduR.o [1]
-PduR_Initialized        0x1fff'bd68    0x1  Data  Gb  PduR_Lcfg.o [1]
+PduR_Initialized        0x1fff'bd6e    0x1  Data  Gb  PduR_Lcfg.o [1]
 PduR_LoIfRxIndication        0xab55   0x42  Code  Gb  PduR.o [1]
 PduR_LoIfTxConfirmation
                              0xab97   0x4a  Code  Gb  PduR.o [1]
@@ -9599,12 +9600,12 @@ Pwm_Ftm_SetDutyCycle       0x1'50dd   0x82  Code  Gb  Pwm_Ftm.o [1]
 Pwm_Ftm_aNotifToChannelMap
                         0x1fff'bbfc   0x20  Data  Lc  Pwm_Ftm.o [1]
 Pwm_Ftm_au16ChannelDuty
-                        0x1fff'bd30    0x2  Data  Lc  Pwm_Ftm.o [1]
+                        0x1fff'bd34    0x2  Data  Lc  Pwm_Ftm.o [1]
 Pwm_Ftm_au16Period      0x1fff'bbf4    0x8  Data  Lc  Pwm_Ftm.o [1]
 Pwm_Ftm_au8ChannelState
-                        0x1fff'bd6a    0x1  Data  Lc  Pwm_Ftm.o [1]
+                        0x1fff'bd70    0x1  Data  Lc  Pwm_Ftm.o [1]
 Pwm_Init                   0x1'2947   0x2c  Code  Gb  Pwm.o [1]
-Pwm_IpChannelConfig_PB     0x2'be63    0x1  Data  Lc  Pwm_PBcfg.o [1]
+Pwm_IpChannelConfig_PB     0x2'be73    0x1  Data  Lc  Pwm_PBcfg.o [1]
 Pwm_Ipw_Init               0x1'4569   0x10  Code  Gb  Pwm_Ipw.o [1]
 Pwm_Ipw_SetDutyCycle       0x1'4579   0x14  Code  Gb  Pwm_Ipw.o [1]
 Pwm_PBCfgVariantPredefined
@@ -9615,19 +9616,19 @@ Pwm_ValidateChannelConfigCall
 Pwm_ValidateGlobalConfigCall
                            0x1'2885   0x42  Code  Lc  Pwm.o [1]
 Pwm_ValidateParamDuty      0x1'2923   0x24  Code  Lc  Pwm.o [1]
-Pwm_eGlobalState        0x1fff'bd69    0x1  Data  Lc  Pwm.o [1]
+Pwm_eGlobalState        0x1fff'bd6f    0x1  Data  Lc  Pwm.o [1]
 Pwm_pConfig             0x1fff'bbf0    0x4  Data  Lc  Pwm.o [1]
 RCM_ResetConfigPB0         0x2'b964    0x8  Data  Lc  Mcu_PBcfg.o [1]
 Region$$Table$$Base             0x0          --   Gb  - Linker created -
 Region$$Table$$Limit            0x0          --   Gb  - Linker created -
 Request_ESH_PostRunRequest_0_requestedMode
-                        0x1fff'bd3d    0x1  Data  Lc  BswM_Lcfg.o [1]
+                        0x1fff'bd43    0x1  Data  Lc  BswM_Lcfg.o [1]
 Request_ESH_PostRunRequest_1_requestedMode
-                        0x1fff'bd3e    0x1  Data  Lc  BswM_Lcfg.o [1]
+                        0x1fff'bd44    0x1  Data  Lc  BswM_Lcfg.o [1]
 Request_ESH_RunRequest_0_requestedMode
-                        0x1fff'bd3b    0x1  Data  Lc  BswM_Lcfg.o [1]
+                        0x1fff'bd41    0x1  Data  Lc  BswM_Lcfg.o [1]
 Request_ESH_RunRequest_1_requestedMode
-                        0x1fff'bd3c    0x1  Data  Lc  BswM_Lcfg.o [1]
+                        0x1fff'bd42    0x1  Data  Lc  BswM_Lcfg.o [1]
 Reset_Handler              0x1'5245         Code  Wk  startup_S32K148.o [1]
 ResumeAllInterrupts        0x1'f28b   0x2e  Code  Gb  Os_Trap.o [1]
 ResumeOSInterrupts         0x1'f2e7   0x2e  Code  Gb  Os_Trap.o [1]
@@ -9649,7 +9650,7 @@ Rte_Call_DemMaster_0_CBReadData_OdometerValue_OdometerValue_ReadData
 Rte_InitMemory               0x373f    0x2  Code  Gb  Rte.o [1]
 Rte_MemClr                   0x3691   0x10  Code  Gb  Rte.o [1]
 Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode
-                        0x1fff'bd6f    0x1  Data  Gb  Rte.o [1]
+                        0x1fff'bd75    0x1  Data  Gb  Rte.o [1]
 Rte_Mode_BswM_Notification_ESH_ModeNotification_BswM_MDGP_ESH_Mode
                              0x37e7    0x8  Code  Gb  Rte.o [1]
 Rte_Read_BswM_Request_ESH_PostRunRequest_0_requestedMode
@@ -9672,11 +9673,11 @@ Rte_Switch_Dcm_DcmDiagnosticSessionControl_DcmDiagnosticSessionControl
 Rte_Switch_Dcm_DcmEcuReset_DcmEcuReset
                              0x3819    0x8  Code  Gb  Rte.o [1]
 Rte_Test_Swc0_Test_Swc0_Write_u8_Signal
-                        0x1fff'bd6d    0x1  Data  Gb  Rte.o [1]
+                        0x1fff'bd73    0x1  Data  Gb  Rte.o [1]
 Rte_Test_Swc1_Test_Swc1_Send_Test_Signal_u16_Siganl
-                        0x1fff'bd32    0x2  Data  Gb  Rte.o [1]
+                        0x1fff'bd36    0x2  Data  Gb  Rte.o [1]
 Rte_Test_Swc1_Test_Swc1_Write_u8_Signal
-                        0x1fff'bd6e    0x1  Data  Gb  Rte.o [1]
+                        0x1fff'bd74    0x1  Data  Gb  Rte.o [1]
 Rte_Write_CtLedTask_Test_Signal_u16_Siganl
                              0x3741   0x16  Code  Gb  Rte.o [1]
 SCG_ClockConfigPB0_0       0x2'b828   0x20  Data  Lc  Mcu_PBcfg.o [1]
@@ -9710,16 +9711,18 @@ SchM_Init                    0x36a1   0x28  Code  Gb  Rte.o [1]
 SetRelAlarm                0x1'f5ed   0x5e  Code  Gb  Os_Trap.o [1]
 ShutdownOS                 0x1'f225   0x38  Code  Gb  Os_Trap.o [1]
 SpiAttributesConfig_PB0
-                           0x2'bdfc    0x8  Data  Lc  Spi_PBcfg.o [1]
+                           0x2'be08    0x8  Data  Lc  Spi_PBcfg.o [1]
 SpiChannelConfig_PB0       0x2'bd40   0x18  Data  Lc  Spi_PBcfg.o [1]
 SpiJobConfig_PB0           0x2'bd58   0x60  Data  Lc  Spi_PBcfg.o [1]
 SpiJob_0_ChannelAssignment_PB
-                           0x2'be64    0x1  Data  Lc  Spi_PBcfg.o [1]
+                           0x2'be74    0x1  Data  Lc  Spi_PBcfg.o [1]
 SpiJob_1_ChannelAssignment_PB
-                           0x2'be65    0x1  Data  Lc  Spi_PBcfg.o [1]
-SpiSequenceConfig_PB0      0x2'bdbc   0x10  Data  Lc  Spi_PBcfg.o [1]
+                           0x2'be75    0x1  Data  Lc  Spi_PBcfg.o [1]
+SpiSequenceConfig_PB0      0x2'bdb8   0x20  Data  Lc  Spi_PBcfg.o [1]
 SpiSequence_0_SBC_JobAssignment_PB
-                           0x2'bdb8    0x4  Data  Lc  Spi_PBcfg.o [1]
+                           0x2'be62    0x2  Data  Lc  Spi_PBcfg.o [1]
+SpiSequence_1_TEST_JobAssignment_PB
+                           0x2'be64    0x2  Data  Lc  Spi_PBcfg.o [1]
 Spi_Init                   0x1'24e5   0xf2  Code  Gb  Spi.o [1]
 Spi_LPspi_DeInit           0x1'4107   0x32  Code  Gb  Spi_LPspi.o [1]
 Spi_LPspi_Init             0x1'402d   0xda  Code  Gb  Spi_LPspi.o [1]
@@ -9729,28 +9732,28 @@ Spi_LPspi_SyncTransmitJob
 Spi_LPspi_SyncTransmitRX
                            0x1'4435  0x112  Code  Lc  Spi_LPspi.o [1]
 Spi_LPspi_SyncTransmitState
-                        0x1fff'bc34   0x58  Data  Lc  Spi_LPspi.o [1]
+                        0x1fff'bc38   0x58  Data  Lc  Spi_LPspi.o [1]
 Spi_LPspi_SyncTransmitTX
                            0x1'43c7   0x6e  Code  Lc  Spi_LPspi.o [1]
-Spi_LPspi_aDeviceState  0x1fff'bc90   0x70  Data  Gb  Spi_LPspi.o [1]
+Spi_LPspi_aDeviceState  0x1fff'bc94   0x70  Data  Gb  Spi_LPspi.o [1]
 Spi_LPspi_au32BaseAddrs
                            0x2'bd0c   0x34  Data  Gb  Spi_LPspi.o [1]
 Spi_LPspi_u32ReadDiscard
-                        0x1fff'bc8c    0x4  Data  Lc  Spi_LPspi.o [1]
+                        0x1fff'bc90    0x4  Data  Lc  Spi_LPspi.o [1]
 Spi_PBCfgVariantPredefined
-                           0x2'be14   0x1c  Data  Gb  Spi_PBcfg.o [1]
+                           0x2'be20   0x1c  Data  Gb  Spi_PBcfg.o [1]
 Spi_SetupEB                0x1'25d7  0x106  Code  Gb  Spi.o [1]
 Spi_SyncTransmit           0x1'26dd  0x188  Code  Gb  Spi.o [1]
 Spi_aSpiChannelState    0x1fff'bc24    0x8  Data  Gb  Spi.o [1]
 Spi_aSpiHWUnitQueueArray
-                        0x1fff'bd34    0x2  Data  Lc  Spi.o [1]
-Spi_aSpiJobState        0x1fff'bd36    0x2  Data  Gb  Spi.o [1]
-Spi_aSpiSequenceState   0x1fff'bd70    0x1  Data  Gb  Spi.o [1]
+                        0x1fff'bd38    0x2  Data  Lc  Spi.o [1]
+Spi_aSpiJobState        0x1fff'bd3c    0x2  Data  Gb  Spi.o [1]
+Spi_aSpiSequenceState   0x1fff'bd3a    0x2  Data  Gb  Spi.o [1]
 Spi_au32SpiSeqUsedHWUnits
-                        0x1fff'bc2c    0x4  Data  Lc  Spi.o [1]
+                        0x1fff'bc2c    0x8  Data  Lc  Spi.o [1]
 Spi_pcSpiConfigPtr      0x1fff'bc20    0x4  Data  Gb  Spi.o [1]
 Spi_u32SpiBusySyncHWUnitsStatus
-                        0x1fff'bc30    0x4  Data  Lc  Spi.o [1]
+                        0x1fff'bc34    0x4  Data  Lc  Spi.o [1]
 StartOS                    0x1'f21b    0xa  Code  Gb  Os_Trap.o [1]
 Startup_Code$$Base            0x674          --   Gb  - Linker created -
 Startup_Code$$Limit           0x674          --   Gb  - Linker created -
@@ -9768,7 +9771,7 @@ Test_Swc0_Main::sendData
 Test_Swc1_Init             0x1'3139    0x2  Code  Gb  Test_Swc1.o [1]
 Test_Swc1_Main             0x1'313b   0x26  Code  Gb  Test_Swc1.o [1]
 Test_Swc1_Main::csResult
-                        0x1fff'bd71    0x1  Data  Lc  Test_Swc1.o [1]
+                        0x1fff'bd76    0x1  Data  Lc  Test_Swc1.o [1]
 Test_Swc1_Main::sendData
                         0x1fff'bd81    0x1  Data  Lc  Test_Swc1.o [1]
 VStdLib_Loc_MemCpy_32_Aligned
@@ -9790,7 +9793,7 @@ VStdLib_MemSet             0x1'36c1   0x4a  Code  Gb  vstdlib.o [1]
 WaitEvent                  0x1'f4ab   0x4c  Code  Gb  Os_Trap.o [1]
 _Code_Default_LIMIT        0x1'5398         Data  Gb  <internal module>
 _Code_Default_START           0x674         Data  Gb  <internal module>
-_Const_Default_LIMIT       0x2'c274         Data  Gb  <internal module>
+_Const_Default_LIMIT       0x2'c284         Data  Gb  <internal module>
 _Const_Default_START       0x2'afa4         Data  Gb  <internal module>
 _Data_Default_INIT_LIMIT
                         0x1fff'bd84         Data  Gb  <internal module>
@@ -9883,7 +9886,7 @@ __CODE_ROM$$Base                0x0          --   Gb  - Linker created -
 __CODE_ROM$$Limit               0x0          --   Gb  - Linker created -
 __Code_Default_LIMIT       0x1'5398         Data  Gb  <internal module>
 __Code_Default_START          0x674         Data  Gb  <internal module>
-__Const_Default_LIMIT      0x2'c274         Data  Gb  <internal module>
+__Const_Default_LIMIT      0x2'c284         Data  Gb  <internal module>
 __Const_Default_START      0x2'afa4         Data  Gb  <internal module>
 __Data_Default_INIT_LIMIT
                         0x1fff'bd84         Data  Gb  <internal module>
@@ -9947,8 +9950,8 @@ __Startup_Stack_LIMIT   0x1fff'b000         Data  Gb  <internal module>
 __Startup_Stack_START   0x1fff'a800         Data  Gb  <internal module>
 __VECTOR_RAM {Abs}      0x1fff'8000         Data  Gb  <internal module>
 __VECTOR_TABLE {Abs}            0x0         Data  Gb  <internal module>
-__Vectors                  0x2'be68          --   Gb  startup_S32K148.o [1]
-__Vectors_End              0x2'c268         Data  Gb  startup_S32K148.o [1]
+__Vectors                  0x2'be78          --   Gb  startup_S32K148.o [1]
+__Vectors_End              0x2'c278         Data  Gb  startup_S32K148.o [1]
 __Vectors_Size {Abs}          0x400          --   Gb  startup_S32K148.o [1]
 __aeabi_memcpy             0x1'3b91         Code  Gb  ABImemcpy.o [4]
 __aeabi_memcpy4            0x1'3bb1         Code  Gb  ABImemcpy.o [4]
@@ -9958,21 +9961,21 @@ __exit                     0x1'5321   0x14  Code  Gb  exit.o [5]
 __iar_init_vfp             0x1'52c9         Code  Gb  fpinit_M.o [3]
 __iar_program_start        0x1'538d         Code  Gb  cstartup_M.o [4]
 __low_level_init           0x1'530b    0x4  Code  Gb  low_level_init.o [2]
-__vector_table             0x2'be68         Data  Gb  startup_S32K148.o [1]
-__vector_table_0x1c        0x2'be84         Data  Gb  startup_S32K148.o [1]
+__vector_table             0x2'be78         Data  Gb  startup_S32K148.o [1]
+__vector_table_0x1c        0x2'be94         Data  Gb  startup_S32K148.o [1]
 _call_main                 0x1'52f9         Code  Gb  cmain.o [4]
 _exit                      0x1'5315         Code  Gb  cexit.o [4]
 _main                      0x1'5307         Code  Gb  cmain.o [4]
 a                       0x1fff'b8bc    0x4  Data  Gb  CddSbc.o [1]
-canConfigInitFlag       0x1fff'bd49    0x1  Data  Lc  Can.o [1]
-canRxTaskActive         0x1fff'bd48    0x1  Data  Lc  Can.o [1]
-detModuleInit           0x1fff'bd60    0x1  Data  Lc  Det.o [1]
-eChannelIdleState       0x1fff'bd6c    0x1  Data  Lc  Pwm_Ftm.o [1]
-eChannelPolarity        0x1fff'bd6b    0x1  Data  Lc  Pwm_Ftm.o [1]
+canConfigInitFlag       0x1fff'bd4f    0x1  Data  Lc  Can.o [1]
+canRxTaskActive         0x1fff'bd4e    0x1  Data  Lc  Can.o [1]
+detModuleInit           0x1fff'bd66    0x1  Data  Lc  Det.o [1]
+eChannelIdleState       0x1fff'bd72    0x1  Data  Lc  Pwm_Ftm.o [1]
+eChannelPolarity        0x1fff'bd71    0x1  Data  Lc  Pwm_Ftm.o [1]
 exit                       0x1'530f    0x4  Code  Gb  exit.o [2]
 init_data_bss              0x1'5181   0xc4  Code  Gb  startup.o [1]
 main                         0x15b5   0x12  Code  Gb  BrsAsrMain.o [1]
-result                  0x1fff'bd4d    0x1  Data  Lc  CddSbc.o [1]
+result                  0x1fff'bd53    0x1  Data  Lc  CddSbc.o [1]
 
 
 [1] = D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Debug\Obj
@@ -9982,8 +9985,8 @@ result                  0x1fff'bd4d    0x1  Data  Lc  CddSbc.o [1]
 [5] = shb_l.a
 
   173'300 bytes of readonly  code memory
-    7'235 bytes of readonly  data memory
-   15'725 bytes of readwrite data memory
+    7'251 bytes of readonly  data memory
+   15'730 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

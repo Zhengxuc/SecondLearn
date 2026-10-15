@@ -188,26 +188,26 @@ FUNC(void, CtLedTask_CODE) LedRunnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 //static unsigned char My_GroupSignal1 = 254;
 
   //spi¡∑œ∞
-   static Spi_DataBufferType Send[8]={0};
-   static Spi_DataBufferType Receive[8]={0};
+
+   static Spi_DataBufferType Send[8]={0u};
+   static Spi_DataBufferType Receive[8]={0u};
    static Std_ReturnType result;
-   
    uint32 resultCnt=0;
-   Send[0] = 0xAA;
-   Send[1] = 0xFF;
-   Send[2] = 0xAA;
-   Send[3] = 0xAB;
+   Send[0] = 0xFF;
+   Send[1] = 0x12;
+   Send[2] = 0x34;
+   Send[3] = 0x56;
    
-   Send[4] = 0xFF;
-   Send[5] = 0x55;
-   Send[6] = 0xFF;
-   Send[7] = 0xCE;
+   Send[4] = 0x78;
+   Send[5] = 0x90;
+   Send[6] = 0xAA;
+   Send[7] = 0xFF;
    result = Spi_SetupEB(SpiConf_SpiChannel_SpiChannel_Test_Read,Send,Receive,8);
    if(result == E_OK)
   {
       resultCnt++;
   }
-  result = Spi_SyncTransmit(SpiConf_SpiSequence_SpiSequence_0_SBC);
+  result = Spi_SyncTransmit(SpiConf_SpiSequence_SpiSequence_1_TEST);
       if(result == E_OK)
   {
       resultCnt++;

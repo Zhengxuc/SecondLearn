@@ -207,7 +207,13 @@ extern "C"{
 * external identifiers.
 */
 #define SpiConf_SpiSequence_SpiSequence_0_SBC   ((Spi_SequenceType)0)
-#define SPI_MAX_SEQUENCE  (1u)
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SpiConf_SpiSequence_SpiSequence_1_TEST   ((Spi_SequenceType)1)
+#define SPI_MAX_SEQUENCE  (2u)
 
 
 /**
