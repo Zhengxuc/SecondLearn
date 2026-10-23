@@ -2387,6 +2387,9 @@
                     <name>$PROJ_DIR$\Appl\GenData\src\Dio_Cfg.c</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\Appl\GenData\src\Gpt_PBcfg.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\Appl\GenData\src\Mcu_Cfg.c</name>
                 </file>
                 <file>
@@ -3055,9 +3058,36 @@
             </file>
         </group>
         <group>
+            <name>GPT</name>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Gpt_TS_T40D2M10I1R0\src\Gpt.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Gpt_TS_T40D2M10I1R0\src\Gpt_Ftm.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Gpt_TS_T40D2M10I1R0\src\Gpt_Ipw.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Gpt_TS_T40D2M10I1R0\src\Gpt_LPit.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Gpt_TS_T40D2M10I1R0\src\Gpt_Lptmr.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Gpt_TS_T40D2M10I1R0\src\Gpt_SRtc.c</name>
+            </file>
+        </group>
+        <group>
             <name>MCL</name>
             <file>
                 <name>$PROJ_DIR$\MCAL\Mcl_TS_T40D2M10I1R0\src\Ftm_Common.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Mcl_TS_T40D2M10I1R0\src\LPit_Common.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Mcl_TS_T40D2M10I1R0\src\Lptmr_Common.c</name>
             </file>
         </group>
         <group>

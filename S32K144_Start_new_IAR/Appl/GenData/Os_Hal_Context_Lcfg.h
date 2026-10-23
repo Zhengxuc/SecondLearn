@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Context_Lcfg.h
- *   Generation Time: 2026-10-10 10:43:57
+ *   Generation Time: 2026-10-23 10:46:53
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -139,6 +139,9 @@ extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsr_0_MB16
 
 /*! HAL ISR2 context configuration data: CounterIsr_SystemTimer */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CounterIsr_SystemTimer;
+
+/*! HAL ISR2 context configuration data: GPtIsr_LpitChannel0 */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_GPtIsr_LpitChannel0;
 
 /*! HAL task context configuration data: Default_Init_Task */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Init_Task;

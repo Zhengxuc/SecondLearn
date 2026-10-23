@@ -130,6 +130,9 @@
         <Splitter File=".\Config\ECUC\S32K144_Start_Pwm_ecuc.arxml">
             <Module Name="Pwm"/>
         </Splitter>
+        <Splitter File=".\Config\ECUC\S32K144_Start_Gpt_ecuc.arxml">
+            <Module Name="Gpt"/>
+        </Splitter>
         <OwnFolderForEachSplitter>false</OwnFolderForEachSplitter>
     </EcucSplitter>
     <Display LastVersion="5.18.37 SP1">
@@ -171,9 +174,6 @@
             </Settings>
             <Settings Name="com.vector.cfg.gui.core.generators.GeneratedModules">
                 <Setting Value="false" Name="Os"/>
-                <Setting Value="false" Name="Wdg"/>
-                <Setting Value="false" Name="WdgIf"/>
-                <Setting Value="false" Name="WdgM"/>
             </Settings>
             <Settings Name="com.vector.cfg.gui.core.generators.GenerationTarget">
                 <Setting Value="Real Target" Name="TargetType"/>

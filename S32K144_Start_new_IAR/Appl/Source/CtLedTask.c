@@ -123,10 +123,11 @@ FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void) /* PRQA S 0850 */ /* MD_
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: CtLedTask_InitRunnable
  *********************************************************************************************************************/
-  static uint16 ResultBuffer[1] = {0}; 
-  Adc_SetupResultBuffer(AdcConf_AdcGroup_AdcGroup0, ResultBuffer);
-  Adc_EnableGroupNotification(AdcConf_AdcGroup_AdcGroup0);
-  
+//  static uint16 ResultBuffer[1] = {0}; 
+//  Adc_SetupResultBuffer(AdcConf_AdcGroup_AdcGroup0, ResultBuffer);
+//  Adc_EnableGroupNotification(AdcConf_AdcGroup_AdcGroup0);
+  Gpt_EnableNotification(GptConf_GptChannelConfiguration_GptChannelConfiguration);
+  Gpt_StartTimer(0,240000);
 
   Rte_Call_UR_CN_CAN00_06ecbb07_RequestComMode(COMM_FULL_COMMUNICATION);
 
@@ -213,9 +214,7 @@ FUNC(void, CtLedTask_CODE) LedRunnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
       resultCnt++;
   }
    
-//LedCnt++;
-//
-//LedState ^= 0x01;
+
 
 
 //Rte_Write_CtLedTask_RearInterLight_Bool_signal(1);
@@ -229,7 +228,7 @@ Rte_Read_CtLedTask_Recive_Test_Signal_u16_Siganl(&swc12ctledtask);//接收来自swc1
 Rte_Write_CtLedTask_Test_Signal_u16_Siganl(swc12ctledtask);//并通过can发送出去
 
 //Adc_StartGroupConversion(AdcConf_AdcGroup_AdcGroup0);//
-// Dio_WriteChannel(112,LedState);
+//
 
 
 
@@ -243,19 +242,31 @@ Rte_Write_CtLedTask_Test_Signal_u16_Siganl(swc12ctledtask);//并通过can发送出去
 #define CtLedTask_STOP_SEC_CODE
 #include "CtLedTask_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 
-
+void GPT_10ms(void){
+  static unsigned char ledCnt = 0;
+  static unsigned char LedState = 0;
+  ledCnt++;
+  if(ledCnt>=100){
+    //LedCnt++;
+      ledCnt= 0;
+      LedState ^= 0x01;
+     Dio_WriteChannel(112,LedState);
+    
+  }
+  
+}
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of function definition area >>            DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 void AdcGroup0Notification(void)
 {
-   uint16 adcValue = 0u;
-   (void)Adc_ReadGroup(AdcConf_AdcGroup_AdcGroup0, &adcValue);
-   
-   Pwm_SetDutyCycle(PwmConf_PwmChannelConfigSet_PwmChannel0,adcValue*8);
-   
-   
-   Rte_Write_CtLedTask_Test_Signal_u16_Siganl((uint16)(adcValue / 10u));
+//   uint16 adcValue = 0u;
+//   (void)Adc_ReadGroup(AdcConf_AdcGroup_AdcGroup0, &adcValue);
+//   
+//   Pwm_SetDutyCycle(PwmConf_PwmChannelConfigSet_PwmChannel0,adcValue*8);
+//   
+//   
+//   Rte_Write_CtLedTask_Test_Signal_u16_Siganl((uint16)(adcValue / 10u));
  
   
 }
