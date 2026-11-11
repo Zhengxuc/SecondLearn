@@ -1,0 +1,428 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1567536 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:390), pid=26700, tid=0x00000000000038cc
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_181-b13) (build 1.8.0_181-b13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.181-b13 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000002a55b000):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=14540, stack(0x000000002bbc0000,0x000000002bcc0000)]
+
+Stack: [0x000000002bbc0000,0x000000002bcc0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+Current CompileTask:
+C2:58243132 27915       4       org.eclipse.swt.layout.GridLayout::layout (4406 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000004583d800 JavaThread "Worker-42" daemon [_thread_blocked, id=4092, stack(0x0000000038810000,0x0000000038910000)]
+  0x000000004582f000 JavaThread "Worker-36" daemon [_thread_blocked, id=21900, stack(0x0000000052480000,0x0000000052580000)]
+  0x0000000045b3c800 JavaThread "FileSupervisionThread" daemon [_thread_blocked, id=4396, stack(0x000000004e620000,0x000000004e720000)]
+  0x0000000045ba0800 JavaThread "Thread-34" [_thread_blocked, id=1920, stack(0x000000004d720000,0x000000004d820000)]
+  0x0000000045b95000 JavaThread "EventConflaterChain-1" [_thread_in_native, id=29148, stack(0x000000003fa10000,0x000000003fb10000)]
+  0x0000000045b9b000 JavaThread "GlazedListsEventLayer-1" [_thread_blocked, id=30072, stack(0x000000004c9d0000,0x000000004cad0000)]
+  0x0000000045b93000 JavaThread "Lucene_IndexUpdater-Thread-33" [_thread_blocked, id=29872, stack(0x000000004b800000,0x000000004b900000)]
+  0x0000000045b99800 JavaThread "BackgroundValidation-Thread-11" daemon [_thread_blocked, id=16812, stack(0x000000004b700000,0x000000004b800000)]
+  0x0000000045b92000 JavaThread "BackgroundValidation-Thread-10" daemon [_thread_blocked, id=8580, stack(0x000000004b600000,0x000000004b700000)]
+  0x0000000045b99000 JavaThread "BackgroundValidation-Thread-9" daemon [_thread_blocked, id=12792, stack(0x000000004b500000,0x000000004b600000)]
+  0x0000000045b93800 JavaThread "BackgroundValidation-Thread-8" daemon [_thread_blocked, id=15668, stack(0x000000004b400000,0x000000004b500000)]
+  0x0000000045b91800 JavaThread "BackgroundValidation-Thread-7" daemon [_thread_blocked, id=28056, stack(0x000000004b300000,0x000000004b400000)]
+  0x0000000045b98000 JavaThread "BackgroundValidation-Thread-6" daemon [_thread_blocked, id=16332, stack(0x000000004b200000,0x000000004b300000)]
+  0x0000000045b97800 JavaThread "BackgroundValidation-Thread-5" daemon [_thread_blocked, id=20768, stack(0x000000004b100000,0x000000004b200000)]
+  0x0000000045b96000 JavaThread "BackgroundValidation-Thread-4" daemon [_thread_blocked, id=7064, stack(0x000000004b000000,0x000000004b100000)]
+  0x0000000045b96800 JavaThread "BackgroundValidation-Thread-3" daemon [_thread_blocked, id=4364, stack(0x000000004af00000,0x000000004b000000)]
+  0x0000000045b94800 JavaThread "BackgroundValidation-Thread-2" daemon [_thread_blocked, id=17584, stack(0x000000004ae00000,0x000000004af00000)]
+  0x000000003177c000 JavaThread "BackgroundValidation-Thread-1" daemon [_thread_blocked, id=27796, stack(0x000000004ad00000,0x000000004ae00000)]
+  0x0000000031771800 JavaThread "BackgroundValidation-Thread-0" daemon [_thread_blocked, id=30076, stack(0x000000004a5c0000,0x000000004a6c0000)]
+  0x00000000356f9800 JavaThread "ConsistencyThreadPool-11" daemon [_thread_blocked, id=8848, stack(0x000000004a0c0000,0x000000004a1c0000)]
+  0x00000000356fe000 JavaThread "ConsistencyThreadPool-10" daemon [_thread_blocked, id=17164, stack(0x0000000046620000,0x0000000046720000)]
+  0x00000000356f6800 JavaThread "ConsistencyThreadPool-9" daemon [_thread_blocked, id=29852, stack(0x00000000454e0000,0x00000000455e0000)]
+  0x00000000356fc800 JavaThread "ConsistencyThreadPool-8" daemon [_thread_blocked, id=29672, stack(0x0000000040310000,0x0000000040410000)]
+  0x00000000356fd800 JavaThread "ConsistencyThreadPool-7" daemon [_thread_blocked, id=18400, stack(0x0000000040210000,0x0000000040310000)]
+  0x00000000356f6000 JavaThread "ConsistencyThreadPool-6" daemon [_thread_blocked, id=29488, stack(0x0000000040110000,0x0000000040210000)]
+  0x000000003177f000 JavaThread "ConsistencyThreadPool-5" daemon [_thread_blocked, id=17752, stack(0x0000000040010000,0x0000000040110000)]
+  0x000000003177e000 JavaThread "ConsistencyThreadPool-4" daemon [_thread_blocked, id=27280, stack(0x000000003ff10000,0x0000000040010000)]
+  0x000000003177d800 JavaThread "ConsistencyThreadPool-3" daemon [_thread_blocked, id=29280, stack(0x000000003fe10000,0x000000003ff10000)]
+  0x000000003177c800 JavaThread "ConsistencyThreadPool-2" daemon [_thread_blocked, id=11660, stack(0x000000003fd10000,0x000000003fe10000)]
+  0x000000003177b000 JavaThread "ConsistencyThreadPool-1" daemon [_thread_blocked, id=18108, stack(0x000000003fc10000,0x000000003fd10000)]
+  0x0000000031773800 JavaThread "ConsistencyThreadPool-0" daemon [_thread_blocked, id=30428, stack(0x000000003fb10000,0x000000003fc10000)]
+  0x0000000031776800 JavaThread "GenCore-AutomaticOnDemandValidation-TimerThread" [_thread_blocked, id=29984, stack(0x000000003f710000,0x000000003f810000)]
+  0x00000000356f5000 JavaThread "ProjectPhaseThread" daemon [_thread_blocked, id=18540, stack(0x000000003f110000,0x000000003f210000)]
+  0x00000000356f4800 JavaThread "LogAppenderThread1" daemon [_thread_blocked, id=23624, stack(0x000000003f010000,0x000000003f110000)]
+  0x00000000356f9000 JavaThread "EventAdmin Async Event Dispatcher Thread" daemon [_thread_blocked, id=21216, stack(0x000000003c6c0000,0x000000003c7c0000)]
+  0x000000003107b800 JavaThread "com.google.common.base.internal.Finalizer" daemon [_thread_blocked, id=14536, stack(0x000000003abd0000,0x000000003acd0000)]
+  0x0000000031078800 JavaThread "AIScriptService-FileSupervisionThread" daemon [_thread_blocked, id=28844, stack(0x0000000039110000,0x0000000039210000)]
+  0x000000003107b000 JavaThread "Thread-4" daemon [_thread_in_native, id=13100, stack(0x0000000039010000,0x0000000039110000)]
+  0x000000003107e000 JavaThread "StateSupervisorManagerServiceThread" daemon [_thread_blocked, id=18152, stack(0x0000000038b10000,0x0000000038c10000)]
+  0x000000003107c800 JavaThread "EMF Reference Cleaner" daemon [_thread_blocked, id=11136, stack(0x0000000033c10000,0x0000000033d10000)]
+  0x0000000032cc3800 JavaThread "Bundle File Closer" daemon [_thread_blocked, id=6292, stack(0x0000000033810000,0x0000000033910000)]
+  0x000000002f572800 JavaThread "BundleCheckerThread" daemon [_thread_blocked, id=15088, stack(0x0000000032540000,0x0000000032640000)]
+  0x000000002d30c800 JavaThread "Worker-JM" daemon [_thread_blocked, id=29912, stack(0x000000002ec00000,0x000000002ed00000)]
+  0x000000002d3de800 JavaThread "Start Level: Equinox Container: 9e08b533-12f9-4c0b-9e14-02094752ada3" daemon [_thread_blocked, id=29404, stack(0x000000002e500000,0x000000002e600000)]
+  0x000000002b891800 JavaThread "Framework Event Dispatcher: org.eclipse.osgi.internal.framework.EquinoxEventPublisher@f3021cb" daemon [_thread_blocked, id=6964, stack(0x000000002e400000,0x000000002e500000)]
+  0x000000002d3e1800 JavaThread "SCR Component Actor" daemon [_thread_blocked, id=16940, stack(0x000000002e300000,0x000000002e400000)]
+  0x000000002cf66800 JavaThread "Active Thread: Equinox Container: 9e08b533-12f9-4c0b-9e14-02094752ada3" [_thread_blocked, id=16548, stack(0x000000002df00000,0x000000002e000000)]
+  0x000000002b183800 JavaThread "Service Thread" daemon [_thread_blocked, id=25624, stack(0x000000002bfc0000,0x000000002c0c0000)]
+  0x000000002b110800 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=11188, stack(0x000000002bec0000,0x000000002bfc0000)]
+  0x000000002b10a000 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=17776, stack(0x000000002bdc0000,0x000000002bec0000)]
+  0x000000002b105000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=19544, stack(0x000000002bcc0000,0x000000002bdc0000)]
+=>0x000000002a55b000 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=14540, stack(0x000000002bbc0000,0x000000002bcc0000)]
+  0x000000002a545800 JavaThread "Attach Listener" daemon [_thread_blocked, id=9632, stack(0x000000002bac0000,0x000000002bbc0000)]
+  0x000000002b103000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=1472, stack(0x000000002b9c0000,0x000000002bac0000)]
+  0x000000002b102800 JavaThread "Surrogate Locker Thread (Concurrent GC)" daemon [_thread_blocked, id=29500, stack(0x000000002b8c0000,0x000000002b9c0000)]
+  0x000000002a51b800 JavaThread "Finalizer" daemon [_thread_blocked, id=24716, stack(0x000000002af60000,0x000000002b060000)]
+  0x000000002a4ec800 JavaThread "Reference Handler" daemon [_thread_blocked, id=29992, stack(0x000000002ae60000,0x000000002af60000)]
+  0x00000000032de000 JavaThread "main" [_thread_in_native, id=14512, stack(0x0000000000e00000,0x0000000000f00000)]
+
+Other Threads:
+  0x000000002a4e2800 VMThread [stack: 0x000000002ad60000,0x000000002ae60000] [id=8812]
+  0x000000002b141000 WatcherThread [stack: 0x000000002c0c0000,0x000000002c1c0000] [id=5312]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ par new generation   total 260096K, used 69978K [0x00000003c0000000, 0x00000003d1a30000, 0x00000003f4000000)
+  eden space 231232K,  29% used [0x00000003c0000000, 0x00000003c4309b78, 0x00000003ce1d0000)
+  from space 28864K,   4% used [0x00000003ce1d0000, 0x00000003ce31d048, 0x00000003cfe00000)
+  to   space 28864K,   0% used [0x00000003cfe00000, 0x00000003cfe00000, 0x00000003d1a30000)
+ concurrent mark-sweep generation total 577732K, used 243984K [0x00000003f4000000, 0x0000000417431000, 0x00000007c0000000)
+ Metaspace       used 298901K, capacity 322531K, committed 322776K, reserved 1316864K
+  class space    used 49666K, capacity 55750K, committed 55828K, reserved 1048576K
+
+Card table byte_map: [0x00000000130a0000,0x00000000150b0000] byte_map_base: 0x00000000112a0000
+
+Marking Bits: (CMSBitMap*) 0x0000000003224cc8
+ Bits: [0x00000000179d0000, 0x0000000026cd0000)
+
+Mod Union Table: (CMSBitMap*) 0x0000000003224d88
+ Bits: [0x0000000026ce0000, 0x00000000270ac000)
+
+Polling page: 0x0000000002d00000
+
+CodeCache: size=245760Kb used=84127Kb max_used=84260Kb free=161632Kb
+ bounds [0x00000000032e0000, 0x00000000085a0000, 0x00000000122e0000]
+ total_blobs=21885 nmethods=20655 adapters=1137
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 58242.507 Thread 0x000000002b110800 nmethod 27910 0x000000000816ae90 code [0x000000000816afe0, 0x000000000816b0f0]
+Event: 58242.508 Thread 0x000000002b110800 27911       3       org.eclipse.core.runtime.Platform::getOS (7 bytes)
+Event: 58242.530 Thread 0x000000002b110800 nmethod 27911 0x00000000077518d0 code [0x0000000007751ae0, 0x0000000007752548]
+Event: 58242.530 Thread 0x000000002b110800 27914       3       org.eclipse.core.internal.preferences.PreferencesService::get (54 bytes)
+Event: 58242.531 Thread 0x000000002b110800 nmethod 27914 0x0000000007751010 code [0x00000000077511a0, 0x00000000077516c8]
+Event: 58242.531 Thread 0x000000002b110800 27913       3       org.eclipse.ui.internal.themes.ThemeRegistryReader::getBestPlatformMatch (106 bytes)
+Event: 58242.535 Thread 0x000000002b110800 nmethod 27913 0x000000000774d550 code [0x000000000774d900, 0x000000000774f688]
+Event: 58242.535 Thread 0x000000002b110800 27912       3       org.eclipse.core.internal.runtime.InternalPlatform::getOS (12 bytes)
+Event: 58242.536 Thread 0x000000002b110800 nmethod 27912 0x000000000774c3d0 code [0x000000000774c5e0, 0x000000000774cf08]
+Event: 58242.547 Thread 0x000000002a55b000 27915       4       org.eclipse.swt.layout.GridLayout::layout (4406 bytes)
+
+GC Heap History (10 events):
+Event: 19375.903 GC heap before
+{Heap before GC invocations=70 (full 9):
+ par new generation   total 260096K, used 247356K [0x00000003c0000000, 0x00000003d1a30000, 0x00000003f4000000)
+  eden space 231232K, 100% used [0x00000003c0000000, 0x00000003ce1d0000, 0x00000003ce1d0000)
+  from space 28864K,  55% used [0x00000003cfe00000, 0x00000003d0dbf200, 0x00000003d1a30000)
+  to   space 28864K,   0% used [0x00000003ce1d0000, 0x00000003ce1d0000, 0x00000003cfe00000)
+ concurrent mark-sweep generation total 577732K, used 233470K [0x00000003f4000000, 0x0000000417431000, 0x00000007c0000000)
+ Metaspace       used 298836K, capacity 322517K, committed 322776K, reserved 1316864K
+  class space    used 49665K, capacity 55749K, committed 55828K, reserved 1048576K
+Event: 19376.473 GC heap after
+Heap after GC invocations=71 (full 9):
+ par new generation   total 260096K, used 16022K [0x00000003c0000000, 0x00000003d1a30000, 0x00000003f4000000)
+  eden space 231232K,   0% used [0x00000003c0000000, 0x00000003c0000000, 0x00000003ce1d0000)
+  from space 28864K,  55% used [0x00000003ce1d0000, 0x00000003cf175960, 0x00000003cfe00000)
+  to   space 28864K,   0% used [0x00000003cfe00000, 0x00000003cfe00000, 0x00000003d1a30000)
+ concurrent mark-sweep generation total 577732K, used 233470K [0x00000003f4000000, 0x0000000417431000, 0x00000007c0000000)
+ Metaspace       used 298836K, capacity 322517K, committed 322776K, reserved 1316864K
+  class space    used 49665K, capacity 55749K, committed 55828K, reserved 1048576K
+}
+Event: 28496.500 GC heap before
+{Heap before GC invocations=71 (full 9):
+ par new generation   total 260096K, used 247254K [0x00000003c0000000, 0x00000003d1a30000, 0x00000003f4000000)
+  eden space 231232K, 100% used [0x00000003c0000000, 0x00000003ce1d0000, 0x00000003ce1d0000)
+  from space 28864K,  55% used [0x00000003ce1d0000, 0x00000003cf175960, 0x00000003cfe00000)
+  to   space 28864K,   0% used [0x00000003cfe00000, 0x00000003cfe00000, 0x00000003d1a30000)
+ concurrent mark-sweep generation total 577732K, used 233470K [0x00000003f4000000, 0x0000000417431000, 0x00000007c0000000)
+ Metaspace       used 298843K, capacity 322517K, committed 322776K, reserved 1316864K
+  class space    used 49665K, capacity 55749K, committed 55828K, reserved 1048576K
+Event: 28497.082 GC heap after
+Heap after GC invocations=72 (full 9):
+ par new generation   total 260096K, used 14972K [0x00000003c0000000, 0x00000003d1a30000, 0x00000003f4000000)
+  eden space 231232K,   0% used [0x00000003c0000000, 0x00000003c0000000, 0x00000003ce1d0000)
+  from space 28864K,  51% used [0x00000003cfe00000, 0x00000003d0c9f390, 0x00000003d1a30000)
+  to   space 28864K,   0% used [0x00000003ce1d0000, 0x00000003ce1d0000, 0x00000003cfe00000)
+ concurrent mark-sweep generation total 577732K, used 233470K [0x00000003f4000000, 0x0000000417431000, 0x00000007c0000000)
+ Metaspace       used 298843K, capacity 322517K, committed 322776K, reserved 1316864K
+  class space    used 49665K, capacity 55749K, committed 55828K, reserved 1048576K
+}
+Event: 37595.968 GC heap before
+{Heap before GC invocations=72 (full 9):
+ par new generation   total 260096K, used 246204K [0x00000003c0000000, 0x00000003d1a30000, 0x00000003f4000000)
+  eden space 231232K, 100% used [0x00000003c0000000, 0x00000003ce1d0000, 0x00000003ce1d0000)
+  from space 28864K,  51% used [0x00000003cfe00000, 0x00000003d0c9f390, 0x00000003d1a30000)
+  to   space 28864K,   0% used [0x00000003ce1d0000, 0x00000003ce1d0000, 0x00000003cfe00000)
+ concurrent mark-sweep generation total 577732K, used 233470K [0x00000003f4000000, 0x0000000417431000, 0x00000007c0000000)
+ Metaspace       used 298858K, capacity 322525K, committed 322776K, reserved 1316864K
+  class space    used 49665K, capacity 55749K, committed 55828K, reserved 1048576K
+Event: 37596.034 GC heap after
+Heap after GC invocations=73 (full 9):
+ par new generation   total 260096K, used 10296K [0x00000003c0000000, 0x00000003d1a30000, 0x00000003f4000000)
+  eden space 231232K,   0% used [0x00000003c0000000, 0x00000003c0000000, 0x00000003ce1d0000)
+  from space 28864K,  35% used [0x00000003ce1d0000, 0x00000003cebde3d0, 0x00000003cfe00000)
+  to   space 28864K,   0% used [0x00000003cfe00000, 0x00000003cfe00000, 0x00000003d1a30000)
+ concurrent mark-sweep generation total 577732K, used 240493K [0x00000003f4000000, 0x0000000417431000, 0x00000007c0000000)
+ Metaspace       used 298858K, capacity 322525K, committed 322776K, reserved 1316864K
+  class space    used 49665K, capacity 55749K, committed 55828K, reserved 1048576K
+}
+Event: 46681.895 GC heap before
+{Heap before GC invocations=73 (full 9):
+ par new generation   total 260096K, used 241528K [0x00000003c0000000, 0x00000003d1a30000, 0x00000003f4000000)
+  eden space 231232K, 100% used [0x00000003c0000000, 0x00000003ce1d0000, 0x00000003ce1d0000)
+  from space 28864K,  35% used [0x00000003ce1d0000, 0x00000003cebde3d0, 0x00000003cfe00000)
+  to   space 28864K,   0% used [0x00000003cfe00000, 0x00000003cfe00000, 0x00000003d1a30000)
+ concurrent mark-sweep generation total 577732K, used 240493K [0x00000003f4000000, 0x0000000417431000, 0x00000007c0000000)
+ Metaspace       used 298873K, capacity 322525K, committed 322776K, reserved 1316864K
+  class space    used 49665K, capacity 55749K, committed 55828K, reserved 1048576K
+Event: 46681.914 GC heap after
+Heap after GC invocations=74 (full 9):
+ par new generation   total 260096K, used 3469K [0x00000003c0000000, 0x00000003d1a30000, 0x00000003f4000000)
+  eden space 231232K,   0% used [0x00000003c0000000, 0x00000003c0000000, 0x00000003ce1d0000)
+  from space 28864K,  12% used [0x00000003cfe00000, 0x00000003d01635d0, 0x00000003d1a30000)
+  to   space 28864K,   0% used [0x00000003ce1d0000, 0x00000003ce1d0000, 0x00000003cfe00000)
+ concurrent mark-sweep generation total 577732K, used 242490K [0x00000003f4000000, 0x0000000417431000, 0x00000007c0000000)
+ Metaspace       used 298873K, capacity 322525K, committed 322776K, reserved 1316864K
+  class space    used 49665K, capacity 55749K, committed 55828K, reserved 1048576K
+}
+Event: 55713.457 GC heap before
+{Heap before GC invocations=74 (full 9):
+ par new generation   total 260096K, used 234701K [0x00000003c0000000, 0x00000003d1a30000, 0x00000003f4000000)
+  eden space 231232K, 100% used [0x00000003c0000000, 0x00000003ce1d0000, 0x00000003ce1d0000)
+  from space 28864K,  12% used [0x00000003cfe00000, 0x00000003d01635d0, 0x00000003d1a30000)
+  to   space 28864K,   0% used [0x00000003ce1d0000, 0x00000003ce1d0000, 0x00000003cfe00000)
+ concurrent mark-sweep generation total 577732K, used 242490K [0x00000003f4000000, 0x0000000417431000, 0x00000007c0000000)
+ Metaspace       used 298873K, capacity 322525K, committed 322776K, reserved 1316864K
+  class space    used 49665K, capacity 55749K, committed 55828K, reserved 1048576K
+Event: 55713.472 GC heap after
+Heap after GC invocations=75 (full 9):
+ par new generation   total 260096K, used 1332K [0x00000003c0000000, 0x00000003d1a30000, 0x00000003f4000000)
+  eden space 231232K,   0% used [0x00000003c0000000, 0x00000003c0000000, 0x00000003ce1d0000)
+  from space 28864K,   4% used [0x00000003ce1d0000, 0x00000003ce31d048, 0x00000003cfe00000)
+  to   space 28864K,   0% used [0x00000003cfe00000, 0x00000003cfe00000, 0x00000003d1a30000)
+ concurrent mark-sweep generation total 577732K, used 243984K [0x00000003f4000000, 0x0000000417431000, 0x00000007c0000000)
+ Metaspace       used 298873K, capacity 322525K, committed 322776K, reserved 1316864K
+  class space    used 49665K, capacity 55749K, committed 55828K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 1074.686 Thread 0x00000000032de000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00000000076bb200 method=com.vector.cfg.gui.core.ctrl.relations.DefinitionUtil$3.apply(Lcom/vector/cfg/model/mdf/MIObject;)Ljava/lang/String; @ 24
+Event: 1074.751 Thread 0x00000000032de000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00000000076bb200 method=com.vector.cfg.gui.core.ctrl.relations.DefinitionUtil$3.apply(Lcom/vector/cfg/model/mdf/MIObject;)Ljava/lang/String; @ 24
+Event: 1215.021 Thread 0x00000000032de000 Uncommon trap: reason=speculate_class_check action=maybe_recompile pc=0x0000000003860a40 method=com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl.isKidOK(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Z @ 39
+Event: 1215.024 Thread 0x00000000032de000 Uncommon trap: reason=speculate_class_check action=maybe_recompile pc=0x0000000003860a40 method=com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl.isKidOK(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Z @ 39
+Event: 1215.035 Thread 0x00000000032de000 Uncommon trap: reason=speculate_class_check action=maybe_recompile pc=0x0000000003860a40 method=com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl.isKidOK(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Z @ 39
+Event: 1215.039 Thread 0x00000000032de000 Uncommon trap: reason=speculate_class_check action=maybe_recompile pc=0x0000000003860a40 method=com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl.isKidOK(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Z @ 39
+Event: 1585.408 Thread 0x00000000032de000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000045fefb0 method=org.eclipse.swt.widgets.Synchronizer.removeFirst()Lorg/eclipse/swt/widgets/RunnableLock; @ 73
+Event: 4223.649 Thread 0x00000000032de000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000000832d4bc method=org.eclipse.swt.layout.GridLayout.getData([[Lorg/eclipse/swt/widgets/Control;IIIIZ)Lorg/eclipse/swt/layout/GridData; @ 126
+Event: 4223.656 Thread 0x00000000032de000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000007c2b964 method=org.eclipse.swt.layout.GridLayout.getData([[Lorg/eclipse/swt/widgets/Control;IIIIZ)Lorg/eclipse/swt/layout/GridData; @ 126
+Event: 34213.547 Thread 0x00000000032de000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000076227dc method=org.eclipse.swt.widgets.Display.sleep()Z @ 15
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 97.795 Thread 0x0000000045b46000 Implicit null exception at 0x0000000006808e2c to 0x0000000006808ee1
+Event: 97.870 Thread 0x00000000032de000 Exception <a 'java/io/FileNotFoundException'> (0x00000003c51e52a0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u181\11358\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 97.871 Thread 0x00000000032de000 Exception <a 'java/io/FileNotFoundException'> (0x00000003c51e6c30) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u181\11358\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 119.255 Thread 0x00000000032de000 Implicit null exception at 0x0000000006748275 to 0x00000000067483c6
+Event: 234.379 Thread 0x00000000032de000 Implicit null exception at 0x0000000007c82c71 to 0x0000000007c85a29
+Event: 239.090 Thread 0x00000000032de000 Implicit null exception at 0x0000000007cabbf9 to 0x0000000007cac5b9
+Event: 254.929 Thread 0x00000000032de000 Implicit null exception at 0x0000000006f7d336 to 0x0000000006f7dd5d
+Event: 255.209 Thread 0x00000000032de000 Implicit null exception at 0x0000000006e08a94 to 0x0000000006e09125
+Event: 255.211 Thread 0x00000000032de000 Implicit null exception at 0x0000000006c377cc to 0x0000000006c396f9
+Event: 1032.588 Thread 0x00000000032de000 Implicit null exception at 0x00000000069a4040 to 0x00000000069a4251
+
+Events (10 events):
+Event: 46681.888 Executing VM operation: GenCollectForAllocation
+Event: 46681.914 Executing VM operation: GenCollectForAllocation done
+Event: 55238.534 Thread 0x0000000045b3c800 DEOPT PACKING pc=0x0000000007cc650e sp=0x000000004e71f2c0
+Event: 55238.535 Thread 0x0000000045b3c800 DEOPT UNPACKING pc=0x0000000003327490 sp=0x000000004e71f030 mode 0
+Event: 55713.451 Executing VM operation: GenCollectForAllocation
+Event: 55713.472 Executing VM operation: GenCollectForAllocation done
+Event: 58242.513 Thread 0x00000000032de000 DEOPT PACKING pc=0x00000000081f390e sp=0x0000000000efcb80
+Event: 58242.513 Thread 0x00000000032de000 DEOPT UNPACKING pc=0x0000000003327490 sp=0x0000000000efc9b0 mode 0
+Event: 58242.547 Thread 0x00000000032de000 DEOPT PACKING pc=0x00000000081f3ccb sp=0x0000000000efc580
+Event: 58242.547 Thread 0x00000000032de000 DEOPT UNPACKING pc=0x0000000003327490 sp=0x0000000000efc3b0 mode 0
+
+
+Dynamic libraries:
+0x00007ff77b620000 - 0x00007ff77b6a0000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\x86_64\DaVinciCFG.exe
+0x00007ffa88550000 - 0x00007ffa88767000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffa87a60000 - 0x00007ffa87b24000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffa85b80000 - 0x00007ffa85f2d000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffa86ce0000 - 0x00007ffa86e8e000 	C:\Windows\System32\USER32.dll
+0x00007ffa85ff0000 - 0x00007ffa86016000 	C:\Windows\System32\win32u.dll
+0x00007ffa86cb0000 - 0x00007ffa86cd9000 	C:\Windows\System32\GDI32.dll
+0x00007ffa86160000 - 0x00007ffa86279000 	C:\Windows\System32\gdi32full.dll
+0x00007ffa860c0000 - 0x00007ffa8615a000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffa859e0000 - 0x00007ffa85af1000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffa6fe10000 - 0x00007ffa700a3000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.3672_none_2713b9d173822955\COMCTL32.dll
+0x00007ffa862f0000 - 0x00007ffa86397000 	C:\Windows\System32\msvcrt.dll
+0x00007ffa87d10000 - 0x00007ffa87d41000 	C:\Windows\System32\IMM32.DLL
+0x0000000072000000 - 0x0000000072012000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\plugins\org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.551.v20171108-1834\eclipse_1630.dll
+0x00007ffa879a0000 - 0x00007ffa87a52000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffa87e20000 - 0x00007ffa87ec9000 	C:\Windows\System32\sechost.dll
+0x00007ffa86090000 - 0x00007ffa860b8000 	C:\Windows\System32\bcrypt.dll
+0x00007ffa86a90000 - 0x00007ffa86ba4000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffa7b5a0000 - 0x00007ffa7b5aa000 	C:\Windows\SYSTEM32\VERSION.dll
+0x0000000073ba0000 - 0x0000000074442000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\x86_64\jre\bin\server\jvm.dll
+0x00007ffa862e0000 - 0x00007ffa862e8000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffa801f0000 - 0x00007ffa80224000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffa6a7e0000 - 0x00007ffa6a7e9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffa87b80000 - 0x00007ffa87bf1000 	C:\Windows\System32\WS2_32.dll
+0x0000000074850000 - 0x0000000074922000 	C:\Windows\SYSTEM32\MSVCR100.dll
+0x0000000073b90000 - 0x0000000073b9f000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\x86_64\jre\bin\verify.dll
+0x0000000073b60000 - 0x0000000073b89000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\x86_64\jre\bin\java.dll
+0x0000000073b40000 - 0x0000000073b56000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\x86_64\jre\bin\zip.dll
+0x00007ffa87130000 - 0x00007ffa87997000 	C:\Windows\System32\SHELL32.dll
+0x00007ffa837d0000 - 0x00007ffa840cf000 	C:\Windows\SYSTEM32\windows.storage.dll
+0x00007ffa86440000 - 0x00007ffa867ce000 	C:\Windows\System32\combase.dll
+0x00007ffa83690000 - 0x00007ffa837cf000 	C:\Windows\SYSTEM32\wintypes.dll
+0x00007ffa87c00000 - 0x00007ffa87cf9000 	C:\Windows\System32\SHCORE.dll
+0x00007ffa86a30000 - 0x00007ffa86a8e000 	C:\Windows\System32\shlwapi.dll
+0x00007ffa857a0000 - 0x00007ffa857c7000 	C:\Windows\SYSTEM32\profapi.dll
+0x00007ffa84f90000 - 0x00007ffa84fab000 	C:\Windows\SYSTEM32\CRYPTSP.dll
+0x00007ffa84800000 - 0x00007ffa84835000 	C:\Windows\system32\rsaenh.dll
+0x00007ffa84e20000 - 0x00007ffa84e48000 	C:\Windows\SYSTEM32\USERENV.dll
+0x00007ffa85b00000 - 0x00007ffa85b7b000 	C:\Windows\System32\bcryptprimitives.dll
+0x00007ffa84f80000 - 0x00007ffa84f8c000 	C:\Windows\SYSTEM32\CRYPTBASE.dll
+0x0000000073b20000 - 0x0000000073b3a000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\x86_64\jre\bin\net.dll
+0x00007ffa84d30000 - 0x00007ffa84d99000 	C:\Windows\system32\mswsock.dll
+0x00007ffa84370000 - 0x00007ffa8439d000 	C:\Windows\SYSTEM32\IPHLPAPI.DLL
+0x00007ffa863b0000 - 0x00007ffa863b9000 	C:\Windows\System32\NSI.dll
+0x00007ffa81300000 - 0x00007ffa81319000 	C:\Windows\SYSTEM32\dhcpcsvc6.DLL
+0x00007ffa812e0000 - 0x00007ffa812ff000 	C:\Windows\SYSTEM32\dhcpcsvc.DLL
+0x00007ffa843a0000 - 0x00007ffa84498000 	C:\Windows\SYSTEM32\DNSAPI.dll
+0x0000000073b00000 - 0x0000000073b11000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\x86_64\jre\bin\nio.dll
+0x00007ffa81e90000 - 0x00007ffa81f41000 	C:\Windows\system32\uxtheme.dll
+0x00007ffa86fd0000 - 0x00007ffa8712e000 	C:\Windows\System32\MSCTF.dll
+0x00007ffa849b0000 - 0x00007ffa849c8000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ffa86ef0000 - 0x00007ffa86fc7000 	C:\Windows\System32\OLEAUT32.dll
+0x00007ffa71740000 - 0x00007ffa71883000 	C:\Windows\SYSTEM32\textinputframework.dll
+0x00007ffa62780000 - 0x00007ffa62bc9000 	C:\Windows\System32\uiautomationcore.dll
+0x00007ffa5cf00000 - 0x00007ffa5cf69000 	C:\Windows\System32\OLEACC.dll
+0x00007ffa87d70000 - 0x00007ffa87e20000 	C:\Windows\System32\clbcatq.dll
+0x00007ffa63ee0000 - 0x00007ffa63ef5000 	C:\Windows\System32\threadpoolwinrt.dll
+0x0000000073af0000 - 0x0000000073afd000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\x86_64\jre\bin\management.dll
+0x00007ffa02750000 - 0x00007ffa02767000 	C:\Windows\system32\napinsp.dll
+0x00007ffa02730000 - 0x00007ffa0274b000 	C:\Windows\system32\pnrpnsp.dll
+0x00007ffa02690000 - 0x00007ffa026a1000 	C:\Windows\System32\winrnr.dll
+0x00007ffa5f940000 - 0x00007ffa5f955000 	C:\Windows\system32\wshbth.dll
+0x00007ffa6cb60000 - 0x00007ffa6cb87000 	C:\Windows\system32\nlansp_c.dll
+0x00000000769c0000 - 0x00000000769e6000 	C:\Program Files\Bonjour\mdnsNSP.dll
+0x00007ffa80150000 - 0x00007ffa8015a000 	C:\Windows\System32\rasadhlp.dll
+0x00007ffa80160000 - 0x00007ffa801e3000 	C:\Windows\System32\fwpuclnt.dll
+0x0000000073ac0000 - 0x0000000073ae4000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\x86_64\jre\bin\sunec.dll
+0x0000000030b50000 - 0x0000000030bf7000 	C:\Users\EDY\.DaVinciCfg\temp\configuration\vector.cfg.dev.r80658.x86_64\org.eclipse.osgi\374\0\.cp\swt-win32-4763.dll
+0x00007ffa86880000 - 0x00007ffa86a25000 	C:\Windows\System32\ole32.dll
+0x00007ffa86bb0000 - 0x00007ffa86caf000 	C:\Windows\System32\comdlg32.dll
+0x00007ffa85870000 - 0x00007ffa859d6000 	C:\Windows\System32\CRYPT32.dll
+0x00007ffa6b8b0000 - 0x00007ffa6bdae000 	C:\Windows\SYSTEM32\WININET.dll
+0x00007ffa5ee70000 - 0x00007ffa5ef17000 	C:\Windows\SYSTEM32\WINSPOOL.DRV
+0x00007ff9f7010000 - 0x00007ff9f7029000 	C:\Windows\SYSTEM32\USP10.dll
+0x00007ffa80f70000 - 0x00007ffa81070000 	C:\Windows\SYSTEM32\propsys.dll
+0x000000002c300000 - 0x000000002c31e000 	C:\Users\EDY\.DaVinciCfg\temp\configuration\vector.cfg.dev.r80658.x86_64\org.eclipse.osgi\374\0\.cp\swt-gdip-win32-4763.dll
+0x00007ffa545b0000 - 0x00007ffa54769000 	C:\Windows\WinSxS\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.22621.3810_none_57f8d842ce19d879\gdiplus.dll
+0x00007ffa81c50000 - 0x00007ffa81e01000 	C:\Windows\SYSTEM32\WindowsCodecs.dll
+0x00007ffa6cde0000 - 0x00007ffa6ce22000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\plugins\com.vector.cfg.util.jna_4.5.1.r80658\os\win32\x86_64\jnidispatch.dll
+0x00000000738d0000 - 0x0000000073abc000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\plugins\com.vector.cfg.util.win32.win32.x86_64_1.1.0.r80658\lib\FNP_Act_Installer.dll
+0x00007ffa3b700000 - 0x00007ffa3ba63000 	C:\Windows\SYSTEM32\msi.dll
+0x00007ffa6cd50000 - 0x00007ffa6cdd7000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\plugins\com.vector.cfg.util.win32.win32.x86_64_1.1.0.r80658\lib\FnpCommsSoap.dll
+0x00007ffa71230000 - 0x00007ffa7124c000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\plugins\com.vector.cfg.util.win32.win32.x86_64_1.1.0.r80658\lib\VectorDeviceParams64.dll
+0x0000000074490000 - 0x000000007457d000 	C:\Windows\SYSTEM32\WIBUCM64.dll
+0x00007ffa7b410000 - 0x00007ffa7b47b000 	C:\Windows\SYSTEM32\mscoree.dll
+0x00007ffa57fd0000 - 0x00007ffa58076000 	C:\Windows\SYSTEM32\MSVCP120.dll
+0x00007ff9d5c60000 - 0x00007ff9d5d4f000 	C:\Windows\SYSTEM32\MSVCR120.dll
+0x00007ffa7b0b0000 - 0x00007ffa7b14b000 	C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscoreei.dll
+0x0000000180000000 - 0x00000001803b1000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\plugins\com.vector.cfg.util.win32.win32.x86_64_1.1.0.r80658\lib\PoolLicenseManager.dll
+0x00007ffa7e6a0000 - 0x00007ffa7e6b9000 	C:\Windows\SYSTEM32\NETAPI32.dll
+0x00007ffa3fd80000 - 0x00007ffa404d0000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\plugins\com.vector.cfg.util.win32.win32.x86_64_1.1.0.r80658\lib\PoolLicenseManager_libFNP.dll
+0x00007ffa87ed0000 - 0x00007ffa88344000 	C:\Windows\System32\SETUPAPI.dll
+0x00007ffa63320000 - 0x00007ffa6332e000 	C:\Windows\SYSTEM32\snmpapi.dll
+0x00007ffa3f910000 - 0x00007ffa3fd7c000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\plugins\com.vector.cfg.util.win32.win32.x86_64_1.1.0.r80658\lib\com.vector.cfg.win32.win32.dll
+0x00007ffa7ec50000 - 0x00007ffa7ec57000 	C:\Windows\SYSTEM32\MSIMG32.dll
+0x00007ffa3f1c0000 - 0x00007ffa3f910000 	D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\plugins\com.vector.cfg.util.win32.win32.x86_64_1.1.0.r80658\lib\com.vector.cfg.win32.win32.FNP.dll
+0x00007ffa84b20000 - 0x00007ffa84b63000 	C:\Windows\SYSTEM32\SspiCli.dll
+0x00000000323a0000 - 0x00000000323a7000 	C:\Windows\SYSTEM32\WIBUCM64.lCn
+0x00007ffa68db0000 - 0x00007ffa68dcd000 	C:\Windows\SYSTEM32\amsi.dll
+0x00007ffa68ae0000 - 0x00007ffa68b82000 	C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.25100.9008-0\MpOav.dll
+0x00007ffa85440000 - 0x00007ffa8546c000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x00007ffa85470000 - 0x00007ffa854be000 	C:\Windows\SYSTEM32\cfgmgr32.dll
+0x00007ffa86020000 - 0x00007ffa8608b000 	C:\Windows\System32\WINTRUST.dll
+0x00007ffa84fe0000 - 0x00007ffa84ff2000 	C:\Windows\SYSTEM32\MSASN1.dll
+0x00007ffa840d0000 - 0x00007ffa840de000 	C:\Windows\system32\hid.dll
+0x00007ffa6a360000 - 0x00007ffa6a410000 	C:\Windows\SYSTEM32\TextShaping.dll
+0x00007ffa503f0000 - 0x00007ffa50432000 	C:\Windows\system32\mlang.dll
+0x00007ffa5cea0000 - 0x00007ffa5cefe000 	C:\Windows\system32\dataexchange.dll
+0x00007ffa7bce0000 - 0x00007ffa7bf6a000 	C:\Windows\system32\twinapi.appcore.dll
+0x00007ffa5c8f0000 - 0x00007ffa5cba4000 	C:\Windows\system32\explorerframe.dll
+0x00007ffa7f630000 - 0x00007ffa7f763000 	C:\Windows\SYSTEM32\CoreMessaging.dll
+0x00007ffa7cad0000 - 0x00007ffa7ce3d000 	C:\Windows\SYSTEM32\CoreUIComponents.dll
+0x00007ffa85660000 - 0x00007ffa85703000 	C:\Windows\SYSTEM32\sxs.dll
+0x00007ff9f66e0000 - 0x00007ff9f67a8000 	C:\Windows\system32\msctfuimanager.dll
+0x00007ff9f6520000 - 0x00007ff9f66dc000 	C:\Windows\system32\DUI70.dll
+0x00007ff9f6480000 - 0x00007ff9f6519000 	C:\Windows\system32\DUser.dll
+0x00007ffa7c110000 - 0x00007ffa7c15b000 	C:\Windows\System32\UIAnimation.dll
+0x00007ffa82cc0000 - 0x00007ffa82f33000 	C:\Windows\system32\dwrite.dll
+
+VM Arguments:
+jvm_args: -Xmx16384m -XX:+UseConcMarkSweepGC -Dfile.encoding=UTF-8 
+java_command: <unknown>
+java_class_path (initial): D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\DaVinciConfigurator\Core\plugins\org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar
+Launcher Type: generic
+
+Environment Variables:
+PATH=D:/PANDORA/CarCode/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/DaVinciConfigurator/Core/x86_64/jre/bin/server;D:/PANDORA/CarCode/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/DaVinciConfigurator/Core/x86_64/jre/bin;D:/PANDORA/CarCode/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/DaVinciConfigurator/Core/x86_64/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\办公软件\Bandizip\;C:\;rogram Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;D:\Software\bin;D:\Software\Git\cmd;D:\Software\TortoiseGit\bin;D:\Software\Matlab\runtime\win64;D:\Software\Matlab\bin;D:\Software\CURSOR\cursor\resources\app\bin;C:\Infineon\LauncherService;C:\Users\EDY\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\EDY\AppData\Local\Programs\Python\Python312\;d:\Software\CURSOR\resources\app\codeBin;d:\Software\CursorApp\cursor\resources\app\codeBin;C:\Users\EDY\AppData\Local\Microsoft\WindowsApps;D:\办公软件\Microsoft VS Code\bin;D:\Software\mingw64\bin;D:\Software\bin;C:\Users\EDY\Infineon\LauncherService;D:\Software\cursor\resources\app\bin;D:\PANDORA\CarCode\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR;
+USERNAME=EDY
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 22621 (10.0.22621.3958)
+
+CPU:total 12 (initial active 12) (12 cores per cpu, 1 threads per core) family 25 model 80 stepping 0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+Memory: 4k page, physical 16089740k(2284620k free), swap 42304136k(552836k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.181-b13) for windows-amd64 JRE (1.8.0_181-b13), built on Jul  7 2018 04:01:33 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Wed Nov 11 08:40:57 2026
+elapsed time: 58243 seconds (0d 16h 10m 43s)
+
