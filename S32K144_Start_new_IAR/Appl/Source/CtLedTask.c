@@ -53,6 +53,7 @@
 #include "Adc.h"
 #include "Pwm.h"
 #include "Spi.h"
+#include "Gpt.h"
 //#include "Adc_CfgDefines.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
